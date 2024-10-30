@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.7 O limite 𝑒=lim_{𝑥→∞}{(1+{1/𝑥})^𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch4.S6.html" title="4.6 Mudar de variável ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="next" href="Ch4.S8.html" title="4.8 O limite lim_{𝑥→∞}{𝑎^𝑥/𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S1.html" title="4.1 Limites lim_{𝑥→±∞}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S2.html" title="4.2 Limites laterais: lim_{𝑥→𝑎^±}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S3.html" title="4.3 Limites lim_{𝑥→𝑎}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S4.html" title="4.4 Indeterminações do tipo “0/0” ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S5.html" title="4.5 Limites laterais infinitos, assíntotas verticais ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S6.html" title="4.6 Mudar de variável ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S8.html" title="4.8 O limite lim_{𝑥→∞}{𝑎^𝑥/𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S9.html" title="4.9 Exercícios de revisão ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Limites <math class="ltx_Math" alttext="\lim_{x\to\pm\infty}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\pm\infty}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.2" data-path="Ch4.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S2.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Limites laterais: <math class="ltx_Math" alttext="\lim_{x\to a^{\pm}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>±</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{\pm}}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Limites <math class="ltx_Math" alttext="\lim_{x\to a}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Indeterminações do tipo “<math class="ltx_Math" alttext="\tfrac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\tfrac{0}{0}</annotation></semantics></math>”</a></li>
+<li data-level="4.5" data-path="Ch4.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S5.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.5 </span></b>Limites laterais infinitos, assíntotas verticais</a></li>
+<li data-level="4.6" data-path="Ch4.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S6.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.6 </span></b>Mudar de variável</a></li>
+<li data-level="4.7" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.7 </span></b>O limite <math class="ltx_Math" alttext="e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}" display="inline"><semantics><mrow><mi>e</mi><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>x</mi></msup></mrow></mrow><annotation encoding="application/x-tex">e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}</annotation></semantics></math></a></li>
+<li data-level="4.8" data-path="Ch4.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S8.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.8 </span></b>O limite
+<math class="ltx_Math" alttext="\lim_{x\to\infty}\frac{a^{x}}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msup><mi>a</mi><mi>x</mi></msup><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{a^{x}}{x}</annotation></semantics></math></a></li>
+<li data-level="4.9" data-path="Ch4.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S9.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.9 </span></b>Exercícios de revisão</a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O limite </h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4.7</span> O limite <math id="m1" class="ltx_Math" alttext="e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}" display="inline"><semantics><mrow><mi>e</mi><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>x</mi></msup></mrow></mrow><annotation encoding="application/x-tex">e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}</annotation></semantics></math>
+</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Mencionamos, no último capítulo, que uma das definições possíveis do
+número <math id="p1.m1" class="ltx_Math" alttext="e=2,718..." display="inline"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mn>2,718</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">e=2,718...</annotation></semantics></math> é via o limite de <math id="p1.m2" class="ltx_Math" alttext="(1+\tfrac{1}{x})^{x}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><annotation encoding="application/x-tex">(1+\tfrac{1}{x})^{x}</annotation></semantics></math>
+quando <math id="p1.m3" class="ltx_Math" alttext="x\to\infty" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">x\to\infty</annotation></semantics></math>. De fato,</p>
+<div class="bml-overflow-wrapper">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="p1.m4" class="ltx_Math" alttext="x=" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">x=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r">10</td>
+<td class="ltx_td ltx_align_center ltx_border_r">100</td>
+<td class="ltx_td ltx_align_center ltx_border_r">1000</td>
+<td class="ltx_td ltx_align_center">10’000</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="p1.m5" class="ltx_Math" alttext="(1+\tfrac{1}{x}\bigr{)}^{x}=" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>x</mi></msup><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">(1+\tfrac{1}{x}\bigr{)}^{x}=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="p1.m6" class="ltx_Math" alttext="2,59374..." display="inline"><semantics><mrow><mn>2,59374</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">2,59374...</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="p1.m7" class="ltx_Math" alttext="2,70481..." display="inline"><semantics><mrow><mn>2,70481</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">2,70481...</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="p1.m8" class="ltx_Math" alttext="2,71692..." display="inline"><semantics><mrow><mn>2,71692</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">2,71692...</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="p1.m9" class="ltx_Math" alttext="2.71814..." display="inline"><semantics><mrow><mn>2.71814</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">2.71814...</annotation></semantics></math></td>
+</tr>
+</table>
+</div>
+<p class="ltx_p">Pode ser mostrado que o limite quando <math id="p1.m10" class="ltx_Math" alttext="x\to\infty" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">x\to\infty</annotation></semantics></math>
+existe, e tomamos o valor do limite como definição da base do logaritmo natural:</p>
+<div id="Ch4.Ex111" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex111.m1" class="ltx_math_unparsed" alttext="\boxed{e{:=}\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}\,.}" display="block"><semantics><menclose notation="box"><mrow><mi>e</mi><mo lspace="0.278em">:=</mo><munder><mo lspace="0.111em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mn>1</mn><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>x</mi></msup><mo lspace="0em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{e{:=}\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}\,.}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Essa caracterização de <math id="p2.m1" class="ltx_Math" alttext="e" display="inline"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math> permite calcular vários limites importantes,
+como por exemplo
+<math id="p2.m2" class="ltx_Math" alttext="\lim_{h\to 0^{+}}\frac{\ln(1+h)}{h}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>h</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{h\to 0^{+}}\frac{\ln(1+h)}{h}</annotation></semantics></math>.
+De fato, com a mudança de variável <math id="p2.m3" class="ltx_Math" alttext="z=\frac{1}{h}" display="inline"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mn>1</mn><mi>h</mi></mfrac></mrow><annotation encoding="application/x-tex">z=\frac{1}{h}</annotation></semantics></math>, <math id="p2.m4" class="ltx_Math" alttext="h\to 0^{+}" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">h\to 0^{+}</annotation></semantics></math> implica <math id="p2.m5" class="ltx_Math" alttext="z\to+\infty" display="inline"><semantics><mrow><mi>z</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">z\to+\infty</annotation></semantics></math>:</p>
+<div id="Ch4.E23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E23.m1" class="ltx_Math" alttext="\lim_{h\to 0^{+}}\frac{\ln(1+h)}{h}=\lim_{z\to+\infty}\frac{\ln(1+\tfrac{1}{z}%
+)}{\frac{1}{z}}=\lim_{z\to+\infty}\ln\bigl{(}(1+\tfrac{1}{z})^{z}\bigr{)}=\ln e%
+=1\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>h</mi></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow><mfrac><mn>1</mn><mi>z</mi></mfrac></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>z</mi></mfrac></mstyle></mrow><mo stretchy="false">)</mo></mrow><mi>z</mi></msup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>e</mi></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{h\to 0^{+}}\frac{\ln(1+h)}{h}=\lim_{z\to+\infty}\frac{\ln(1+\tfrac{1}{z}%
+)}{\frac{1}{z}}=\lim_{z\to+\infty}\ln\bigl{(}(1+\tfrac{1}{z})^{z}\bigr{)}=\ln e%
+=1\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.23)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Um outro limite que pode ser calculado é <math id="p3.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{e^{x}-1}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{e^{x}-1}{x}</annotation></semantics></math>. Dessa
+vez, chamando <math id="p3.m2" class="ltx_Math" alttext="z=e^{x}" display="inline"><semantics><mrow><mi>z</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">z=e^{x}</annotation></semantics></math>, <math id="p3.m3" class="ltx_Math" alttext="x\to 0^{+}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to 0^{+}</annotation></semantics></math> implica <math id="p3.m4" class="ltx_Math" alttext="z\to 1^{+}" display="inline"><semantics><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">z\to 1^{+}</annotation></semantics></math>:</p>
+<div id="Ch4.Ex112" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex112.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{e^{x}-1}{x}=\lim_{z\to 1^{+}}\frac{z-1}{\ln z}=\lim_{z%
+\to 1^{+}}\frac{1}{\frac{\ln z}{z-1}}" display="block"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>x</mi></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></munder><mfrac><mn>1</mn><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mfrac></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{e^{x}-1}{x}=\lim_{z\to 1^{+}}\frac{z-1}{\ln z}=\lim_{z%
+\to 1^{+}}\frac{1}{\frac{\ln z}{z-1}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Mas agora se <math id="p3.m5" class="ltx_Math" alttext="h{:=}z-1" display="inline"><semantics><mrow><mi>h</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">h{:=}z-1</annotation></semantics></math>, então <math id="p3.m6" class="ltx_Math" alttext="z\to 1^{+}" display="inline"><semantics><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">z\to 1^{+}</annotation></semantics></math> implica <math id="p3.m7" class="ltx_Math" alttext="h\to 0^{+}" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">h\to 0^{+}</annotation></semantics></math>, e
+por (<a href="#Ch4.E23" title="In 4.7 O limite 𝑒=lim_{𝑥→∞}{(1+{1/𝑥})^𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.23</span></a>),</p>
+<div id="Ch4.Ex113" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex113.m1" class="ltx_Math" alttext="\lim_{z\to 1^{+}}\frac{\ln z}{z-1}=\lim_{h\to 0^{+}}\frac{\ln(1+h)}{h}=1\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>h</mi></mfrac></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{z\to 1^{+}}\frac{\ln z}{z-1}=\lim_{h\to 0^{+}}\frac{\ln(1+h)}{h}=1\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Portanto,</p>
+<div id="Ch4.E24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E24.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{e^{x}-1}{x}=1\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{e^{x}-1}{x}=1\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.24)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Observe que o limite lateral a esquerda se obtém facilmente: chamando <math id="p3.m8" class="ltx_Math" alttext="y{:=}-x" display="inline"><semantics><mrow><mi>y</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo>−</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">y{:=}-x</annotation></semantics></math>,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx50" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch4.Ex114"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch4.Ex114.m1" class="ltx_Math" alttext="\displaystyle\lim_{x\to 0^{-}}\frac{e^{x}-1}{x}=\lim_{y\to 0^{+}}\frac{e^{-y}-%
+1}{-y}" display="inline"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>−</mo></msup></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>x</mi></mfrac></mstyle></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>y</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow><mrow><mo>−</mo><mi>y</mi></mrow></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\lim_{x\to 0^{-}}\frac{e^{x}-1}{x}=\lim_{y\to 0^{+}}\frac{e^{-y}-%
+1}{-y}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex114.m2" class="ltx_Math" alttext="\displaystyle=\lim_{y\to 0^{+}}\frac{e^{y}-1}{y}e^{-y}" display="inline"><semantics><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>e</mi><mi>y</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>y</mi></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>y</mi></mrow></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\lim_{y\to 0^{+}}\frac{e^{y}-1}{y}e^{-y}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch4.Ex115"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex115.m1" class="ltx_Math" alttext="\displaystyle=\Bigl{(}\lim_{y\to 0^{+}}\frac{e^{y}-1}{y}\Bigr{)}\bigl{(}\lim_{%
+y\to 0^{+}}e^{-y}\bigr{)}=1\cdot 1=1\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><msup><mi>e</mi><mi>y</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>y</mi></mfrac></mstyle></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><msup><mi>e</mi><mrow><mo>−</mo><mi>y</mi></mrow></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>1</mn></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\Bigl{(}\lim_{y\to 0^{+}}\frac{e^{y}-1}{y}\Bigr{)}\bigl{(}\lim_{%
+y\to 0^{+}}e^{-y}\bigr{)}=1\cdot 1=1\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="Ch4.Thmexo28" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.28</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo28.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que para todo <math id="Ch4.Thmexo28.p1.m1" class="ltx_Math" alttext="a&gt;0" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math>,</span></p>
+<div id="Ch4.E25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E25.m1" class="ltx_Math" alttext="\lim_{h\to 0}\frac{\log_{a}(1+h)}{h}=\frac{1}{\ln a}\,,\quad\quad\lim_{x\to 0}%
+\frac{a^{x}-1}{x}=\ln a\,." display="block"><semantics><mrow><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><msub><mi>log</mi><mi>a</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>h</mi></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></mfrac></mrow><mo lspace="0.170em" rspace="2.289em">,</mo><mrow><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{h\to 0}\frac{\log_{a}(1+h)}{h}=\frac{1}{\ln a}\,,\quad\quad\lim_{x\to 0}%
+\frac{a^{x}-1}{x}=\ln a\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.25)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S6.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.S8.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

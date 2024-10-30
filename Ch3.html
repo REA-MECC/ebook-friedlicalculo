@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch2.S4.html" title="2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="next" href="Ch3.S1.html" title="3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<link rel="section" href="Ch3.S1.html" title="3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="section" href="Ch3.S2.html" title="3.2 Logaritmo ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="section" href="Ch3.S3.html" title="3.3 A base 𝑒=2,718⁢… ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="section" href="Ch3.S4.html" title="3.4 Funções trigonométricas hiperbólicas ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="exponencial, função, física estatística, informação, logaritmo, na base , na base , teoria da">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="" class="ltx_tocentry ltx_tocentry_chapter ltx_ref_self  chapter active">
+<a href="" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Exponencial</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Logaritmo</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>A base <math class="ltx_Math" alttext="e=2,718..." display="inline"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mn>2,718</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">e=2,718...</annotation></semantics></math></a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>Funções hiperbólicas</a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Exponencial e logaritmo</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_chapter normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter header-section-number">Capítulo 3</span> Exponencial e logaritmo</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">O objetivo nesse capítulo é definir e descrever as principais
+propriedades de uma das funções mais importantes da matemática, a
+<span class="ltx_text ltx_font_bold">exponencial de base <math id="p1.m1" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></span>,
+e da sua função inversa, o <span class="ltx_text ltx_font_bold">logaritmo na base <math id="p1.m3" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></span>,</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Os exemplos de uso dessas duas funções em ciências são inúmeros. Vejamos dois
+exemplos onde elas aparecem nos axiomas de uma teoria:</p>
+</div>
+<div id="Thmex1" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 3.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmex1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Em <em class="ltx_emph ltx_font_upright">física estatística</em>, estudam-se sistemas em equilíbrio termodinâmico.
+Suponha que um sistema pode estar, no equilíbrio, em
+um dos <math id="Thmex1.p1.m1" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> microestados <math id="Thmex1.p1.m2" class="ltx_Math" alttext="x_{1},\dots,x_{N}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>N</mi></msub></mrow><annotation encoding="application/x-tex">x_{1},\dots,x_{N}</annotation></semantics></math> de energias respectivas <math id="Thmex1.p1.m3" class="ltx_Math" alttext="E_{1},\dots,E_{N}" display="inline"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>E</mi><mi>N</mi></msub></mrow><annotation encoding="application/x-tex">E_{1},\dots,E_{N}</annotation></semantics></math>.
+Se a temperatura é <math id="Thmex1.p1.m4" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>, a <span class="ltx_text ltx_font_bold">probabilidade do sistema estar no estado <math id="Thmex1.p1.m5" class="ltx_Math" alttext="i" display="inline"><semantics><mi mathvariant="normal">i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math></span> é
+dada por</span></p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="p_{i}=\frac{e^{-\tfrac{E_{i}}{k_{B}T}}}{Z}\,," display="block"><semantics><mrow><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mo>−</mo><mstyle scriptlevel="-1"><mfrac><msub><mi>E</mi><mi>i</mi></msub><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mfrac></mstyle></mrow></msup><mi>Z</mi></mfrac></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">p_{i}=\frac{e^{-\tfrac{E_{i}}{k_{B}T}}}{Z}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">onde <math id="Thmex1.p1.m6" class="ltx_Math" alttext="e^{x}" display="inline"><semantics><msup><mi>e</mi><mi>x</mi></msup><annotation encoding="application/x-tex">e^{x}</annotation></semantics></math> é a função exponencial na base <math id="Thmex1.p1.m7" class="ltx_Math" alttext="e=2.718..." display="inline"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mn>2.718</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">e=2.718...</annotation></semantics></math> (ver Seção
+<a href="Ch3.S3.html" title="3.3 A base 𝑒=2,718⁢… ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>), <math id="Thmex1.p1.m8" class="ltx_Math" alttext="k_{B}" display="inline"><semantics><msub><mi>k</mi><mi>B</mi></msub><annotation encoding="application/x-tex">k_{B}</annotation></semantics></math> é a <span class="ltx_text ltx_font_bold">constante de Boltzmann</span> e <math id="Thmex1.p1.m9" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> a
+<span class="ltx_text ltx_font_bold">função de partição</span>.</span></p>
+</div>
+</div>
+<div id="Thmex2" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 3.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmex2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Em <em class="ltx_emph ltx_font_upright">Teoria da Informação,</em> estudam-se sequências
+infinitas de símbolos
+aleatórios. Com um alfabeto binário <math id="Thmex2.p1.m1" class="ltx_Math" alttext="\mathbb{A}=\{0,1\}" display="inline"><semantics><mrow><mi>𝔸</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{A}=\{0,1\}</annotation></semantics></math>,</span></p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="01101001000011011011001001101010011001000000111010101100110...." display="block"><semantics><mrow><mrow><mn>01101001000011011011001001101010011001000000111010101100110</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">01101001000011011011001001101010011001000000111010101100110....</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Com um alfabeto <math id="Thmex2.p1.m2" class="ltx_Math" alttext="\mathbb{A}=\{0,1,2,\dots,8,9\}" display="inline"><semantics><mrow><mi>𝔸</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0,1,2</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,8,9</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{A}=\{0,1,2,\dots,8,9\}</annotation></semantics></math>,</span></p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="43895612031468275092781059463897360142581974603522706194583..." display="block"><semantics><mrow><mn>43895612031468275092781059463897360142581974603522706194583</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">43895612031468275092781059463897360142581974603522706194583...</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se cada algarismo <math id="Thmex2.p1.m3" class="ltx_Math" alttext="a_{i}" display="inline"><semantics><msub><mi>a</mi><mi>i</mi></msub><annotation encoding="application/x-tex">a_{i}</annotation></semantics></math> de um alfabeto
+<math id="Thmex2.p1.m4" class="ltx_Math" alttext="\mathbb{A}=\{a_{1},a_{2},\dots,a_{k}\}" display="inline"><semantics><mrow><mi>𝔸</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>k</mi></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{A}=\{a_{1},a_{2},\dots,a_{k}\}</annotation></semantics></math> aparece com uma probabilidade <math id="Thmex2.p1.m5" class="ltx_Math" alttext="p_{i}" display="inline"><semantics><msub><mi>p</mi><mi>i</mi></msub><annotation encoding="application/x-tex">p_{i}</annotation></semantics></math>, onde
+<math id="Thmex2.p1.m6" class="ltx_Math" alttext="\sum_{j=1}^{k}p_{j}=1" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><msub><mi>p</mi><mi>j</mi></msub></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sum_{j=1}^{k}p_{j}=1</annotation></semantics></math>, então a <span class="ltx_text ltx_font_bold">Entropia de Shannon</span> de uma sequência
+aleatória com essa propriedade é definida por</span></p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="S=-\sum_{j=1}^{k}p_{j}\log_{2}p_{j}\,," display="block"><semantics><mrow><mrow><mi>S</mi><mo>=</mo><mrow><mo>−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow><msub><mi>p</mi><mi>j</mi></msub><mo lspace="0.167em">⁢</mo><mrow><msub><mi>log</mi><mn>2</mn></msub><mo lspace="0.167em">⁡</mo><msub><mi>p</mi><mi>j</mi></msub></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">S=-\sum_{j=1}^{k}p_{j}\log_{2}p_{j}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">onde o logaritmo é na base <math id="Thmex2.p1.m7" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> (mas pode ser tomado numa base qualquer).
+<math id="Thmex2.p1.m8" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> dá um limite para a maior <span class="ltx_text ltx_font_bold">taxa de compactação</span> para essa sequência.</span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Uma construção completa das funções <math id="p3.m1" class="ltx_Math" alttext="\exp_{a}x" display="inline"><semantics><mrow><msub><mi>exp</mi><mi>a</mi></msub><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\exp_{a}x</annotation></semantics></math>, <math id="p3.m2" class="ltx_Math" alttext="\log_{a}x" display="inline"><semantics><mrow><msub><mi>log</mi><mi>a</mi></msub><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\log_{a}x</annotation></semantics></math>, para todo <math id="p3.m3" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>,
+como se encontra nos livros de análise, requer um conhecimento detalhado das
+propriedades dos números reais. Aqui daremos uma construção que, apesar de não
+ser completamente rigorosa, tem a vantagem de ser intuitiva (espera-se) e permitirá
+usar essas funções já desde o próximo capítulo.</p>
+</div>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S1.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Exponencial</span></a></li>
+</ol></nav>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S2.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Logaritmo</span></a></li>
+</ol></nav>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S3.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>A base <math class="ltx_Math" alttext="e=2,718..." display="inline"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mn>2,718</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">e=2,718...</annotation></semantics></math></span></a></li>
+</ol></nav>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S4.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Funções hiperbólicas</span></a></li>
+</ol></nav>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.S4.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.S1.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

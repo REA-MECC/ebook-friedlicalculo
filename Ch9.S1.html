@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>9.1 Introdução ‣ Capítulo 9 Integral ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="next" href="Ch9.S2.html" title="9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S2.html" title="9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S3.html" title="9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S4.html" title="9.4 Áreas de regiões do plano ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S5.html" title="9.5 Primitivas ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="aproximação, disco, gráfico, por retângulos, área debaixo de um">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="9.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.1 </span></b>Introdução</a></li>
+<li data-level="9.2" data-path="Ch9.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S2.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.2 </span></b>A integral de Riemann</a></li>
+<li data-level="9.3" data-path="Ch9.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S3.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.3 </span></b>O Teorema Fundamental do Cálculo</a></li>
+<li data-level="9.4" data-path="Ch9.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S4.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.4 </span></b>Áreas de regiões do plano</a></li>
+<li data-level="9.5" data-path="Ch9.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S5.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.5 </span></b>Primitivas</a></li>
+</ol>
+</li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Introdução</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">9.1</span> Introdução</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Como calcular, em geral, a área de uma região limitada do plano?</em>
+Para sermos um pouco mais específicos, faremos a mesma pergunta para áreas
+delimitadas pelo gráfico de uma função. <em class="ltx_emph ltx_font_italic">Dada uma função positiva
+<math id="p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math>,
+como calcular a área debaixo do seu gráfico, isto é, a área da região <math id="p1.m2" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+delimitada pelo gráfico de <math id="p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, pelo eixo <math id="p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, e pelas retas <math id="p1.m5" class="ltx_Math" alttext="x=a" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x=a</annotation></semantics></math>, <math id="p1.m6" class="ltx_Math" alttext="x=b" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">x=b</annotation></semantics></math>?</em>
+</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-146.svg" alt="" id="p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="154" height="101"></div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Para as funções elementares a seguir, a resposta pode ser dada sem muito
+esforço.
+Por exemplo, se <math id="p2.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é constante, <math id="p2.m2" class="ltx_Math" alttext="f(x)=h&gt;0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>h</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x)=h&gt;0</annotation></semantics></math>, <math id="p2.m3" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> é um retângulo, logo</p>
+</div>
+<div id="p3" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-147.svg" alt="" id="g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="428" height="84"></div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Por outro lado, se o gráfico de <math id="p4.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> for uma reta, por exemplo <math id="p4.m2" class="ltx_Math" alttext="f(x)=mx" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=mx</annotation></semantics></math>
+com <math id="p4.m3" class="ltx_Math" alttext="m&gt;0" display="inline"><semantics><mrow><mi>m</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m&gt;0</annotation></semantics></math>, e se <math id="p4.m4" class="ltx_Math" alttext="0&lt;a&lt;b" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">0&lt;a&lt;b</annotation></semantics></math>, então <math id="p4.m5" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> é um trapézio, e a sua área pode ser
+escrita como a diferença das áreas de dois triângulos (lembre o
+Exercício <a href="Ch2.S3.html#Ch2.Thmexo19" title="Exercício 2.19. ‣ 2.3 Montar funções ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.19</span></a>):</p>
+</div>
+<div id="p5" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-148.svg" alt="" id="g2" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="520" height="91"></div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">O nosso último exemplo “simples”
+será <math id="p6.m1" class="ltx_Math" alttext="f(x)=\sqrt{1-x^{2}}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">f(x)=\sqrt{1-x^{2}}</annotation></semantics></math>, com <math id="p6.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math>, <math id="p6.m3" class="ltx_Math" alttext="b=1" display="inline"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">b=1</annotation></semantics></math>. Neste caso
+reconhecemos a região <math id="p6.m4" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> como
+a sendo o quarto do disco de raio <math id="p6.m5" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> centrado na origem, contido no primeiro
+quadrante:
+</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-149.svg" alt="" id="p6.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="349" height="129"></div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Consideremos agora <math id="p7.m1" class="ltx_Math" alttext="f(x)=1-x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=1-x^{2}</annotation></semantics></math>,
+também com <math id="p7.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math>, <math id="p7.m3" class="ltx_Math" alttext="b=1" display="inline"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">b=1</annotation></semantics></math>:</p>
+</div>
+<div id="p8" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-150.svg" alt="" id="g3" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="199" height="90"></div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Apesar da função <math id="p9.m1" class="ltx_Math" alttext="f(x)=1-x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=1-x^{2}</annotation></semantics></math> ser elementar, não vemos um jeito simples
+de decompor <math id="p9.m2" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> em um número finito de regiões simples do tipo
+retângulo, triângulo, ou disco.
+<br class="ltx_break"></p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">No entanto, o que pode ser feito
+é <em class="ltx_emph ltx_font_italic">aproximar <math id="p10.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> por regiões mais
+simples</em>, a começar com retângulos <span id="Ch9.footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+              <span class="ltx_tag ltx_tag_note">2</span>
+              
+              
+              
+            Já encontramos esse tipo de
+construção, mas com triângulos, no Exercício
+<a href="Ch4.S9.html#Ch4.Thmexo32" title="Exercício 4.32. ‣ 4.9 Exercícios de revisão ‣ Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.32</span></a>.</span></span></span>.
+Começemos aproximando <math id="p10.m2" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> de maneira grosseira, usando uma região <math id="p10.m3" class="ltx_Math" alttext="R_{2}" display="inline"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/x-tex">R_{2}</annotation></semantics></math>
+formada por dois retângulos, da seguinte maneira:
+</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-151.svg" alt="" id="p10.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="483" height="113"></div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">A área de <math id="p11.m1" class="ltx_Math" alttext="R_{2}" display="inline"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/x-tex">R_{2}</annotation></semantics></math> é a soma das áreas dos dois retângulos de bases
+iguais <math id="p11.m2" class="ltx_Math" alttext="\tfrac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{1}{2}</annotation></semantics></math> mas de alturas diferentes:
+o canto esquerdo superior do primeiro retângulo está em <math id="p11.m3" class="ltx_Math" alttext="(0,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>, e o do segundo
+foi escolhido <em class="ltx_emph ltx_font_italic">no gráfico de <math id="p11.m4" class="ltx_Math" alttext="1-x^{2}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1-x^{2}</annotation></semantics></math></em>, no ponto <math id="p11.m5" class="ltx_Math" alttext="(\tfrac{1}{2},\tfrac{3}{4})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\tfrac{1}{2},\tfrac{3}{4})</annotation></semantics></math>.
+Logo, <math id="p11.m6" class="ltx_Math" alttext="\text{\'{a}rea}(R_{2})=\tfrac{7}{8}" display="inline"><semantics><mrow><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>7</mn><mn>8</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}(R_{2})=\tfrac{7}{8}</annotation></semantics></math>.
+É claro que <math id="p11.m7" class="ltx_Math" alttext="\text{\'{a}rea}R_{2}" display="inline"><semantics><mrow><mtext>área</mtext><mo>⁢</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}R_{2}</annotation></semantics></math> somente dá uma <em class="ltx_emph ltx_font_italic">estimativa</em>:
+<math id="p11.m8" class="ltx_Math" alttext="\text{\'{a}rea}(R)&lt;\text{\'{a}rea}R_{2}" display="inline"><semantics><mrow><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mtext>área</mtext><mo>⁢</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}(R)&lt;\text{\'{a}rea}R_{2}</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Tentaremos agora melhorar
+essa aproximação: fixemos um inteiro <math id="p12.m1" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>, e
+aproximemos
+<math id="p12.m2" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> pela região <math id="p12.m3" class="ltx_Math" alttext="R_{n}" display="inline"><semantics><msub><mi>R</mi><mi>n</mi></msub><annotation encoding="application/x-tex">R_{n}</annotation></semantics></math> formada pela união de <math id="p12.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> retângulos de larguras iguais a
+<math id="p12.m5" class="ltx_Math" alttext="1/n" display="inline"><semantics><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1/n</annotation></semantics></math>, mas com alturas
+escolhidas tais que o canto superior esquerdo esteja sempre <em class="ltx_emph ltx_font_italic">na curva</em>
+<math id="p12.m6" class="ltx_Math" alttext="1-x^{2}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1-x^{2}</annotation></semantics></math>. Por exemplo,
+se <math id="p12.m7" class="ltx_Math" alttext="n=5" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n=5</annotation></semantics></math>, <math id="p12.m8" class="ltx_Math" alttext="{15}" display="inline"><semantics><mn>15</mn><annotation encoding="application/x-tex">{15}</annotation></semantics></math> e <math id="p12.m9" class="ltx_Math" alttext="{25}" display="inline"><semantics><mn>25</mn><annotation encoding="application/x-tex">{25}</annotation></semantics></math>,</p>
+</div>
+<div id="p13" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-152.svg" alt="" id="g4" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="350" height="84"></div>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Vemos que quanto maior o número de retângulos <math id="p14.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, melhor a aproximação da
+verdadeira área de <math id="p14.m2" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Logo, tentaremos calcular <math id="p14.m3" class="ltx_Math" alttext="\text{\'{a}rea}(R)" display="inline"><semantics><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}(R)</annotation></semantics></math> via um <em class="ltx_emph ltx_font_italic">limite</em>:</p>
+<div id="Ch9.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex1.m1" class="ltx_Math" alttext="\text{\'{a}rea}(R)=\lim_{n\to\infty}\text{\'{a}rea}(R_{n})\,." display="block"><semantics><mrow><mrow><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}(R)=\lim_{n\to\infty}\text{\'{a}rea}(R_{n})\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Olhemos os retângulos de mais perto. Por exemplo, para calcular
+<math id="p14.m4" class="ltx_Math" alttext="\text{\'{a}rea}(R_{5})" display="inline"><semantics><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mn>5</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}(R_{5})</annotation></semantics></math>, calculemos a soma das áreas de <math id="p14.m5" class="ltx_Math" alttext="5" display="inline"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math> retângulos:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx60" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch9.Ex2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch9.Ex2.m1" class="ltx_Math" alttext="\displaystyle\text{\'{a}rea}(R_{5})" display="inline"><semantics><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mn>5</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\text{\'{a}rea}(R_{5})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.Ex2.m2" class="ltx_Math" alttext="\displaystyle=\tfrac{1}{5}\big{(}1-(\tfrac{0}{5})^{2})+\tfrac{1}{5}\big{(}1-(%
+\tfrac{1}{5})^{2})+\tfrac{1}{5}\big{(}1-(\tfrac{2}{5})^{2})+\tfrac{1}{5}\big{(%
+}1-(\tfrac{3}{5})^{2})+\tfrac{1}{5}\big{(}1-(\tfrac{4}{5})^{2})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>0</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\tfrac{1}{5}\big{(}1-(\tfrac{0}{5})^{2})+\tfrac{1}{5}\big{(}1-(%
+\tfrac{1}{5})^{2})+\tfrac{1}{5}\big{(}1-(\tfrac{2}{5})^{2})+\tfrac{1}{5}\big{(%
+}1-(\tfrac{3}{5})^{2})+\tfrac{1}{5}\big{(}1-(\tfrac{4}{5})^{2})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch9.Ex3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.Ex3.m1" class="ltx_Math" alttext="\displaystyle=1-\tfrac{1^{2}+2^{2}+3^{2}+4^{2}}{5^{3}}(=0.76)\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup></mrow><msup><mn>5</mn><mn>3</mn></msup></mfrac></mrow><mspace width="0.3888888888888889em"></mspace><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo>=</mo><mn>0.76</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=1-\tfrac{1^{2}+2^{2}+3^{2}+4^{2}}{5^{3}}(=0.76)\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Para um <math id="p15.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> qualquer,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx61" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch9.Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch9.Ex4.m1" class="ltx_Math" alttext="\displaystyle\text{\'{a}rea}(R_{n})" display="inline"><semantics><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\text{\'{a}rea}(R_{n})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.Ex4.m2" class="ltx_Math" alttext="\displaystyle=\tfrac{1}{n}\big{(}1-(\tfrac{0}{n})^{2})+\tfrac{1}{n}\big{(}1-(%
+\tfrac{1}{n})^{2})+\dots+\tfrac{1}{n}\big{(}1-(\tfrac{n-2}{n})^{2})+\tfrac{1}{%
+n}\big{(}1-(\tfrac{n-1}{n})^{2})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>0</mn><mi>n</mi></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><mi>n</mi></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\tfrac{1}{n}\big{(}1-(\tfrac{0}{n})^{2})+\tfrac{1}{n}\big{(}1-(%
+\tfrac{1}{n})^{2})+\dots+\tfrac{1}{n}\big{(}1-(\tfrac{n-2}{n})^{2})+\tfrac{1}{%
+n}\big{(}1-(\tfrac{n-1}{n})^{2})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch9.E1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.E1.m1" class="ltx_Math" alttext="\displaystyle=1-\tfrac{1^{2}+2^{2}+\dots+(n-2)^{2}+(n-1)^{2}}{n^{3}}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><msup><mi>n</mi><mn>3</mn></msup></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=1-\tfrac{1^{2}+2^{2}+\dots+(n-2)^{2}+(n-1)^{2}}{n^{3}}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9.1)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">Pode ser mostrado (ver Exercício <a href="#Ch9.Thmexo1" title="Exercício 9.1. ‣ 9.1 Introdução ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.1</span></a>) que para todo
+<math id="p16.m1" class="ltx_Math" alttext="k\geq 1" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\geq 1</annotation></semantics></math>,</p>
+<div id="Ch9.E2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E2.m1" class="ltx_Math" alttext="1^{2}+2^{2}+\dots+k^{2}=\frac{k(k+1)(2k+1)}{6}\,." display="block"><semantics><mrow><mrow><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">1^{2}+2^{2}+\dots+k^{2}=\frac{k(k+1)(2k+1)}{6}\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.2)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Usando essa expressão em (<a href="#Ch9.E1" title="In 9.1 Introdução ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.1</span></a>) com <math id="p16.m2" class="ltx_Math" alttext="k=n-1" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">k=n-1</annotation></semantics></math>, obtemos</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx62" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch9.Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch9.Ex5.m1" class="ltx_Math" alttext="\displaystyle\text{\'{a}rea}(R)=\lim_{n\to\infty}\text{\'{a}rea}(R_{n})" display="inline"><semantics><mrow><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mtext>área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\text{\'{a}rea}(R)=\lim_{n\to\infty}\text{\'{a}rea}(R_{n})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.Ex5.m2" class="ltx_Math" alttext="\displaystyle=1-\lim_{n\to\infty}\frac{(n-1)((n-1)+1)(2(n-1)+1)}{6n^{3}}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=1-\lim_{n\to\infty}\frac{(n-1)((n-1)+1)(2(n-1)+1)}{6n^{3}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch9.Ex6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.Ex6.m1" class="ltx_Math" alttext="\displaystyle=1-\lim_{n\to\infty}\frac{n(n-1)(2n-1)}{6n^{3}}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=1-\lim_{n\to\infty}\frac{n(n-1)(2n-1)}{6n^{3}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch9.Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.Ex7.m1" class="ltx_Math" alttext="\displaystyle=1-\tfrac{1}{3}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=1-\tfrac{1}{3}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch9.Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.Ex8.m1" class="ltx_Math" alttext="\displaystyle=\tfrac{2}{3}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\tfrac{2}{3}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="Ch9.Thmobs1" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmobs1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">É interessante observar que no limite <math id="Ch9.Thmobs1.p1.m1" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>, o número de retângulos que
+aproxima <math id="Ch9.Thmobs1.p1.m2" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> tende ao infinito,
+mas que a área de cada um tende a zero. Assim podemos dizer, informalmente, que
+depois do processo de limite, a área exata de <math id="Ch9.Thmobs1.p1.m3" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+é obtida “somando infinitos retângulos de largura zero”.</span></p>
+</div>
+</div>
+<div id="Ch9.Thmexo1" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre por indução que para todo <math id="Ch9.Thmexo1.p1.m1" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>,</span></p>
+<div id="Ch9.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex9.m1" class="ltx_Math" alttext="1+2+3+\dots+n=\frac{n(n+1)}{2}\,,\quad 1^{2}+2^{2}+\dots+n^{2}=\frac{n(n+1)(2n%
++1)}{6}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>n</mi></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">1+2+3+\dots+n=\frac{n(n+1)}{2}\,,\quad 1^{2}+2^{2}+\dots+n^{2}=\frac{n(n+1)(2n%
++1)}{6}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch9.Thmexo2" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a aproximação da área <math id="Ch9.Thmexo2.p1.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> tratada acima, usando retângulos cujo canto
+superior <em class="ltx_emph ltx_font_upright">direito</em> sempre fica na curva <math id="Ch9.Thmexo2.p1.m2" class="ltx_Math" alttext="y=1-x^{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">y=1-x^{2}</annotation></semantics></math>, e mostre que quando
+<math id="Ch9.Thmexo2.p1.m3" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>, o limite é o mesmo: <math id="Ch9.Thmexo2.p1.m4" class="ltx_Math" alttext="\tfrac{2}{3}" display="inline"><semantics><mfrac><mn>2</mn><mn>3</mn></mfrac><annotation encoding="application/x-tex">\tfrac{2}{3}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">O método usado para calcular a área debaixo de <math id="p17.m1" class="ltx_Math" alttext="1-x^{2}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1-x^{2}</annotation></semantics></math>
+funcionou graças à fórmula (<a href="#Ch9.E2" title="In 9.1 Introdução ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2</span></a>), que
+permitiu transformar a soma dos <math id="p17.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> primeiros quadrados em um
+polinômio de grau <math id="p17.m3" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math> em <math id="p17.m4" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>. Essa fórmula foi particularmente bem adaptada à
+função <math id="p17.m5" class="ltx_Math" alttext="1-x^{2}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1-x^{2}</annotation></semantics></math>, mas não será útil em outras situações.
+Na verdade, são poucos casos em que a conta pode ser feita ne maneira
+explícita.</p>
+</div>
+<div id="Ch9.Thmex1" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmex1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch9.Thmex1.p1.m1" class="ltx_Math" alttext="f(x)=\cos(x)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)=\cos(x)</annotation></semantics></math> entre <math id="Ch9.Thmex1.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math> e <math id="Ch9.Thmex1.p1.m3" class="ltx_Math" alttext="b=\pi/2" display="inline"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">b=\pi/2</annotation></semantics></math>.</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-153.svg" alt="" id="Ch9.Thmex1.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="126" height="97"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Neste caso, uma aproximação da área <math id="Ch9.Thmex1.p1.m4" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> debaixo do gráfico por
+retângulos de largura <math id="Ch9.Thmex1.p1.m5" class="ltx_Math" alttext="\tfrac{1}{n}" display="inline"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac><annotation encoding="application/x-tex">\tfrac{1}{n}</annotation></semantics></math> dá:</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx63" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch9.E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch9.E3.m1" class="ltx_Math" alttext="\displaystyle\text{\'{a}rea}(R_{n})" display="inline"><semantics><mrow><mtext class="ltx_mathvariant_italic">área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\text{\'{a}rea}(R_{n})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch9.E3.m2" class="ltx_Math" alttext="\displaystyle=\tfrac{1}{n}\cos(\tfrac{1}{n})+\tfrac{1}{n}\cos(\tfrac{2}{n})+%
+\dots+\tfrac{1}{n}\cos(\tfrac{\frac{n\pi}{2}}{n})\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>2</mn><mi>n</mi></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mfrac><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac><mi>n</mi></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\tfrac{1}{n}\cos(\tfrac{1}{n})+\tfrac{1}{n}\cos(\tfrac{2}{n})+%
+\dots+\tfrac{1}{n}\cos(\tfrac{\frac{n\pi}{2}}{n})\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9.3)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para calcular o limite <math id="Ch9.Thmex1.p1.m6" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math> desta soma, o leitor interessado
+pode começar verificando por indução <span id="Ch9.footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+                  <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_upright">3</span></span>
+                  
+                  
+                  
+                <span class="ltx_text ltx_font_upright">Fonte: Folhetim de
+Educação Matemática, Feira de Santana, Ano 18, Número 166, junho de
+2012.</span></span></span></span> que para todo <math id="Ch9.Thmex1.p1.m7" class="ltx_Math" alttext="a&gt;0" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math> e todo inteiro <math id="Ch9.Thmex1.p1.m8" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,</span></p>
+<div id="Ch9.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex10.m1" class="ltx_Math" alttext="\tfrac{1}{2}+\cos(a)+\cos(2a)+\cos(3a)+\dots+\cos(ka)=\frac{\operatorname{sen}%
+(\frac{2k+1}{2}a)}{2\operatorname{sen}(\frac{a}{2})}\,." display="block"><semantics><mrow><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\tfrac{1}{2}+\cos(a)+\cos(2a)+\cos(3a)+\dots+\cos(ka)=\frac{\operatorname{sen}%
+(\frac{2k+1}{2}a)}{2\operatorname{sen}(\frac{a}{2})}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Usando esta fórmula com <math id="Ch9.Thmex1.p1.m9" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> e <math id="Ch9.Thmex1.p1.m10" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> bem escolhidos, pode
+mostrar que <math id="Ch9.Thmex1.p1.m11" class="ltx_Math" alttext="\lim_{n\to\infty}\text{\'{a}rea}(R_{n})=1" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mtext class="ltx_mathvariant_italic">área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}\text{\'{a}rea}(R_{n})=1</annotation></semantics></math>. Portanto,
+<math id="Ch9.Thmex1.p1.m12" class="ltx_Math" alttext="\text{\'{a}rea}(R)=1" display="inline"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic">área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}(R)=1</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch9.Thmexo3" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch9.Thmexo3.p1.m1" class="ltx_Math" alttext="f(x)=e^{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">f(x)=e^{x}</annotation></semantics></math> entre <math id="Ch9.Thmexo3.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math> e <math id="Ch9.Thmexo3.p1.m3" class="ltx_Math" alttext="b=1" display="inline"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">b=1</annotation></semantics></math>.
+Monte <math id="Ch9.Thmexo3.p1.m4" class="ltx_Math" alttext="\text{\'{a}rea}(R_{n})" display="inline"><semantics><mrow><mtext class="ltx_mathvariant_italic">área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\text{\'{a}rea}(R_{n})</annotation></semantics></math> usando retângulos de largura <math id="Ch9.Thmexo3.p1.m5" class="ltx_Math" alttext="\tfrac{1}{n}" display="inline"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac><annotation encoding="application/x-tex">\tfrac{1}{n}</annotation></semantics></math>.
+Usando</span></p>
+<div id="Ch9.Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex11.m1" class="ltx_Math" alttext="1+r+r^{2}+\dots+r^{n}=\frac{1-r^{n}}{1-r}\,," display="block"><semantics><mrow><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mi>r</mi><mi>n</mi></msup></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">1+r+r^{2}+\dots+r^{n}=\frac{1-r^{n}}{1-r}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">calcule <math id="Ch9.Thmexo3.p1.m6" class="ltx_Math" alttext="\lim_{n\to\infty}\text{\'{a}rea}(R_{n})" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mtext class="ltx_mathvariant_italic">área</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>R</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}\text{\'{a}rea}(R_{n})</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">O que foi feito nesses últimos exemplos foi calcular uma área por um
+procedimento chamado <em class="ltx_emph ltx_font_italic">integração</em>.
+Mais tarde, desenvolveremos um método que permite calcular
+integrais usando um método completamente diferente. Mas
+antes disso precisamos definir o que significa <em class="ltx_emph ltx_font_italic">integrar</em> de
+maneira mais geral.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch9.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch9.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

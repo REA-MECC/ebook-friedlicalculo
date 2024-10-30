@@ -1,0 +1,1146 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch6.S3.html" title="6.3 A derivada como função ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="next" href="Ch6.S5.html" title="6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S1.html" title="6.1 Retas e gráficos de funções ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S2.html" title="6.2 Reta tangente e derivada ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S3.html" title="6.3 A derivada como função ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S5.html" title="6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S6.html" title="6.6 Derivada e Variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S7.html" title="6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S8.html" title="6.8 Linearização ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S9.html" title="6.9 Derivação implícita ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S10.html" title="6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S11.html" title="6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="da cadeia, derivada, exponenciação, logarítmica, regra, regra de Leibniz, regras de derivação">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="6.1" data-path="Ch6.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S1.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Retas e gráficos de funções</a></li>
+<li data-level="6.2" data-path="Ch6.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S2.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Reta tangente e derivada</a></li>
+<li data-level="6.3" data-path="Ch6.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S3.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>A derivada como função</a></li>
+<li data-level="6.4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>Regras de derivação</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="6.4.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4.1 </span></b>Derivar as potências <math class="ltx_Math" alttext="x^{\alpha}" display="inline"><semantics><msup><mi>x</mi><mi>α</mi></msup><annotation encoding="application/x-tex">x^{\alpha}</annotation></semantics></math>; exponenciação</a></li>
+<li data-level="6.4.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4.2 </span></b>Derivadas logarítmicas</a></li>
+<li data-level="6.4.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4.3 </span></b>Derivar uma função inversa</a></li>
+</ol>
+</li>
+<li data-level="6.5" data-path="Ch6.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S5.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.5 </span></b>O Teorema de Rolle</a></li>
+<li data-level="6.6" data-path="Ch6.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S6.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.6 </span></b>Derivada e Variação</a></li>
+<li data-level="6.7" data-path="Ch6.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S7.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.7 </span></b>Velocidade, aceleração, taxa de
+variação</a></li>
+<li data-level="6.8" data-path="Ch6.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S8.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.8 </span></b>Linearização</a></li>
+<li data-level="6.9" data-path="Ch6.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S9.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.9 </span></b>Derivação implícita</a></li>
+<li data-level="6.10" data-path="Ch6.S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S10.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.10 </span></b>Convexidade, concavidade</a></li>
+<li data-level="6.11" data-path="Ch6.S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S11.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.11 </span></b>A Regra de Bernoulli-l’Hôpital</a></li>
+</ol>
+</li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Regras de derivação</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">6.4</span> Regras de derivação</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Antes de começar a usar derivadas, é necessário estabelecer algumas
+<em class="ltx_emph ltx_font_italic">regras
+de derivação</em>, que respondem essencialmente à seguinte pergunta: se <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e <math id="p1.m2" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+sáo deriváveis, <math id="p1.m3" class="ltx_Math" alttext="f^{\prime}" display="inline"><semantics><msup><mi>f</mi><mo>′</mo></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math> e <math id="p1.m4" class="ltx_Math" alttext="g^{\prime}" display="inline"><semantics><msup><mi>g</mi><mo>′</mo></msup><annotation encoding="application/x-tex">g^{\prime}</annotation></semantics></math> conhecidas, como calcular <math id="p1.m5" class="ltx_Math" alttext="(f+g)^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>+</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(f+g)^{\prime}</annotation></semantics></math>, <math id="p1.m6" class="ltx_Math" alttext="(f\cdot g)^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(f\cdot g)^{\prime}</annotation></semantics></math>,
+<math id="p1.m7" class="ltx_Math" alttext="(\frac{f}{g})^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mfrac><mi>f</mi><mi>g</mi></mfrac><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(\frac{f}{g})^{\prime}</annotation></semantics></math>, <math id="p1.m8" class="ltx_Math" alttext="(f\circ g)^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(f\circ g)^{\prime}</annotation></semantics></math>?
+Nesta seção, será sempre subentendido que as funções consideradas são
+deriváveis nos pontos considerados. Comecemos com o caso mais fácil:</p>
+</div>
+<div id="Thmregra1" class="ltx_theorem ltx_theorem_regra">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Regra 1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmregra1.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmregra1.p1.m1" class="ltx_Math" alttext="\boxed{(\lambda f(x))^{\prime}=\lambda f^{\prime}(x)}" display="inline"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></menclose><annotation encoding="application/x-tex">\boxed{(\lambda f(x))^{\prime}=\lambda f^{\prime}(x)}</annotation></semantics></math> para toda constante <math id="Thmregra1.p1.m2" class="ltx_Math" alttext="\lambda\in\mathbb{R}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathbb{R}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Usando a definição de <math id="p2.m1" class="ltx_Math" alttext="(\lambda f(x))^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(\lambda f(x))^{\prime}</annotation></semantics></math> e colocando <math id="p2.m2" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math> em
+evidência,</p>
+<div id="Ch6.Ex34" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex34.m1" class="ltx_Math" alttext="(\lambda f(x))^{\prime}{:=}\lim_{h\to 0}\frac{\lambda f(x+h)-\lambda f(x)}{h}=%
+\lambda\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\equiv\lambda f^{\prime}(x)\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo lspace="0.278em">:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mrow><mo>=</mo><mrow><mi>λ</mi><mo lspace="0.167em">⁢</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mrow></mrow><mo>≡</mo><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(\lambda f(x))^{\prime}{:=}\lim_{h\to 0}\frac{\lambda f(x+h)-\lambda f(x)}{h}=%
+\lambda\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\equiv\lambda f^{\prime}(x)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Por exemplo, <math id="p3.m1" class="ltx_Math" alttext="(2x^{5})^{\prime}=2(x^{5})^{\prime}=2\cdot 5x^{4}=10x^{4}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>5</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>5</mn></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>5</mn></mrow><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>=</mo><mrow><mn>10</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mrow><annotation encoding="application/x-tex">(2x^{5})^{\prime}=2(x^{5})^{\prime}=2\cdot 5x^{4}=10x^{4}</annotation></semantics></math>.</p>
+</div>
+<div id="Thmregra2" class="ltx_theorem ltx_theorem_regra">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Regra 2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmregra2.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmregra2.p1.m1" class="ltx_math_unparsed" alttext="\boxed{(f(x)+g(x))^{\prime}=f^{\prime}(x)+g^{\prime}(x).}" display="inline"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mi>g</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><msup><mi>g</mi><mo>′</mo></msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{(f(x)+g(x))^{\prime}=f^{\prime}(x)+g^{\prime}(x).}</annotation></semantics></math></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Aplicando a definição e rearranjando os termos,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx54" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch6.Ex35"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch6.Ex35.m1" class="ltx_Math" alttext="\displaystyle(f(x)+g(x))^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">\displaystyle(f(x)+g(x))^{\prime}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex35.m2" class="ltx_Math" alttext="\displaystyle{:=}\lim_{h\to 0}\frac{\bigl{(}f(x+h)+g(x+h)\bigr{)}-\bigl{(}f(x)%
++g(x)\bigr{)}}{h}" display="inline"><semantics><mrow><mi></mi><mo lspace="0.278em">:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>−</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{:=}\lim_{h\to 0}\frac{\bigl{(}f(x+h)+g(x+h)\bigr{)}-\bigl{(}f(x)%
++g(x)\bigr{)}}{h}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch6.Ex36"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex36.m1" class="ltx_Math" alttext="\displaystyle=\lim_{h\to 0}\Bigl{\{}\frac{f(x+h)-f(x)}{h}+\frac{g(x+h)-g(x)}{h%
+}\Bigr{\}}" display="inline"><semantics><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mrow><mo maxsize="160%" minsize="160%">{</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow><mo maxsize="160%" minsize="160%">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\lim_{h\to 0}\Bigl{\{}\frac{f(x+h)-f(x)}{h}+\frac{g(x+h)-g(x)}{h%
+}\Bigr{\}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch6.Ex37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex37.m1" class="ltx_Math" alttext="\displaystyle=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}+\lim_{h\to 0}\frac{g(x+h)-g(x%
+)}{h}=f^{\prime}(x)+g^{\prime}(x)\,." display="inline"><semantics><mrow><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow><mo>+</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}+\lim_{h\to 0}\frac{g(x+h)-g(x%
+)}{h}=f^{\prime}(x)+g^{\prime}(x)\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Por exemplo, <math id="p5.m1" class="ltx_Math" alttext="(2x^{5}+\operatorname{sen}x)^{\prime}=(2x^{5})^{\prime}+(\operatorname{sen}x)^%
+{\prime}=10x^{4}+\cos x" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>5</mn></msup></mrow><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>5</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><mo>=</mo><mrow><mrow><mn>10</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">(2x^{5}+\operatorname{sen}x)^{\prime}=(2x^{5})^{\prime}+(\operatorname{sen}x)^%
+{\prime}=10x^{4}+\cos x</annotation></semantics></math>.</p>
+</div>
+<div id="Thmregra3" class="ltx_theorem ltx_theorem_regra">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Regra 3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmregra3.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmregra3.p1.m1" class="ltx_Math" alttext="\boxed{(f(x)g(x))^{\prime}=f^{\prime}(x)g(x)+f(x)g^{\prime}(x)}" display="inline"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></menclose><annotation encoding="application/x-tex">\boxed{(f(x)g(x))^{\prime}=f^{\prime}(x)g(x)+f(x)g^{\prime}(x)}</annotation></semantics></math> (Regra do produto de Leibniz).
+</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Por definição,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx55" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch6.Ex38"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch6.Ex38.m1" class="ltx_Math" alttext="\displaystyle(f(x)g(x))^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">\displaystyle(f(x)g(x))^{\prime}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex38.m2" class="ltx_Math" alttext="\displaystyle{:=}\lim_{h\to 0}\frac{f(x+h)g(x+h)-f(x)g(x)}{h}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo lspace="0.278em">:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle{:=}\lim_{h\to 0}\frac{f(x+h)g(x+h)-f(x)g(x)}{h}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Para fazer aparecer as derivadas respectivas de <math id="p6.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e <math id="p6.m2" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>, escrevamos o
+quociente como</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx56" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch6.Ex39"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch6.Ex39.m1" class="ltx_Math" alttext="\displaystyle\frac{f(x+h)g(x+h)-f(x)g(x)}{h}={\frac{f(x+h)-f(x)}{h}}g(x+h)+f(x%
+){\frac{g(x+h)-g(x)}{h}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\frac{f(x+h)g(x+h)-f(x)g(x)}{h}={\frac{f(x+h)-f(x)}{h}}g(x+h)+f(x%
+){\frac{g(x+h)-g(x)}{h}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Quando <math id="p6.m3" class="ltx_Math" alttext="h\to 0" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\to 0</annotation></semantics></math>, temos <math id="p6.m4" class="ltx_Math" alttext="\frac{f(x+h)-f(x)}{h}\to f^{\prime}(x)" display="inline"><semantics><mrow><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac><mo stretchy="false">→</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\frac{f(x+h)-f(x)}{h}\to f^{\prime}(x)</annotation></semantics></math> e <math id="p6.m5" class="ltx_Math" alttext="\frac{g(x+h)-g(x)}{h}\to g^{\prime}(x)" display="inline"><semantics><mrow><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac><mo stretchy="false">→</mo><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\frac{g(x+h)-g(x)}{h}\to g^{\prime}(x)</annotation></semantics></math>.
+Como <math id="p6.m6" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> é derivável em <math id="p6.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, ela é também contínua em <math id="p6.m8" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+(Teorema <a href="Ch6.S2.html#Ch6.Thmteo1" title="Teorema 6.1. ‣ 6.2.2 Derivabilidade e continuidade ‣ 6.2 Reta tangente e derivada ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>), logo <math id="p6.m9" class="ltx_Math" alttext="\lim_{h\to 0}g(x+h)=g(x)" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{h\to 0}g(x+h)=g(x)</annotation></semantics></math>. Assim,
+quando <math id="p6.m10" class="ltx_Math" alttext="h\to 0" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\to 0</annotation></semantics></math>, o quociente inteiro tende a <math id="p6.m11" class="ltx_Math" alttext="f^{\prime}(x)g(x)+f(x)g^{\prime}(x)" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)g(x)+f(x)g^{\prime}(x)</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Por exemplo,</p>
+<div id="Ch6.Ex40" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex40.m1" class="ltx_Math" alttext="(x^{2}\operatorname{sen}x)^{\prime}=(x^{2})^{\prime}\operatorname{sen}x+x^{2}(%
+\operatorname{sen}x)^{\prime}=2x\operatorname{sen}x+x^{2}\cos x\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>+</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>+</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(x^{2}\operatorname{sen}x)^{\prime}=(x^{2})^{\prime}\operatorname{sen}x+x^{2}(%
+\operatorname{sen}x)^{\prime}=2x\operatorname{sen}x+x^{2}\cos x\,.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch6.Thmexo16" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.16</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo16.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Dê contra-exemplos para mostrar que em geral, <math id="Ch6.Thmexo16.p1.m1" class="ltx_Math" alttext="(fg)^{\prime}\neq f^{\prime}g^{\prime}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>≠</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">(fg)^{\prime}\neq f^{\prime}g^{\prime}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo17" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.17</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo17.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre a fórmula <math id="Ch6.Thmexo17.p1.m1" class="ltx_Math" alttext="(x^{n})^{\prime}=nx^{n-1}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">(x^{n})^{\prime}=nx^{n-1}</annotation></semantics></math> usando indução e a regra de Leibniz. (Dica:
+<math id="Ch6.Thmexo17.p1.m2" class="ltx_Math" alttext="x^{n+1}=x\cdot x^{n}" display="inline"><semantics><mrow><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">x^{n+1}=x\cdot x^{n}</annotation></semantics></math>.)</span></p>
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Estudemos agora a derivação de funções <em class="ltx_emph ltx_font_italic">compostas</em>:</p>
+</div>
+<div id="Thmregra4" class="ltx_theorem ltx_theorem_regra">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Regra 4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmregra4.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmregra4.p1.m1" class="ltx_Math" alttext="\boxed{(f(g(x)))^{\prime}=f^{\prime}(g(x))g^{\prime}(x)}" display="inline"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></menclose><annotation encoding="application/x-tex">\boxed{(f(g(x)))^{\prime}=f^{\prime}(g(x))g^{\prime}(x)}</annotation></semantics></math> (Regra da cadeia).</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Fixemos um ponto <math id="p9.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Suporemos, para simplificar, que <math id="p9.m2" class="ltx_Math" alttext="g(x+h)-g(x)\neq 0" display="inline"><semantics><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g(x+h)-g(x)\neq 0</annotation></semantics></math> para todo <math id="p9.m3" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> suficientemente
+pequeno <span id="Ch6.footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                <span class="ltx_tag ltx_tag_note">1</span>
+                
+                
+                
+              Sem essa hipótese, a prova precisa ser ligeiramente modificada.</span></span></span>.
+Podemos escrever</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx57" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch6.Ex41"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch6.Ex41.m1" class="ltx_Math" alttext="\displaystyle(f(g(x)))^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">\displaystyle(f(g(x)))^{\prime}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex41.m2" class="ltx_Math" alttext="\displaystyle{:=}\lim_{h\to 0}\frac{f(g(x+h))-f(g(x))}{h}" display="inline"><semantics><mrow><mi></mi><mo lspace="0.278em">:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{:=}\lim_{h\to 0}\frac{f(g(x+h))-f(g(x))}{h}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch6.E10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.E10.m1" class="ltx_Math" alttext="\displaystyle=\lim_{h\to 0}\frac{f(g(x+h))-f(g(x))}{g(x+h)-g(x)}{\frac{g(x+h)-%
+g(x)}{h}}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mstyle></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\lim_{h\to 0}\frac{f(g(x+h))-f(g(x))}{g(x+h)-g(x)}{\frac{g(x+h)-%
+g(x)}{h}}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.10)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Sabemos que o segundo
+termo <math id="p9.m4" class="ltx_Math" alttext="\frac{g(x+h)-g(x)}{h}\to g^{\prime}(x)" display="inline"><semantics><mrow><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac><mo stretchy="false">→</mo><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\frac{g(x+h)-g(x)}{h}\to g^{\prime}(x)</annotation></semantics></math> quando <math id="p9.m5" class="ltx_Math" alttext="h\to 0" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\to 0</annotation></semantics></math>.
+Para o
+primeiro termo chamemos <math id="p9.m6" class="ltx_Math" alttext="a{:=}g(x)" display="inline"><semantics><mrow><mi>a</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">a{:=}g(x)</annotation></semantics></math> e <math id="p9.m7" class="ltx_Math" alttext="z{:=}g(x+h)" display="inline"><semantics><mrow><mi>z</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">z{:=}g(x+h)</annotation></semantics></math>. Quando <math id="p9.m8" class="ltx_Math" alttext="h\to 0" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\to 0</annotation></semantics></math>, <math id="p9.m9" class="ltx_Math" alttext="z\to a" display="inline"><semantics><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">z\to a</annotation></semantics></math>, logo</p>
+<div id="Ch6.Ex42" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex42.m1" class="ltx_Math" alttext="\lim_{h\to 0}\frac{f(g(x+h))-f(g(x))}{g(x+h)-g(x)}=\lim_{z\to a}\frac{f(z)-f(a%
+)}{z-a}\equiv f^{\prime}(a)=f^{\prime}(g(x))\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><mo>≡</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{h\to 0}\frac{f(g(x+h))-f(g(x))}{g(x+h)-g(x)}=\lim_{z\to a}\frac{f(z)-f(a%
+)}{z-a}\equiv f^{\prime}(a)=f^{\prime}(g(x))\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Para aplicar a regra da cadeia, é importante saber identificar quais são as funções
+envolvidas, e em qual ordem elas são aplicadas (lembre do Exercício
+<a href="Ch2.S4.html#Ch2.Thmexo22" title="Exercício 2.22. ‣ 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.22</span></a>).</p>
+</div>
+<div id="Ch6.Thmex7" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suponha por exemplo que queira calcular a derivada da função <math id="Ch6.Thmex7.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(x^{2})" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(x^{2})</annotation></semantics></math>, que é
+a composta de <math id="Ch6.Thmex7.p1.m2" class="ltx_Math" alttext="f(x)=\operatorname{sen}x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\operatorname{sen}x</annotation></semantics></math> com <math id="Ch6.Thmex7.p1.m3" class="ltx_Math" alttext="g(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g(x)=x^{2}</annotation></semantics></math>: <math id="Ch6.Thmex7.p1.m4" class="ltx_Math" alttext="\operatorname{sen}(x^{2})=f(g(x))" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(x^{2})=f(g(x))</annotation></semantics></math>.
+Como <math id="Ch6.Thmex7.p1.m5" class="ltx_Math" alttext="f^{\prime}(x)=\cos x" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=\cos x</annotation></semantics></math> e <math id="Ch6.Thmex7.p1.m6" class="ltx_Math" alttext="g^{\prime}(x)=2x" display="inline"><semantics><mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">g^{\prime}(x)=2x</annotation></semantics></math> temos, pela regra da
+cadeia,</span></p>
+<div id="Ch6.Ex43" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex43.m1" class="ltx_Math" alttext="(\operatorname{sen}(x^{2}))^{\prime}=f(g(x))^{\prime}=f^{\prime}(g(x))g^{%
+\prime}(x)=\cos(x^{2})\cdot(2x)=2x\cos(x^{2})\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><mo>=</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(\operatorname{sen}(x^{2}))^{\prime}=f(g(x))^{\prime}=f^{\prime}(g(x))g^{%
+\prime}(x)=\cos(x^{2})\cdot(2x)=2x\cos(x^{2})\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para calcular <math id="Ch6.Thmex7.p1.m7" class="ltx_Math" alttext="e^{x^{2}}" display="inline"><semantics><msup><mi>e</mi><msup><mi>x</mi><mn>2</mn></msup></msup><annotation encoding="application/x-tex">e^{x^{2}}</annotation></semantics></math>, que é
+a composta de <math id="Ch6.Thmex7.p1.m8" class="ltx_Math" alttext="f(x)=e^{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">f(x)=e^{x}</annotation></semantics></math> com <math id="Ch6.Thmex7.p1.m9" class="ltx_Math" alttext="g(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g(x)=x^{2}</annotation></semantics></math>, e como <math id="Ch6.Thmex7.p1.m10" class="ltx_Math" alttext="f^{\prime}(x)=e^{x}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=e^{x}</annotation></semantics></math>,
+temos</span></p>
+<div id="Ch6.Ex44" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex44.m1" class="ltx_Math" alttext="(e^{x^{2}})^{\prime}=e^{x^{2}}\cdot(x^{2})^{\prime}=2xe^{x^{2}}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><msup><mi>x</mi><mn>2</mn></msup></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><msup><mi>e</mi><msup><mi>x</mi><mn>2</mn></msup></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><msup><mi>x</mi><mn>2</mn></msup></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">(e^{x^{2}})^{\prime}=e^{x^{2}}\cdot(x^{2})^{\prime}=2xe^{x^{2}}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch6.Thmex8" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para calcular a derivada de <math id="Ch6.Thmex8.p1.m1" class="ltx_Math" alttext="\frac{1}{\cos x}" display="inline"><semantics><mfrac><mn>1</mn><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{\cos x}</annotation></semantics></math>, que é a composta de
+<math id="Ch6.Thmex8.p1.m2" class="ltx_Math" alttext="f(x)=\frac{1}{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{1}{x}</annotation></semantics></math> com <math id="Ch6.Thmex8.p1.m3" class="ltx_Math" alttext="g(x)=\cos x" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">g(x)=\cos x</annotation></semantics></math>, e como <math id="Ch6.Thmex8.p1.m4" class="ltx_Math" alttext="f^{\prime}(x)=-\frac{1}{x^{2}}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=-\frac{1}{x^{2}}</annotation></semantics></math>,
+<math id="Ch6.Thmex8.p1.m5" class="ltx_Math" alttext="g^{\prime}(x)=-\operatorname{sen}x" display="inline"><semantics><mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">g^{\prime}(x)=-\operatorname{sen}x</annotation></semantics></math>, temos</span></p>
+<div id="Ch6.Ex45" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex45.m1" class="ltx_Math" alttext="(\tfrac{1}{\cos x})^{\prime}=-\frac{1}{(\cos x)^{2}}\cdot(-\operatorname{sen}x%
+)=\frac{\operatorname{sen}x}{(\cos x)^{2}}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mstyle><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(\tfrac{1}{\cos x})^{\prime}=-\frac{1}{(\cos x)^{2}}\cdot(-\operatorname{sen}x%
+)=\frac{\operatorname{sen}x}{(\cos x)^{2}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">De modo geral, deixando <math id="Ch6.Thmex8.p1.m6" class="ltx_Math" alttext="g(x)" display="inline"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">g(x)</annotation></semantics></math> ser uma função qualquer, derivável e não-nula em
+<math id="Ch6.Thmex8.p1.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,</span></p>
+<div id="Ch6.E11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E11.m1" class="ltx_Math" alttext="\Big{(}\frac{1}{g(x)}\Big{)}^{\prime}=-\frac{g^{\prime}(x)}{g(x)^{2}}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mn>1</mn><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mo>−</mo><mfrac><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\Big{(}\frac{1}{g(x)}\Big{)}^{\prime}=-\frac{g^{\prime}(x)}{g(x)^{2}}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.11)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="Thmregra5" class="ltx_theorem ltx_theorem_regra">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Regra 5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmregra5.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmregra5.p1.m1" class="ltx_Math" alttext="\boxed{\Bigl{(}\frac{f(x)}{g(x)}\Bigr{)}^{\prime}=\frac{f^{\prime}(x)g(x)-f(x)%
+g^{\prime}(x)}{g(x)^{2}}}" display="inline"><semantics><menclose notation="box"><mrow><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></menclose><annotation encoding="application/x-tex">\boxed{\Bigl{(}\frac{f(x)}{g(x)}\Bigr{)}^{\prime}=\frac{f^{\prime}(x)g(x)-f(x)%
+g^{\prime}(x)}{g(x)^{2}}}</annotation></semantics></math> (Regra do
+quociente).</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Aplicando a Regra de Leibniz e (<a href="#Ch6.E11" title="In Exemplo 6.8. ‣ 6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.11</span></a>),</p>
+<div id="Ch6.Ex46" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex46.m1" class="ltx_Math" alttext="\Big{(}\frac{f(x)}{g(x)}\Big{)}^{\prime}=\Big{(}f(x)\cdot\frac{1}{g(x)}\Big{)}%
+^{\prime}=f^{\prime}(x)\cdot\frac{1}{g(x)}+f(x)\cdot\Big{(}-\frac{g^{\prime}(x%
+)}{g(x)^{2}}\Big{)}=\frac{f^{\prime}(x)g(x)-f(x)g^{\prime}(x)}{g(x)^{2}}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>′</mo></msup><mo>=</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>+</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mo>−</mo><mfrac><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\Big{(}\frac{f(x)}{g(x)}\Big{)}^{\prime}=\Big{(}f(x)\cdot\frac{1}{g(x)}\Big{)}%
+^{\prime}=f^{\prime}(x)\cdot\frac{1}{g(x)}+f(x)\cdot\Big{(}-\frac{g^{\prime}(x%
+)}{g(x)^{2}}\Big{)}=\frac{f^{\prime}(x)g(x)-f(x)g^{\prime}(x)}{g(x)^{2}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="Ch6.Thmex9" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Usando a regra do quociente, podemos agora calcular:</span></p>
+<div id="Ch6.Ex47" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex47.m1" class="ltx_Math" alttext="(\tan x)^{\prime}=\Big{(}\frac{\operatorname{sen}x}{\cos x}\Big{)}^{\prime}=%
+\frac{(\operatorname{sen}x)^{\prime}\cos x-\operatorname{sen}x(\cos x)^{\prime%
+}}{\cos^{2}x}=\frac{\cos^{2}x+\operatorname{sen}^{2}x}{\cos^{2}x}" display="block"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>−</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow></mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">(\tan x)^{\prime}=\Big{(}\frac{\operatorname{sen}x}{\cos x}\Big{)}^{\prime}=%
+\frac{(\operatorname{sen}x)^{\prime}\cos x-\operatorname{sen}x(\cos x)^{\prime%
+}}{\cos^{2}x}=\frac{\cos^{2}x+\operatorname{sen}^{2}x}{\cos^{2}x}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Essa última expressão pode ser escrita de dois jeitos:</span></p>
+<div id="Ch6.Ex48" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex48.m1" class="ltx_Math" alttext="\boxed{(\tan x)^{\prime}=\begin{cases}1+\tan^{2}x\,,\\
+\text{ ou }\frac{1}{\cos^{2}x}\,.\ \end{cases}}" display="block"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em">,</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext class="ltx_mathvariant_italic"> ou </mtext><mo>⁢</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></menclose><annotation encoding="application/x-tex">\boxed{(\tan x)^{\prime}=\begin{cases}1+\tan^{2}x\,,\\
+\text{ ou }\frac{1}{\cos^{2}x}\,.\ \end{cases}}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch6.Thmexo18" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.18</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo18.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Use as regras de derivação para
+calcular as derivadas das seguintes funções. Quando for possível,
+simplifique a expressão obtida.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="-5x" display="inline"><semantics><mrow><mo>−</mo><mrow><mn>5</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">-5x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="x^{3}-x^{7}" display="inline"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><msup><mi>x</mi><mn>7</mn></msup></mrow><annotation encoding="application/x-tex">x^{3}-x^{7}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="1+x+\frac{x^{2}}{2}+\frac{x^{3}}{3}" display="inline"><semantics><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">1+x+\frac{x^{2}}{2}+\frac{x^{3}}{3}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\frac{1}{1-x}" display="inline"><semantics><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{1-x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="x\operatorname{sen}x" display="inline"><semantics><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">x\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I1.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i6.p1.m1" class="ltx_Math" alttext="(x^{2}+1)\operatorname{sen}x\cos x" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">(x^{2}+1)\operatorname{sen}x\cos x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I1.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i7.p1.m1" class="ltx_Math" alttext="\frac{\operatorname{sen}x}{x}" display="inline"><semantics><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><annotation encoding="application/x-tex">\frac{\operatorname{sen}x}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I1.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i8.p1.m1" class="ltx_Math" alttext="\frac{x+1}{x^{2}-1}" display="inline"><semantics><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac><annotation encoding="application/x-tex">\frac{x+1}{x^{2}-1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I1.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i9.p1.m1" class="ltx_Math" alttext="(x+1)^{5}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>5</mn></msup><annotation encoding="application/x-tex">(x+1)^{5}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I1.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i10.p1.m1" class="ltx_Math" alttext="\big{(}3+\frac{1}{x}\big{)}^{2}" display="inline"><semantics><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>3</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mn>2</mn></msup><annotation encoding="application/x-tex">\big{(}3+\frac{1}{x}\big{)}^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I1.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i11.p1.m1" class="ltx_Math" alttext="\sqrt{1-x^{2}}" display="inline"><semantics><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{1-x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span><div id="I1.i12.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i12.p1.m1" class="ltx_Math" alttext="\operatorname{sen}^{3}x-\cos^{7}x" display="inline"><semantics><mrow><mrow><msup><mi>sen</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><msup><mi>cos</mi><mn>7</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}^{3}x-\cos^{7}x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i13" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">13.</span><div id="I1.i13.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i13.p1.m1" class="ltx_Math" alttext="\frac{1}{1-\cos x}" display="inline"><semantics><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{1-\cos x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i14" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">14.</span><div id="I1.i14.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i14.p1.m1" class="ltx_Math" alttext="\frac{1}{\cos(2x-1)}" display="inline"><semantics><mfrac><mn>1</mn><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{\cos(2x-1)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i15" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">15.</span><div id="I1.i15.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i15.p1.m1" class="ltx_Math" alttext="\frac{1}{\sqrt{1+x^{2}}}" display="inline"><semantics><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><annotation encoding="application/x-tex">\frac{1}{\sqrt{1+x^{2}}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i16" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">16.</span><div id="I1.i16.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i16.p1.m1" class="ltx_Math" alttext="\frac{(x^{2}-1)^{2}}{\sqrt{x^{2}-1}}" display="inline"><semantics><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></msqrt></mfrac><annotation encoding="application/x-tex">\frac{(x^{2}-1)^{2}}{\sqrt{x^{2}-1}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i17" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">17.</span><div id="I1.i17.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i17.p1.m1" class="ltx_Math" alttext="\frac{x}{x+\sqrt{9+x^{2}}}" display="inline"><semantics><mfrac><mi>x</mi><mrow><mi>x</mi><mo>+</mo><msqrt><mrow><mn>9</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac><annotation encoding="application/x-tex">\frac{x}{x+\sqrt{9+x^{2}}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i18" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">18.</span><div id="I1.i18.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i18.p1.m1" class="ltx_Math" alttext="\sqrt{1+\sqrt{x}}" display="inline"><semantics><msqrt><mrow><mn>1</mn><mo>+</mo><msqrt><mi>x</mi></msqrt></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{1+\sqrt{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i19" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">19.</span><div id="I1.i19.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i19.p1.m1" class="ltx_Math" alttext="\frac{x}{\cos x}" display="inline"><semantics><mfrac><mi>x</mi><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{x}{\cos x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i20" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">20.</span><div id="I1.i20.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i20.p1.m1" class="ltx_Math" alttext="\cos\sqrt{1+x^{2}}" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\cos\sqrt{1+x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i21" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">21.</span><div id="I1.i21.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i21.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(\operatorname{sen}x)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(\operatorname{sen}x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch6.Thmexo19" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.19</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo19.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule a derivada da função dada.</span></p>
+<div class="ltx_pagination ltx_role_start_4_columns"></div>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="2e^{-x}" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">2e^{-x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\ln(1+x)" display="inline"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(1+x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="\ln(e^{3x})" display="inline"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(e^{3x})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="e^{x}\operatorname{sen}x" display="inline"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">e^{x}\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="e^{\operatorname{sen}x}" display="inline"><semantics><msup><mi>e</mi><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">e^{\operatorname{sen}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i6.p1.m1" class="ltx_Math" alttext="e^{e^{x}}" display="inline"><semantics><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup><annotation encoding="application/x-tex">e^{e^{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i7.p1.m1" class="ltx_Math" alttext="\ln(1+e^{2x})" display="inline"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(1+e^{2x})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I2.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i8.p1.m1" class="ltx_Math" alttext="x\ln x" display="inline"><semantics><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">x\ln x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I2.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i9.p1.m1" class="ltx_Math" alttext="e^{\frac{1}{x}}" display="inline"><semantics><msup><mi>e</mi><mfrac><mn>1</mn><mi>x</mi></mfrac></msup><annotation encoding="application/x-tex">e^{\frac{1}{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I2.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i10.p1.m1" class="ltx_Math" alttext="\ln(\cos x)" display="inline"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(\cos x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I2.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i11.p1.m1" class="ltx_Math" alttext="\ln(\frac{1+\cos x}{\operatorname{sen}x})" display="inline"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(\frac{1+\cos x}{\operatorname{sen}x})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_4_columns"></div>
+</div>
+</div>
+<div id="Ch6.Thmexo20" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.20</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo20.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Verifique que as derivadas das funções trigonométricas hiperbólicas são
+dadas por</span></p>
+<div id="Ch6.Ex49" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex49.m1" class="ltx_Math" alttext="\boxed{(\operatorname{senh}x)^{\prime}=\cosh x\,,\quad(\cosh x)^{\prime}=%
+\operatorname{senh}x\,,\quad(\tanh x)^{\prime}=\begin{cases}1-\tanh^{2}x\,,\\
+\text{ou }\frac{1}{\cosh^{2}x}\,.\end{cases}}" display="block"><semantics><menclose notation="box"><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>senh</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>cosh</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>cosh</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>senh</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>tanh</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>tanh</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em">,</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext class="ltx_mathvariant_italic">ou </mtext><mo>⁢</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mrow><msup><mi>cosh</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></mrow></mrow></menclose><annotation encoding="application/x-tex">\boxed{(\operatorname{senh}x)^{\prime}=\cosh x\,,\quad(\cosh x)^{\prime}=%
+\operatorname{senh}x\,,\quad(\tanh x)^{\prime}=\begin{cases}1-\tanh^{2}x\,,\\
+\text{ou }\frac{1}{\cosh^{2}x}\,.\end{cases}}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Às vezes, um limite pode ser calculado uma vez que interpretado como uma
+derivada.</p>
+</div>
+<div id="Ch6.Thmex10" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.10</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere o limite <math id="Ch6.Thmex10.p1.m1" class="ltx_Math" alttext="\lim_{x\to 1}\frac{\ln x}{x-1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></msub><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{\ln x}{x-1}</annotation></semantics></math>, que é indeterminado da
+forma <math id="Ch6.Thmex10.p1.m2" class="ltx_Math" alttext="\frac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\frac{0}{0}</annotation></semantics></math>.
+Como <math id="Ch6.Thmex10.p1.m3" class="ltx_Math" alttext="\frac{\ln x}{x-1}=\frac{\ln x-\ln 1}{x-1}" display="inline"><semantics><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mn>1</mn></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\ln x}{x-1}=\frac{\ln x-\ln 1}{x-1}</annotation></semantics></math>, vemos que o limite pode ser
+interpretado como a derivada da função <math id="Ch6.Thmex10.p1.m4" class="ltx_Math" alttext="f(x)=\ln x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\ln x</annotation></semantics></math> no ponto <math id="Ch6.Thmex10.p1.m5" class="ltx_Math" alttext="a=1" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1</annotation></semantics></math>:</span></p>
+<div id="Ch6.Ex50" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex50.m1" class="ltx_Math" alttext="\lim_{x\to 1}\frac{\ln x-\ln 1}{x-1}=\lim_{x\to 1}\frac{f(x)-f(1)}{x-1}\equiv f%
+^{\prime}(1)\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></munder><mfrac><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mn>1</mn></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></munder><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo>≡</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{\ln x-\ln 1}{x-1}=\lim_{x\to 1}\frac{f(x)-f(1)}{x-1}\equiv f%
+^{\prime}(1)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Ora, como <math id="Ch6.Thmex10.p1.m6" class="ltx_Math" alttext="f^{\prime}(x)=\frac{1}{x}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=\frac{1}{x}</annotation></semantics></math>, temos <math id="Ch6.Thmex10.p1.m7" class="ltx_Math" alttext="f^{\prime}(1)=1" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(1)=1</annotation></semantics></math>. Isto é: <math id="Ch6.Thmex10.p1.m8" class="ltx_Math" alttext="\lim_{x\to 1}\frac{\ln x}{x-1}=1" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></msub><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{\ln x}{x-1}=1</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo21" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.21</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo21.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule os seguintes limites, interpretando-os como derivadas.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="\lim_{x\to 1}\frac{x^{999}-1}{x-1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>999</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{x^{999}-1}{x-1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\lim_{x\to\pi}\frac{\cos x+1}{x-\pi}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>π</mi></mrow></msub><mfrac><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mi>π</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\pi}\frac{\cos x+1}{x-\pi}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I3.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i3.p1.m1" class="ltx_Math" alttext="\lim_{x\to\pi}\frac{\operatorname{sen}(x^{2})-\operatorname{sen}(\pi^{2})}{x-\pi}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>π</mi></mrow></msub><mfrac><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>π</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mi>π</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\pi}\frac{\operatorname{sen}(x^{2})-\operatorname{sen}(\pi^{2})}{x-\pi}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I3.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i4.p1.m1" class="ltx_Math" alttext="\lim_{x\to 2}\frac{\ln x-\ln 2}{x-2}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>2</mn></mrow></msub><mfrac><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mn>2</mn></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 2}\frac{\ln x-\ln 2}{x-2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I3.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i5.p1.m1" class="ltx_Math" alttext="\lim_{t\to 0}\frac{e^{\lambda t}-1}{t}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>t</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><msup><mi>e</mi><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{t\to 0}\frac{e^{\lambda t}-1}{t}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch6.Thmexo22" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.22</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo22.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere as funções</span></p>
+<div id="Ch6.Ex51" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex51.m1" class="ltx_Math" alttext="f(x){:=}\begin{cases}x\operatorname{sen}\frac{1}{x}&amp;\text{ se }x\neq 0\,,\\
+0&amp;\text{ se }x=0\,,\end{cases}\quad\quad g(x){:=}\begin{cases}x^{2}%
+\operatorname{sen}\frac{1}{x}&amp;\text{ se }x\neq 0\,,\\
+0&amp;\text{ se }x=0\,.\end{cases}" display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≠</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr></mtable></mrow></mrow><mspace width="2.4em"></mspace><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≠</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x){:=}\begin{cases}x\operatorname{sen}\frac{1}{x}&amp;\text{ se }x\neq 0\,,\\
+0&amp;\text{ se }x=0\,,\end{cases}\quad\quad g(x){:=}\begin{cases}x^{2}%
+\operatorname{sen}\frac{1}{x}&amp;\text{ se }x\neq 0\,,\\
+0&amp;\text{ se }x=0\,.\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que <math id="Ch6.Thmexo22.p1.m1" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> é derivável (logo, contínua) em todo <math id="Ch6.Thmexo22.p1.m2" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>.
+Mostre que <math id="Ch6.Thmexo22.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é contínua em todo <math id="Ch6.Thmexo22.p1.m4" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math> e derivável em todo <math id="Ch6.Thmexo22.p1.m5" class="ltx_Math" alttext="x\in\mathbb{R}\setminus\{0\}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mi>ℝ</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}\setminus\{0\}</annotation></semantics></math>, mas não é derivável em <math id="Ch6.Thmexo22.p1.m6" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.4.1</span> Derivar as potências <math id="SS1.m1" class="ltx_Math" alttext="x^{\alpha}" display="inline"><semantics><msup><mi>x</mi><mi>α</mi></msup><annotation encoding="application/x-tex">x^{\alpha}</annotation></semantics></math>; exponenciação</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Definir uma potência <math id="SS1.p1.m1" class="ltx_Math" alttext="x^{p}" display="inline"><semantics><msup><mi>x</mi><mi>p</mi></msup><annotation encoding="application/x-tex">x^{p}</annotation></semantics></math> para <math id="SS1.p1.m2" class="ltx_Math" alttext="p\in\mathbb{Z}" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">p\in\mathbb{Z}</annotation></semantics></math> é imediato. Por exemplo,
+<math id="SS1.p1.m3" class="ltx_Math" alttext="x^{3}{:=}x\cdot x\cdot x" display="inline"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">x^{3}{:=}x\cdot x\cdot x</annotation></semantics></math>. Mas como definir <math id="SS1.p1.m4" class="ltx_Math" alttext="x^{\alpha}" display="inline"><semantics><msup><mi>x</mi><mi>α</mi></msup><annotation encoding="application/x-tex">x^{\alpha}</annotation></semantics></math> para uma potência
+não-inteira, por exemplo <math id="SS1.p1.m5" class="ltx_Math" alttext="x^{\sqrt{2}}=x^{1,414...}" display="inline"><semantics><mrow><msup><mi>x</mi><msqrt><mn>2</mn></msqrt></msup><mo>=</mo><msup><mi>x</mi><mrow><mn>1,414</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></msup></mrow><annotation encoding="application/x-tex">x^{\sqrt{2}}=x^{1,414...}</annotation></semantics></math>? 
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Um jeito de fazer é de se lembrar que qualquer <math id="SS1.p2.m1" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math> pode ser
+<em class="ltx_emph ltx_font_italic">exponenciado</em>: <math id="SS1.p2.m2" class="ltx_Math" alttext="x=e^{\ln x}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>e</mi><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">x=e^{\ln x}</annotation></semantics></math>. Como <math id="SS1.p2.m3" class="ltx_Math" alttext="(e^{\ln x})^{\alpha}=e^{\alpha\ln x}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup><mo stretchy="false">)</mo></mrow><mi>α</mi></msup><mo>=</mo><msup><mi>e</mi><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">(e^{\ln x})^{\alpha}=e^{\alpha\ln x}</annotation></semantics></math>,
+é natural definir</p>
+<div id="Ch6.E12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E12.m1" class="ltx_math_unparsed" alttext="\boxed{x^{\alpha}{:=}e^{\alpha\ln x}\,.}" display="block"><semantics><menclose notation="box"><mrow><msup><mi>x</mi><mi>α</mi></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><msup><mi>e</mi><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{x^{\alpha}{:=}e^{\alpha\ln x}\,.}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.12)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Observe que com essa definição, as regras habituais são satisfeitas. Por
+exemplo, para qualquer <math id="SS1.p2.m4" class="ltx_Math" alttext="\alpha,\beta\in\mathbb{R}" display="inline"><semantics><mrow><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\alpha,\beta\in\mathbb{R}</annotation></semantics></math>,</p>
+<div id="Ch6.Ex52" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex52.m1" class="ltx_Math" alttext="x^{\alpha}x^{\beta}=e^{\alpha\ln x}e^{\beta\ln x}=e^{\alpha\ln x+\beta\ln x}=e%
+^{(\alpha+\beta)\ln x}=x^{\alpha+\beta}\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mi>α</mi></msup><mo>⁢</mo><msup><mi>x</mi><mi>β</mi></msup></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mi>β</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup></mrow><mo>=</mo><msup><mi>e</mi><mrow><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>+</mo><mrow><mi>β</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup><mo>=</mo><msup><mi>x</mi><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">x^{\alpha}x^{\beta}=e^{\alpha\ln x}e^{\beta\ln x}=e^{\alpha\ln x+\beta\ln x}=e%
+^{(\alpha+\beta)\ln x}=x^{\alpha+\beta}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Mas a definição dada acima permite também derivar <math id="SS1.p2.m5" class="ltx_Math" alttext="x^{\alpha}" display="inline"><semantics><msup><mi>x</mi><mi>α</mi></msup><annotation encoding="application/x-tex">x^{\alpha}</annotation></semantics></math>, usando
+simplesmente a regra da cadeia:</p>
+<div id="Ch6.Ex53" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex53.m1" class="ltx_Math" alttext="(x^{\alpha})^{\prime}=(e^{\alpha\ln x})^{\prime}=(\alpha\ln x)^{\prime}e^{%
+\alpha\ln x}=\frac{\alpha}{x}x^{\alpha}=\alpha x^{\alpha-1}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>α</mi></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup></mrow><mo>=</mo><mrow><mfrac><mi>α</mi><mi>x</mi></mfrac><mo>⁢</mo><msup><mi>x</mi><mi>α</mi></msup></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>α</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">(x^{\alpha})^{\prime}=(e^{\alpha\ln x})^{\prime}=(\alpha\ln x)^{\prime}e^{%
+\alpha\ln x}=\frac{\alpha}{x}x^{\alpha}=\alpha x^{\alpha-1}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Assim foi provado que a fórmula <math id="SS1.p2.m6" class="ltx_Math" alttext="(x^{p})^{\prime}=px^{p-1}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>p</mi></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">(x^{p})^{\prime}=px^{p-1}</annotation></semantics></math>, inicialmente provada para
+<math id="SS1.p2.m7" class="ltx_Math" alttext="p\in\mathbb{Z}" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">p\in\mathbb{Z}</annotation></semantics></math>, vale também para expoentes não-inteiros.
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">O que foi usado acima é que
+se <math id="SS1.p3.m1" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> é derivável, então pela regra da cadeia,</p>
+<div id="Ch6.E13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E13.m1" class="ltx_Math" alttext="(e^{g(x)})^{\prime}=e^{g(x)}g^{\prime}(x)\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><msup><mi>e</mi><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(e^{g(x)})^{\prime}=e^{g(x)}g^{\prime}(x)\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.13)</span>
+              
+              
+            
+</div>
+</div>
+<div id="Ch6.Thmex11" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.11</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere uma exponencial numa base qualquer, <math id="Ch6.Thmex11.p1.m1" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math>, <math id="Ch6.Thmex11.p1.m2" class="ltx_Math" alttext="a&gt;0" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math>. Exponenciando
+a base <math id="Ch6.Thmex11.p1.m3" class="ltx_Math" alttext="a=e^{\ln a}" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><msup><mi>e</mi><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></msup></mrow><annotation encoding="application/x-tex">a=e^{\ln a}</annotation></semantics></math>, temos <math id="Ch6.Thmex11.p1.m4" class="ltx_Math" alttext="a^{x}=e^{x\ln a}" display="inline"><semantics><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>=</mo><msup><mi>e</mi><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">a^{x}=e^{x\ln a}</annotation></semantics></math>. Logo,</span></p>
+<div id="Ch6.E14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E14.m1" class="ltx_math_unparsed" alttext="\boxed{(a^{x})^{\prime}=(e^{x\ln a})^{\prime}=(x\ln a)^{\prime}e^{x\ln a}=(\ln
+a%
+)a^{x}\,.}" display="block"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mi>x</mi></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></mrow></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mi>ln</mi><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><msup><mi>e</mi><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></mrow></msup><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>ln</mi><mi>a</mi><mo stretchy="false">)</mo></mrow><msup><mi>a</mi><mi>x</mi></msup><mo lspace="0em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{(a^{x})^{\prime}=(e^{x\ln a})^{\prime}=(x\ln a)^{\prime}e^{x\ln a}=(\ln
+a%
+)a^{x}\,.}</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.14)</span>
+                
+                
+              
+</div>
+</div>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<p class="ltx_p">Essa expressão permite calcular as derivadas das funções da forma
+<math id="SS1.p4.m1" class="ltx_Math" alttext="f(x)^{g(x)}" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">f(x)^{g(x)}</annotation></semantics></math>. De fato, se <math id="SS1.p4.m2" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>, sempre podemos escrever
+<math id="SS1.p4.m3" class="ltx_Math" alttext="f(x)=e^{\ln f(x)}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">f(x)=e^{\ln f(x)}</annotation></semantics></math>, transformando <math id="SS1.p4.m4" class="ltx_Math" alttext="f(x)^{g(x)}=e^{g(x)\ln f(x)}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">f(x)^{g(x)}=e^{g(x)\ln f(x)}</annotation></semantics></math>.
+Por exemplo,</p>
+</div>
+<div id="Ch6.Thmex12" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.12</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex12.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch6.Thmex12.p1.m1" class="ltx_Math" alttext="x^{x}" display="inline"><semantics><msup><mi>x</mi><mi>x</mi></msup><annotation encoding="application/x-tex">x^{x}</annotation></semantics></math>, com <math id="Ch6.Thmex12.p1.m2" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>.
+Escrevendo o <math id="Ch6.Thmex12.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> (de baixo) como <math id="Ch6.Thmex12.p1.m4" class="ltx_Math" alttext="x=e^{\ln x}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>e</mi><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">x=e^{\ln x}</annotation></semantics></math>, temos <math id="Ch6.Thmex12.p1.m5" class="ltx_Math" alttext="x^{x}=(e^{\ln x})^{x}=e^{x\ln x}" display="inline"><semantics><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><mo>=</mo><msup><mi>e</mi><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">x^{x}=(e^{\ln x})^{x}=e^{x\ln x}</annotation></semantics></math>, logo</span></p>
+<div id="Ch6.Ex54" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex54.m1" class="ltx_Math" alttext="(x^{x})^{\prime}=(e^{x\ln x})^{\prime}=(x\ln x)^{\prime}e^{x\ln x}=(\ln x+1)x^%
+{x}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>x</mi></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msup></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>x</mi></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">(x^{x})^{\prime}=(e^{x\ln x})^{\prime}=(x\ln x)^{\prime}e^{x\ln x}=(\ln x+1)x^%
+{x}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch6.Thmexo23" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.23</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo23.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Derive as seguintes funções (supondo sempre que <math id="Ch6.Thmexo23.p1.m1" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>).</span></p>
+<div class="ltx_pagination ltx_role_start_4_columns"></div>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="x^{\sqrt{x}}" display="inline"><semantics><msup><mi>x</mi><msqrt><mi>x</mi></msqrt></msup><annotation encoding="application/x-tex">x^{\sqrt{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="(\operatorname{sen}x)^{x}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><annotation encoding="application/x-tex">(\operatorname{sen}x)^{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I4.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i3.p1.m1" class="ltx_Math" alttext="x^{\operatorname{sen}x}" display="inline"><semantics><msup><mi>x</mi><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">x^{\operatorname{sen}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I4.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i4.p1.m1" class="ltx_Math" alttext="x^{x^{x}}" display="inline"><semantics><msup><mi>x</mi><msup><mi>x</mi><mi>x</mi></msup></msup><annotation encoding="application/x-tex">x^{x^{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_4_columns"></div>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.4.2</span> Derivadas logarítmicas</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Vimos que derivar uma soma é mais simples do que derivar um produto: a derivada da
+soma se calcula termo a termo, enquanto para derivar o produto, é necessário
+usar a regra de Leibniz repetitivamente.
+Ora, lembramos que <em class="ltx_emph ltx_font_italic">o logaritmo transforma produtos em soma</em>, e que esse
+fato pode ser usado para simplificar as contas que aparecem para derivar um
+produto. 
+<br class="ltx_break"></p>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Considere uma função <math id="SS2.p2.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> definida como o produto de <math id="SS2.p2.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> funções, que suporemos
+todas positivas e deriváveis:</p>
+<div id="Ch6.Ex55" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex55.m1" class="ltx_Math" alttext="f(x)=h_{1}(x)h_{2}(x)\dots h_{n}(x)\equiv\prod_{k=1}^{n}h_{k}(x)\,." display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>h</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>h</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>h</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">≡</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>h</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f(x)=h_{1}(x)h_{2}(x)\dots h_{n}(x)\equiv\prod_{k=1}^{n}h_{k}(x)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Para calcular <math id="SS2.p2.m3" class="ltx_Math" alttext="f^{\prime}(x)" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)</annotation></semantics></math>, calculemos
+primeiro</p>
+<div id="Ch6.Ex56" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex56.m1" class="ltx_Math" alttext="\ln f(x)=\ln h_{1}(x)+\ln h_{2}(x)+\dots+\ln h_{n}(x)\equiv\sum_{k=1}^{n}\ln h%
+_{k}(x)\,," display="block"><semantics><mrow><mrow><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mn>1</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mi>n</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">≡</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mi>k</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\ln f(x)=\ln h_{1}(x)+\ln h_{2}(x)+\dots+\ln h_{n}(x)\equiv\sum_{k=1}^{n}\ln h%
+_{k}(x)\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e derivamos ambos lados
+com respeito a <math id="SS2.p2.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. Do lado esquerdo, usando a regra da cadeia, <math id="SS2.p2.m5" class="ltx_Math" alttext="(\ln f(x))^{\prime}=\frac{f^{\prime}(x)}{f(x)}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">(\ln f(x))^{\prime}=\frac{f^{\prime}(x)}{f(x)}</annotation></semantics></math>. Derivando termo a termo do lado direito, obtemos</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx58" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch6.Ex57"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch6.Ex57.m1" class="ltx_Math" alttext="\displaystyle\frac{f^{\prime}(x)}{f(x)}" display="inline"><semantics><mstyle displaystyle="true"><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><annotation encoding="application/x-tex">\displaystyle\frac{f^{\prime}(x)}{f(x)}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex57.m2" class="ltx_Math" alttext="\displaystyle=(\ln h_{1}(x)+\ln h_{2}(x)+\dots+\ln h_{n}(x))^{\prime}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mn>1</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mi>n</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">\displaystyle=(\ln h_{1}(x)+\ln h_{2}(x)+\dots+\ln h_{n}(x))^{\prime}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch6.Ex58"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex58.m1" class="ltx_Math" alttext="\displaystyle=(\ln h_{1}(x))^{\prime}+(\ln h_{2}(x))^{\prime}+\dots+(\ln h_{n}%
+(x))^{\prime}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mn>1</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><msub><mi>h</mi><mi>n</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=(\ln h_{1}(x))^{\prime}+(\ln h_{2}(x))^{\prime}+\dots+(\ln h_{n}%
+(x))^{\prime}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch6.Ex59"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch6.Ex59.m1" class="ltx_Math" alttext="\displaystyle=\frac{h_{1}^{\prime}(x)}{h_{1}(x)}+\frac{h_{2}^{\prime}(x)}{h_{2%
+}(x)}+\dots+\frac{h_{n}^{\prime}(x)}{h_{n}(x)}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msubsup><mi>h</mi><mn>1</mn><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>h</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msubsup><mi>h</mi><mn>2</mn><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>h</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msubsup><mi>h</mi><mi>n</mi><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>h</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{h_{1}^{\prime}(x)}{h_{1}(x)}+\frac{h_{2}^{\prime}(x)}{h_{2%
+}(x)}+\dots+\frac{h_{n}^{\prime}(x)}{h_{n}(x)}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Logo, obtemos uma fórmula</p>
+<div id="Ch6.Ex60" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex60.m1" class="ltx_Math" alttext="f^{\prime}(x)=f(x)\Bigl{(}\frac{h_{1}^{\prime}(x)}{h_{1}(x)}+\frac{h_{2}^{%
+\prime}(x)}{h_{2}(x)}+\dots+\frac{h_{n}^{\prime}(x)}{h_{n}(x)}\Bigr{)}" display="block"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mfrac><mrow><msubsup><mi>h</mi><mn>1</mn><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>h</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>+</mo><mfrac><mrow><msubsup><mi>h</mi><mn>2</mn><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>h</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mfrac><mrow><msubsup><mi>h</mi><mi>n</mi><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>h</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=f(x)\Bigl{(}\frac{h_{1}^{\prime}(x)}{h_{1}(x)}+\frac{h_{2}^{%
+\prime}(x)}{h_{2}(x)}+\dots+\frac{h_{n}^{\prime}(x)}{h_{n}(x)}\Bigr{)}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch6.Thmexo24" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.24</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo24.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Derive, usando o método sugerido acima:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="\frac{(x+1)(x+2)(x+3)}{(x+4)(x+5)(x+6)}" display="inline"><semantics><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><annotation encoding="application/x-tex">\frac{(x+1)(x+2)(x+3)}{(x+4)(x+5)(x+6)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="\frac{x\operatorname{sen}^{3}x}{\sqrt{1+\cos^{2}x}}" display="inline"><semantics><mfrac><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sen</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><msqrt><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msqrt></mfrac><annotation encoding="application/x-tex">\frac{x\operatorname{sen}^{3}x}{\sqrt{1+\cos^{2}x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I5.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="\prod_{k=1}^{n}(1+x^{k})" display="inline"><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mi>k</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\prod_{k=1}^{n}(1+x^{k})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.4.3</span> Derivar uma função inversa</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">Sabemos que <math id="SS3.p1.m1" class="ltx_Math" alttext="(\operatorname{sen}x)^{\prime}=\cos x" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">(\operatorname{sen}x)^{\prime}=\cos x</annotation></semantics></math> e <math id="SS3.p1.m2" class="ltx_Math" alttext="(a^{x})^{\prime}=(\ln a)a^{x}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mi>x</mi></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></mrow><annotation encoding="application/x-tex">(a^{x})^{\prime}=(\ln a)a^{x}</annotation></semantics></math>, mas como derivar as suas
+respectivas funções inversas, isto é, <math id="SS3.p1.m3" class="ltx_Math" alttext="(\operatorname{arcsen}x)^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(\operatorname{arcsen}x)^{\prime}</annotation></semantics></math> e <math id="SS3.p1.m4" class="ltx_Math" alttext="(\log_{a}x)^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>log</mi><mi>a</mi></msub><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(\log_{a}x)^{\prime}</annotation></semantics></math>?
+<br class="ltx_break"></p>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">Vimos que o inverso de uma função <math id="SS3.p2.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, quando é bem definido, satisfaz às
+relações:</p>
+<div id="Ch6.Ex61" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex61.m1" class="ltx_math_unparsed" alttext="\forall x,\quad(f(f^{-1}(x))=x\,." display="block"><semantics><mrow><mo rspace="0.167em">∀</mo><mi>x</mi><mo rspace="1.367em">,</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>x</mi><mo lspace="0.170em">.</mo></mrow></mrow><annotation encoding="application/x-tex">\forall x,\quad(f(f^{-1}(x))=x\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Logo, derivando em ambos lados com respeito a <math id="SS3.p2.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, e usando a regra da cadeia
+do lado esquerdo,</p>
+<div id="Ch6.Ex62" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex62.m1" class="ltx_Math" alttext="f^{\prime}(f^{-1}(x))\cdot(f^{-1})^{\prime}(x)=1" display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(f^{-1}(x))\cdot(f^{-1})^{\prime}(x)=1</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Logo,</p>
+<div id="Ch6.Ex63" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex63.m1" class="ltx_math_unparsed" alttext="\boxed{(f^{-1})^{\prime}(x)=\frac{1}{f^{\prime}(f^{-1}(x))}\,.}" display="block"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo lspace="0.170em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{(f^{-1})^{\prime}(x)=\frac{1}{f^{\prime}(f^{-1}(x))}\,.}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch6.Thmex13" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.13</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex13.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calculemos a derivada do <math id="Ch6.Thmex13.p1.m1" class="ltx_Math" alttext="\operatorname{arcsen}x" display="inline"><semantics><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{arcsen}x</annotation></semantics></math>, que é por definição a inversa da
+função <math id="Ch6.Thmex13.p1.m2" class="ltx_Math" alttext="f(x)=\operatorname{sen}x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\operatorname{sen}x</annotation></semantics></math>, e bem definida para <math id="Ch6.Thmex13.p1.m3" class="ltx_Math" alttext="x\in[-1,1]" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[-1,1]</annotation></semantics></math>. Como <math id="Ch6.Thmex13.p1.m4" class="ltx_Math" alttext="f^{\prime}(x)=\cos x" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=\cos x</annotation></semantics></math>, a
+fórmula acima dá</span></p>
+<div id="Ch6.Ex64" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex64.m1" class="ltx_Math" alttext="(\operatorname{arcsen}x)^{\prime}=\frac{1}{f^{\prime}(f^{-1}(x))}=\frac{1}{%
+\cos(\operatorname{arcsen}x)}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(\operatorname{arcsen}x)^{\prime}=\frac{1}{f^{\prime}(f^{-1}(x))}=\frac{1}{%
+\cos(\operatorname{arcsen}x)}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Usando a identidade provada no Exemplo
+<a href="Ch2.S4.html#Ch2.Thmex26" title="Exemplo 2.26. ‣ 2.4.3 Funções trigonométricas inversas ‣ 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.26</span></a>: <math id="Ch6.Thmex13.p1.m5" class="ltx_Math" alttext="\cos(\operatorname{arcsen}x)=\sqrt{1-x^{2}}" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\cos(\operatorname{arcsen}x)=\sqrt{1-x^{2}}</annotation></semantics></math>, obtemos</span></p>
+<div id="Ch6.E15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E15.m1" class="ltx_math_unparsed" alttext="\boxed{(\operatorname{arcsen}x)^{\prime}=\frac{1}{\sqrt{1-x^{2}}}\,.}" display="block"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>arcsen</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo lspace="0.170em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{(\operatorname{arcsen}x)^{\prime}=\frac{1}{\sqrt{1-x^{2}}}\,.}</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.15)</span>
+                
+                
+              
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que, como pode ser visto no gráfico da Seção
+<a href="Ch2.S4.html#SS3" title="2.4.3 Funções trigonométricas inversas ‣ 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4.3</span></a>, as retas tangentes ao gráfico de <math id="Ch6.Thmex13.p1.m6" class="ltx_Math" alttext="\operatorname{arcsen}x" display="inline"><semantics><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{arcsen}x</annotation></semantics></math> são
+verticais nos pontos <math id="Ch6.Thmex13.p1.m7" class="ltx_Math" alttext="x=\pm 1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">x=\pm 1</annotation></semantics></math>, o que se traduz pelo fato de <math id="Ch6.Thmex13.p1.m8" class="ltx_Math" alttext="(\operatorname{arcsen}x)^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(\operatorname{arcsen}x)^{\prime}</annotation></semantics></math> não
+existir nesses pontos.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo25" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.25</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo25.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que</span></p>
+<div id="Ch6.E16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E16.m1" class="ltx_math_unparsed" alttext="\boxed{(\log_{a}x)^{\prime}=\frac{1}{(\ln a)x}\,,\quad\quad(\operatorname{%
+arcos}x)^{\prime}=\frac{-1}{\sqrt{1-x^{2}}}\,,\quad\quad(\arctan x)^{\prime}=%
+\frac{1}{1+x^{2}}\,.}" display="block"><semantics><menclose notation="box"><mrow><msup><mrow><mo stretchy="false">(</mo><msub><mi>log</mi><mi>a</mi></msub><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo lspace="0.170em" rspace="2.567em">,</mo><msup><mrow><mo stretchy="false">(</mo><mi>arcos</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mrow><mo>−</mo><mn>1</mn></mrow><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo lspace="0.170em" rspace="2.567em">,</mo><msup><mrow><mo stretchy="false">(</mo><mi>arctan</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo lspace="0.170em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{(\log_{a}x)^{\prime}=\frac{1}{(\ln a)x}\,,\quad\quad(\operatorname{%
+arcos}x)^{\prime}=\frac{-1}{\sqrt{1-x^{2}}}\,,\quad\quad(\arctan x)^{\prime}=%
+\frac{1}{1+x^{2}}\,.}</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.16)</span>
+                
+                
+              
+</div>
+</div>
+</div>
+<div id="Ch6.Thmexo26" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.26</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo26.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule as derivadas das funções abaixo.</span></p>
+<div class="ltx_pagination ltx_role_start_2_columns"></div>
+<ol id="I6" class="ltx_enumerate">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i1.p1.m1" class="ltx_Math" alttext="\log_{a}(1-x^{2})" display="inline"><semantics><mrow><msub><mi>log</mi><mi>a</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\log_{a}(1-x^{2})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I6.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i2.p1.m1" class="ltx_Math" alttext="\operatorname{arcsen}(1-x^{2})" display="inline"><semantics><mrow><mi>arcsen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{arcsen}(1-x^{2})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I6.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i3.p1.m1" class="ltx_Math" alttext="\arctan(\tan x)" display="inline"><semantics><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\arctan(\tan x)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I6.i3.p1.m2" class="ltx_Math" alttext="-\tfrac{\pi}{2}&lt;x&lt;\tfrac{\pi}{2}" display="inline"><semantics><mrow><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">-\tfrac{\pi}{2}&lt;x&lt;\tfrac{\pi}{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I6.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i4.p1.m1" class="ltx_Math" alttext="\operatorname{arcsen}(\cos x)" display="inline"><semantics><mrow><mi>arcsen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{arcsen}(\cos x)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I6.i4.p1.m2" class="ltx_Math" alttext="0&lt;x&lt;\tfrac{\pi}{2}" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">0&lt;x&lt;\tfrac{\pi}{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I6.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i5.p1.m1" class="ltx_Math" alttext="\cos(\operatorname{arcsen}x)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\cos(\operatorname{arcsen}x)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I6.i5.p1.m2" class="ltx_Math" alttext="-1&lt;x&lt;1" display="inline"><semantics><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1&lt;x&lt;1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_2_columns"></div>
+</div>
+</div>
+<div id="Ch6.Thmexo27" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.27</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo27.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch6.Thmexo27.p1.m1" class="ltx_Math" alttext="f(x)=\operatorname{arcos}(\frac{1-x^{2}}{1+x^{2}})" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>arcos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)=\operatorname{arcos}(\frac{1-x^{2}}{1+x^{2}})</annotation></semantics></math>. Mostre que a reta
+de equação <math id="Ch6.Thmexo27.p1.m2" class="ltx_Math" alttext="y=-\frac{3}{2}(x+\frac{1}{\sqrt{3}})+\frac{\pi}{3}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mfrac><mi>π</mi><mn>3</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">y=-\frac{3}{2}(x+\frac{1}{\sqrt{3}})+\frac{\pi}{3}</annotation></semantics></math>
+é tangente ao gráfico de <math id="Ch6.Thmexo27.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em algum ponto <math id="Ch6.Thmexo27.p1.m4" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch6.S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch6.S5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

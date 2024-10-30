@@ -1,0 +1,336 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>5.1 O Teorema do valor intermediário ‣ Capítulo 5 Continuidade ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="next" href="Ch5.S2.html" title="5.2 Limites e funções contínuas ‣ Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="section" href="Ch5.S2.html" title="5.2 Limites e funções contínuas ‣ Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="section" href="Ch5.S3.html" title="5.3 Exercícios de revisão ‣ Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Teorema, do valor intermediário, resolução numérica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="5.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 5 Continuidade ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.1 </span></b>O Teorema do valor intermediário</a></li>
+<li data-level="5.2" data-path="Ch5.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch5.S2.html" title="In Capítulo 5 Continuidade ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.2 </span></b>Limites e funções contínuas</a></li>
+<li data-level="5.3" data-path="Ch5.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch5.S3.html" title="In Capítulo 5 Continuidade ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.3 </span></b>Exercícios de revisão</a></li>
+</ol>
+</li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O Teorema do valor intermediário</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">5.1</span> O Teorema do valor intermediário</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Funções contínuas possuem propriedades muito particulares.
+Considere por exemplo
+uma função contínua num intervalo fechado, <math id="p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math>.
+Então, ao <math id="p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> variar entre <math id="p1.m3" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> e <math id="p1.m4" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>, <em class="ltx_emph ltx_font_italic">o gráfico de <math id="p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> corta
+qualquer reta horizontal
+intermediária, de altura <math id="p1.m6" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> entre <math id="p1.m7" class="ltx_Math" alttext="f(a)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(a)</annotation></semantics></math> e <math id="p1.m8" class="ltx_Math" alttext="f(b)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(b)</annotation></semantics></math>, pelo menos uma
+vez</em>:</p>
+</div>
+<div id="p2" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-86.svg" alt="" id="g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="364" height="169"></div>
+</div>
+<div id="Ch5.Thmteo1" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 5.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Teorema do Valor Intermediário)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch5.Thmteo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch5.Thmteo1.p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math> uma função contínua, tal que <math id="Ch5.Thmteo1.p1.m2" class="ltx_Math" alttext="f(a)&lt;f(b)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(a)&lt;f(b)</annotation></semantics></math>.
+Então para todo <math id="Ch5.Thmteo1.p1.m3" class="ltx_Math" alttext="h\in[f(a),f(b)]" display="inline"><semantics><mrow><mi>h</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">h\in[f(a),f(b)]</annotation></semantics></math>, existe <math id="Ch5.Thmteo1.p1.m4" class="ltx_Math" alttext="c\in[a,b]" display="inline"><semantics><mrow><mi>c</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">c\in[a,b]</annotation></semantics></math> tal que
+<math id="Ch5.Thmteo1.p1.m5" class="ltx_Math" alttext="f(c)=h" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">f(c)=h</annotation></semantics></math>. Uma afirmação parecida vale quando <math id="Ch5.Thmteo1.p1.m6" class="ltx_Math" alttext="f(a)&gt;f(b)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(a)&gt;f(b)</annotation></semantics></math></span></p>
+</div>
+</div>
+<div id="Ch5.Thmexo6" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 5.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch5.Thmexo6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para cada função abaixo, estude a propriedade do valor
+intermediário (isto é, fixe uma reta de altura <math id="Ch5.Thmexo6.p1.m1" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> e vê se o gráfico de <math id="Ch5.Thmexo6.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+corta a reta).</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="f:[-1,2]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,2</mn></mrow><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[-1,2]\to\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="f(x){:=}x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x){:=}x^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="g:[-1,1]\to\mathbb{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:[-1,1]\to\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+</span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="g(x){:=}\begin{cases}\frac{|x|}{x}&amp;\text{ se }x\neq 0\,,\\
+0&amp;\text{ se }x=0\,.\\
+\end{cases}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mfrac><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mi>x</mi></mfrac></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≠</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">g(x){:=}\begin{cases}\frac{|x|}{x}&amp;\text{ se }x\neq 0\,,\\
+0&amp;\text{ se }x=0\,.\\
+\end{cases}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="h:[0,2]\to\mathbb{R}" display="inline"><semantics><mrow><mi>h</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,2</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">h:[0,2]\to\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+</span><math id="I1.i3.p1.m2" class="ltx_Math" alttext="h(x){:=}\begin{cases}2x-1&amp;\text{ se }0\leq x&lt;1\,,\\
+2x-3&amp;\text{ se }1\leq x\leq 2\,.\\
+\end{cases}" display="inline"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mn>0</mn></mrow><mo>≤</mo><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>3</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mn>1</mn></mrow><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>2</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">h(x){:=}\begin{cases}2x-1&amp;\text{ se }0\leq x&lt;1\,,\\
+2x-3&amp;\text{ se }1\leq x\leq 2\,.\\
+\end{cases}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">O Teorema do valor intermediário pode ser usado para
+a resolução numérica de equações:</p>
+</div>
+<div id="Ch5.Thmex8" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 5.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch5.Thmex8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a função
+<math id="Ch5.Thmex8.p1.m1" class="ltx_Math" alttext="f(x){:=}\tfrac{1}{2}-x^{2}-x^{5}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>5</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x){:=}\tfrac{1}{2}-x^{2}-x^{5}</annotation></semantics></math>,
+no intervalo <math id="Ch5.Thmex8.p1.m2" class="ltx_Math" alttext="[-1,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-1,1]</annotation></semantics></math>. Como <math id="Ch5.Thmex8.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é contínua e muda de
+sinal entre <math id="Ch5.Thmex8.p1.m4" class="ltx_Math" alttext="-1" display="inline"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math> e <math id="Ch5.Thmex8.p1.m5" class="ltx_Math" alttext="+1" display="inline"><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math>,
+<math id="Ch5.Thmex8.p1.m6" class="ltx_Math" alttext="f(-1)=\frac{1}{2}&gt;0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(-1)=\frac{1}{2}&gt;0</annotation></semantics></math>,
+<math id="Ch5.Thmex8.p1.m7" class="ltx_Math" alttext="f(+1)=-\frac{3}{2}&lt;0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(+1)=-\frac{3}{2}&lt;0</annotation></semantics></math>,
+o Teorema do Valor Intermediário implica que
+deve existir pelo menos um ponto <math id="Ch5.Thmex8.p1.m8" class="ltx_Math" alttext="x_{*}\in[-1,1]" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x_{*}\in[-1,1]</annotation></semantics></math> tal que <math id="Ch5.Thmex8.p1.m9" class="ltx_Math" alttext="f(x^{*})=0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>∗</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x^{*})=0</annotation></semantics></math>.</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-87.svg" alt="" id="Ch5.Thmex8.p1.g1" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="214" height="197"></div>
+</div>
+<div id="Ch5.Thmex8.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como calcular <math id="Ch5.Thmex8.p2.m1" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>? Por definição, <math id="Ch5.Thmex8.p2.m2" class="ltx_Math" alttext="x_{*}\in[-1,1]" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x_{*}\in[-1,1]</annotation></semantics></math> é solução da
+equação do quinto grau:</span></p>
+<div id="Ch5.Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex12.m1" class="ltx_Math" alttext="x^{5}+x^{2}-\tfrac{1}{2}=0\,," display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">x^{5}+x^{2}-\tfrac{1}{2}=0\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como não existe um método geral para a resolução de tais equações, vejamos um
+método que, sem ser <em class="ltx_emph ltx_font_upright">exato</em>, fornece pelo menos uma <em class="ltx_emph ltx_font_upright">aproximação</em>
+de <math id="Ch5.Thmex8.p2.m3" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>.
+<br class="ltx_break"></span></p>
+</div>
+<div id="Ch5.Thmex8.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A ideia é de localizar <math id="Ch5.Thmex8.p3.m1" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> usando recursivamente o Teorema do Valor intermediário.
+Para começar, observemos que como <math id="Ch5.Thmex8.p3.m2" class="ltx_Math" alttext="f(0)&gt;0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(0)&gt;0</annotation></semantics></math>, <math id="Ch5.Thmex8.p3.m3" class="ltx_Math" alttext="f(1)&lt;0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(1)&lt;0</annotation></semantics></math>,
+<math id="Ch5.Thmex8.p3.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> muda de sinal também no intervalo <math id="Ch5.Thmex8.p3.m5" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>, o que implica que
+<math id="Ch5.Thmex8.p3.m6" class="ltx_Math" alttext="x_{*}\in[0,1]" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x_{*}\in[0,1]</annotation></semantics></math>.
+<br class="ltx_break"></span></p>
+</div>
+<div id="Ch5.Thmex8.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calculemos então o valor de <math id="Ch5.Thmex8.p4.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> no meio do
+intervalo <math id="Ch5.Thmex8.p4.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math> e observemos que <math id="Ch5.Thmex8.p4.m3" class="ltx_Math" alttext="f(\frac{1}{2})&gt;0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(\frac{1}{2})&gt;0</annotation></semantics></math>. Portanto, <math id="Ch5.Thmex8.p4.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> muda
+de sinal entre <math id="Ch5.Thmex8.p4.m5" class="ltx_Math" alttext="\frac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math> e <math id="Ch5.Thmex8.p4.m6" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, o que implica que <math id="Ch5.Thmex8.p4.m7" class="ltx_Math" alttext="x_{*}\in[\frac{1}{2},1]" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mn>,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x_{*}\in[\frac{1}{2},1]</annotation></semantics></math>.
+Em seguida, <math id="Ch5.Thmex8.p4.m8" class="ltx_Math" alttext="f(\frac{3}{4})&lt;0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(\frac{3}{4})&lt;0</annotation></semantics></math> implica que <math id="Ch5.Thmex8.p4.m9" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> muda de sinal entre
+<math id="Ch5.Thmex8.p4.m10" class="ltx_Math" alttext="\frac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math> e <math id="Ch5.Thmex8.p4.m11" class="ltx_Math" alttext="\frac{3}{4}" display="inline"><semantics><mfrac><mn>3</mn><mn>4</mn></mfrac><annotation encoding="application/x-tex">\frac{3}{4}</annotation></semantics></math>, isto é, <math id="Ch5.Thmex8.p4.m12" class="ltx_Math" alttext="x_{*}\in[\frac{1}{2},\frac{3}{4}]" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x_{*}\in[\frac{1}{2},\frac{3}{4}]</annotation></semantics></math>. Continuando
+assim, obtemos uma sequência decrescente de intervalos encaixados,
+cada um contendo <math id="Ch5.Thmex8.p4.m13" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>:</span></p>
+<div id="Ch5.Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex13.m1" class="ltx_Math" alttext="[0,1]\supset[\tfrac{1}{2},1]\supset[\tfrac{1}{2},\tfrac{3}{4}]\supset\cdots" display="block"><semantics><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo>⊃</mo><mrow><mo stretchy="false">[</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mn>,1</mn></mrow><mo stretchy="false">]</mo></mrow><mo>⊃</mo><mrow><mo stretchy="false">[</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo stretchy="false">]</mo></mrow><mo>⊃</mo><mi mathvariant="normal">⋯</mi></mrow><annotation encoding="application/x-tex">[0,1]\supset[\tfrac{1}{2},1]\supset[\tfrac{1}{2},\tfrac{3}{4}]\supset\cdots</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Os tamanhos dos intervalos decrescem exponencialmente rápido: o
+primeiro tem tamanho <math id="Ch5.Thmex8.p4.m14" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, o segundo tamanho <math id="Ch5.Thmex8.p4.m15" class="ltx_Math" alttext="\frac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math>, etc., o
+<math id="Ch5.Thmex8.p4.m16" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-ésimo tem tamanho <math id="Ch5.Thmex8.p4.m17" class="ltx_Math" alttext="2^{-n}" display="inline"><semantics><msup><mn>2</mn><mrow><mo>−</mo><mi>n</mi></mrow></msup><annotation encoding="application/x-tex">2^{-n}</annotation></semantics></math>.
+Logo, qualquer ponto do <math id="Ch5.Thmex8.p4.m18" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-ésimo intervalo dá uma aproximação
+de <math id="Ch5.Thmex8.p4.m19" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> com uma precisão de <math id="Ch5.Thmex8.p4.m20" class="ltx_Math" alttext="2^{-n}" display="inline"><semantics><msup><mn>2</mn><mrow><mo>−</mo><mi>n</mi></mrow></msup><annotation encoding="application/x-tex">2^{-n}</annotation></semantics></math>.
+<br class="ltx_break"></span></p>
+</div>
+<div id="Ch5.Thmex8.p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">O método descrito acima, que consiste em usar o Teorema do Valor
+intermediário a cada etapa, é chamado de <em class="ltx_emph ltx_font_upright">método da bisseção</em>.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch5.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch5.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6.8 Linearização ‣ Capítulo 6 Derivada ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch6.S7.html" title="6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="next" href="Ch6.S9.html" title="6.9 Derivação implícita ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S1.html" title="6.1 Retas e gráficos de funções ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S2.html" title="6.2 Reta tangente e derivada ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S3.html" title="6.3 A derivada como função ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S4.html" title="6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S5.html" title="6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S6.html" title="6.6 Derivada e Variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S7.html" title="6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S9.html" title="6.9 Derivação implícita ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S10.html" title="6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S11.html" title="6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="linearização, reta, tangente">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="6.1" data-path="Ch6.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S1.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Retas e gráficos de funções</a></li>
+<li data-level="6.2" data-path="Ch6.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S2.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Reta tangente e derivada</a></li>
+<li data-level="6.3" data-path="Ch6.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S3.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>A derivada como função</a></li>
+<li data-level="6.4" data-path="Ch6.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S4.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>Regras de derivação</a></li>
+<li data-level="6.5" data-path="Ch6.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S5.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.5 </span></b>O Teorema de Rolle</a></li>
+<li data-level="6.6" data-path="Ch6.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S6.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.6 </span></b>Derivada e Variação</a></li>
+<li data-level="6.7" data-path="Ch6.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S7.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.7 </span></b>Velocidade, aceleração, taxa de
+variação</a></li>
+<li data-level="6.8" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.8 </span></b>Linearização</a></li>
+<li data-level="6.9" data-path="Ch6.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S9.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.9 </span></b>Derivação implícita</a></li>
+<li data-level="6.10" data-path="Ch6.S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S10.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.10 </span></b>Convexidade, concavidade</a></li>
+<li data-level="6.11" data-path="Ch6.S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S11.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.11 </span></b>A Regra de Bernoulli-l’Hôpital</a></li>
+</ol>
+</li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Linearização</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">6.8</span> Linearização</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">A derivada fornece um jeito eficiente de aproximar funções.
+De fato, ao olhar <em class="ltx_emph ltx_font_italic">localmente</em> o gráfico de uma função <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> derivável
+em torno de um
+ponto <math id="p1.m2" class="ltx_Math" alttext="P=(a,f(a))" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P=(a,f(a))</annotation></semantics></math>, vemos que este é quase indistinguível da sua reta
+tangente:</p>
+</div>
+<div id="p2" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-111.svg" alt="" id="g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="217" height="118"></div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Tornemos essa observação mais quantitativa.
+A reta tangente tem inclinação dada pela derivada de <math id="p3.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em <math id="p3.m2" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>:</p>
+<div id="Ch6.Ex84" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex84.m1" class="ltx_Math" alttext="f^{\prime}(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">A existência do limite acima significa que quando <math id="p3.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> fica
+suficientemente perto de <math id="p3.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>, então o quociente
+<math id="p3.m5" class="ltx_Math" alttext="\frac{f(x)-f(a)}{x-a}" display="inline"><semantics><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{f(x)-f(a)}{x-a}</annotation></semantics></math> pode ser aproximado pelo número
+<math id="p3.m6" class="ltx_Math" alttext="f^{\prime}(a)" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(a)</annotation></semantics></math>, o que pode ser escrito informalmente</p>
+<div id="Ch6.Ex85" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex85.m1" class="ltx_Math" alttext="\frac{f(x)-f(a)}{x-a}\simeq f^{\prime}(a)\,." display="block"><semantics><mrow><mrow><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo>≃</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\frac{f(x)-f(a)}{x-a}\simeq f^{\prime}(a)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Rerranjando obtemos</p>
+<div id="Ch6.E19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E19.m1" class="ltx_Math" alttext="f(x)\simeq\underbrace{f(a)+f^{\prime}(a)(x-a)}_{\text{reta tangente em $P$}}\,." display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><munder><munder accentunder="true"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⏟</mo></munder><mrow><mtext>reta tangente em </mtext><mi>P</mi></mrow></munder></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">f(x)\simeq\underbrace{f(a)+f^{\prime}(a)(x-a)}_{\text{reta tangente em $P$}}\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.19)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Em função da variável <math id="p3.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, o lado direito dessa expressão
+representa a reta tangente ao gráfico de <math id="p3.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> no ponto <math id="p3.m9" class="ltx_Math" alttext="(a,f(a))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a,f(a))</annotation></semantics></math>.
+Assim, (<a href="#Ch6.E19" title="In 6.8 Linearização ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.19</span></a>) dá uma aproximação de <math id="p3.m10" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> para <math id="p3.m11" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> numa
+vizinhança de <math id="p3.m12" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>; a reta <math id="p3.m13" class="ltx_Math" alttext="y=f(a)+f^{\prime}(a)(x-a)" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">y=f(a)+f^{\prime}(a)(x-a)</annotation></semantics></math> é chamada <span class="ltx_text ltx_font_bold">linearização de
+<math id="p3.m14" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em torno <math id="p3.m15" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></span>.</p>
+</div>
+<div id="Ch6.Thmex23" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.23</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex23.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Já vimos que a linearização de <math id="Ch6.Thmex23.p1.m1" class="ltx_Math" alttext="f(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{2}</annotation></semantics></math> em torno de <math id="Ch6.Thmex23.p1.m2" class="ltx_Math" alttext="x=-1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">x=-1</annotation></semantics></math> é dada
+por <math id="Ch6.Thmex23.p1.m3" class="ltx_Math" alttext="f(x)\simeq-2x-1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">f(x)\simeq-2x-1</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmex24" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.24</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex24.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para seno e cosseno, temos (lembre do Exercício
+<a href="Ch6.S3.html#Ch6.Thmexo14" title="Exercício 6.14. ‣ 6.3.2 Derivar as funções trigonométricas ‣ 6.3 A derivada como função ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.14</span></a>):</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Em torno de </span><math id="I1.i1.p1.m1" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">: </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="\operatorname{sen}x\simeq x" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≃</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}x\simeq x</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="\cos x\simeq 1" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≃</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\cos x\simeq 1</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Em torno de </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="a=\tfrac{\pi}{2}" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">a=\tfrac{\pi}{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic">:
+</span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="\operatorname{sen}x\simeq 1" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≃</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{sen}x\simeq 1</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="\cos x\simeq-(x-\tfrac{\pi}{2})" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≃</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\cos x\simeq-(x-\tfrac{\pi}{2})</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Em torno de </span><math id="I1.i3.p1.m1" class="ltx_Math" alttext="a=\pi" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">a=\pi</annotation></semantics></math><span class="ltx_text ltx_font_italic">: </span><math id="I1.i3.p1.m2" class="ltx_Math" alttext="\operatorname{sen}x\simeq-(x-\pi)" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≃</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}x\simeq-(x-\pi)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i3.p1.m3" class="ltx_Math" alttext="\cos x\simeq-1" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≃</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\cos x\simeq-1</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch6.Thmexo43" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.43</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo43.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule a linearização de <math id="Ch6.Thmexo43.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em torno de <math id="Ch6.Thmexo43.p1.m2" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.</span></p>
+<div class="ltx_pagination ltx_role_start_2_columns"></div>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="f(x)=e^{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">f(x)=e^{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="a=0,-1" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">a=0,-1</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="f(x)=\ln(1+x)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)=\ln(1+x)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="f(x)=\frac{x}{x-1}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{x}{x-1}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i3.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="f(x)=e^{-\frac{x^{2}}{2}}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">f(x)=e^{-\frac{x^{2}}{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i4.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="f(x)=\operatorname{sen}x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i5.p1.m2" class="ltx_Math" alttext="a=0,\tfrac{\pi}{2},\pi" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>,</mo><mi>π</mi></mrow></mrow><annotation encoding="application/x-tex">a=0,\tfrac{\pi}{2},\pi</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i6.p1.m1" class="ltx_Math" alttext="f(x)=\sqrt{1+x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">f(x)=\sqrt{1+x}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i6.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_2_columns"></div>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Linearização é usada em muitas situações práticas, com o intuito de
+<em class="ltx_emph ltx_font_italic">simplificar</em> a complexidade de uma função perto de um ponto. Ela pode
+também ser usada como um simples método de cálculo, como no seguinte exemplo.</p>
+</div>
+<div id="Ch6.Thmex25" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.25</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex25.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como calcular <math id="Ch6.Thmex25.p1.m1" class="ltx_Math" alttext="\sqrt{9.12}" display="inline"><semantics><msqrt><mn>9.12</mn></msqrt><annotation encoding="application/x-tex">\sqrt{9.12}</annotation></semantics></math>, <em class="ltx_emph ltx_font_upright">sem calculadora</em>?
+Observe que <math id="Ch6.Thmex25.p1.m2" class="ltx_Math" alttext="\sqrt{9}=3" display="inline"><semantics><mrow><msqrt><mn>9</mn></msqrt><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\sqrt{9}=3</annotation></semantics></math>, então o número procurado deve ser perto de <math id="Ch6.Thmex25.p1.m3" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>. Se
+<math id="Ch6.Thmex25.p1.m4" class="ltx_Math" alttext="f(x)=\sqrt{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow><annotation encoding="application/x-tex">f(x)=\sqrt{x}</annotation></semantics></math>, temos <math id="Ch6.Thmex25.p1.m5" class="ltx_Math" alttext="f(9)=3" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">f(9)=3</annotation></semantics></math>, e queremos <math id="Ch6.Thmex25.p1.m6" class="ltx_Math" alttext="f(9.12)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9.12</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(9.12)</annotation></semantics></math>. Como <math id="Ch6.Thmex25.p1.m7" class="ltx_Math" alttext="9.12" display="inline"><semantics><mn>9.12</mn><annotation encoding="application/x-tex">9.12</annotation></semantics></math> é próximo de
+<math id="Ch6.Thmex25.p1.m8" class="ltx_Math" alttext="9" display="inline"><semantics><mn>9</mn><annotation encoding="application/x-tex">9</annotation></semantics></math>, façamos uma linearização de <math id="Ch6.Thmex25.p1.m9" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em o de <math id="Ch6.Thmex25.p1.m10" class="ltx_Math" alttext="9" display="inline"><semantics><mn>9</mn><annotation encoding="application/x-tex">9</annotation></semantics></math>: como
+<math id="Ch6.Thmex25.p1.m11" class="ltx_Math" alttext="f^{\prime}(x)=\frac{1}{2\sqrt{x}}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>x</mi></msqrt></mrow></mfrac></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=\frac{1}{2\sqrt{x}}</annotation></semantics></math>, temos para <math id="Ch6.Thmex25.p1.m12" class="ltx_Math" alttext="x\simeq 9" display="inline"><semantics><mrow><mi>x</mi><mo>≃</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">x\simeq 9</annotation></semantics></math>:</span></p>
+<div id="Ch6.Ex86" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex86.m1" class="ltx_Math" alttext="f(x)\simeq f(9)+f^{\prime}(9)(x-9)=3+\tfrac{1}{6}(x-9)\,." display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>9</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>6</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>9</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f(x)\simeq f(9)+f^{\prime}(9)(x-9)=3+\tfrac{1}{6}(x-9)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Logo, <math id="Ch6.Thmex25.p1.m13" class="ltx_Math" alttext="f(9.12)\simeq 3.02" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9.12</mn><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mn>3.02</mn></mrow><annotation encoding="application/x-tex">f(9.12)\simeq 3.02</annotation></semantics></math>.
+Esse número é uma aproximação boa do verdadeiro valor, que pode ser obtido com
+uma calculadora: <math id="Ch6.Thmex25.p1.m14" class="ltx_Math" alttext="\sqrt{9.12}=3.019933..." display="inline"><semantics><mrow><msqrt><mn>9.12</mn></msqrt><mo>=</mo><mrow><mn>3.019933</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">\sqrt{9.12}=3.019933...</annotation></semantics></math></span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo44" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.44</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo44.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Dê um valor aproximado de <math id="Ch6.Thmexo44.p1.m1" class="ltx_Math" alttext="\sqrt{3.99}" display="inline"><semantics><msqrt><mn>3.99</mn></msqrt><annotation encoding="application/x-tex">\sqrt{3.99}</annotation></semantics></math>,
+<math id="Ch6.Thmexo44.p1.m2" class="ltx_Math" alttext="\ln(1.0123)" display="inline"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1.0123</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(1.0123)</annotation></semantics></math>, <math id="Ch6.Thmexo44.p1.m3" class="ltx_Math" alttext="\sqrt{101}" display="inline"><semantics><msqrt><mn>101</mn></msqrt><annotation encoding="application/x-tex">\sqrt{101}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmobs7" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 6.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmobs7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Em Cálculo II serão estudadas aproximações de uma função <math id="Ch6.Thmobs7.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em torno
+de um ponto <math id="Ch6.Thmobs7.p1.m2" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>, que vão além da aproximação linear. Por exemplo, uma
+aproximação de <math id="Ch6.Thmobs7.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> de ordem dois é da forma:</span></p>
+<div id="Ch6.Ex87" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex87.m1" class="ltx_Math" alttext="f(x)\simeq f(a)+f^{\prime}(a)(x-a)+\tfrac{1}{2}f^{\prime\prime}(a)(x-a)^{2}\,," display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">f(x)\simeq f(a)+f^{\prime}(a)(x-a)+\tfrac{1}{2}f^{\prime\prime}(a)(x-a)^{2}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">onde <math id="Ch6.Thmobs7.p1.m4" class="ltx_Math" alttext="f^{\prime\prime}(a)" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(a)</annotation></semantics></math> é a <em class="ltx_emph ltx_font_upright">segunda derivada</em> de <math id="Ch6.Thmobs7.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em <math id="Ch6.Thmobs7.p1.m6" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch6.S7.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch6.S9.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

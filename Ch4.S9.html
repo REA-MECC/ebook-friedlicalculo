@@ -1,0 +1,427 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.9 Exercícios de revisão ‣ Capítulo 4 Limites ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch4.S8.html" title="4.8 O limite lim_{𝑥→∞}{𝑎^𝑥/𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="next" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="section" href="Ch4.S1.html" title="4.1 Limites lim_{𝑥→±∞}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S2.html" title="4.2 Limites laterais: lim_{𝑥→𝑎^±}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S3.html" title="4.3 Limites lim_{𝑥→𝑎}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S4.html" title="4.4 Indeterminações do tipo “0/0” ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S5.html" title="4.5 Limites laterais infinitos, assíntotas verticais ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S6.html" title="4.6 Mudar de variável ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S7.html" title="4.7 O limite 𝑒=lim_{𝑥→∞}{(1+{1/𝑥})^𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S8.html" title="4.8 O limite lim_{𝑥→∞}{𝑎^𝑥/𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Limites <math class="ltx_Math" alttext="\lim_{x\to\pm\infty}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\pm\infty}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.2" data-path="Ch4.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S2.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Limites laterais: <math class="ltx_Math" alttext="\lim_{x\to a^{\pm}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>±</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{\pm}}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Limites <math class="ltx_Math" alttext="\lim_{x\to a}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Indeterminações do tipo “<math class="ltx_Math" alttext="\tfrac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\tfrac{0}{0}</annotation></semantics></math>”</a></li>
+<li data-level="4.5" data-path="Ch4.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S5.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.5 </span></b>Limites laterais infinitos, assíntotas verticais</a></li>
+<li data-level="4.6" data-path="Ch4.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S6.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.6 </span></b>Mudar de variável</a></li>
+<li data-level="4.7" data-path="Ch4.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S7.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.7 </span></b>O limite <math class="ltx_Math" alttext="e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}" display="inline"><semantics><mrow><mi>e</mi><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>x</mi></msup></mrow></mrow><annotation encoding="application/x-tex">e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}</annotation></semantics></math></a></li>
+<li data-level="4.8" data-path="Ch4.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S8.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.8 </span></b>O limite
+<math class="ltx_Math" alttext="\lim_{x\to\infty}\frac{a^{x}}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msup><mi>a</mi><mi>x</mi></msup><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{a^{x}}{x}</annotation></semantics></math></a></li>
+<li data-level="4.9" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.9 </span></b>Exercícios de revisão</a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Exercícios de revisão</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4.9</span> Exercícios de revisão</h1>
+
+<div id="Ch4.Thmexo30" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.30</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo30.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a função</span></p>
+<div id="Ch4.Ex124" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex124.m1" class="ltx_Math" alttext="f(x)=\begin{cases}2x+2&amp;\text{ se }x&lt;0\,,\\
+x^{2}-2&amp;\text{ se }0\leq x&lt;2\,,\\
+2&amp;\text{ se }x\geq 2\,.\\
+\end{cases}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>2</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mn>0</mn></mrow><mo>≤</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mn>2</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≥</mo><mn>2</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(x)=\begin{cases}2x+2&amp;\text{ se }x&lt;0\,,\\
+x^{2}-2&amp;\text{ se }0\leq x&lt;2\,,\\
+2&amp;\text{ se }x\geq 2\,.\\
+\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule os limites
+<math id="Ch4.Thmexo30.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{-}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>−</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{-}}f(x)</annotation></semantics></math>,
+<math id="Ch4.Thmexo30.p1.m2" class="ltx_Math" alttext="\lim_{x\to 0^{+}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}f(x)</annotation></semantics></math>, <math id="Ch4.Thmexo30.p1.m3" class="ltx_Math" alttext="\lim_{x\to 0}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}f(x)</annotation></semantics></math>, <math id="Ch4.Thmexo30.p1.m4" class="ltx_Math" alttext="\lim_{x\to 2^{-}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>2</mn><mo>−</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 2^{-}}f(x)</annotation></semantics></math>, <math id="Ch4.Thmexo30.p1.m5" class="ltx_Math" alttext="\lim_{x\to 2^{+}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>2</mn><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 2^{+}}f(x)</annotation></semantics></math>,
+<math id="Ch4.Thmexo30.p1.m6" class="ltx_Math" alttext="\lim_{x\to 2}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>2</mn></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 2}f(x)</annotation></semantics></math>. Em seguida, interprete esses limites no gráfico de <math id="Ch4.Thmexo30.p1.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch4.Thmexo31" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.31</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo31.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere um ponto <math id="Ch4.Thmexo31.p1.m1" class="ltx_Math" alttext="Q" display="inline"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> na parábola <math id="Ch4.Thmexo31.p1.m2" class="ltx_Math" alttext="y=x^{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=x^{2}</annotation></semantics></math>.
+Seja <math id="Ch4.Thmexo31.p1.m3" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> o ponto meio do segmento <math id="Ch4.Thmexo31.p1.m4" class="ltx_Math" alttext="OQ" display="inline"><semantics><mrow><mi>O</mi><mo>⁢</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">OQ</annotation></semantics></math> (<math id="Ch4.Thmexo31.p1.m5" class="ltx_Math" alttext="O" display="inline"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math> é a origem) e seja
+<math id="Ch4.Thmexo31.p1.m6" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> a reta perpendicular ao segmento <math id="Ch4.Thmexo31.p1.m7" class="ltx_Math" alttext="OQ" display="inline"><semantics><mrow><mi>O</mi><mo>⁢</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">OQ</annotation></semantics></math>, passando por <math id="Ch4.Thmexo31.p1.m8" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>. Seja <math id="Ch4.Thmexo31.p1.m9" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+a interseção de <math id="Ch4.Thmexo31.p1.m10" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> com o eixo <math id="Ch4.Thmexo31.p1.m11" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>. Estude o que acontece com <math id="Ch4.Thmexo31.p1.m12" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> quando
+<math id="Ch4.Thmexo31.p1.m13" class="ltx_Math" alttext="Q" display="inline"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> varia. O que acontece com <math id="Ch4.Thmexo31.p1.m14" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> no limite <math id="Ch4.Thmexo31.p1.m15" class="ltx_Math" alttext="Q\to O" display="inline"><semantics><mrow><mi>Q</mi><mo stretchy="false">→</mo><mi>O</mi></mrow><annotation encoding="application/x-tex">Q\to O</annotation></semantics></math>?</span></p>
+</div>
+</div>
+<div id="Ch4.Thmexo32" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.32</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo32.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere um círculo <math id="Ch4.Thmexo32.p1.m1" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> de raio <math id="Ch4.Thmexo32.p1.m2" class="ltx_Math" alttext="r&gt;0" display="inline"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&gt;0</annotation></semantics></math>. Considere a divisão de <math id="Ch4.Thmexo32.p1.m3" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> em <math id="Ch4.Thmexo32.p1.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+setores de aberturas iguais.
+Aproxime a área de cada setor pela área de um triângulo,
+escreva a área <math id="Ch4.Thmexo32.p1.m5" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math> do polígono definido pela união dos <math id="Ch4.Thmexo32.p1.m6" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> triângulos, e
+calcule <math id="Ch4.Thmexo32.p1.m7" class="ltx_Math" alttext="\lim_{n\to\infty}A_{n}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}A_{n}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch4.Thmexo33" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.33</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo33.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule o limite, se existir.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\lim_{x\to 2}\frac{x^{4}-16}{x-2}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>2</mn></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>16</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 2}\frac{x^{4}-16}{x-2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\lim_{x\to\frac{1}{3}}\frac{3x^{2}-x}{3x-1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></msub><mfrac><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mi>x</mi></mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\frac{1}{3}}\frac{3x^{2}-x}{3x-1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\lim_{x\to 3}\frac{x^{2}+4x-21}{x^{2}-x-6}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>3</mn></mrow></msub><mfrac><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>−</mo><mn>21</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>6</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 3}\frac{x^{2}+4x-21}{x^{2}-x-6}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\lim_{x\to 3}\frac{x^{2}+4x-21}{x^{2}-x+6}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>3</mn></mrow></msub><mfrac><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>−</mo><mn>21</mn></mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 3}\frac{x^{2}+4x-21}{x^{2}-x+6}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{x^{2}+4x-21}{x^{2}-x+6}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>−</mo><mn>21</mn></mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{x^{2}+4x-21}{x^{2}-x+6}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I1.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i6.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{x^{3}+1}{x^{3}+x^{2}-2x^{3}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>1</mn></mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{x^{3}+1}{x^{3}+x^{2}-2x^{3}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I1.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i7.p1.m1" class="ltx_Math" alttext="\lim_{x\to-1}\frac{\operatorname{sen}(x+1)}{1-x^{2}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></msub><mfrac><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to-1}\frac{\operatorname{sen}(x+1)}{1-x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I1.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i8.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\operatorname{sen}x}{(\cos x)^{2}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\operatorname{sen}x}{(\cos x)^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I1.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i9.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\log_{9}(\operatorname{sen}(x))" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mrow><msub><mi>log</mi><mn>9</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\log_{9}(\operatorname{sen}(x))</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I1.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i10.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\log_{9}(\cos(x))" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mrow><msub><mi>log</mi><mn>9</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\log_{9}(\cos(x))</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I1.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i11.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{1-\cos x}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{1-\cos x}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span><div id="I1.i12.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i12.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}(\frac{1}{x}-\frac{1}{e^{x}-1})" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}(\frac{1}{x}-\frac{1}{e^{x}-1})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i13" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">13.</span><div id="I1.i13.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i13.p1.m1" class="ltx_Math" alttext="\scriptstyle{\lim_{{x}\to{\pm\infty}}\sqrt{x^{2}-\pi x}-\sqrt{x^{2}-1}}" display="inline"><semantics><mrow><mrow><msub><mo mathsize="70%">lim</mo><mrow><mi mathsize="71%">x</mi><mo mathsize="71%" stretchy="false">→</mo><mrow><mo mathsize="71%">±</mo><mi mathsize="71%" mathvariant="normal">∞</mi></mrow></mrow></msub><msqrt><mrow><msup><mi mathsize="70%">x</mi><mn mathsize="71%">2</mn></msup><mo mathsize="70%">−</mo><mrow><mi mathsize="70%">π</mi><mo>⁢</mo><mi mathsize="70%">x</mi></mrow></mrow></msqrt></mrow><mo mathsize="70%">−</mo><msqrt><mrow><msup><mi mathsize="70%">x</mi><mn mathsize="71%">2</mn></msup><mo mathsize="70%">−</mo><mn mathsize="70%">1</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">\scriptstyle{\lim_{{x}\to{\pm\infty}}\sqrt{x^{2}-\pi x}-\sqrt{x^{2}-1}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i14" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">14.</span><div id="I1.i14.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i14.p1.m1" class="ltx_Math" alttext="\lim_{{x}\to{+\infty}}\operatorname{sen}(\frac{\pi}{2}+\frac{1}{1+x^{2}})" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{{x}\to{+\infty}}\operatorname{sen}(\frac{\pi}{2}+\frac{1}{1+x^{2}})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i15" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">15.</span><div id="I1.i15.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i15.p1.m1" class="ltx_Math" alttext="\lim_{{x}\to{+\infty}}\frac{x^{2}+3}{5+x^{3}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{{x}\to{+\infty}}\frac{x^{2}+3}{5+x^{3}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i16" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">16.</span><div id="I1.i16.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i16.p1.m1" class="ltx_Math" alttext="\lim_{{x}\to{+\infty}}\frac{1-x^{7}}{10x^{7}+1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>7</mn></msup></mrow><mrow><mrow><mn>10</mn><mo>⁢</mo><msup><mi>x</mi><mn>7</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{{x}\to{+\infty}}\frac{1-x^{7}}{10x^{7}+1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i17" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">17.</span><div id="I1.i17.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i17.p1.m1" class="ltx_Math" alttext="\lim_{h\to 0}\frac{\sqrt{3+3h}-\sqrt{3}}{h}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><msqrt><mrow><mn>3</mn><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>h</mi></mrow></mrow></msqrt><mo>−</mo><msqrt><mn>3</mn></msqrt></mrow><mi>h</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{h\to 0}\frac{\sqrt{3+3h}-\sqrt{3}}{h}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i18" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">18.</span><div id="I1.i18.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i18.p1.m1" class="ltx_Math" alttext="\lim_{h\to 1}\frac{\sqrt[3]{h}-1}{\sqrt{h}-1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></msub><mfrac><mrow><mroot><mi>h</mi><mn>3</mn></mroot><mo>−</mo><mn>1</mn></mrow><mrow><msqrt><mi>h</mi></msqrt><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{h\to 1}\frac{\sqrt[3]{h}-1}{\sqrt{h}-1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i19" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">19.</span><div id="I1.i19.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i19.p1.m1" class="ltx_Math" alttext="\lim_{x\to-\infty}\frac{5x^{2}+8x-3}{7x^{3}-4x-17}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mfrac><mrow><mrow><mrow><mn>5</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>8</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>−</mo><mn>3</mn></mrow><mrow><mrow><mn>7</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>17</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to-\infty}\frac{5x^{2}+8x-3}{7x^{3}-4x-17}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i20" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">20.</span><div id="I1.i20.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i20.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{x\operatorname{sen}x}{2-2\cos x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{x\operatorname{sen}x}{2-2\cos x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i21" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">21.</span><div id="I1.i21.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i21.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{1-\sqrt{1-4x^{2}}}{2x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mn>1</mn><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{1-\sqrt{1-4x^{2}}}{2x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch4.Thmexo34" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.34</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo34.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prove o Teorema <a href="Ch4.S1.html#Ch4.Thmteo1" title="Teorema 4.1. ‣ O “sanduiche” ‣ 4.1.3 Limites infinitos ‣ 4.1 Limites lim_{𝑥→±∞}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a>.</span></p>
+</div>
+</div>
+<div id="Ch4.Thmexo35" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.35</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo35.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule os limites</span></p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\sqrt{1-\cos x}}{|x|}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><msqrt><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></msqrt><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\sqrt{1-\cos x}}{|x|}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (Dica:
+</span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="1-\cos^{2}x=\dots" display="inline"><semantics><mrow><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">1-\cos^{2}x=\dots</annotation></semantics></math><span class="ltx_text ltx_font_italic">)</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\lim_{h\to 0}\frac{\operatorname{sen}(a+h)-\operatorname{sen}a}{h}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></mrow><mi>h</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{h\to 0}\frac{\operatorname{sen}(a+h)-\operatorname{sen}a}{h}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (Dica:
+</span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="\operatorname{sen}(a+b)=\dots" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}(a+b)=\dots</annotation></semantics></math><span class="ltx_text ltx_font_italic">)</span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="\lim_{x\to\alpha}\frac{x^{3}-\alpha^{3}}{\operatorname{sen}(\tfrac{\pi}{\alpha%
+}x)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>α</mi></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><msup><mi>α</mi><mn>3</mn></msup></mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle scriptlevel="-1"><mfrac><mi>π</mi><mi>α</mi></mfrac></mstyle><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\alpha}\frac{x^{3}-\alpha^{3}}{\operatorname{sen}(\tfrac{\pi}{\alpha%
+}x)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (Dica: </span><math id="I2.i3.p1.m2" class="ltx_Math" alttext="\lim_{x\to\alpha}\frac{x^{3}-\alpha^{3}}{x-\alpha}=\dots" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>α</mi></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><msup><mi>α</mi><mn>3</mn></msup></mrow><mrow><mi>x</mi><mo>−</mo><mi>α</mi></mrow></mfrac></mrow><mo>=</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\lim_{x\to\alpha}\frac{x^{3}-\alpha^{3}}{x-\alpha}=\dots</annotation></semantics></math><span class="ltx_text ltx_font_italic">)</span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para </span><math id="I2.i4.p1.m1" class="ltx_Math" alttext="a,b&gt;0" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a,b&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i4.p1.m2" class="ltx_Math" alttext="\lim_{x\to\tfrac{\pi}{3}}\frac{1-2\cos x}{\operatorname{sen}(\pi-3x)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mstyle scriptlevel="-1"><mfrac><mi>π</mi><mn>3</mn></mfrac></mstyle></mrow></msub><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\tfrac{\pi}{3}}\frac{1-2\cos x}{\operatorname{sen}(\pi-3x)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (Dica: </span><math id="I2.i4.p1.m3" class="ltx_Math" alttext="\pi-3x=3t" display="inline"><semantics><mrow><mrow><mi>π</mi><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>t</mi></mrow></mrow><annotation encoding="application/x-tex">\pi-3x=3t</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i4.p1.m4" class="ltx_Math" alttext="\cos(a+b)=\dots" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\cos(a+b)=\dots</annotation></semantics></math><span class="ltx_text ltx_font_italic">)</span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{1}{x}\ln(a^{x}+b^{x})" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>+</mo><msup><mi>b</mi><mi>x</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{1}{x}\ln(a^{x}+b^{x})</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (Dica:
+distinguir </span><math id="I2.i5.p1.m2" class="ltx_Math" alttext="a\geq b" display="inline"><semantics><mrow><mi>a</mi><mo>≥</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\geq b</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i5.p1.m3" class="ltx_Math" alttext="a&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a&lt;b</annotation></semantics></math><span class="ltx_text ltx_font_italic">)</span></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para </span><math id="I2.i6.p1.m1" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i6.p1.m2" class="ltx_Math" alttext="x_{0}\in\mathbb{R}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x_{0}\in\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+</span><math id="I2.i6.p1.m3" class="ltx_Math" alttext="\lim_{h\to 0}\frac{(x+h)^{n}-x^{n}}{h}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>−</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><mi>h</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{h\to 0}\frac{(x+h)^{n}-x^{n}}{h}</annotation></semantics></math><span class="ltx_text ltx_font_italic">
+(Dica: use uma mudança de variável </span><math id="I2.i6.p1.m4" class="ltx_Math" alttext="z=x+h" display="inline"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></mrow><annotation encoding="application/x-tex">z=x+h</annotation></semantics></math><span class="ltx_text ltx_font_italic"> e faça uma
+divisão, ou então
+use a fórmula do binômio de Newton para expandir </span><math id="I2.i6.p1.m5" class="ltx_Math" alttext="(x_{0}+h)^{n}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><annotation encoding="application/x-tex">(x_{0}+h)^{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.)</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S8.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

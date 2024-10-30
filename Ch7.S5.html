@@ -1,0 +1,353 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>7.5 A Lei de Snell ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch7.S4.html" title="7.4 Problemas de otimização ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="next" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="section" href="Ch7.S1.html" title="7.1 Extremos globais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S2.html" title="7.2 Extremos locais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S3.html" title="7.3 A procura de extremos em intervalos fechados ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S4.html" title="7.4 Problemas de otimização ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Lei de Snell, de refração, ângulo">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="7.1" data-path="Ch7.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S1.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.1 </span></b>Extremos globais</a></li>
+<li data-level="7.2" data-path="Ch7.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S2.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.2 </span></b>Extremos locais</a></li>
+<li data-level="7.3" data-path="Ch7.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S3.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.3 </span></b>A procura de extremos em intervalos
+fechados</a></li>
+<li data-level="7.4" data-path="Ch7.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S4.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.4 </span></b>Problemas de otimização</a></li>
+<li data-level="7.5" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.5 </span></b>A Lei de Snell</a></li>
+</ol>
+</li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>A Lei de Snell</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">7.5</span> A Lei de Snell</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Considere uma partícula que evolui na interface entre dois ambientes,
+<math id="p1.m1" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> e <math id="p1.m2" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> (veja a figura abaixo).
+Suponhamos que num ambiente dado, a partícula anda sempre em linha reta e que a
+partícula evolui no ambiente <math id="p1.m3" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> com uma
+velocidade constante <math id="p1.m4" class="ltx_Math" alttext="v_{1}" display="inline"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_{1}</annotation></semantics></math> e no ambiente <math id="p1.m5" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> com uma velocidade constante
+<math id="p1.m6" class="ltx_Math" alttext="v_{2}" display="inline"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_{2}</annotation></semantics></math>.
+Suponhamos também que a partícula queira viajar de um ponto <math id="p1.m7" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> no
+ambiente <math id="p1.m8" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> para um ponto <math id="p1.m9" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> no ambiente <math id="p1.m10" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>; qual estratégia a
+partícula deve adotar
+para <em class="ltx_emph ltx_font_italic">minimizar o seu tempo de viagem entre <math id="p1.m11" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="p1.m12" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math></em>?</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-131.svg" alt="" id="p1.g1" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="230" height="220"></div>
+<p class="ltx_p">É claro que se <math id="p1.m13" class="ltx_Math" alttext="v_{1}=v_{2}" display="inline"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">v_{1}=v_{2}</annotation></semantics></math>, a partícula não precisa se preocupar com a
+interface, e pode andar em linha reta de <math id="p1.m14" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> até <math id="p1.m15" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>. Mas se porventura
+<math id="p1.m16" class="ltx_Math" alttext="v_{1}&lt;v_{2}" display="inline"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">v_{1}&lt;v_{2}</annotation></semantics></math>, a partícula precisa escolher um ponto <math id="p1.m17" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> na
+interface entre <math id="p1.m18" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> e <math id="p1.m19" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>, mais perto de <math id="p1.m20" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> do que de <math id="p1.m21" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>, andar em linha reta
+de <math id="p1.m22" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> até <math id="p1.m23" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>, para depois andar em linha reta de <math id="p1.m24" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> até <math id="p1.m25" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>.
+O problema é de saber como escolher <math id="p1.m26" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>, de maneira tal que o tempo total de
+viagem seja mínimo. Modelemos a situação da seguinte maneira:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-132.svg" alt="" id="p1.g2" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="217" height="223"></div>
+<p class="ltx_p">A nossa variável será <math id="p1.m27" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, a distância entre <math id="p1.m28" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> e a projeção de <math id="p1.m29" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> na
+horizontal.
+Quando <math id="p1.m30" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é fixo, a distância de <math id="p1.m31" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> até <math id="p1.m32" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> é dada por
+<math id="p1.m33" class="ltx_Math" alttext="d_{1}=\sqrt{h_{1}^{2}+x^{2}}" display="inline"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><msqrt><mrow><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">d_{1}=\sqrt{h_{1}^{2}+x^{2}}</annotation></semantics></math>, e a distância de <math id="p1.m34" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> até <math id="p1.m35" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> é dada por
+<math id="p1.m36" class="ltx_Math" alttext="d_{2}=\sqrt{h_{2}^{2}+(L-x)^{2}}" display="inline"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><msqrt><mrow><msubsup><mi>h</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>L</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">d_{2}=\sqrt{h_{2}^{2}+(L-x)^{2}}</annotation></semantics></math>.
+Indo de <math id="p1.m37" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> até <math id="p1.m38" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>, a partícula percorre a distância <math id="p1.m39" class="ltx_Math" alttext="d_{1}" display="inline"><semantics><msub><mi>d</mi><mn>1</mn></msub><annotation encoding="application/x-tex">d_{1}</annotation></semantics></math> em um
+tempo <math id="p1.m40" class="ltx_Math" alttext="t_{1}=\frac{d_{1}}{v_{1}}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><mfrac><msub><mi>d</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">t_{1}=\frac{d_{1}}{v_{1}}</annotation></semantics></math>, e indo de <math id="p1.m41" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> até <math id="p1.m42" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>, percorre a distância <math id="p1.m43" class="ltx_Math" alttext="d_{2}" display="inline"><semantics><msub><mi>d</mi><mn>2</mn></msub><annotation encoding="application/x-tex">d_{2}</annotation></semantics></math>
+em um
+tempo <math id="p1.m44" class="ltx_Math" alttext="t_{2}=\frac{d_{2}}{v_{2}}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mfrac><msub><mi>d</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">t_{2}=\frac{d_{2}}{v_{2}}</annotation></semantics></math>. Logo, o tempo total de viagem de <math id="p1.m45" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> até <math id="p1.m46" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> é
+de <math id="p1.m47" class="ltx_Math" alttext="T=t_{1}+t_{2}" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">T=t_{1}+t_{2}</annotation></semantics></math>. Indicando explicitamente a dependência em <math id="p1.m48" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,</p>
+<div id="Ch7.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex9.m1" class="ltx_Math" alttext="T(x)=\frac{\sqrt{h_{1}^{2}+x^{2}}}{v_{1}}+\frac{\sqrt{h_{2}^{2}+(L-x)^{2}}}{v_%
+{2}}\,." display="block"><semantics><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msqrt><mrow><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><msub><mi>v</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><msqrt><mrow><msubsup><mi>h</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>L</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><msub><mi>v</mi><mn>2</mn></msub></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">T(x)=\frac{\sqrt{h_{1}^{2}+x^{2}}}{v_{1}}+\frac{\sqrt{h_{2}^{2}+(L-x)^{2}}}{v_%
+{2}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Assim, o nosso objetivo é <em class="ltx_emph ltx_font_italic">achar o mínimo global da função <math id="p1.m49" class="ltx_Math" alttext="T(x)" display="inline"><semantics><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(x)</annotation></semantics></math>,
+para <math id="p1.m50" class="ltx_Math" alttext="x\in[0,L]" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>L</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[0,L]</annotation></semantics></math>.</em> Comecemos procurando os pontos críticos de <math id="p1.m51" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> em
+<math id="p1.m52" class="ltx_Math" alttext="(0,L)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>L</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,L)</annotation></semantics></math>, isto é, os <math id="p1.m53" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> tais que <math id="p1.m54" class="ltx_Math" alttext="T^{\prime}(x_{*})=0" display="inline"><semantics><mrow><mrow><msup><mi>T</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">T^{\prime}(x_{*})=0</annotation></semantics></math>, isto é,</p>
+</div>
+<div id="p2" class="ltx_para">
+<div id="Ch7.E1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.E1.m1" class="ltx_Math" alttext="\frac{x_{*}}{v_{1}\sqrt{h_{1}^{2}+x_{*}^{2}}}-\frac{L-x_{*}}{v_{2}\sqrt{h_{2}^%
+{2}+(L-x_{*})^{2}}}=0\,." display="block"><semantics><mrow><mrow><mrow><mfrac><msub><mi>x</mi><mo>∗</mo></msub><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>⁢</mo><msqrt><mrow><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mo>∗</mo><mn>2</mn></msubsup></mrow></msqrt></mrow></mfrac><mo>−</mo><mfrac><mrow><mi>L</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>⁢</mo><msqrt><mrow><msubsup><mi>h</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>L</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\frac{x_{*}}{v_{1}\sqrt{h_{1}^{2}+x_{*}^{2}}}-\frac{L-x_{*}}{v_{2}\sqrt{h_{2}^%
+{2}+(L-x_{*})^{2}}}=0\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(7.1)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Essa equação é do quarto grau em <math id="p2.m1" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>. Pode ser mostrado que a sua solução
+existe, é única, e dá o mínimo global de <math id="p2.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> em <math id="p2.m3" class="ltx_Math" alttext="[0,L]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>L</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,L]</annotation></semantics></math>.
+Em vez de
+buscar o valor exato do <math id="p2.m4" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>, daremos uma interpretação geométrica da solução.
+De fato, observe que em (<a href="#Ch7.E1" title="In 7.5 A Lei de Snell ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.1</span></a>) aparecem dois quocientes
+que podem ser interpretados,
+respectivamente, como os senos dos ângulos entre <math id="p2.m5" class="ltx_Math" alttext="AC" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">AC</annotation></semantics></math> e a vertical, e <math id="p2.m6" class="ltx_Math" alttext="BC" display="inline"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">BC</annotation></semantics></math> e a
+vertical:</p>
+<div id="Ch7.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex10.m1" class="ltx_Math" alttext="\frac{x_{*}}{\sqrt{h_{1}^{2}+x_{*}^{2}}}\equiv\operatorname{sen}\theta_{1}\,,%
+\quad\frac{L-x_{*}}{\sqrt{h_{2}^{2}+(L-x_{*})^{2}}}\equiv\operatorname{sen}%
+\theta_{2}\,." display="block"><semantics><mrow><mrow><mrow><mfrac><msub><mi>x</mi><mo>∗</mo></msub><msqrt><mrow><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mo>∗</mo><mn>2</mn></msubsup></mrow></msqrt></mfrac><mo>≡</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><msub><mi>θ</mi><mn>1</mn></msub></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mfrac><mrow><mi>L</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><msqrt><mrow><msubsup><mi>h</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>L</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mfrac><mo>≡</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><msub><mi>θ</mi><mn>2</mn></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{x_{*}}{\sqrt{h_{1}^{2}+x_{*}^{2}}}\equiv\operatorname{sen}\theta_{1}\,,%
+\quad\frac{L-x_{*}}{\sqrt{h_{2}^{2}+(L-x_{*})^{2}}}\equiv\operatorname{sen}%
+\theta_{2}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Portanto, vemos que o mínimo de <math id="p2.m7" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é atingido uma vez que os ângulos
+<math id="p2.m8" class="ltx_Math" alttext="\theta_{1}" display="inline"><semantics><msub><mi>θ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\theta_{1}</annotation></semantics></math> e <math id="p2.m9" class="ltx_Math" alttext="\theta_{2}" display="inline"><semantics><msub><mi>θ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\theta_{2}</annotation></semantics></math> são tais que</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-133.svg" alt="" id="p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="306" height="138"></div>
+<p class="ltx_p">Em ótica, quando um raio de luz passa de ambiente <math id="p2.m10" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> para um ambiente <math id="p2.m11" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>,
+observe-se um desvio ao atravessar a interface;
+<math id="p2.m12" class="ltx_Math" alttext="\theta_{1}" display="inline"><semantics><msub><mi>θ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\theta_{1}</annotation></semantics></math> é chamado o <span class="ltx_text ltx_font_bold">ângulo de incidência</span>, <math id="p2.m13" class="ltx_Math" alttext="\theta_{2}" display="inline"><semantics><msub><mi>θ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\theta_{2}</annotation></semantics></math> o
+
+<span class="ltx_text ltx_font_bold">ângulo de refração</span>. O ângulo de refração depende das propriedades dos
+ambientes <math id="p2.m14" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> e <math id="p2.m15" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> via <math id="p2.m16" class="ltx_Math" alttext="v_{1}" display="inline"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_{1}</annotation></semantics></math> e <math id="p2.m17" class="ltx_Math" alttext="v_{2}" display="inline"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_{2}</annotation></semantics></math>, e a relação acima é chamada a
+<span class="ltx_text ltx_font_bold">Lei de Snell <span id="Ch7.footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_medium">2</span></span>
+                
+                
+                
+              <span class="ltx_text ltx_font_medium">Willebrord Snellius van Royen, Leiden, 1580 -
+1626.</span></span></span></span></span>.
+<br class="ltx_break"></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">No exemplo acima não obtivemos um valor explícito para o <math id="p3.m1" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> que minimize o
+tempo de viagem de <math id="p3.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> até <math id="p3.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>, mas aprendemos alguma coisa a respeito dos
+ângulos <math id="p3.m4" class="ltx_Math" alttext="\theta_{1}" display="inline"><semantics><msub><mi>θ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\theta_{1}</annotation></semantics></math> e <math id="p3.m5" class="ltx_Math" alttext="\theta_{2}" display="inline"><semantics><msub><mi>θ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\theta_{2}</annotation></semantics></math>. Em alguns casos particulares, <math id="p3.m6" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> pode
+ser calculado explicitamente:</p>
+</div>
+<div id="Ch7.Thmexo20" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.20</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo20.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um ponto <math id="Ch7.Thmexo20.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> flutuando a <math id="Ch7.Thmexo20.p1.m2" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> metros da praia precisa atingir um ponto <math id="Ch7.Thmexo20.p1.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+situado na beirada da água, a <math id="Ch7.Thmexo20.p1.m4" class="ltx_Math" alttext="L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> metros do ponto da praia mais perto de <math id="Ch7.Thmexo20.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.
+Supondo que <math id="Ch7.Thmexo20.p1.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> se move na água com uma velocidade <math id="Ch7.Thmexo20.p1.m7" class="ltx_Math" alttext="v_{1}" display="inline"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_{1}</annotation></semantics></math> e na areia com uma
+velocidade <math id="Ch7.Thmexo20.p1.m8" class="ltx_Math" alttext="v_{2}&gt;v_{1}" display="inline"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>&gt;</mo><msub><mi>v</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">v_{2}&gt;v_{1}</annotation></semantics></math>, elabore uma estratégia para que <math id="Ch7.Thmexo20.p1.m9" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> atinja <math id="Ch7.Thmexo20.p1.m10" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> o mais
+rápido possível. E se <math id="Ch7.Thmexo20.p1.m11" class="ltx_Math" alttext="v_{1}&lt;v_{2}" display="inline"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">v_{1}&lt;v_{2}</annotation></semantics></math>?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo21" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.21</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo21.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma partícula parte de um ponto <math id="Ch7.Thmexo21.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> para
+atingir o mais rápido possível
+um ponto <math id="Ch7.Thmexo21.p1.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> situado do outro lado de uma piscina redonda:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-134.svg" alt="" id="Ch7.Thmexo21.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="123" height="77"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch7.Thmexo21.p1.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> nada com uma velocidade de <math id="Ch7.Thmexo21.p1.m4" class="ltx_Math" alttext="2km/h" display="inline"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>m</mi></mrow><mo>/</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">2km/h</annotation></semantics></math> e anda
+com uma velocidade de <math id="Ch7.Thmexo21.p1.m5" class="ltx_Math" alttext="4km/h" display="inline"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>m</mi></mrow><mo>/</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">4km/h</annotation></semantics></math>, será que é melhor 1) dar a volta toda
+andando, 2) usar o caminho mais direto, atravessando a piscina
+nadando, 3) adotar uma outra estratégia?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo22" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.22</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo22.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a esquina do corredor em formato de L representado na figura
+abaixo (suponha-se que o corredor é infinitamente extenso nas
+direções perpendiculares).
+Qual é o tamanho <math id="Ch7.Thmexo22.p1.m1" class="ltx_Math" alttext="\ell" display="inline"><semantics><mi mathvariant="normal">ℓ</mi><annotation encoding="application/x-tex">\ell</annotation></semantics></math> da maior vara rígida que pode passar por esse
+corredor?</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-135.svg" alt="" id="Ch7.Thmexo22.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="218" height="175"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch7.S4.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch8.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

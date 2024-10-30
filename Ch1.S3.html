@@ -1,0 +1,880 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch1.S2.html" title="1.2 O plano cartesiano ‣ Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="next" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="section" href="Ch1.S1.html" title="1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="section" href="Ch1.S2.html" title="1.2 O plano cartesiano ‣ Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="cosseno, círculo trigonométrico, identidades trigonométricas, medido em graus, medido em radianos, seno, tangente, trigonometria, ângulo">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="1.1" data-path="Ch1.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S1.html" title="In Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1 </span></b>Números reais</a></li>
+<li data-level="1.2" data-path="Ch1.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S2.html" title="In Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.2 </span></b>O plano cartesiano</a></li>
+<li data-level="1.3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3 </span></b>Trigonometria</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="1.3.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3.1 </span></b>Medir ângulos no plano</a></li>
+<li data-level="1.3.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3.2 </span></b>Seno, cosseno e tangente</a></li>
+<li data-level="1.3.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3.3 </span></b>Identidades trigonométricas</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Trigonometria</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">1.3</span> Trigonometria</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">trigonometria</em> estabelece relações precisas entre os ângulos e os
+lados de um triângulo.
+Definiremos as três funções (mesmo se a própria noção de <em class="ltx_emph ltx_font_italic">função</em>
+será estudada no próximo capítulo)
+trigonométricas elementares, <math id="p1.m1" class="ltx_Math" alttext="\operatorname{sen}" display="inline"><semantics><mi>sen</mi><annotation encoding="application/x-tex">\operatorname{sen}</annotation></semantics></math> (seno), <math id="p1.m2" class="ltx_Math" alttext="\cos" display="inline"><semantics><mi>cos</mi><annotation encoding="application/x-tex">\cos</annotation></semantics></math> (cosseno) e <math id="p1.m3" class="ltx_Math" alttext="\tan" display="inline"><semantics><mi>tan</mi><annotation encoding="application/x-tex">\tan</annotation></semantics></math> (tangente), e
+daremos as suas propriedades básicas. Nos próximos capítulos olharemos
+mais de perto as propriedades analíticas dessas funções.</p>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.3.1</span> Medir ângulos no plano</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Para começar, é importante escolher uma <em class="ltx_emph ltx_font_italic">unidade</em> (como “metros” para
+comprimentos, ou “litros” para volumes) para medir um ângulo
+determinado pela abertura entre duas retas.
+Descreveremos as duas unidades mais usadas, <em class="ltx_emph ltx_font_italic">graus</em> e <em class="ltx_emph ltx_font_italic">radianos</em>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Os ângulos serão medidos a partir de uma reta horizontal, em sentido
+<em class="ltx_emph ltx_font_italic">antihorário</em>. A abertura mínima, naturalmente, é definida como
+valendo zero, qualquer que seja a unidade.
+O que precisa ser definido é o valor do <em class="ltx_emph ltx_font_italic">ângulo total</em>.
+Se o ângulo for medido em <span class="ltx_text ltx_font_bold">graus</span>,
+esse ângulo total é definido como valendo <math id="SS1.p2.m1" class="ltx_Math" alttext="360" display="inline"><semantics><mn>360</mn><annotation encoding="application/x-tex">360</annotation></semantics></math><span class="ltx_text ltx_font_bold"> graus</span>:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-15.svg" alt="" id="SS1.p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="140" height="88"></div>
+<p class="ltx_p">Uma vez que o ângulo total foi fixado, a medição dos outros se faz proporcionalmente: a
+metade do ângulo total vale <math id="SS1.p2.m2" class="ltx_Math" alttext="180" display="inline"><semantics><mn>180</mn><annotation encoding="application/x-tex">180</annotation></semantics></math> graus, o ângulo reto mede <math id="SS1.p2.m3" class="ltx_Math" alttext="90" display="inline"><semantics><mn>90</mn><annotation encoding="application/x-tex">90</annotation></semantics></math> graus, etc.
+A vantagem dessa unidade é que vários ângulos bastante usados em geometria tomam valores
+inteiros: <math id="SS1.p2.m4" class="ltx_Math" alttext="30" display="inline"><semantics><mn>30</mn><annotation encoding="application/x-tex">30</annotation></semantics></math>, <math id="SS1.p2.m5" class="ltx_Math" alttext="60" display="inline"><semantics><mn>60</mn><annotation encoding="application/x-tex">60</annotation></semantics></math>, <math id="SS1.p2.m6" class="ltx_Math" alttext="90" display="inline"><semantics><mn>90</mn><annotation encoding="application/x-tex">90</annotation></semantics></math>, <math id="SS1.p2.m7" class="ltx_Math" alttext="180" display="inline"><semantics><mn>180</mn><annotation encoding="application/x-tex">180</annotation></semantics></math>, <math id="SS1.p2.m8" class="ltx_Math" alttext="270" display="inline"><semantics><mn>270</mn><annotation encoding="application/x-tex">270</annotation></semantics></math>, etc.</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-16.svg" alt="" id="SS1.p2.g2" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="185" height="166"></div>
+<p class="ltx_p">Observe que apesar da posição do ângulo total coincidir com o ângulo
+nulo, eles devem ser considerados como distintos.
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">Fixar o ângulo total como sendo igual a <math id="SS1.p3.m1" class="ltx_Math" alttext="360" display="inline"><semantics><mn>360</mn><annotation encoding="application/x-tex">360</annotation></semantics></math> pode parecer arbitrário,
+e um jeito mais natural de definir o ângulo total é de usar a
+noção de comprimento usual na reta.
+De fato, considere o
+círculo de raio <math id="SS1.p3.m2" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> centrado na origem e, partindo do ponto <math id="SS1.p3.m3" class="ltx_Math" alttext="(1,0)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>1,0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,0)</annotation></semantics></math> (que corresponde
+a um ângulo de <math id="SS1.p3.m4" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>),
+ande ao longo do círculo no sentido antihorário. Quando tiver
+percorrido uma distância igual ao raio do círculo, o ângulo
+correspondente é definido como sendo de <math id="SS1.p3.m5" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math><span class="ltx_text ltx_font_bold"> (um)
+radiano</span>:</p>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-17.svg" alt="" id="SS1.g1" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="96" height="95"></div>
+</div>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">Observe que o ângulo total corresponde à circunferência de um círculo de raio <math id="SS1.p5.m1" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>:
+<math id="SS1.p5.m2" class="ltx_Math" alttext="2\pi" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">2\pi</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p6" class="ltx_para">
+<p class="ltx_p">Em geral, nessa apostila, os ângulos serão medidos em radianos. Se a medida de um ângulo
+em graus é <math id="SS1.p6.m1" class="ltx_Math" alttext="\alpha_{g}" display="inline"><semantics><msub><mi>α</mi><mi>g</mi></msub><annotation encoding="application/x-tex">\alpha_{g}</annotation></semantics></math> e em radianos é <math id="SS1.p6.m2" class="ltx_Math" alttext="\alpha_{r}" display="inline"><semantics><msub><mi>α</mi><mi>r</mi></msub><annotation encoding="application/x-tex">\alpha_{r}</annotation></semantics></math>,
+a conversão se faz da seguinte maneira: como o ângulo total mede <math id="SS1.p6.m3" class="ltx_Math" alttext="360" display="inline"><semantics><mn>360</mn><annotation encoding="application/x-tex">360</annotation></semantics></math> graus e <math id="SS1.p6.m4" class="ltx_Math" alttext="2\pi" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">2\pi</annotation></semantics></math>
+radianos, temos <math id="SS1.p6.m5" class="ltx_Math" alttext="\frac{360}{2\pi}=\frac{\alpha_{g}}{\alpha_{r}}" display="inline"><semantics><mrow><mfrac><mn>360</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>=</mo><mfrac><msub><mi>α</mi><mi>g</mi></msub><msub><mi>α</mi><mi>r</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{360}{2\pi}=\frac{\alpha_{g}}{\alpha_{r}}</annotation></semantics></math>. Portanto,</p>
+<div id="Ch1.E17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E17.m1" class="ltx_Math" alttext="\alpha_{g}=\frac{180}{\pi}\alpha_{r}\,,\quad\text{ ou }\alpha_{r}=\frac{\pi}{1%
+80}\alpha_{g}\,." display="block"><semantics><mrow><mrow><mrow><msub><mi>α</mi><mi>g</mi></msub><mo>=</mo><mrow><mfrac><mn>180</mn><mi>π</mi></mfrac><mo>⁢</mo><msub><mi>α</mi><mi>r</mi></msub></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mtext> ou </mtext><mo>⁢</mo><msub><mi>α</mi><mi>r</mi></msub></mrow><mo>=</mo><mrow><mfrac><mi>π</mi><mn>180</mn></mfrac><mo>⁢</mo><msub><mi>α</mi><mi>g</mi></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\alpha_{g}=\frac{180}{\pi}\alpha_{r}\,,\quad\text{ ou }\alpha_{r}=\frac{\pi}{1%
+80}\alpha_{g}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.17)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Assim, verifica-se por exemplo que um ângulo de <math id="SS1.p6.m6" class="ltx_Math" alttext="90" display="inline"><semantics><mn>90</mn><annotation encoding="application/x-tex">90</annotation></semantics></math> graus corresponde a
+<math id="SS1.p6.m7" class="ltx_Math" alttext="\frac{\pi}{180}90=\tfrac{\pi}{2}=1.57..." display="inline"><semantics><mrow><mrow><mfrac><mi>π</mi><mn>180</mn></mfrac><mo>⁢</mo><mn>90</mn></mrow><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mn>1.57</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">\frac{\pi}{180}90=\tfrac{\pi}{2}=1.57...</annotation></semantics></math> radianos.</p>
+</div>
+<div id="Ch1.Thmexo19" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.19</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo19.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">O ponteiro dos segundos de um relógio mede <math id="Ch1.Thmexo19.p1.m1" class="ltx_Math" alttext="20" display="inline"><semantics><mn>20</mn><annotation encoding="application/x-tex">20</annotation></semantics></math>
+centímetros. Qual distância a
+ponta desse ponteiro percorreu depois de uma hora e 15 minutos?</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo20" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.20</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo20.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estime a velocidade (em km/s) com a qual a lua gira em torno
+da terra, sabendo que a distância média terra-lua fica é de 384’400km
+e que uma volta dura aproximadamente um mês.</span></p>
+</div>
+</div>
+<div id="SS1.p7" class="ltx_para">
+<p class="ltx_p">Um ângulo <em class="ltx_emph ltx_font_italic">negativo</em> será interpretado como medido no sentido horário:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-18.svg" alt="" id="SS1.p7.g1" class="ltx_graphics ltx_centering ltx_img_portrait" style="vertical-align:-1px" width="50" height="65"></div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.3.2</span> Seno, cosseno e tangente</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Para poder definir as ligações entre os ângulos e os lados de um triângulo, é necessário
+fazer umas simplificações. Trabalharemos com um <span class="ltx_text ltx_font_bold">triângulo retângulo</span>,
+isto é, que possui um ângulo reto. Considere então o seguinte triângulo <math id="SS2.p1.m1" class="ltx_Math" alttext="ABC" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">ABC</annotation></semantics></math>, retângulo
+em <math id="SS2.p1.m2" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-19.svg" alt="" id="SS2.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="160" height="101"></div>
+<p class="ltx_p">Com respeito a <math id="SS2.p1.m3" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>, <math id="SS2.p1.m4" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> é chamado de <span class="ltx_text ltx_font_bold">cateto adjacente</span>, <math id="SS2.p1.m5" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> de
+<span class="ltx_text ltx_font_bold">cateto oposto</span>, e <math id="SS2.p1.m6" class="ltx_Math" alttext="c" display="inline"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math> de <span class="ltx_text ltx_font_bold">hipotenusa</span>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Se dois lados forem conhecidos, o terceiro pode ser calculado usando o Teorema de
+Pitágoras, e o valor do ângulo <math id="SS2.p2.m1" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> é determinado.
+Como qualquer triângulo semelhante a <math id="SS2.p2.m2" class="ltx_Math" alttext="ABC" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">ABC</annotation></semantics></math> tem os mesmos ângulos, <math id="SS2.p2.m3" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> é
+determinado uma vez que um dos quocientes <math id="SS2.p2.m4" class="ltx_Math" alttext="\tfrac{a}{c}" display="inline"><semantics><mfrac><mi>a</mi><mi>c</mi></mfrac><annotation encoding="application/x-tex">\tfrac{a}{c}</annotation></semantics></math>, <math id="SS2.p2.m5" class="ltx_Math" alttext="\tfrac{b}{c}" display="inline"><semantics><mfrac><mi>b</mi><mi>c</mi></mfrac><annotation encoding="application/x-tex">\tfrac{b}{c}</annotation></semantics></math>, ou
+<math id="SS2.p2.m6" class="ltx_Math" alttext="\tfrac{a}{b}" display="inline"><semantics><mfrac><mi>a</mi><mi>b</mi></mfrac><annotation encoding="application/x-tex">\tfrac{a}{b}</annotation></semantics></math> for conhecido. A ligação entre <math id="SS2.p2.m7" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> e esses quocientes é
+chamada respectivamente
+<span class="ltx_text ltx_font_bold">seno, cosseno e tangente de <math id="SS2.p2.m8" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span>, e
+denotada por</p>
+<div id="Ch1.Ex33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex33.m1" class="ltx_math_unparsed" alttext="\boxed{\operatorname{sen}\alpha{:=}\frac{a}{c}\,,\quad\cos\alpha{:=}\frac{b}{c%
+}\,,\quad\tan\alpha{:=}\frac{a}{b}\,.}" display="block"><semantics><menclose notation="box"><mrow><mi>sen</mi><mi>α</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mi>a</mi><mi>c</mi></mfrac><mo lspace="0.170em" rspace="1.367em">,</mo><mi>cos</mi><mi>α</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mi>b</mi><mi>c</mi></mfrac><mo lspace="0.170em" rspace="1.367em">,</mo><mi>tan</mi><mi>α</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo lspace="0.170em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{\operatorname{sen}\alpha{:=}\frac{a}{c}\,,\quad\cos\alpha{:=}\frac{b}{c%
+}\,,\quad\tan\alpha{:=}\frac{a}{b}\,.}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">(Aqui escreveremos a tangente <math id="SS2.p2.m9" class="ltx_Math" alttext="\tan\alpha" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\tan\alpha</annotation></semantics></math>, mas às vezes se encontra
+também a notação <math id="SS2.p2.m10" class="ltx_Math" alttext="\mathrm{tg}\,\alpha" display="inline"><semantics><mrow><mi>tg</mi><mo lspace="0.170em">⁢</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{tg}\,\alpha</annotation></semantics></math>.)
+Observe que a seguinte relação sempre vale:</p>
+<div id="Ch1.E18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E18.m1" class="ltx_Math" alttext="\tan\alpha=\frac{\operatorname{sen}\alpha}{\cos\alpha}" display="block"><semantics><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>=</mo><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\tan\alpha=\frac{\operatorname{sen}\alpha}{\cos\alpha}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.18)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Em alguns casos simples, <math id="SS2.p2.m11" class="ltx_Math" alttext="\operatorname{sen}\alpha" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}\alpha</annotation></semantics></math>, <math id="SS2.p2.m12" class="ltx_Math" alttext="\cos\alpha" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\cos\alpha</annotation></semantics></math> e <math id="SS2.p2.m13" class="ltx_Math" alttext="\tan\alpha" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\tan\alpha</annotation></semantics></math> podem ser
+calculados “manualmente”.</p>
+</div>
+<div id="Ch1.Thmex7" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 1.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmex7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch1.Thmex7.p1.m1" class="ltx_Math" alttext="\alpha=\tfrac{\pi}{4}" display="inline"><semantics><mrow><mi>α</mi><mo>=</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\alpha=\tfrac{\pi}{4}</annotation></semantics></math> (<math id="Ch1.Thmex7.p1.m2" class="ltx_Math" alttext="=45^{o}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><msup><mn>45</mn><mi>o</mi></msup></mrow><annotation encoding="application/x-tex">=45^{o}</annotation></semantics></math>). Para calcular
+<math id="Ch1.Thmex7.p1.m3" class="ltx_Math" alttext="\operatorname{sen}\tfrac{\pi}{4}" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\operatorname{sen}\tfrac{\pi}{4}</annotation></semantics></math>, <math id="Ch1.Thmex7.p1.m4" class="ltx_Math" alttext="\cos\tfrac{\pi}{4}" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\cos\tfrac{\pi}{4}</annotation></semantics></math> e <math id="Ch1.Thmex7.p1.m5" class="ltx_Math" alttext="\tan\tfrac{\pi}{4}" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\tan\tfrac{\pi}{4}</annotation></semantics></math>,
+consideremos o seguinte triângulo:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-20.svg" alt="" id="Ch1.Thmex7.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="450" height="79"></div>
+</div>
+</div>
+<div id="Ch1.Thmexo21" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.21</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo21.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Montando em cada caso um triângulo apropriado,
+calcule (sem calculadora) <math id="Ch1.Thmexo21.p1.m1" class="ltx_Math" alttext="\operatorname{sen}\tfrac{\pi}{3}" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\operatorname{sen}\tfrac{\pi}{3}</annotation></semantics></math>, <math id="Ch1.Thmexo21.p1.m2" class="ltx_Math" alttext="\cos\tfrac{\pi}{3}" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\cos\tfrac{\pi}{3}</annotation></semantics></math>,
+<math id="Ch1.Thmexo21.p1.m3" class="ltx_Math" alttext="\tan\tfrac{\pi}{3}" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\tan\tfrac{\pi}{3}</annotation></semantics></math>, <math id="Ch1.Thmexo21.p1.m4" class="ltx_Math" alttext="\operatorname{sen}\tfrac{\pi}{6}" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\operatorname{sen}\tfrac{\pi}{6}</annotation></semantics></math>, <math id="Ch1.Thmexo21.p1.m5" class="ltx_Math" alttext="\cos\tfrac{\pi}{6}" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\cos\tfrac{\pi}{6}</annotation></semantics></math>,
+<math id="Ch1.Thmexo21.p1.m6" class="ltx_Math" alttext="\tan\tfrac{\pi}{6}" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>π</mi><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\tan\tfrac{\pi}{6}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo22" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.22</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo22.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para determinar a altura <math id="Ch1.Thmexo22.p1.m1" class="ltx_Math" alttext="H" display="inline"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math> de uma torre,
+ficamos a uma distância qualquer dela, e medimos o ângulo <math id="Ch1.Thmexo22.p1.m2" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+entre a horizontal e o topo da torre. Em seguida, andamos uma distância
+<math id="Ch1.Thmexo22.p1.m3" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> em direção à base da torre, e medimos o ângulo <math id="Ch1.Thmexo22.p1.m4" class="ltx_Math" alttext="\beta" display="inline"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+entre a horizontal e o topo da torre.
+Expresse <math id="Ch1.Thmexo22.p1.m5" class="ltx_Math" alttext="H" display="inline"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math> como função de <math id="Ch1.Thmexo22.p1.m6" class="ltx_Math" alttext="\alpha,\beta,d" display="inline"><semantics><mrow><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">\alpha,\beta,d</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">Faremos agora uma generalização, que permitirá
+<em class="ltx_emph ltx_font_italic">enxergar</em> melhor os três números <math id="SS2.p3.m1" class="ltx_Math" alttext="\operatorname{sen}\alpha" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}\alpha</annotation></semantics></math>, <math id="SS2.p3.m2" class="ltx_Math" alttext="\cos\alpha" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\cos\alpha</annotation></semantics></math> e
+<math id="SS2.p3.m3" class="ltx_Math" alttext="\tan\alpha" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\tan\alpha</annotation></semantics></math>, e
+que será também útil para considerá-las como <em class="ltx_emph ltx_font_italic">funções de uma
+variável real</em>, a partir do próximo capítulo.
+<br class="ltx_break"></p>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<p class="ltx_p">Para tanto, usaremos um triângulo cuja hipotenusa é de tamanho <math id="SS2.p4.m1" class="ltx_Math" alttext="c=1" display="inline"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c=1</annotation></semantics></math>.
+Isto é, o ponto <math id="SS2.p4.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+do triângulo da
+figura acima é posicionado no círculo de raio <math id="SS2.p4.m3" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> centrado na origem,
+chamado
+<span class="ltx_text ltx_font_bold">círculo trigonométrico</span>. As funções
+trigonométricas
+podem então ser medidas efetivamente olhando para os comprimentos da
+seguinte figura:</p>
+</div>
+<div id="SS2.p5" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-21.svg" alt="" id="SS2.g1" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="185" height="202"></div>
+</div>
+<div id="SS2.p6" class="ltx_para">
+<p class="ltx_p">Observe como <math id="SS2.p6.m1" class="ltx_Math" alttext="\operatorname{sen}\alpha" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}\alpha</annotation></semantics></math>, <math id="SS2.p6.m2" class="ltx_Math" alttext="\cos\alpha" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\cos\alpha</annotation></semantics></math> e <math id="SS2.p6.m3" class="ltx_Math" alttext="\tan\alpha" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\tan\alpha</annotation></semantics></math> mudam à
+medida que <math id="SS2.p6.m4" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> se
+movimenta ao longo do círculo. Em particular, <math id="SS2.p6.m5" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> pode dar uma volta
+completa no círculo,
+o que permite estender as funções trigonométricas a qualquer
+ângulo <span id="Ch1.footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+                <span class="ltx_tag ltx_tag_note">3</span>
+                
+                
+                
+              A tangente tem um problema nos múltiplos de
+<math id="Ch1.footnote3.m1" class="ltx_Math" alttext="\tfrac{\pi}{2}" display="inline"><semantics><mfrac><mi>π</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{\pi}{2}</annotation></semantics></math> (ver mais adiante).</span></span></span>
+<math id="SS2.p6.m6" class="ltx_Math" alttext="0\leq\alpha\leq 2\pi" display="inline"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>α</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow><annotation encoding="application/x-tex">0\leq\alpha\leq 2\pi</annotation></semantics></math>, e também para valores maiores ou até negativos.
+Os sinais das funções trigonométricas mudam dependendo do quadrante ao qual <math id="SS2.p6.m7" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> pertence:</p>
+</div>
+<div id="SS2.p7" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-22.svg" alt="" id="SS2.g2" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="161" height="161"></div>
+</div>
+<div id="SS2.p8" class="ltx_para">
+<p class="ltx_p">Várias propriedades podem ser obtidas a partir do círculo trigonométrico. Por exemplo,
+observe que <math id="SS2.p8.m1" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> e <math id="SS2.p8.m2" class="ltx_Math" alttext="-\alpha" display="inline"><semantics><mrow><mo>−</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">-\alpha</annotation></semantics></math> têm o mesmo cosseno, mas que ao transformar <math id="SS2.p8.m3" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> em
+<math id="SS2.p8.m4" class="ltx_Math" alttext="-\alpha" display="inline"><semantics><mrow><mo>−</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">-\alpha</annotation></semantics></math>, o seno muda de sinal. Portanto,</p>
+<div id="Ch1.E19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E19.m1" class="ltx_Math" alttext="\cos(-\alpha)=\cos\alpha\,,\quad\operatorname{sen}(-\alpha)=-\operatorname{sen%
+}\alpha\,,\quad\tan(-\alpha)=-\tan\alpha\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\cos(-\alpha)=\cos\alpha\,,\quad\operatorname{sen}(-\alpha)=-\operatorname{sen%
+}\alpha\,,\quad\tan(-\alpha)=-\tan\alpha\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.19)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS2.p9" class="ltx_para">
+<p class="ltx_p">Todas as identidades do seguinte exercício podem ser obtidas de maneira
+parecida, olhando simplesmente para o círculo trigonométrico.</p>
+</div>
+<div id="Ch1.Thmexo23" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.23</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo23.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prove as identidades:</span></p>
+<div id="Ch1.E20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E20.m1" class="ltx_Math" alttext="\cos(\pi-\alpha)=-\cos\alpha\,,\quad\operatorname{sen}(\pi-\alpha)=%
+\operatorname{sen}\alpha\,,\quad\tan(\pi-\alpha)=-\tan\alpha\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\cos(\pi-\alpha)=-\cos\alpha\,,\quad\operatorname{sen}(\pi-\alpha)=%
+\operatorname{sen}\alpha\,,\quad\tan(\pi-\alpha)=-\tan\alpha\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.20)</span>
+                
+                
+              
+</div>
+<div id="Ch1.E21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E21.m1" class="ltx_Math" alttext="\cos(\pi+\alpha)=-\cos\alpha\,,\quad\operatorname{sen}(\pi+\alpha)=-%
+\operatorname{sen}\alpha\,,\quad\tan(\pi+\alpha)=\tan\alpha\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>+</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>+</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>+</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\cos(\pi+\alpha)=-\cos\alpha\,,\quad\operatorname{sen}(\pi+\alpha)=-%
+\operatorname{sen}\alpha\,,\quad\tan(\pi+\alpha)=\tan\alpha\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.21)</span>
+                
+                
+              
+</div>
+<div id="Ch1.E22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E22.m1" class="ltx_Math" alttext="\cos(\tfrac{\pi}{2}-\alpha)=\operatorname{sen}\alpha\,,\quad\operatorname{sen}%
+(\tfrac{\pi}{2}-\alpha)=\cos\alpha\,,\quad\tan(\tfrac{\pi}{2}-\alpha)={{\rm
+cotan%
+\,}\alpha}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cotan</mi><mo lspace="0.170em">⁢</mo><mi>α</mi></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\cos(\tfrac{\pi}{2}-\alpha)=\operatorname{sen}\alpha\,,\quad\operatorname{sen}%
+(\tfrac{\pi}{2}-\alpha)=\cos\alpha\,,\quad\tan(\tfrac{\pi}{2}-\alpha)={{\rm
+cotan%
+\,}\alpha}\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.22)</span>
+                
+                
+              
+</div>
+<div id="Ch1.E23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E23.m1" class="ltx_Math" alttext="\cos(\tfrac{\pi}{2}+\alpha)=-\operatorname{sen}\alpha\,,\quad\operatorname{sen%
+}(\tfrac{\pi}{2}+\alpha)=\cos\alpha\,,\quad\tan(\tfrac{\pi}{2}+\alpha)=-{{\rm
+cotan%
+\,}\alpha}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>+</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>+</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>+</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mi>cotan</mi><mo lspace="0.170em">⁢</mo><mi>α</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\cos(\tfrac{\pi}{2}+\alpha)=-\operatorname{sen}\alpha\,,\quad\operatorname{sen%
+}(\tfrac{\pi}{2}+\alpha)=\cos\alpha\,,\quad\tan(\tfrac{\pi}{2}+\alpha)=-{{\rm
+cotan%
+\,}\alpha}\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.23)</span>
+                
+                
+              
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A <span class="ltx_text ltx_font_bold">cotangente</span>, definida por <math id="Ch1.Thmexo23.p1.m1" class="ltx_Math" alttext="{\rm cotan\,}\alpha{:=}\frac{1}{\tan\alpha}" display="inline"><semantics><mrow><mrow><mi>cotan</mi><mo lspace="0.170em">⁢</mo><mi>α</mi></mrow><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mn>1</mn><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">{\rm cotan\,}\alpha{:=}\frac{1}{\tan\alpha}</annotation></semantics></math>, apareceu
+naturalmente.</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo24" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.24</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo24.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Complete a seguinte tabela</span></p>
+<div class="bml-overflow-wrapper">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_italic">graus</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m1" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m2" class="ltx_Math" alttext="30" display="inline"><semantics><mn>30</mn><annotation encoding="application/x-tex">30</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m3" class="ltx_Math" alttext="45" display="inline"><semantics><mn>45</mn><annotation encoding="application/x-tex">45</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m4" class="ltx_Math" alttext="60" display="inline"><semantics><mn>60</mn><annotation encoding="application/x-tex">60</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m5" class="ltx_Math" alttext="90" display="inline"><semantics><mn>90</mn><annotation encoding="application/x-tex">90</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m6" class="ltx_Math" alttext="120" display="inline"><semantics><mn>120</mn><annotation encoding="application/x-tex">120</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m7" class="ltx_Math" alttext="150" display="inline"><semantics><mn>150</mn><annotation encoding="application/x-tex">150</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m8" class="ltx_Math" alttext="180" display="inline"><semantics><mn>180</mn><annotation encoding="application/x-tex">180</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m9" class="ltx_Math" alttext="210" display="inline"><semantics><mn>210</mn><annotation encoding="application/x-tex">210</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m10" class="ltx_Math" alttext="240" display="inline"><semantics><mn>240</mn><annotation encoding="application/x-tex">240</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m11" class="ltx_Math" alttext="270" display="inline"><semantics><mn>270</mn><annotation encoding="application/x-tex">270</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m12" class="ltx_Math" alttext="300" display="inline"><semantics><mn>300</mn><annotation encoding="application/x-tex">300</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m13" class="ltx_Math" alttext="330" display="inline"><semantics><mn>330</mn><annotation encoding="application/x-tex">330</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m14" class="ltx_Math" alttext="360" display="inline"><semantics><mn>360</mn><annotation encoding="application/x-tex">360</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_italic">rad</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m15" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m16" class="ltx_Math" alttext="\tfrac{\pi}{6}" display="inline"><semantics><mfrac><mi>π</mi><mn>6</mn></mfrac><annotation encoding="application/x-tex">\tfrac{\pi}{6}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m17" class="ltx_Math" alttext="\tfrac{\pi}{4}" display="inline"><semantics><mfrac><mi>π</mi><mn>4</mn></mfrac><annotation encoding="application/x-tex">\tfrac{\pi}{4}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m18" class="ltx_Math" alttext="\tfrac{\pi}{3}" display="inline"><semantics><mfrac><mi>π</mi><mn>3</mn></mfrac><annotation encoding="application/x-tex">\tfrac{\pi}{3}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m19" class="ltx_Math" alttext="\tfrac{\pi}{2}" display="inline"><semantics><mfrac><mi>π</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{\pi}{2}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m20" class="ltx_Math" alttext="\tfrac{2\pi}{3}" display="inline"><semantics><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac><annotation encoding="application/x-tex">\tfrac{2\pi}{3}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m21" class="ltx_Math" alttext="\tfrac{5\pi}{6}" display="inline"><semantics><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac><annotation encoding="application/x-tex">\tfrac{5\pi}{6}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m22" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m23" class="ltx_Math" alttext="\tfrac{7\pi}{6}" display="inline"><semantics><mfrac><mrow><mn>7</mn><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac><annotation encoding="application/x-tex">\tfrac{7\pi}{6}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m24" class="ltx_Math" alttext="\tfrac{4\pi}{3}" display="inline"><semantics><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac><annotation encoding="application/x-tex">\tfrac{4\pi}{3}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m25" class="ltx_Math" alttext="\tfrac{3\pi}{2}" display="inline"><semantics><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{3\pi}{2}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m26" class="ltx_Math" alttext="\tfrac{5\pi}{3}" display="inline"><semantics><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac><annotation encoding="application/x-tex">\tfrac{5\pi}{3}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m27" class="ltx_Math" alttext="\tfrac{11\pi}{6}" display="inline"><semantics><mfrac><mrow><mn>11</mn><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac><annotation encoding="application/x-tex">\tfrac{11\pi}{6}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m28" class="ltx_Math" alttext="2\pi" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">2\pi</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m29" class="ltx_Math" alttext="\operatorname{sen}" display="inline"><semantics><mi>sen</mi><annotation encoding="application/x-tex">\operatorname{sen}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m30" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m31" class="ltx_Math" alttext="\frac{{1}}{\sqrt{2}}" display="inline"><semantics><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><annotation encoding="application/x-tex">\frac{{1}}{\sqrt{2}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m32" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m33" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m34" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m35" class="ltx_Math" alttext="\cos" display="inline"><semantics><mi>cos</mi><annotation encoding="application/x-tex">\cos</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m36" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m37" class="ltx_Math" alttext="\frac{{1}}{\sqrt{2}}" display="inline"><semantics><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><annotation encoding="application/x-tex">\frac{{1}}{\sqrt{2}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m38" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m39" class="ltx_Math" alttext="-1" display="inline"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m40" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m41" class="ltx_Math" alttext="\tan" display="inline"><semantics><mi>tan</mi><annotation encoding="application/x-tex">\tan</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m42" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m43" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m44" class="ltx_Math" alttext="\varnothing" display="inline"><semantics><mi mathvariant="normal">∅</mi><annotation encoding="application/x-tex">\varnothing</annotation></semantics></math></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m45" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_b ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><math id="Ch1.Thmexo24.p1.m46" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.3.3</span> Identidades trigonométricas</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">As identidades do Exercício <a href="#Ch1.Thmexo23" title="Exercício 1.23. ‣ 1.3.2 Seno, cosseno e tangente ‣ 1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.23</span></a> deram algumas ligações entre
+seno, cosseno e tangente.
+O Teorema de Pitágoras dá também a relação</p>
+<div id="Ch1.E24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E24.m1" class="ltx_Math" alttext="\cos^{2}\alpha+\operatorname{sen}^{2}\alpha=1\,." display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>+</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\cos^{2}\alpha+\operatorname{sen}^{2}\alpha=1\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.24)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Provaremos agora a identidade</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E25.m1" class="ltx_Math" alttext="\displaystyle\operatorname{sen}(\alpha+\beta)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{sen}(\alpha+\beta)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E25.m2" class="ltx_Math" alttext="\displaystyle=\operatorname{sen}\alpha\cos\beta+\cos\alpha\operatorname{sen}%
+\beta\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\operatorname{sen}\alpha\cos\beta+\cos\alpha\operatorname{sen}%
+\beta\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.25)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Apesar desta valer para ângulos <math id="SS3.p1.m1" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> e <math id="SS3.p1.m2" class="ltx_Math" alttext="\beta" display="inline"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math> quaisquer, suporemos que
+<math id="SS3.p1.m3" class="ltx_Math" alttext="\alpha,\beta\in(0,\tfrac{\pi}{4})" display="inline"><semantics><mrow><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mfrac><mi>π</mi><mn>4</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\alpha,\beta\in(0,\tfrac{\pi}{4})</annotation></semantics></math>,
+e usaremos o seguinte desenho:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-23.svg" alt="" id="SS3.p1.g1" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="191" height="189"></div>
+<p class="ltx_p">Observe que <math id="SS3.p1.m4" class="ltx_Math" alttext="\operatorname{sen}(\alpha+\beta)=d(A,C)=d(A,B)+d(B,C)" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(\alpha+\beta)=d(A,C)=d(A,B)+d(B,C)</annotation></semantics></math>.
+Usando o ponto <math id="SS3.p1.m5" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> (projeção ortogonal de <math id="SS3.p1.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> no segmento <math id="SS3.p1.m7" class="ltx_Math" alttext="OD" display="inline"><semantics><mrow><mi>O</mi><mo>⁢</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">OD</annotation></semantics></math>) e olhando para o
+triângulo <math id="SS3.p1.m8" class="ltx_Math" alttext="OEA" display="inline"><semantics><mrow><mi>O</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">OEA</annotation></semantics></math>, temos <math id="SS3.p1.m9" class="ltx_Math" alttext="d(O,E)=\cos\beta" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>O</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow><annotation encoding="application/x-tex">d(O,E)=\cos\beta</annotation></semantics></math> e <math id="SS3.p1.m10" class="ltx_Math" alttext="d(A,E)=\operatorname{sen}\beta" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow><annotation encoding="application/x-tex">d(A,E)=\operatorname{sen}\beta</annotation></semantics></math>.
+Observe também que o ângulo <math id="SS3.p1.m11" class="ltx_Math" alttext="BAE" display="inline"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">BAE</annotation></semantics></math> vale <math id="SS3.p1.m12" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.
+Portanto, <math id="SS3.p1.m13" class="ltx_Math" alttext="d(A,B)=d(A,E)/\cos\alpha=\operatorname{sen}\beta/\cos\alpha" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>β</mi><mo>/</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">d(A,B)=d(A,E)/\cos\alpha=\operatorname{sen}\beta/\cos\alpha</annotation></semantics></math> e <math id="SS3.p1.m14" class="ltx_Math" alttext="d(B,E)=d(A,B)\operatorname{sen}\alpha" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">d(B,E)=d(A,B)\operatorname{sen}\alpha</annotation></semantics></math>.
+Por outro lado, <math id="SS3.p1.m15" class="ltx_Math" alttext="d(B,C)=d(O,B)\operatorname{sen}\alpha" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>O</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">d(B,C)=d(O,B)\operatorname{sen}\alpha</annotation></semantics></math>, mas como</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.Ex34"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.Ex34.m1" class="ltx_Math" alttext="\displaystyle d(O,B)" display="inline"><semantics><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>O</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle d(O,B)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.Ex34.m2" class="ltx_Math" alttext="\displaystyle=d(O,E)-d(B,E)" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>O</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=d(O,E)-d(B,E)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch1.Ex35"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.Ex35.m1" class="ltx_Math" alttext="\displaystyle=\cos\beta-d(A,B)\operatorname{sen}\alpha" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow><mo>−</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\cos\beta-d(A,B)\operatorname{sen}\alpha</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch1.Ex36"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.Ex36.m1" class="ltx_Math" alttext="\displaystyle=\cos\beta-\frac{\operatorname{sen}\beta}{\cos\alpha}%
+\operatorname{sen}\alpha=\cos\beta-\operatorname{sen}\beta\tan\alpha\,," display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>β</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\cos\beta-\frac{\operatorname{sen}\beta}{\cos\alpha}%
+\operatorname{sen}\alpha=\cos\beta-\operatorname{sen}\beta\tan\alpha\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">temos</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.Ex37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.Ex37.m1" class="ltx_Math" alttext="\displaystyle\operatorname{sen}(\alpha+\beta)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{sen}(\alpha+\beta)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.Ex37.m2" class="ltx_Math" alttext="\displaystyle=\frac{\operatorname{sen}\beta}{\cos\alpha}+\operatorname{sen}%
+\alpha\bigl{(}\cos\beta-\operatorname{sen}\beta\tan\alpha\bigr{)}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>β</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\operatorname{sen}\beta}{\cos\alpha}+\operatorname{sen}%
+\alpha\bigl{(}\cos\beta-\operatorname{sen}\beta\tan\alpha\bigr{)}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch1.Ex38"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.Ex38.m1" class="ltx_Math" alttext="\displaystyle=\frac{\operatorname{sen}\beta}{\cos\alpha}+\operatorname{sen}%
+\alpha\cos\beta-\operatorname{sen}\beta\frac{\operatorname{sen}^{2}\alpha}{%
+\cos\alpha}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>β</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\operatorname{sen}\beta}{\cos\alpha}+\operatorname{sen}%
+\alpha\cos\beta-\operatorname{sen}\beta\frac{\operatorname{sen}^{2}\alpha}{%
+\cos\alpha}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch1.Ex39"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.Ex39.m1" class="ltx_Math" alttext="\displaystyle=\operatorname{sen}\alpha\cos\beta+\operatorname{sen}\beta\cos%
+\alpha\,," display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>β</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\operatorname{sen}\alpha\cos\beta+\operatorname{sen}\beta\cos%
+\alpha\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">o que prova (<a href="#Ch1.E25" title="In 1.3.3 Identidades trigonométricas ‣ 1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.25</span></a>).
+<br class="ltx_break"></p>
+</div>
+<div id="Ch1.Thmexo25" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.25</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo25.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prove as identidades (dica: todas podem se deduzir a partir de
+(<a href="#Ch1.E25" title="In 1.3.3 Identidades trigonométricas ‣ 1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.25</span></a>) e de algumas identidades do Exercício <a href="#Ch1.Thmexo23" title="Exercício 1.23. ‣ 1.3.2 Seno, cosseno e tangente ‣ 1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.23</span></a>):</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx5" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E26.m1" class="ltx_Math" alttext="\displaystyle\operatorname{sen}(\alpha-\beta)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>−</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{sen}(\alpha-\beta)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E26.m2" class="ltx_Math" alttext="\displaystyle=\operatorname{sen}\alpha\cos\beta-\cos\alpha\operatorname{sen}\beta" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\operatorname{sen}\alpha\cos\beta-\cos\alpha\operatorname{sen}\beta</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.26)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E27.m1" class="ltx_Math" alttext="\displaystyle\cos(\alpha+\beta)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\cos(\alpha+\beta)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E27.m2" class="ltx_Math" alttext="\displaystyle=\cos\alpha\cos\beta-\operatorname{sen}\alpha\operatorname{sen}\beta" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\cos\alpha\cos\beta-\operatorname{sen}\alpha\operatorname{sen}\beta</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.27)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E28.m1" class="ltx_Math" alttext="\displaystyle\tan(\alpha+\beta)" display="inline"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\tan(\alpha+\beta)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E28.m2" class="ltx_Math" alttext="\displaystyle=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>+</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.28)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E29.m1" class="ltx_Math" alttext="\displaystyle\cos(\alpha-\beta)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>−</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\cos(\alpha-\beta)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E29.m2" class="ltx_Math" alttext="\displaystyle=\cos\alpha\cos\beta+\operatorname{sen}\alpha\operatorname{sen}\beta" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\cos\alpha\cos\beta+\operatorname{sen}\alpha\operatorname{sen}\beta</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.29)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E30.m1" class="ltx_Math" alttext="\displaystyle\tan(\alpha-\beta)" display="inline"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>−</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\tan(\alpha-\beta)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E30.m2" class="ltx_Math" alttext="\displaystyle=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>−</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.30)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="Ch1.Thmexo26" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.26</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo26.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prove as identidades:</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx6" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E31"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E31.m1" class="ltx_Math" alttext="\displaystyle\operatorname{sen}(2\alpha)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{sen}(2\alpha)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E31.m2" class="ltx_Math" alttext="\displaystyle=2\operatorname{sen}\alpha\cos\alpha" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>α</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=2\operatorname{sen}\alpha\cos\alpha</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.31)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E32"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E32.m1" class="ltx_Math" alttext="\displaystyle\cos(2\alpha)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\cos(2\alpha)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E32.m2" class="ltx_Math" alttext="\displaystyle=\cos^{2}\alpha-\operatorname{sen}^{2}\alpha=2\cos^{2}\alpha-1=1-%
+2\operatorname{sen}^{2}\alpha\,," display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>−</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\cos^{2}\alpha-\operatorname{sen}^{2}\alpha=2\cos^{2}\alpha-1=1-%
+2\operatorname{sen}^{2}\alpha\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.32)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E33"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E33.m1" class="ltx_Math" alttext="\displaystyle\tan\tfrac{\alpha}{2}" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>α</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\displaystyle\tan\tfrac{\alpha}{2}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E33.m2" class="ltx_Math" alttext="\displaystyle=\frac{\operatorname{sen}\alpha}{1+\cos\alpha}\,," display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\operatorname{sen}\alpha}{1+\cos\alpha}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.33)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E34"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E34.m1" class="ltx_Math" alttext="\displaystyle\cos\alpha\cdot\cos\beta" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>β</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\cos\alpha\cdot\cos\beta</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E34.m2" class="ltx_Math" alttext="\displaystyle=\tfrac{1}{2}(\cos(\alpha+\beta)+\cos(\alpha-\beta))\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>−</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\tfrac{1}{2}(\cos(\alpha+\beta)+\cos(\alpha-\beta))\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.34)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="Ch1.Thmexo27" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.27</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo27.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule a equação da reta <math id="Ch1.Thmexo27.p1.m1" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> que passa pelo ponto <math id="Ch1.Thmexo27.p1.m2" class="ltx_Math" alttext="(2,-1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(2,-1)</annotation></semantics></math>, cujo ângulo com a horizontal
+é igual a <math id="Ch1.Thmexo27.p1.m3" class="ltx_Math" alttext="60^{o}" display="inline"><semantics><msup><mn>60</mn><mi>o</mi></msup><annotation encoding="application/x-tex">60^{o}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo28" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.28</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo28.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolva:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\cos x=0" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\cos x=0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\operatorname{sen}x=\frac{1}{2}" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\operatorname{sen}x=\frac{1}{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\operatorname{sen}x=\cos x" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}x=\cos x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\operatorname{sen}x=\operatorname{sen}^{2}x" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}x=\operatorname{sen}^{2}x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="\operatorname{sen}^{2}x+\tfrac{3}{2}\operatorname{sen}x=1" display="inline"><semantics><mrow><mrow><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{sen}^{2}x+\tfrac{3}{2}\operatorname{sen}x=1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I1.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i6.p1.m1" class="ltx_Math" alttext="\operatorname{sen}x\geq\tfrac{1}{2}" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≥</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\operatorname{sen}x\geq\tfrac{1}{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I1.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i7.p1.m1" class="ltx_Math" alttext="|\cos x|&lt;\tfrac{1}{\sqrt{2}}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac></mrow><annotation encoding="application/x-tex">|\cos x|&lt;\tfrac{1}{\sqrt{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I1.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i8.p1.m1" class="ltx_Math" alttext="(\cos x+\operatorname{sen}x)^{2}=\tfrac{1}{2}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">(\cos x+\operatorname{sen}x)^{2}=\tfrac{1}{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I1.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i9.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(2x)=\operatorname{sen}x" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(2x)=\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch1.S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

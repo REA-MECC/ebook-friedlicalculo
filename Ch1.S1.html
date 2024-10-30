@@ -1,0 +1,1036 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="next" href="Ch1.S2.html" title="1.2 O plano cartesiano ‣ Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="section" href="Ch1.S2.html" title="1.2 O plano cartesiano ‣ Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="section" href="Ch1.S3.html" title="1.3 Trigonometria ‣ Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="aberto, com valores absolutos, completar um quadrado, conjunto de soluções, divisão por zero, do primeiro grau, do segundo grau, equação, fatoração de polinômio, fechado, inequações, inteiros , intervalo, naturais , números, ordem, quadrada, raiz, reais , reais não-negativos , reais positivos , semi-aberto/fechado, semi-infinito, valor absoluto">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="1.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1 </span></b>Números reais</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="1.1.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1.1 </span></b>Equações do primeiro e segundo grau</a></li>
+<li data-level="1.1.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1.2 </span></b>Ordem e intervalos</a></li>
+<li data-level="1.1.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1.3 </span></b>Inequações e sinal</a></li>
+<li data-level="1.1.4" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS4" title="In 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1.4 </span></b>Valor absoluto</a></li>
+</ol>
+</li>
+<li data-level="1.2" data-path="Ch1.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S2.html" title="In Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.2 </span></b>O plano cartesiano</a></li>
+<li data-level="1.3" data-path="Ch1.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S3.html" title="In Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3 </span></b>Trigonometria</a></li>
+</ol>
+</li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Números reais</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">1.1</span> Números reais</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">O conjunto dos números reais, <math id="p1.m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>, pode ser visto como o conjunto dos pontos
+da linha real, que serão em geral denotados por letras minúsculas: <math id="p1.m2" class="ltx_Math" alttext="x,y,s,t,u" display="inline"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo>,</mo><mi>u</mi></mrow><annotation encoding="application/x-tex">x,y,s,t,u</annotation></semantics></math>,
+etc.
+<math id="p1.m3" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> é munido de quatro operações aritméticas básicas: <span class="ltx_text ltx_font_bold">adição</span> (<math id="p1.m4" class="ltx_Math" alttext="+" display="inline"><semantics><mo>+</mo><annotation encoding="application/x-tex">+</annotation></semantics></math>),
+<span class="ltx_text ltx_font_bold">subtração</span> (<math id="p1.m5" class="ltx_Math" alttext="-" display="inline"><semantics><mo>−</mo><annotation encoding="application/x-tex">-</annotation></semantics></math>), <span class="ltx_text ltx_font_bold">multiplicação</span> (<math id="p1.m6" class="ltx_Math" alttext="\times" display="inline"><semantics><mo>×</mo><annotation encoding="application/x-tex">\times</annotation></semantics></math> ou
+<math id="p1.m7" class="ltx_Math" alttext="\cdot" display="inline"><semantics><mo>⋅</mo><annotation encoding="application/x-tex">\cdot</annotation></semantics></math>) e <span class="ltx_text ltx_font_bold">divisão</span> (<math id="p1.m8" class="ltx_Math" alttext="\div" display="inline"><semantics><mo>÷</mo><annotation encoding="application/x-tex">\div</annotation></semantics></math>, ou simplesmente <math id="p1.m9" class="ltx_Math" alttext="/" display="inline"><semantics><mo>/</mo><annotation encoding="application/x-tex">/</annotation></semantics></math>).
+<br class="ltx_break"></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Lembremos a importância de dois números com papel relevante com respeito à
+adição e multiplicação. Primeiro, o elemento <math id="p2.m1" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> (“zero”) é tal que <math id="p2.m2" class="ltx_Math" alttext="x+0=0+x=x" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mn>0</mn></mrow><mo>=</mo><mrow><mn>0</mn><mo>+</mo><mi>x</mi></mrow><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x+0=0+x=x</annotation></semantics></math>,
+<math id="p2.m3" class="ltx_Math" alttext="x\cdot 0=0\cdot x=0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>0</mn></mrow><mo>=</mo><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\cdot 0=0\cdot x=0</annotation></semantics></math> para todo <math id="p2.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Um real <math id="p2.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> diferente de zero será às vezes chamado de <span class="ltx_text ltx_font_bold">não-nulo</span>.
+<br class="ltx_break"></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Por outro lado, o elemento <math id="p3.m1" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> (“um”) é tal que <math id="p3.m2" class="ltx_Math" alttext="x\cdot 1=1\cdot x=x" display="inline"><semantics><mrow><mrow><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>1</mn></mrow><mo>=</mo><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>x</mi></mrow><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x\cdot 1=1\cdot x=x</annotation></semantics></math>
+para todo <math id="p3.m3" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>.
+É importante lembrar que <em class="ltx_emph ltx_font_italic">a divisão por zero não é definida</em>.
+Portanto,
+símbolos do tipo <math id="p3.m4" class="ltx_Math" alttext="x/0" display="inline"><semantics><mrow><mi>x</mi><mo>/</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x/0</annotation></semantics></math> ou <math id="p3.m5" class="ltx_Math" alttext="0/0" display="inline"><semantics><mrow><mn>0</mn><mo>/</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0/0</annotation></semantics></math> não fazem sentido. No entanto, <math id="p3.m6" class="ltx_Math" alttext="0/x=0" display="inline"><semantics><mrow><mrow><mn>0</mn><mo>/</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0/x=0</annotation></semantics></math> para todo
+<math id="p3.m7" class="ltx_Math" alttext="x\neq 0" display="inline"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\neq 0</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Os subconjuntos de <math id="p4.m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> serão em geral denotados usando letras maiúsculas.
+Por exemplo, <math id="p4.m2" class="ltx_Math" alttext="A=\{0,1,2\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0,1,2</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A=\{0,1,2\}</annotation></semantics></math> é o conjunto que contém os três números reais <math id="p4.m3" class="ltx_Math" alttext="0,1" display="inline"><semantics><mn>0,1</mn><annotation encoding="application/x-tex">0,1</annotation></semantics></math>
+e <math id="p4.m4" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>, e <math id="p4.m5" class="ltx_Math" alttext="B=(0,2)" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">B=(0,2)</annotation></semantics></math> é o intervalo aberto que contém todos os reais entre <math id="p4.m6" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> e
+<math id="p4.m7" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> (ver abaixo).
+O conjunto dos <span class="ltx_text ltx_font_bold">números naturais é</span> <span id="Ch1.footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+              <span class="ltx_tag ltx_tag_note">1</span>
+              
+              
+              
+            Ao longo da apostila,
+o símbolo “<math id="Ch1.footnote1.m1" class="ltx_Math" alttext="{:=}" display="inline"><semantics><mo>:=</mo><annotation encoding="application/x-tex">{:=}</annotation></semantics></math>” será usado para definir um objeto. Por exemplo,
+<math id="Ch1.footnote1.m2" class="ltx_Math" alttext="A{:=}\{x\in\mathbb{R}:x^{2}&gt;1\}" display="inline"><semantics><mrow><mi>A</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>&gt;</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A{:=}\{x\in\mathbb{R}:x^{2}&gt;1\}</annotation></semantics></math> significa que <math id="Ch1.footnote1.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é <em class="ltx_emph ltx_font_italic">definido</em> como o conjunto
+dos números reais cujo quadrado é maior que <math id="Ch1.footnote1.m4" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>.</span></span></span></p>
+<div id="Ch1.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex1.m1" class="ltx_Math" alttext="\mathbb{N}{:=}\{1,2,3,\dots\}\,," display="block"><semantics><mrow><mrow><mi>ℕ</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo rspace="0.170em" stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{N}{:=}\{1,2,3,\dots\}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e o conjunto dos <span class="ltx_text ltx_font_bold">inteiros</span> é</p>
+<div id="Ch1.Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex2.m1" class="ltx_Math" alttext="\mathbb{Z}{:=}\{\dots,-3,-2,-1,0,1,2,3,\dots\}\,." display="block"><semantics><mrow><mrow><mi>ℤ</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>1,0,1,2,3</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}{:=}\{\dots,-3,-2,-1,0,1,2,3,\dots\}\,.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">As operações entre conjuntos são: <span class="ltx_text ltx_font_bold">interseção</span> (<math id="p5.m1" class="ltx_Math" alttext="\cap" display="inline"><semantics><mo>∩</mo><annotation encoding="application/x-tex">\cap</annotation></semantics></math>), <span class="ltx_text ltx_font_bold">união</span>
+(<math id="p5.m2" class="ltx_Math" alttext="\cup" display="inline"><semantics><mo>∪</mo><annotation encoding="application/x-tex">\cup</annotation></semantics></math>), <span class="ltx_text ltx_font_bold">diferença</span> (<math id="p5.m3" class="ltx_Math" alttext="\setminus" display="inline"><semantics><mo>∖</mo><annotation encoding="application/x-tex">\setminus</annotation></semantics></math>).
+O <span class="ltx_text ltx_font_bold">conjunto vazio</span> será denotado por <math id="p5.m4" class="ltx_Math" alttext="\varnothing" display="inline"><semantics><mi mathvariant="normal">∅</mi><annotation encoding="application/x-tex">\varnothing</annotation></semantics></math>.</p>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.1.1</span> Equações do primeiro e segundo grau</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Considere a equação do primeiro grau:</p>
+<div id="Ch1.E1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E1.m1" class="ltx_Math" alttext="1+4x=-7\,." display="block"><semantics><mrow><mrow><mrow><mn>1</mn><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn>7</mn></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">1+4x=-7\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.1)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Resolver</em> essa equação
+significa achar o(s) valor(es) da variável <math id="SS1.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> para os quais a igualdade em (<a href="#Ch1.E1" title="In 1.1.1 Equações do primeiro e segundo grau ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a>)
+é verdadeira. Esse conjunto de valores será denotado por <math id="SS1.p1.m2" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> e chamado <span class="ltx_text ltx_font_bold">conjunto de
+soluções</span>.
+A resolução é bem conhecida:
+isolando <math id="SS1.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> obtemos
+uma única solução <math id="SS1.p1.m4" class="ltx_Math" alttext="x=-2" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">x=-2</annotation></semantics></math>. Portanto, o conjunto das soluções de (<a href="#Ch1.E1" title="In 1.1.1 Equações do primeiro e segundo grau ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a>) é <math id="SS1.p1.m5" class="ltx_Math" alttext="S=\{-2\}" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">S=\{-2\}</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Considere em seguida a equação do segundo grau:</p>
+<div id="Ch1.E2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E2.m1" class="ltx_Math" alttext="x^{2}=9\,." display="block"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">x^{2}=9\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.2)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Aqui, sabemos que existem duas soluções, <math id="SS1.p2.m1" class="ltx_Math" alttext="x=\pm\sqrt{9}=\pm 3" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>±</mo><msqrt><mn>9</mn></msqrt></mrow><mo>=</mo><mrow><mo>±</mo><mn>3</mn></mrow></mrow><annotation encoding="application/x-tex">x=\pm\sqrt{9}=\pm 3</annotation></semantics></math>, logo <math id="SS1.p2.m2" class="ltx_Math" alttext="S=\{+3,-3\}" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo>+</mo><mn>3</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">S=\{+3,-3\}</annotation></semantics></math>. 
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">Agora, já que um número negativo não possui raiz quadrada, a equação</p>
+<div id="Ch1.Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex3.m1" class="ltx_Math" alttext="x^{2}=-4" display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>−</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">x^{2}=-4</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">não possui nenhuma solução real: <math id="SS1.p3.m1" class="ltx_Math" alttext="S=\varnothing" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">S=\varnothing</annotation></semantics></math>. Finalmente,</p>
+<div id="Ch1.Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex4.m1" class="ltx_Math" alttext="x^{2}=0" display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}=0</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">possui uma única solução: <math id="SS1.p3.m2" class="ltx_Math" alttext="S=\{0\}" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">S=\{0\}</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<p class="ltx_p">Um outro jeito de entender (<a href="#Ch1.E2" title="In 1.1.1 Equações do primeiro e segundo grau ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2</span></a>) é de escrevê-la <math id="SS1.p4.m1" class="ltx_Math" alttext="x^{2}-9=0" display="inline"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}-9=0</annotation></semantics></math> e de fatorar o
+polinômio <math id="SS1.p4.m2" class="ltx_Math" alttext="x^{2}-9" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">x^{2}-9</annotation></semantics></math>, obtendo um produto de dois fatores:</p>
+<div id="Ch1.Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex5.m1" class="ltx_Math" alttext="(x-3)(x+3)=0\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(x-3)(x+3)=0\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Para o produto de dois fatores (aqui, <math id="SS1.p4.m3" class="ltx_Math" alttext="x-3" display="inline"><semantics><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x-3</annotation></semantics></math> e <math id="SS1.p4.m4" class="ltx_Math" alttext="x+3" display="inline"><semantics><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x+3</annotation></semantics></math>) ser zero, é necessário que pelo
+menos um deles seja nulo. Se for o primeiro, <math id="SS1.p4.m5" class="ltx_Math" alttext="x-3=0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-3=0</annotation></semantics></math>, então <math id="SS1.p4.m6" class="ltx_Math" alttext="x=3" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x=3</annotation></semantics></math>. Se for o segundo,
+<math id="SS1.p4.m7" class="ltx_Math" alttext="x+3=0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x+3=0</annotation></semantics></math>, logo <math id="SS1.p4.m8" class="ltx_Math" alttext="x=-3" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>3</mn></mrow></mrow><annotation encoding="application/x-tex">x=-3</annotation></semantics></math>.
+De modo geral, para <math id="SS1.p4.m9" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> ser solução de uma equação da forma</p>
+<div id="Ch1.E3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E3.m1" class="ltx_Math" alttext="(x-\alpha)(x-\beta)=0\,," display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">(x-\alpha)(x-\beta)=0\,,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.3)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">pelo menos um dos fatores, <math id="SS1.p4.m10" class="ltx_Math" alttext="(x-\alpha)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x-\alpha)</annotation></semantics></math> ou <math id="SS1.p4.m11" class="ltx_Math" alttext="(x-\beta)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x-\beta)</annotation></semantics></math>, deve ser igual a zero, o que
+implica <math id="SS1.p4.m12" class="ltx_Math" alttext="x=\alpha" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">x=\alpha</annotation></semantics></math> ou <math id="SS1.p4.m13" class="ltx_Math" alttext="x=\beta" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">x=\beta</annotation></semantics></math>. Portanto, o conjunto das soluções de (<a href="#Ch1.E3" title="In 1.1.1 Equações do primeiro e segundo grau ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.3</span></a>) é dado
+por
+<math id="SS1.p4.m14" class="ltx_Math" alttext="S=\{\alpha,\beta\}" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">S=\{\alpha,\beta\}</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">Olhemos agora para a equação do segundo grau da forma geral</p>
+<div id="Ch1.E4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E4.m1" class="ltx_Math" alttext="ax^{2}+bx+c=0\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>c</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">ax^{2}+bx+c=0\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.4)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Se <math id="SS1.p5.m1" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math>, essa equação é do primeiro grau,</p>
+<div id="Ch1.Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex6.m1" class="ltx_Math" alttext="bx+c=0\,," display="block"><semantics><mrow><mrow><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>c</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">bx+c=0\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e a sua única solução é dada por <math id="SS1.p5.m2" class="ltx_Math" alttext="x=-\frac{c}{b}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mfrac><mi>c</mi><mi>b</mi></mfrac></mrow></mrow><annotation encoding="application/x-tex">x=-\frac{c}{b}</annotation></semantics></math> (supondo <math id="SS1.p5.m3" class="ltx_Math" alttext="b\neq 0" display="inline"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b\neq 0</annotation></semantics></math>). Isto é,
+<math id="SS1.p5.m4" class="ltx_Math" alttext="S=\{-\frac{c}{b}\}" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo>−</mo><mfrac><mi>c</mi><mi>b</mi></mfrac></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">S=\{-\frac{c}{b}\}</annotation></semantics></math>. Por outro lado, se <math id="SS1.p5.m5" class="ltx_Math" alttext="a\neq 0" display="inline"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a\neq 0</annotation></semantics></math>, então dividindo (<a href="#Ch1.E4" title="In 1.1.1 Equações do primeiro e segundo grau ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4</span></a>) por <math id="SS1.p5.m6" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>, e
+<em class="ltx_emph ltx_font_italic">completando o quadrado</em> obtemos:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.Ex7.m1" class="ltx_Math" alttext="\displaystyle 0=x^{2}+\tfrac{b}{a}x+\tfrac{c}{a}" display="inline"><semantics><mrow><mn>0</mn><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mfrac><mi>c</mi><mi>a</mi></mfrac></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 0=x^{2}+\tfrac{b}{a}x+\tfrac{c}{a}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.Ex7.m2" class="ltx_Math" alttext="\displaystyle=(x+\tfrac{b}{2a})^{2}-(\tfrac{b}{2a})^{2}+\tfrac{c}{a}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mfrac><mi>b</mi><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mi>b</mi><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mfrac><mi>c</mi><mi>a</mi></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=(x+\tfrac{b}{2a})^{2}-(\tfrac{b}{2a})^{2}+\tfrac{c}{a}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Portanto,</p>
+<div id="Ch1.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex8.m1" class="ltx_Math" alttext="(x+\tfrac{b}{2a})^{2}=(\tfrac{b}{2a})^{2}-\tfrac{c}{a}=\tfrac{b^{2}-4ac}{4a^{2%
+}}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mi>b</mi><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mstyle displaystyle="false"><mfrac><mi>b</mi><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mstyle displaystyle="false"><mfrac><mi>c</mi><mi>a</mi></mfrac></mstyle></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(x+\tfrac{b}{2a})^{2}=(\tfrac{b}{2a})^{2}-\tfrac{c}{a}=\tfrac{b^{2}-4ac}{4a^{2%
+}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Defina <math id="SS1.p5.m7" class="ltx_Math" alttext="\Delta{:=}b^{2}-4ac" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\Delta{:=}b^{2}-4ac</annotation></semantics></math>. Se <math id="SS1.p5.m8" class="ltx_Math" alttext="\Delta&lt;0" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta&lt;0</annotation></semantics></math>, não tem soluções:
+<math id="SS1.p5.m9" class="ltx_Math" alttext="S=\varnothing" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">S=\varnothing</annotation></semantics></math>.
+Se <math id="SS1.p5.m10" class="ltx_Math" alttext="\Delta\geq 0" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta\geq 0</annotation></semantics></math>, podemos tomar a raiz quadrada em ambos lados
+dessa última expressão, e obter</p>
+<div id="Ch1.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex9.m1" class="ltx_Math" alttext="x+\tfrac{b}{2a}=\pm\tfrac{\sqrt{\Delta}}{2a}\,." display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mi>b</mi><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle></mrow><mo>=</mo><mrow><mo>±</mo><mstyle displaystyle="false"><mfrac><msqrt><mi mathvariant="normal">Δ</mi></msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">x+\tfrac{b}{2a}=\pm\tfrac{\sqrt{\Delta}}{2a}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Isto é,</p>
+<div id="Ch1.E5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E5.m1" class="ltx_Math" alttext="x=\tfrac{-b\pm\sqrt{\Delta}}{2a}\,." display="block"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mstyle displaystyle="false"><mfrac><mrow><mrow><mo>−</mo><mi>b</mi></mrow><mo>±</mo><msqrt><mi mathvariant="normal">Δ</mi></msqrt></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">x=\tfrac{-b\pm\sqrt{\Delta}}{2a}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Resumindo: quando <math id="SS1.p5.m11" class="ltx_Math" alttext="a\neq 0" display="inline"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a\neq 0</annotation></semantics></math>, o conjunto das soluções de (<a href="#Ch1.E4" title="In 1.1.1 Equações do primeiro e segundo grau ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4</span></a>) é dado por</p>
+<div id="Ch1.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex10.m1" class="ltx_Math" alttext="S=\begin{cases}\varnothing&amp;\text{ se }\Delta&lt;0\,\text{(zero solu\c{c}\~{o}es)}%
+\\
+\{\tfrac{-b}{2a}\}&amp;\text{ se }\Delta=0\,\text{(uma solu\c{c}\~{a}o)}\\
+\{\tfrac{-b\pm\sqrt{\Delta}}{2a}\}&amp;\text{ se }\Delta&gt;0\,\text{(duas solu\c{c}%
+\~{o}es)}\,.\end{cases}" display="block"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mi mathvariant="normal">∅</mi></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext> se </mtext><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow><mo>&lt;</mo><mrow><mn>0</mn><mo lspace="0.170em">⁢</mo><mtext>(zero soluções)</mtext></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mo stretchy="false">{</mo><mstyle displaystyle="false"><mfrac><mrow><mo>−</mo><mi>b</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle><mo stretchy="false">}</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext> se </mtext><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo lspace="0.170em">⁢</mo><mtext>(uma solução)</mtext></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mo stretchy="false">{</mo><mstyle displaystyle="false"><mfrac><mrow><mrow><mo>−</mo><mi>b</mi></mrow><mo>±</mo><msqrt><mi mathvariant="normal">Δ</mi></msqrt></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle><mo stretchy="false">}</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext> se </mtext><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow><mo>&gt;</mo><mrow><mn>0</mn><mo lspace="0.170em">⁢</mo><mtext>(duas soluções)</mtext></mrow></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">S=\begin{cases}\varnothing&amp;\text{ se }\Delta&lt;0\,\text{(zero solu\c{c}\~{o}es)}%
+\\
+\{\tfrac{-b}{2a}\}&amp;\text{ se }\Delta=0\,\text{(uma solu\c{c}\~{a}o)}\\
+\{\tfrac{-b\pm\sqrt{\Delta}}{2a}\}&amp;\text{ se }\Delta&gt;0\,\text{(duas solu\c{c}%
+\~{o}es)}\,.\end{cases}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch1.Thmexo1" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolva as seguintes equações.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="1-x=1" display="inline"><semantics><mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1-x=1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="x^{2}=1" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{2}=1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\frac{1}{x}=x+1" display="inline"><semantics><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{x}=x+1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="(x+1)(x-7)=0" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>7</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x+1)(x-7)=0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="x=x" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x=x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I1.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i6.p1.m1" class="ltx_Math" alttext="x=x^{2}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x=x^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I1.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i7.p1.m1" class="ltx_Math" alttext="1=0" display="inline"><semantics><mrow><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1=0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I1.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i8.p1.m1" class="ltx_Math" alttext="6x^{3}-1=3x(1+2x^{2})" display="inline"><semantics><mrow><mrow><mrow><mn>6</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">6x^{3}-1=3x(1+2x^{2})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I1.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i9.p1.m1" class="ltx_Math" alttext="(x+6)(x+1)=1" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(x+6)(x+1)=1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch1.Thmexo2" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que
+se <math id="Ch1.Thmexo2.p1.m1" class="ltx_Math" alttext="\gamma" display="inline"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math> e <math id="Ch1.Thmexo2.p1.m2" class="ltx_Math" alttext="\beta" display="inline"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math> forem dois números positivos satisfazendo</span></p>
+<div id="Ch1.Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex11.m1" class="ltx_Math" alttext="2\gamma-\frac{\gamma^{2}}{2}+\frac{\beta^{2}}{2}=2\,," display="block"><semantics><mrow><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>γ</mi></mrow><mo>−</mo><mfrac><msup><mi>γ</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>β</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow><mo>=</mo><mn>2</mn></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">2\gamma-\frac{\gamma^{2}}{2}+\frac{\beta^{2}}{2}=2\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">então ou <math id="Ch1.Thmexo2.p1.m3" class="ltx_Math" alttext="\gamma+\beta=2" display="inline"><semantics><mrow><mrow><mi>γ</mi><mo>+</mo><mi>β</mi></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\gamma+\beta=2</annotation></semantics></math>, ou <math id="Ch1.Thmexo2.p1.m4" class="ltx_Math" alttext="\gamma-\beta=2" display="inline"><semantics><mrow><mrow><mi>γ</mi><mo>−</mo><mi>β</mi></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\gamma-\beta=2</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo3" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Existe um triângulo retângulo de área <math id="Ch1.Thmexo3.p1.m1" class="ltx_Math" alttext="7" display="inline"><semantics><mn>7</mn><annotation encoding="application/x-tex">7</annotation></semantics></math> e de perímetro <math id="Ch1.Thmexo3.p1.m2" class="ltx_Math" alttext="12" display="inline"><semantics><mn>12</mn><annotation encoding="application/x-tex">12</annotation></semantics></math>?</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.1.2</span> Ordem e intervalos</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Existe em <math id="SS2.p1.m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> uma relação de ordem: dois
+reais <math id="SS2.p1.m2" class="ltx_Math" alttext="x,y" display="inline"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math> podem ser comparados usando os seguintes símbolos:</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="x=y" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x=y</annotation></semantics></math>: “<math id="I2.i1.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">igual</span> a <math id="I2.i1.p1.m3" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>”,</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="x\neq y" display="inline"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\neq y</annotation></semantics></math>: “<math id="I2.i2.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">diferente</span> de <math id="I2.i2.p1.m3" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>”,</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="x\geq y" display="inline"><semantics><mrow><mi>x</mi><mo>≥</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\geq y</annotation></semantics></math>: “<math id="I2.i3.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">maior ou igual a</span> <math id="I2.i3.p1.m3" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>”,</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="x&gt;y" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x&gt;y</annotation></semantics></math>: “<math id="I2.i4.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">estritamente maior</span> que <math id="I2.i4.p1.m3" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>”,</p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="x\leq y" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\leq y</annotation></semantics></math>: “<math id="I2.i5.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">menor ou igual a</span> <math id="I2.i5.p1.m3" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>”,</p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i6.p1.m1" class="ltx_Math" alttext="x&lt;y" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x&lt;y</annotation></semantics></math>: “<math id="I2.i6.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">estritamente menor</span> que <math id="I2.i6.p1.m3" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>”.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">A ordem permite definir subconjuntos elementares de <math id="SS2.p2.m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>. Por exemplo, os <span class="ltx_text ltx_font_bold">reais
+não-negativos <math id="SS2.p2.m2" class="ltx_Math" alttext="\mathbb{R}_{+}" display="inline"><semantics><msub><mi>ℝ</mi><mo>+</mo></msub><annotation encoding="application/x-tex">\mathbb{R}_{+}</annotation></semantics></math></span> são definidos por</p>
+<div id="Ch1.Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex12.m1" class="ltx_Math" alttext="\mathbb{R}_{+}{:=}\{x\in\mathbb{R}:x\geq 0\}\,," display="block"><semantics><mrow><mrow><msub><mi>ℝ</mi><mo>+</mo></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><mo rspace="0.170em" stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}_{+}{:=}\{x\in\mathbb{R}:x\geq 0\}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">(leia-se: “o conjunto dos números reais <math id="SS2.p2.m4" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math> tais que <math id="SS2.p2.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> seja <math id="SS2.p2.m6" class="ltx_Math" alttext="\geq 0" display="inline"><semantics><mrow><mi></mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\geq 0</annotation></semantics></math>)
+e os <span class="ltx_text ltx_font_bold">reais positivos</span> por</p>
+<div id="Ch1.Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex13.m1" class="ltx_Math" alttext="\mathbb{R}_{+}^{*}{:=}\{x\in\mathbb{R}:x&gt;0\}\,." display="block"><semantics><mrow><mrow><msubsup><mi>ℝ</mi><mo>+</mo><mo>∗</mo></msubsup><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}_{+}^{*}{:=}\{x\in\mathbb{R}:x&gt;0\}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Podem também ser definidos conjuntos particulares chamados
+<span class="ltx_text ltx_font_bold">intervalos</span>. Começaremos com os intervalos <span class="ltx_text ltx_font_bold">limitados</span>.
+Se <math id="SS2.p2.m8" class="ltx_Math" alttext="a&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a&lt;b</annotation></semantics></math> são dois números reais, o intervalo <span class="ltx_text ltx_font_bold">fechado</span> é
+definido como</p>
+<div id="Ch1.Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex14.m1" class="ltx_Math" alttext="[a,b]{:=}\{x\in\mathbb{R}:a\leq x\leq b\}\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo rspace="0.278em" stretchy="false">]</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>a</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>b</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">[a,b]{:=}\{x\in\mathbb{R}:a\leq x\leq b\}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Leia-se: “<math id="SS2.p2.m9" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math> é definido como o conjunto dos números reais <math id="SS2.p2.m10" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tais que <math id="SS2.p2.m11" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> seja
+maior ou igual a <math id="SS2.p2.m12" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>, e menor ou igual a <math id="SS2.p2.m13" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>”.
+O intervalo <span class="ltx_text ltx_font_bold">aberto</span> é definido como</p>
+<div id="Ch1.Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex15.m1" class="ltx_Math" alttext="(a,b){:=}\{x\in\mathbb{R}:a&lt;x&lt;b\}\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>a</mi><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mi>b</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(a,b){:=}\{x\in\mathbb{R}:a&lt;x&lt;b\}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Observe que <math id="SS2.p2.m14" class="ltx_Math" alttext="(a,b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math> pode ser considerado como obtido a partir de <math id="SS2.p2.m15" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math> retirando as
+extremidades: <math id="SS2.p2.m16" class="ltx_Math" alttext="(a,b)=[a,b]\backslash\{a,b\}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo rspace="0.222em" stretchy="false">]</mo></mrow><mo rspace="0.222em">\</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">(a,b)=[a,b]\backslash\{a,b\}</annotation></semantics></math>.
+Definam-se também os intervalos semi-abertos (ou semi-fechados)</p>
+<div id="Ch1.Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex16.m1" class="ltx_Math" alttext="[a,b){:=}\{x\in\mathbb{R}:a\leq x&lt;b\}\,,\quad(a,b]{:=}\{x\in\mathbb{R}:a&lt;x\leq
+b%
+\}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>a</mi><mo>≤</mo><mi>x</mi><mo>&lt;</mo><mi>b</mi></mrow><mo rspace="0.170em" stretchy="false">}</mo></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo rspace="0.278em" stretchy="false">]</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>a</mi><mo>&lt;</mo><mi>x</mi><mo>≤</mo><mi>b</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">[a,b){:=}\{x\in\mathbb{R}:a\leq x&lt;b\}\,,\quad(a,b]{:=}\{x\in\mathbb{R}:a&lt;x\leq
+b%
+\}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Graficamente, representaremos esses intervalos da seguinte maneira:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-1.svg" alt="" id="SS2.p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="508" height="53"></div>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">Introduziremos também intervalos não-limitados: os <span class="ltx_text ltx_font_bold">semi-infinitos
+fechados</span></p>
+<div id="Ch1.Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex17.m1" class="ltx_Math" alttext="(-\infty,a]{:=}\{x\in\mathbb{R}:x\leq a\}\,,\quad[c,+\infty){:=}\{x\in\mathbb{%
+R}:x\geq c\}\,," display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>a</mi><mo rspace="0.278em" stretchy="false">]</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≤</mo><mi>a</mi></mrow><mo rspace="0.170em" stretchy="false">}</mo></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mo stretchy="false">[</mo><mi>c</mi><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≥</mo><mi>c</mi></mrow><mo rspace="0.170em" stretchy="false">}</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">(-\infty,a]{:=}\{x\in\mathbb{R}:x\leq a\}\,,\quad[c,+\infty){:=}\{x\in\mathbb{%
+R}:x\geq c\}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e os <span class="ltx_text ltx_font_bold">semi-infinitos abertos</span></p>
+<div id="Ch1.Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex18.m1" class="ltx_Math" alttext="(-\infty,a){:=}\{x\in\mathbb{R}:x&lt;a\}\,,\quad(c,+\infty){:=}\{x\in\mathbb{R}:x%
+&gt;c\}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>a</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>&lt;</mo><mi>a</mi></mrow><mo rspace="0.170em" stretchy="false">}</mo></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mo stretchy="false">(</mo><mi>c</mi><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>&gt;</mo><mi>c</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(-\infty,a){:=}\{x\in\mathbb{R}:x&lt;a\}\,,\quad(c,+\infty){:=}\{x\in\mathbb{R}:x%
+&gt;c\}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por exemplo,</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-2.svg" alt="" id="SS2.p3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="508" height="45"></div>
+<p class="ltx_p">Observe que “<math id="SS2.p3.m1" class="ltx_Math" alttext="+\infty" display="inline"><semantics><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">+\infty</annotation></semantics></math>” e “<math id="SS2.p3.m2" class="ltx_Math" alttext="-\infty" display="inline"><semantics><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">-\infty</annotation></semantics></math>” <em class="ltx_emph ltx_font_italic">não são números reais propriamente
+ditos</em>, <math id="SS2.p3.m3" class="ltx_Math" alttext="+\infty" display="inline"><semantics><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">+\infty</annotation></semantics></math> (respectivamente <math id="SS2.p3.m4" class="ltx_Math" alttext="-\infty" display="inline"><semantics><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">-\infty</annotation></semantics></math>) é somente um símbolo usado para representar
+a idéia (meio abstrata) de um número maior (respectivamente menor) do que qualquer real
+<math id="SS2.p3.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</p>
+</div>
+<div id="Ch1.Thmexo4" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Simplifique as expressões, usando as notações introduzidas acima.</span></p>
+<div class="ltx_pagination ltx_role_start_2_columns"></div>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="A=\{x\in\mathbb{R}:x^{2}\leq 4\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≤</mo><mn>4</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A=\{x\in\mathbb{R}:x^{2}\leq 4\}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="B=\{x:x\geq 0\}\cap\{x:x&lt;1\}" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><mo stretchy="false">}</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">B=\{x:x\geq 0\}\cap\{x:x&lt;1\}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I3.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i3.p1.m1" class="ltx_Math" alttext="C=\{x:x\leq 1\}\cap\{x:x&lt;0\}" display="inline"><semantics><mrow><mi>C</mi><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≤</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">C=\{x:x\leq 1\}\cap\{x:x&lt;0\}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I3.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i4.p1.m1" class="ltx_Math" alttext="D=\{x:x\geq 1\}\cap\{x:x\leq-1\}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≥</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≤</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">D=\{x:x\geq 1\}\cap\{x:x\leq-1\}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I3.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i5.p1.m1" class="ltx_Math" alttext="E=\{x:x\leq 2\}\cup[0,+\infty)" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>≤</mo><mn>2</mn></mrow><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E=\{x:x\leq 2\}\cup[0,+\infty)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I3.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i6.p1.m1" class="ltx_math_unparsed" alttext="F=[1,2]\cap(-\infty,1]" display="inline"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>1,2</mn><mo stretchy="false">]</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em">−</mo><mi mathvariant="normal">∞</mi><mn>,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">F=[1,2]\cap(-\infty,1]</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I3.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i7.p1.m1" class="ltx_Math" alttext="G=[0,1]\cap[0,\tfrac{1}{2}]\cap[0,\tfrac{1}{3}]\cap[0,\tfrac{1}{4}]\cap\dots" display="inline"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo stretchy="false">]</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">]</mo></mrow><mo>∩</mo><mi>…</mi></mrow></mrow><annotation encoding="application/x-tex">G=[0,1]\cap[0,\tfrac{1}{2}]\cap[0,\tfrac{1}{3}]\cap[0,\tfrac{1}{4}]\cap\dots</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I3.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i8.p1.m1" class="ltx_Math" alttext="H=[0,1]\cup[1,2]\cup[2,3]\cup[3,4]\cup\dots" display="inline"><semantics><mrow><mi>H</mi><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">[</mo><mn>1,2</mn><mo stretchy="false">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">[</mo><mn>2,3</mn><mo stretchy="false">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">[</mo><mn>3,4</mn><mo stretchy="false">]</mo></mrow><mo>∪</mo><mi>…</mi></mrow></mrow><annotation encoding="application/x-tex">H=[0,1]\cup[1,2]\cup[2,3]\cup[3,4]\cup\dots</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_2_columns"></div>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.1.3</span> Inequações e sinal</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">Considere a inequação do primeiro grau:</p>
+<div id="Ch1.E6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E6.m1" class="ltx_Math" alttext="2-2x\geq 1\,." display="block"><semantics><mrow><mrow><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>≥</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">2-2x\geq 1\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.6)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Como antes, “resolver” essa inequação significa achar todos os valores de
+<math id="SS3.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> para os quais a expressão em (<a href="#Ch1.E6" title="In 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>) se torne verdadeira.
+Por exemplo, <math id="SS3.p1.m2" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> é solução, pois o lado esquerdo vale <math id="SS3.p1.m3" class="ltx_Math" alttext="2-2\cdot 0=2" display="inline"><semantics><mrow><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>0</mn></mrow></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2-2\cdot 0=2</annotation></semantics></math>, que é <math id="SS3.p1.m4" class="ltx_Math" alttext="\geq 1" display="inline"><semantics><mrow><mi></mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\geq 1</annotation></semantics></math>.
+Mas em geral uma inequação pode possuir mais de uma solução, às vezes possui
+infinitas soluções.
+O conjunto de todas as soluções, também denotado por <math id="SS3.p1.m5" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>, pode ser calculado
+da seguinte maneira. Primeiro, <em class="ltx_emph ltx_font_italic">o conjunto <math id="SS3.p1.m6" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> das soluções não é
+modificado ao adicionarmos (ou subtrairmos)
+expressões iguais em ambos lados de uma inequação</em>. Assim, adicionando <math id="SS3.p1.m7" class="ltx_Math" alttext="2x" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">2x</annotation></semantics></math> em cada lado
+de (<a href="#Ch1.E6" title="In 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>), obtemos</p>
+<div id="Ch1.Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex19.m1" class="ltx_Math" alttext="2\geq 1+2x\,." display="block"><semantics><mrow><mrow><mn>2</mn><mo>≥</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">2\geq 1+2x\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Podemos em seguida subtrair <math id="SS3.p1.m8" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> em ambos lados:</p>
+<div id="Ch1.Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex20.m1" class="ltx_Math" alttext="1\geq 2x\,." display="block"><semantics><mrow><mrow><mn>1</mn><mo>≥</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">1\geq 2x\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Agora, <em class="ltx_emph ltx_font_italic">o conjunto <math id="SS3.p1.m9" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> das soluções não é modificado ao multiplicarmos
+(ou dividirmos) ambos lados de uma inequação por um número positivo</em>.
+Assim, dividindo ambos lados da inequação <math id="SS3.p1.m10" class="ltx_Math" alttext="1\geq 2x" display="inline"><semantics><mrow><mn>1</mn><mo>≥</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">1\geq 2x</annotation></semantics></math> por <math id="SS3.p1.m11" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> obtemos
+<math id="SS3.p1.m12" class="ltx_Math" alttext="\tfrac{1}{2}\geq x" display="inline"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>≥</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\tfrac{1}{2}\geq x</annotation></semantics></math>, isto é <math id="SS3.p1.m13" class="ltx_Math" alttext="x\leq\tfrac{1}{2}" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">x\leq\tfrac{1}{2}</annotation></semantics></math>. Assim,
+qualquer real <math id="SS3.p1.m14" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> menor ou igual a <math id="SS3.p1.m15" class="ltx_Math" alttext="\tfrac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{1}{2}</annotation></semantics></math> torna a desigualdade em
+(<a href="#Ch1.E6" title="In 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>) verdadeira. Logo, <math id="SS3.p1.m16" class="ltx_Math" alttext="S=(-\infty,\tfrac{1}{2}]" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">S=(-\infty,\tfrac{1}{2}]</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">Observe que
+(<a href="#Ch1.E6" title="In 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>) pode também ser resolvida subtraindo <math id="SS3.p2.m1" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> em ambos lados,</p>
+<div id="Ch1.E7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E7.m1" class="ltx_Math" alttext="-2x\geq-1\,." display="block"><semantics><mrow><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>≥</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">-2x\geq-1\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.7)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Passando <math id="SS3.p2.m2" class="ltx_Math" alttext="-2x" display="inline"><semantics><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">-2x</annotation></semantics></math> para o lado direito e <math id="SS3.p2.m3" class="ltx_Math" alttext="-1" display="inline"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math> para o lado esquerdo obtemos <math id="SS3.p2.m4" class="ltx_Math" alttext="1\geq 2x" display="inline"><semantics><mrow><mn>1</mn><mo>≥</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">1\geq 2x</annotation></semantics></math>, o que
+equivale a</p>
+<div id="Ch1.E8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E8.m1" class="ltx_Math" alttext="2x\leq 1\,." display="block"><semantics><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>≤</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">2x\leq 1\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.8)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Vemos que (<a href="#Ch1.E8" title="In 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8</span></a>) é obtida a partir de (<a href="#Ch1.E7" title="In 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.7</span></a>) <em class="ltx_emph ltx_font_italic">trocando os
+sinais</em> (i.é. multiplicando ambos lados por <math id="SS3.p2.m5" class="ltx_Math" alttext="-1" display="inline"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>), e <em class="ltx_emph ltx_font_italic">trocando o sentido da
+desigualdade</em>.</p>
+</div>
+<div id="Ch1.Thmex1" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 1.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmex1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolvamos agora uma inequação do segundo grau:</span></p>
+<div id="Ch1.E9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E9.m1" class="ltx_Math" alttext="x^{2}-3x+2&gt;0\,." display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>2</mn></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">x^{2}-3x+2&gt;0\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.9)</span>
+                
+                
+              
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Primeiro, o polinômio do lado esquerdo da desigualdade em (<a href="#Ch1.E9" title="In Exemplo 1.1. ‣ 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.9</span></a>) pode ser
+fatorado:
+<math id="Ch1.Thmex1.p1.m1" class="ltx_Math" alttext="x^{2}-3x+2=(x-1)(x-2)" display="inline"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>2</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x^{2}-3x+2=(x-1)(x-2)</annotation></semantics></math>. Assim, (<a href="#Ch1.E9" title="In Exemplo 1.1. ‣ 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.9</span></a>) é equivalente a</span></p>
+<div id="Ch1.E10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E10.m1" class="ltx_Math" alttext="(x-1)(x-2)&gt;0\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(x-1)(x-2)&gt;0\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.10)</span>
+                
+                
+              
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe agora que para o produto de dois números ser <math id="Ch1.Thmex1.p1.m2" class="ltx_Math" alttext="&gt;0" display="inline"><semantics><mrow><mi></mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&gt;0</annotation></semantics></math>, eles têm que ser ambos
+não-nulos e ter o mesmo sinal. Portanto, a resolução de (<a href="#Ch1.E10" title="In Exemplo 1.1. ‣ 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.10</span></a>) passa pelo estudo
+do sinal de <math id="Ch1.Thmex1.p1.m3" class="ltx_Math" alttext="x-1" display="inline"><semantics><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x-1</annotation></semantics></math> e <math id="Ch1.Thmex1.p1.m4" class="ltx_Math" alttext="x-2" display="inline"><semantics><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x-2</annotation></semantics></math>. Isso pode ser feito como em (<a href="#Ch1.E6" title="In 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>).
+Por um lado, <math id="Ch1.Thmex1.p1.m5" class="ltx_Math" alttext="x-1&lt;0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-1&lt;0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m6" class="ltx_Math" alttext="x&lt;1" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x&lt;1</annotation></semantics></math>, <math id="Ch1.Thmex1.p1.m7" class="ltx_Math" alttext="x-1=0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-1=0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m8" class="ltx_Math" alttext="x=1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>, e <math id="Ch1.Thmex1.p1.m9" class="ltx_Math" alttext="x-1&gt;0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-1&gt;0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m10" class="ltx_Math" alttext="x&gt;1" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x&gt;1</annotation></semantics></math>.
+Por outro lado, <math id="Ch1.Thmex1.p1.m11" class="ltx_Math" alttext="x-2&lt;0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-2&lt;0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m12" class="ltx_Math" alttext="x&lt;2" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x&lt;2</annotation></semantics></math>, <math id="Ch1.Thmex1.p1.m13" class="ltx_Math" alttext="x-2=0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-2=0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m14" class="ltx_Math" alttext="x=2" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x=2</annotation></semantics></math>, e <math id="Ch1.Thmex1.p1.m15" class="ltx_Math" alttext="x-2&gt;0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-2&gt;0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m16" class="ltx_Math" alttext="x&gt;2" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x&gt;2</annotation></semantics></math>.
+Isso pode ser resumido nas duas primeiras linhas da seguinte tabela:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-3.svg" alt="" id="Ch1.Thmex1.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="380" height="100"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A terceira linha foi obtida multiplicando os sinais de <math id="Ch1.Thmex1.p1.m17" class="ltx_Math" alttext="x-1" display="inline"><semantics><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x-1</annotation></semantics></math> e <math id="Ch1.Thmex1.p1.m18" class="ltx_Math" alttext="x-2" display="inline"><semantics><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x-2</annotation></semantics></math>:
+<math id="Ch1.Thmex1.p1.m19" class="ltx_Math" alttext="(x-1)(x-2)&gt;0" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x-1)(x-2)&gt;0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m20" class="ltx_Math" alttext="x&lt;1" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x&lt;1</annotation></semantics></math>, <math id="Ch1.Thmex1.p1.m21" class="ltx_Math" alttext="(x-1)(x-2)=0" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x-1)(x-2)=0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m22" class="ltx_Math" alttext="x=1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>,
+<math id="Ch1.Thmex1.p1.m23" class="ltx_Math" alttext="(x-1)(x-2)&lt;0" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x-1)(x-2)&lt;0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m24" class="ltx_Math" alttext="1&lt;x&lt;2" display="inline"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1&lt;x&lt;2</annotation></semantics></math>, <math id="Ch1.Thmex1.p1.m25" class="ltx_Math" alttext="(x-1)(x-2)=0" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x-1)(x-2)=0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m26" class="ltx_Math" alttext="x=2" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x=2</annotation></semantics></math>, e <math id="Ch1.Thmex1.p1.m27" class="ltx_Math" alttext="(x-1)(x-2)&gt;0" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x-1)(x-2)&gt;0</annotation></semantics></math> se <math id="Ch1.Thmex1.p1.m28" class="ltx_Math" alttext="x&gt;2" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x&gt;2</annotation></semantics></math>.
+Assim, <math id="Ch1.Thmex1.p1.m29" class="ltx_Math" alttext="S=(-\infty,1)\cup(2,+\infty)" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mrow><mi mathvariant="normal">∞</mi><mo>⁢</mo><mn>,1</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">S=(-\infty,1)\cup(2,+\infty)</annotation></semantics></math> dá todas as soluções de (<a href="#Ch1.E9" title="In Exemplo 1.1. ‣ 1.1.3 Inequações e sinal ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.9</span></a>).</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo5" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolva as seguintes inequações.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="x&gt;4-5" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mrow><mn>4</mn><mo>−</mo><mn>5</mn></mrow></mrow><annotation encoding="application/x-tex">x&gt;4-5</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="3x\leq x+1" display="inline"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>≤</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">3x\leq x+1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I4.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i3.p1.m1" class="ltx_Math" alttext="-8x&lt;3-4x" display="inline"><semantics><mrow><mrow><mo>−</mo><mrow><mn>8</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>&lt;</mo><mrow><mn>3</mn><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">-8x&lt;3-4x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I4.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i4.p1.m1" class="ltx_Math" alttext="10&gt;10-x" display="inline"><semantics><mrow><mn>10</mn><mo>&gt;</mo><mrow><mn>10</mn><mo>−</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">10&gt;10-x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I4.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i5.p1.m1" class="ltx_Math" alttext="x^{2}\geq 1" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{2}\geq 1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I4.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i6.p1.m1" class="ltx_Math" alttext="-x^{2}&gt;1+2x" display="inline"><semantics><mrow><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>&gt;</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">-x^{2}&gt;1+2x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I4.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i7.p1.m1" class="ltx_Math" alttext="x&gt;x" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x&gt;x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I4.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i8.p1.m1" class="ltx_Math" alttext="x\geq x" display="inline"><semantics><mrow><mi>x</mi><mo>≥</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x\geq x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I4.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i9.p1.m1" class="ltx_Math" alttext="x\leq x^{2}" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x\leq x^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I4.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i10.p1.m1" class="ltx_Math" alttext="-2x^{2}+10x-12&lt;0" display="inline"><semantics><mrow><mrow><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>10</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>−</mo><mn>12</mn></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-2x^{2}+10x-12&lt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I4.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i11.p1.m1" class="ltx_Math" alttext="x^{2}(x+7)\leq 0" display="inline"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>7</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}(x+7)\leq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span><div id="I4.i12.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i12.p1.m1" class="ltx_Math" alttext="x^{3}-2x^{2}-x+2&gt;0" display="inline"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{3}-2x^{2}-x+2&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i13" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">13.</span><div id="I4.i13.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i13.p1.m1" class="ltx_Math" alttext="x^{2}-x(x+3)\leq 0" display="inline"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}-x(x+3)\leq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i14" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">14.</span><div id="I4.i14.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i14.p1.m1" class="ltx_Math" alttext="x\leq\frac{x+3}{x-1}" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">x\leq\frac{x+3}{x-1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i15" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">15.</span><div id="I4.i15.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i15.p1.m1" class="ltx_Math" alttext="\frac{1}{x}-\frac{1}{x+2}\geq 0" display="inline"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\frac{1}{x}-\frac{1}{x+2}\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i16" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">16.</span><div id="I4.i16.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i16.p1.m1" class="ltx_Math" alttext="\frac{1}{x}+\frac{2}{2-x}&lt;1" display="inline"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>2</mn><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{1}{x}+\frac{2}{2-x}&lt;1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i17" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">17.</span><div id="I4.i17.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i17.p1.m1" class="ltx_Math" alttext="\frac{1-x}{2+x}\leq-\frac{2}{3x-4}" display="inline"><semantics><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mo>≤</mo><mrow><mo>−</mo><mfrac><mn>2</mn><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>4</mn></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">\frac{1-x}{2+x}\leq-\frac{2}{3x-4}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch1.Thmexo6" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Quantos números inteiros <math id="Ch1.Thmexo6.p1.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> existem tais que <math id="Ch1.Thmexo6.p1.m2" class="ltx_Math" alttext="3n-1\leq 5n-2&lt;4" display="inline"><semantics><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>n</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo>&lt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">3n-1\leq 5n-2&lt;4</annotation></semantics></math>?</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo7" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Quantos números primos <math id="Ch1.Thmexo7.p1.m1" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math> existem tais que <math id="Ch1.Thmexo7.p1.m2" class="ltx_Math" alttext="0\leq 2p-3\leq p+8" display="inline"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi></mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mrow><mi>p</mi><mo>+</mo><mn>8</mn></mrow></mrow><annotation encoding="application/x-tex">0\leq 2p-3\leq p+8</annotation></semantics></math>?</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS4" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.1.4</span> Valor absoluto</h2>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">Informalmente, o <span class="ltx_text ltx_font_bold">valor absoluto</span> de um número real <math id="SS4.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, denotado por <math id="SS4.p1.m2" class="ltx_Math" alttext="|x|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|x|</annotation></semantics></math>,
+representa o
+seu “valor equivalente positivo”. Por exemplo, <math id="SS4.p1.m3" class="ltx_Math" alttext="|5|=5" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mn>5</mn><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">|5|=5</annotation></semantics></math>, <math id="SS4.p1.m4" class="ltx_Math" alttext="|-3|=3" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">|-3|=3</annotation></semantics></math>, e <math id="SS4.p1.m5" class="ltx_Math" alttext="|0|=0" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mn>0</mn><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">|0|=0</annotation></semantics></math>.
+Formalmente,</p>
+</div>
+<div id="SS4.p2" class="ltx_para">
+<div id="Ch1.E11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E11.m1" class="ltx_Math" alttext="\boxed{|x|{:=}\begin{cases}x&amp;\text{ se }x&gt;0\\
+0&amp;\text{ se }x=0\\
+-x&amp;\text{ se }x&lt;0\,.\end{cases}}" display="block"><semantics><menclose notation="box"><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">|</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mi>x</mi></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mo>−</mo><mi>x</mi></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow></menclose><annotation encoding="application/x-tex">\boxed{|x|{:=}\begin{cases}x&amp;\text{ se }x&gt;0\\
+0&amp;\text{ se }x=0\\
+-x&amp;\text{ se }x&lt;0\,.\end{cases}}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.11)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS4.p3" class="ltx_para">
+<p class="ltx_p">Por exemplo, com essa definição, já que <math id="SS4.p3.m1" class="ltx_Math" alttext="-3&lt;0" display="inline"><semantics><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-3&lt;0</annotation></semantics></math>, temos <math id="SS4.p3.m2" class="ltx_Math" alttext="|-3|=-(-3)=3" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">|-3|=-(-3)=3</annotation></semantics></math>.
+Observe que para qualquer número <math id="SS4.p3.m3" class="ltx_Math" alttext="a\geq 0" display="inline"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a\geq 0</annotation></semantics></math>,</p>
+<div id="Ch1.E12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E12.m1" class="ltx_Math" alttext="|x|\leq a\Longleftrightarrow-a\leq x\leq a\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>a</mi></mrow><mo stretchy="false">⟺</mo><mrow><mrow><mo>−</mo><mi>a</mi></mrow><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>a</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">|x|\leq a\Longleftrightarrow-a\leq x\leq a\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.12)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">De fato, suponha primeiro que <math id="SS4.p3.m4" class="ltx_Math" alttext="x\geq 0" display="inline"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\geq 0</annotation></semantics></math>. Entao <math id="SS4.p3.m5" class="ltx_Math" alttext="|x|=x" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">|x|=x</annotation></semantics></math>, e <math id="SS4.p3.m6" class="ltx_Math" alttext="|x|\leq a" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">|x|\leq a</annotation></semantics></math>
+é equivalente a <math id="SS4.p3.m7" class="ltx_Math" alttext="x\leq a" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x\leq a</annotation></semantics></math>. Por outro lado, se <math id="SS4.p3.m8" class="ltx_Math" alttext="x\leq 0" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\leq 0</annotation></semantics></math>, então <math id="SS4.p3.m9" class="ltx_Math" alttext="|x|=-x" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>−</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">|x|=-x</annotation></semantics></math>, e
+<math id="SS4.p3.m10" class="ltx_Math" alttext="|x|\leq a" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">|x|\leq a</annotation></semantics></math> é equivalente a <math id="SS4.p3.m11" class="ltx_Math" alttext="-x\leq a" display="inline"><semantics><mrow><mrow><mo>−</mo><mi>x</mi></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">-x\leq a</annotation></semantics></math>, isto é a <math id="SS4.p3.m12" class="ltx_Math" alttext="-a\leq x" display="inline"><semantics><mrow><mrow><mo>−</mo><mi>a</mi></mrow><mo>≤</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">-a\leq x</annotation></semantics></math>.
+Juntando os dois casos, isso mostra que <math id="SS4.p3.m13" class="ltx_Math" alttext="|x|\leq a" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">|x|\leq a</annotation></semantics></math> é equivalente a <math id="SS4.p3.m14" class="ltx_Math" alttext="-a\leq x\leq a" display="inline"><semantics><mrow><mrow><mo>−</mo><mi>a</mi></mrow><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">-a\leq x\leq a</annotation></semantics></math>.</p>
+</div>
+<div id="Ch1.Thmexo8" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Quais das expressões abaixo são verdadeiras (para qualquer <math id="Ch1.Thmexo8.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>)?
+Justifique.</span></p>
+<div id="Ch1.Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex21.m1" class="ltx_Math" alttext="\sqrt{x^{2}}=x\,,\quad\sqrt{x}^{2}=x\,,\quad\sqrt{x^{2}}=|x|\,." display="block"><semantics><mrow><mrow><mrow><msqrt><msup><mi>x</mi><mn>2</mn></msup></msqrt><mo>=</mo><mi>x</mi></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><msqrt><mi>x</mi></msqrt><mn>2</mn></msup><mo>=</mo><mi>x</mi></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><msqrt><msup><mi>x</mi><mn>2</mn></msup></msqrt><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\sqrt{x^{2}}=x\,,\quad\sqrt{x}^{2}=x\,,\quad\sqrt{x^{2}}=|x|\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="SS4.p4" class="ltx_para">
+<p class="ltx_p">O valor absoluto para definir
+a <span class="ltx_text ltx_font_bold">distância</span> entre dois números reais:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-4.svg" alt="" id="SS4.p4.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="391" height="57"></div>
+<p class="ltx_p">De fato, se <math id="SS4.p4.m1" class="ltx_Math" alttext="x\leq y" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\leq y</annotation></semantics></math>, a distância é igual a <math id="SS4.p4.m2" class="ltx_Math" alttext="y-x=-(x-y)\equiv|x-y|" display="inline"><semantics><mrow><mrow><mi>y</mi><mo>−</mo><mi>x</mi></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">y-x=-(x-y)\equiv|x-y|</annotation></semantics></math>, e se
+<math id="SS4.p4.m3" class="ltx_Math" alttext="x&gt;y" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x&gt;y</annotation></semantics></math> a distância é <math id="SS4.p4.m4" class="ltx_Math" alttext="x-y\equiv|x-y|" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo>≡</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">x-y\equiv|x-y|</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="SS4.p5" class="ltx_para">
+<p class="ltx_p">Podemos também resolver inequações que envolvem valores absolutos:</p>
+</div>
+<div id="Ch1.Thmex2" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 1.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmex2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolvamos</span></p>
+<div id="Ch1.E13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E13.m1" class="ltx_Math" alttext="|x-2|\geq 3\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≥</mo><mn>3</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">|x-2|\geq 3\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.13)</span>
+                
+                
+              
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sabemos que pela definição do valor absoluto,</span></p>
+<div id="Ch1.Ex22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex22.m1" class="ltx_Math" alttext="|x-2|=\begin{cases}x-2&amp;\text{ se }x\geq 2\,,\\
+-x+2&amp;\text{ se }x&lt;2\,,\end{cases}" display="block"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≥</mo><mn>2</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mn>2</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>2</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">|x-2|=\begin{cases}x-2&amp;\text{ se }x\geq 2\,,\\
+-x+2&amp;\text{ se }x&lt;2\,,\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Logo, a resolução de (<a href="#Ch1.E13" title="In Exemplo 1.2. ‣ 1.1.4 Valor absoluto ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.13</span></a>) passa pela resolução de <em class="ltx_emph ltx_font_upright">duas</em> inequações mais
+simples. A primeira é</span></p>
+<div id="Ch1.Ex23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex23.m1" class="ltx_Math" alttext="x-2\geq 3\,,\text{ isto \'{e} }x\geq 5\,," display="block"><semantics><mrow><mrow><mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo>≥</mo><mn>3</mn></mrow><mo lspace="0.170em">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic"> isto é </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≥</mo><mn>5</mn></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">x-2\geq 3\,,\text{ isto \'{e} }x\geq 5\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">e deve ser considerada somente para os <math id="Ch1.Thmex2.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tais que <math id="Ch1.Thmex2.p1.m2" class="ltx_Math" alttext="x\geq 2" display="inline"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x\geq 2</annotation></semantics></math>. Isso
+dá um primeiro conjunto de soluções: <math id="Ch1.Thmex2.p1.m3" class="ltx_Math" alttext="S_{1}=[5,+\infty)" display="inline"><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>5</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">S_{1}=[5,+\infty)</annotation></semantics></math> (os reais que são ao mesmo tempo
+maiores ou iguais a <math id="Ch1.Thmex2.p1.m4" class="ltx_Math" alttext="5" display="inline"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math> e maiores ou iguais a <math id="Ch1.Thmex2.p1.m5" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>). A segunda é</span></p>
+<div id="Ch1.Ex24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.Ex24.m1" class="ltx_Math" alttext="-x+2\geq 3\,,\text{ isto \'{e} }x\leq-1\,," display="block"><semantics><mrow><mrow><mrow><mrow><mrow><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo>≥</mo><mn>3</mn></mrow><mo lspace="0.170em">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic"> isto é </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≤</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">-x+2\geq 3\,,\text{ isto \'{e} }x\leq-1\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">e deve ser considerada somente para os <math id="Ch1.Thmex2.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tais que <math id="Ch1.Thmex2.p1.m7" class="ltx_Math" alttext="x\leq 2" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x\leq 2</annotation></semantics></math>, o que dá um segundo
+conjunto de soluções <math id="Ch1.Thmex2.p1.m8" class="ltx_Math" alttext="S_{2}=(-\infty,-1]" display="inline"><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">S_{2}=(-\infty,-1]</annotation></semantics></math>. Assim, o conjunto de todas as soluções de
+(<a href="#Ch1.E13" title="In Exemplo 1.2. ‣ 1.1.4 Valor absoluto ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.13</span></a>) é dado por <math id="Ch1.Thmex2.p1.m9" class="ltx_Math" alttext="S=S_{1}\cup S_{2}" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>S</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">S=S_{1}\cup S_{2}</annotation></semantics></math>: <math id="Ch1.Thmex2.p1.m10" class="ltx_Math" alttext="S=(-\infty,-1]\cup[5,+\infty)" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">[</mo><mn>5</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">S=(-\infty,-1]\cup[5,+\infty)</annotation></semantics></math>.
+<br class="ltx_break"></span></p>
+</div>
+<div id="Ch1.Thmex2.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um jeito mais geométrico (mas equivalente) de resolver o problema é de escrever
+(<a href="#Ch1.E13" title="In Exemplo 1.2. ‣ 1.1.4 Valor absoluto ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.13</span></a>) como: <math id="Ch1.Thmex2.p2.m1" class="ltx_Math" alttext="d(x,2)\geq 3" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mn>,2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">d(x,2)\geq 3</annotation></semantics></math>. Assim, podemos
+interpretar as soluções de (<a href="#Ch1.E13" title="In Exemplo 1.2. ‣ 1.1.4 Valor absoluto ‣ 1.1 Números reais ‣ Capítulo 1 Fundamentos ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.13</span></a>) como sendo os reais <math id="Ch1.Thmex2.p2.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> cuja distância ao ponto
+<math id="Ch1.Thmex2.p2.m3" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> é maior ou igual a <math id="Ch1.Thmex2.p2.m4" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>, que são todos os reais a esquerda de
+<math id="Ch1.Thmex2.p2.m5" class="ltx_Math" alttext="-1" display="inline"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math> ou a direita de <math id="Ch1.Thmex2.p2.m6" class="ltx_Math" alttext="5" display="inline"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>: <math id="Ch1.Thmex2.p2.m7" class="ltx_Math" alttext="S=(-\infty,-1]\cup[5,+\infty)" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">[</mo><mn>5</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">S=(-\infty,-1]\cup[5,+\infty)</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch1.Thmexo9" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolva as seguintes inequações.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="|x+27|\geq 0" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>+</mo><mn>27</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">|x+27|\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="|x-2|&lt;0" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">|x-2|&lt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I5.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="|2x+3|&gt;0" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">|2x+3|&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I5.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i4.p1.m1" class="ltx_Math" alttext="3&lt;|3-x|" display="inline"><semantics><mrow><mn>3</mn><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mrow><mn>3</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">3&lt;|3-x|</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I5.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i5.p1.m1" class="ltx_Math" alttext="2x-3|x|-4\geq 0" display="inline"><semantics><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow><mo>−</mo><mn>4</mn></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2x-3|x|-4\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I5.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i6.p1.m1" class="ltx_Math" alttext="|x^{2}-1|\leq 1" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|x^{2}-1|\leq 1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I5.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i7.p1.m1" class="ltx_Math" alttext="\frac{x}{|x-2|}&gt;2" display="inline"><semantics><mrow><mfrac><mi>x</mi><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">|</mo></mrow></mfrac><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\frac{x}{|x-2|}&gt;2</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="SS4.p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Estudar o sinal de uma expressão</span> que depende de uma variável <math id="SS4.p6.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> significa
+determinar os valores de <math id="SS4.p6.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> para os quais a expressão é positiva, negativa, ou
+nula.</p>
+</div>
+<div id="Ch1.Thmex3" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 1.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmex3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estudemos o sinal da expressão <math id="Ch1.Thmex3.p1.m1" class="ltx_Math" alttext="x^{3}+3x^{2}" display="inline"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">x^{3}+3x^{2}</annotation></semantics></math>.
+Como <math id="Ch1.Thmex3.p1.m2" class="ltx_Math" alttext="x^{3}+3x^{2}=x^{2}(x+3)" display="inline"><semantics><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x^{3}+3x^{2}=x^{2}(x+3)</annotation></semantics></math>, o sinal da expressão inteira é obtido a partir dos sinais das
+partes <math id="Ch1.Thmex3.p1.m3" class="ltx_Math" alttext="x^{2}" display="inline"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^{2}</annotation></semantics></math> e <math id="Ch1.Thmex3.p1.m4" class="ltx_Math" alttext="x+3" display="inline"><semantics><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x+3</annotation></semantics></math>.</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-5.svg" alt="" id="Ch1.Thmex3.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="380" height="100"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Assim vemos que <math id="Ch1.Thmex3.p1.m5" class="ltx_Math" alttext="x^{3}+3x^{2}" display="inline"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">x^{3}+3x^{2}</annotation></semantics></math> é <math id="Ch1.Thmex3.p1.m6" class="ltx_Math" alttext="&gt;0" display="inline"><semantics><mrow><mi></mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&gt;0</annotation></semantics></math> (<em class="ltx_emph ltx_font_upright">estritamente positiva</em>) se <math id="Ch1.Thmex3.p1.m7" class="ltx_Math" alttext="x\in(-3,0)\cup(0,\infty)" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>3,0</mn></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x\in(-3,0)\cup(0,\infty)</annotation></semantics></math>, ela é <math id="Ch1.Thmex3.p1.m8" class="ltx_Math" alttext="&lt;0" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&lt;0</annotation></semantics></math> (<em class="ltx_emph ltx_font_upright">estritamente negativa</em>) se <math id="Ch1.Thmex3.p1.m9" class="ltx_Math" alttext="x&lt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&lt;0</annotation></semantics></math>, e é <math id="Ch1.Thmex3.p1.m10" class="ltx_Math" alttext="=0" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">=0</annotation></semantics></math> (<em class="ltx_emph ltx_font_upright">nula</em>)
+se <math id="Ch1.Thmex3.p1.m11" class="ltx_Math" alttext="x\in\{-3,0\}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mrow><mo>−</mo><mn>3,0</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">x\in\{-3,0\}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="SS4.p7" class="ltx_para">
+<p class="ltx_p">Mais tarde resolveremos inequações onde aparecem, e estudaremos o sinal de outras
+expressões, como funções trigonométricas, raízes ou logaritmos.</p>
+</div>
+<div id="Ch1.Thmexo10" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 1.10</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch1.Thmexo10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estude o sinal das seguintes expressões</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I6" class="ltx_enumerate">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i1.p1.m1" class="ltx_Math" alttext="5+x" display="inline"><semantics><mrow><mn>5</mn><mo>+</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">5+x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I6.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i2.p1.m1" class="ltx_Math" alttext="5+x^{2}" display="inline"><semantics><mrow><mn>5</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">5+x^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I6.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i3.p1.m1" class="ltx_Math" alttext="(x-5)^{2}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><annotation encoding="application/x-tex">(x-5)^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I6.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i4.p1.m1" class="ltx_Math" alttext="x^{2}-5" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">x^{2}-5</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I6.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i5.p1.m1" class="ltx_Math" alttext="\frac{x^{2}+2x-48}{2-x}" display="inline"><semantics><mfrac><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>−</mo><mn>48</mn></mrow><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{x^{2}+2x-48}{2-x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I6.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i6.p1.m1" class="ltx_Math" alttext="(x+1)|2x-1-x^{2}|" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">(x+1)|2x-1-x^{2}|</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch1.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

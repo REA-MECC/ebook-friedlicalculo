@@ -1,0 +1,459 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>7.2 Extremos locais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch7.S1.html" title="7.1 Extremos globais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="next" href="Ch7.S3.html" title="7.3 A procura de extremos em intervalos fechados ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S1.html" title="7.1 Extremos globais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S3.html" title="7.3 A procura de extremos em intervalos fechados ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S4.html" title="7.4 Problemas de otimização ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S5.html" title="7.5 A Lei de Snell ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Potencial, de Lennard-Jones, local, máximo, mínimo">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="7.1" data-path="Ch7.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S1.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.1 </span></b>Extremos globais</a></li>
+<li data-level="7.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.2 </span></b>Extremos locais</a></li>
+<li data-level="7.3" data-path="Ch7.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S3.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.3 </span></b>A procura de extremos em intervalos
+fechados</a></li>
+<li data-level="7.4" data-path="Ch7.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S4.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.4 </span></b>Problemas de otimização</a></li>
+<li data-level="7.5" data-path="Ch7.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S5.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.5 </span></b>A Lei de Snell</a></li>
+</ol>
+</li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Extremos locais</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">7.2</span> Extremos locais</h1>
+
+<div id="Ch7.Thmdefin2" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 7.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmdefin2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere uma função real <math id="Ch7.Thmdefin2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um ponto </span><math id="I1.i1.p1.m1" class="ltx_Math" alttext="x_{*}\in D" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">x_{*}\in D</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é chamado de </span><span class="ltx_text ltx_font_bold ltx_font_italic">máximo local
+de <math id="I1.i1.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathvariant="normal">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="ltx_text ltx_font_italic"> se existir um intervalo aberto </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="I\ni x_{*}" display="inline"><semantics><mrow><mi>I</mi><mo>∋</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><annotation encoding="application/x-tex">I\ni x_{*}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que
+</span><math id="I1.i1.p1.m4" class="ltx_Math" alttext="f(x)\leq f(x_{*})" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)\leq f(x_{*})</annotation></semantics></math><span class="ltx_text ltx_font_italic"> para todo </span><math id="I1.i1.p1.m5" class="ltx_Math" alttext="x\in I" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x\in I</annotation></semantics></math><span class="ltx_text ltx_font_italic">.
+</span><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um ponto </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="x_{*}\in D" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">x_{*}\in D</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é chamado de </span><span class="ltx_text ltx_font_bold ltx_font_italic">mínimo local
+de <math id="I1.i2.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathvariant="normal">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="ltx_text ltx_font_italic"> se existir um intervalo aberto </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="I\ni x_{*}" display="inline"><semantics><mrow><mi>I</mi><mo>∋</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><annotation encoding="application/x-tex">I\ni x_{*}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que
+</span><math id="I1.i2.p1.m4" class="ltx_Math" alttext="f(x)\geq f(x_{*})" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)\geq f(x_{*})</annotation></semantics></math><span class="ltx_text ltx_font_italic"> para todo </span><math id="I1.i2.p1.m5" class="ltx_Math" alttext="x\in I" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x\in I</annotation></semantics></math><span class="ltx_text ltx_font_italic">.
+</span><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_logical-block">
+        
+<div id="p1" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-122.svg" alt="" id="g1" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="145" height="156"></div>
+</div>
+        
+<figure id="Ch7.F1" class="ltx_figure ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 7.1: </span>Uma função com um máximo global
+em <math id="Ch7.F1.m3" class="ltx_Math" alttext="x_{1}" display="inline"><semantics><msub><mi>x</mi><mn>1</mn></msub><annotation encoding="application/x-tex">x_{1}</annotation></semantics></math> e um máximo local em <math id="Ch7.F1.m4" class="ltx_Math" alttext="x_{2}" display="inline"><semantics><msub><mi>x</mi><mn>2</mn></msub><annotation encoding="application/x-tex">x_{2}</annotation></semantics></math>.</figcaption>
+</figure>
+      
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Observe que um ponto de máximo (resp. mínimo) global, quando pertencente
+ao interior do domínio, é local ao mesmo tempo.
+Vejamos agora como que extremos locais podem ser encontrados usando derivada.</p>
+</div>
+<div id="Ch7.Thmteo2" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 7.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmteo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch7.Thmteo2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> uma função com um máximo (resp. mínimo) local em <math id="Ch7.Thmteo2.p1.m2" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>.
+Se <math id="Ch7.Thmteo2.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é derivável em <math id="Ch7.Thmteo2.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, então <math id="Ch7.Thmteo2.p1.m5" class="ltx_Math" alttext="f^{\prime}(x_{*})=0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{*})=0</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Seja <math id="p3.m1" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> um máximo local (se for mínimo local, a prova é parecida).
+Isto é, <math id="p3.m2" class="ltx_Math" alttext="f(x)\leq f(x_{*})" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)\leq f(x_{*})</annotation></semantics></math> para todo <math id="p3.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> suficientemente perto de <math id="p3.m4" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>.
+Como <math id="p3.m5" class="ltx_Math" alttext="f^{\prime}(x_{*})" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{*})</annotation></semantics></math> existe por hipótese, podemos escrever
+<math id="p3.m6" class="ltx_Math" alttext="f^{\prime}(x_{*})=\lim_{x\to x_{*}^{+}}\frac{f(x)-f(x_{*})}{x-x_{*}}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msubsup><mi>x</mi><mo>∗</mo><mo>+</mo></msubsup></mrow></msub><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{*})=\lim_{x\to x_{*}^{+}}\frac{f(x)-f(x_{*})}{x-x_{*}}</annotation></semantics></math>. Mas aqui <math id="p3.m7" class="ltx_Math" alttext="x-x_{*}&gt;0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-x_{*}&gt;0</annotation></semantics></math>, e
+como <math id="p3.m8" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> é máximo local, <math id="p3.m9" class="ltx_Math" alttext="f(x)-f(x_{*})\leq 0" display="inline"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x)-f(x_{*})\leq 0</annotation></semantics></math>. Portanto,
+<math id="p3.m10" class="ltx_Math" alttext="f^{\prime}(x_{*})\leq 0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{*})\leq 0</annotation></semantics></math>.
+Por outro lado, podemos escrever
+<math id="p3.m11" class="ltx_Math" alttext="f^{\prime}(x_{*})=\lim_{x\to x_{*}^{-}}\frac{f(x)-f(x_{*})}{x-x_{*}}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msubsup><mi>x</mi><mo>∗</mo><mo>−</mo></msubsup></mrow></msub><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{*})=\lim_{x\to x_{*}^{-}}\frac{f(x)-f(x_{*})}{x-x_{*}}</annotation></semantics></math>. Aqui, <math id="p3.m12" class="ltx_Math" alttext="x-x_{*}&lt;0" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x-x_{*}&lt;0</annotation></semantics></math>, e
+<math id="p3.m13" class="ltx_Math" alttext="f(x)-f(x_{*})\leq 0" display="inline"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x)-f(x_{*})\leq 0</annotation></semantics></math>, logo <math id="p3.m14" class="ltx_Math" alttext="f^{\prime}(x_{*})\geq 0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{*})\geq 0</annotation></semantics></math>. Consequentemente, <math id="p3.m15" class="ltx_Math" alttext="f^{\prime}(x_{*})=0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{*})=0</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">O resultado acima permite achar <em class="ltx_emph ltx_font_italic">candidatos</em> a pontos de mínimo/máximo
+local. Vejamos alguns exemplos.</p>
+</div>
+<div id="Ch7.Thmex6" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 7.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmex6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch7.Thmex6.p1.m1" class="ltx_Math" alttext="f(x)=1-x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=1-x^{2}</annotation></semantics></math>, que é obviamente derivável.
+Logo, sabemos pelo Teorema <a href="#Ch7.Thmteo2" title="Teorema 7.2. ‣ 7.2 Extremos locais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.2</span></a> que qualquer extremo
+local deve anular a derivada. Como <math id="Ch7.Thmex6.p1.m2" class="ltx_Math" alttext="f^{\prime}(x)=-2x" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=-2x</annotation></semantics></math>, e como <math id="Ch7.Thmex6.p1.m3" class="ltx_Math" alttext="f^{\prime}(x)=0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=0</annotation></semantics></math> se e somente se
+<math id="Ch7.Thmex6.p1.m4" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>, o ponto <math id="Ch7.Thmex6.p1.m5" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> é candidato a ser um extremo local. Para determinar se de
+fato é, estudemos o sinal de <math id="Ch7.Thmex6.p1.m6" class="ltx_Math" alttext="f^{\prime}(x)" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)</annotation></semantics></math>, e observemos que <math id="Ch7.Thmex6.p1.m7" class="ltx_Math" alttext="f^{\prime}(x)&gt;0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x)&gt;0</annotation></semantics></math>
+se <math id="Ch7.Thmex6.p1.m8" class="ltx_Math" alttext="x&lt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&lt;0</annotation></semantics></math>, <math id="Ch7.Thmex6.p1.m9" class="ltx_Math" alttext="f^{\prime}(x)&lt;0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x)&lt;0</annotation></semantics></math> se <math id="Ch7.Thmex6.p1.m10" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>. Logo, <math id="Ch7.Thmex6.p1.m11" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> cresce antes de <math id="Ch7.Thmex6.p1.m12" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>, decresce depois:
+<math id="Ch7.Thmex6.p1.m13" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> é um ponto de máximo local:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-123.svg" alt="" id="Ch7.Thmex6.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="350" height="93"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que podia também calcular <math id="Ch7.Thmex6.p1.m14" class="ltx_Math" alttext="f^{\prime\prime}(x)=-2" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(x)=-2</annotation></semantics></math>, que é sempre <math id="Ch7.Thmex6.p1.m15" class="ltx_Math" alttext="&lt;0" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&lt;0</annotation></semantics></math>, o que implica
+que <math id="Ch7.Thmex6.p1.m16" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é côncava, logo <math id="Ch7.Thmex6.p1.m17" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> só pode ser um máximo local.
+A <em class="ltx_emph ltx_font_upright">posição</em> do máximo local no gráfico de <math id="Ch7.Thmex6.p1.m18" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é <math id="Ch7.Thmex6.p1.m19" class="ltx_Math" alttext="(0,f(0))=(0,1)" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">(0,f(0))=(0,1)</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmobs1" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 7.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmobs1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">No exemplo anterior, localizamos um ponto onde a primeira derivada é nula, e
+em seguida usamos o <span class="ltx_text ltx_font_bold">teste da segunda derivada</span>:
+estudamos o sinal da segunda derivada neste mesmo ponto para determinar se ele
+é um mínimo ou um máximo local.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmex7" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 7.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmex7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch7.Thmex7.p1.m1" class="ltx_Math" alttext="f(x)=x^{3}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{3}</annotation></semantics></math>, derivável também.
+Como <math id="Ch7.Thmex7.p1.m2" class="ltx_Math" alttext="f^{\prime}(x)=3x^{2}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=3x^{2}</annotation></semantics></math>, <math id="Ch7.Thmex7.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> é candidato a ser ponto de mínimo ou máximo local.
+Ora, vemos que <math id="Ch7.Thmex7.p1.m4" class="ltx_Math" alttext="f^{\prime}(x)\geq 0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x)\geq 0</annotation></semantics></math> para todo <math id="Ch7.Thmex7.p1.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, logo <em class="ltx_emph ltx_font_upright"><math id="Ch7.Thmex7.p1.m6" class="ltx_Math" alttext="f^{\prime}" display="inline"><semantics><msup><mi>f</mi><mo>′</mo></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math> não muda de sinal em
+<math id="Ch7.Thmex7.p1.m7" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math></em>. Portanto esse ponto não é nem mínimo, nem máximo.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmex8" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 7.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmex8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A função <math id="Ch7.Thmex8.p1.m1" class="ltx_Math" alttext="f(x)=|x|" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)=|x|</annotation></semantics></math> possui um mínimo local (que também é global) em <math id="Ch7.Thmex8.p1.m2" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>.
+Observe que esse fato não segue do Teorema
+<a href="#Ch7.Thmteo2" title="Teorema 7.2. ‣ 7.2 Extremos locais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.2</span></a>, já que <math id="Ch7.Thmex8.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> não é derivável em zero.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmex9" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 7.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmex9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere
+<math id="Ch7.Thmex9.p1.m1" class="ltx_Math" alttext="f(x)=\frac{x^{4}}{4}-\frac{x^{2}}{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">f(x)=\frac{x^{4}}{4}-\frac{x^{2}}{2}</annotation></semantics></math>, que é derivável em todo <math id="Ch7.Thmex9.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Como <math id="Ch7.Thmex9.p1.m3" class="ltx_Math" alttext="f^{\prime}(x)=x^{3}-x=x(x^{2}-1)" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mi>x</mi></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=x^{3}-x=x(x^{2}-1)</annotation></semantics></math>, as soluções de <math id="Ch7.Thmex9.p1.m4" class="ltx_Math" alttext="f^{\prime}(x)=0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=0</annotation></semantics></math> são <math id="Ch7.Thmex9.p1.m5" class="ltx_Math" alttext="x=-1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">x=-1</annotation></semantics></math>, <math id="Ch7.Thmex9.p1.m6" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>,
+<math id="Ch7.Thmex9.p1.m7" class="ltx_Math" alttext="x=+1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">x=+1</annotation></semantics></math>. A tabela de variação já foi montada no Exercício
+<a href="Ch6.S6.html#Ch6.Thmexo32" title="Exercício 6.32. ‣ 6.6 Derivada e Variação ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.32</span></a>. Logo,
+<math id="Ch7.Thmex9.p1.m8" class="ltx_Math" alttext="x=-1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">x=-1</annotation></semantics></math> e <math id="Ch7.Thmex9.p1.m9" class="ltx_Math" alttext="x=+1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">x=+1</annotation></semantics></math> são pontos de mínimo local (posições:
+<math id="Ch7.Thmex9.p1.m10" class="ltx_Math" alttext="(-1,f(-1))=(-1,-\frac{1}{2})" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">(-1,f(-1))=(-1,-\frac{1}{2})</annotation></semantics></math> e <math id="Ch7.Thmex9.p1.m11" class="ltx_Math" alttext="(+1,f(+1))=(+1,-\frac{1}{2})" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">(+1,f(+1))=(+1,-\frac{1}{2})</annotation></semantics></math>), e <math id="Ch7.Thmex9.p1.m12" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> é máximo
+local (posição: <math id="Ch7.Thmex9.p1.m13" class="ltx_Math" alttext="(0,0)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0,0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,0)</annotation></semantics></math>).</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo2" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para cada função abaixo (todas são deriváveis), determine os extremos locais
+(se tiver).</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="2x^{3}+3x^{2}-12x+5" display="inline"><semantics><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>−</mo><mrow><mn>12</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2x^{3}+3x^{2}-12x+5</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="2x^{3}+x" display="inline"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">2x^{3}+x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="\frac{x^{4}}{4}+\frac{x^{3}}{3}" display="inline"><semantics><mrow><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{x^{4}}{4}+\frac{x^{3}}{3}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="\frac{x^{2}+1}{x^{2}+x+1}" display="inline"><semantics><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><annotation encoding="application/x-tex">\frac{x^{2}+1}{x^{2}+x+1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="e^{-\frac{x^{2}}{2}}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><annotation encoding="application/x-tex">e^{-\frac{x^{2}}{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i6.p1.m1" class="ltx_Math" alttext="xe^{-x}" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">xe^{-x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i7.p1.m1" class="ltx_Math" alttext="\frac{x}{1+x^{2}}" display="inline"><semantics><mfrac><mi>x</mi><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{x}{1+x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I2.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i8.p1.m1" class="ltx_Math" alttext="x^{x}" display="inline"><semantics><msup><mi>x</mi><mi>x</mi></msup><annotation encoding="application/x-tex">x^{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i8.p1.m2" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I2.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i9.p1.m1" class="ltx_Math" alttext="x(\ln x)^{2}" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x(\ln x)^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i9.p1.m2" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch7.Thmexo3" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Determine os valores dos parâmetros <math id="Ch7.Thmexo3.p1.m1" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> e <math id="Ch7.Thmexo3.p1.m2" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> para que <math id="Ch7.Thmexo3.p1.m3" class="ltx_Math" alttext="f(x)=x^{3}+ax^{2}+b" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>b</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=x^{3}+ax^{2}+b</annotation></semantics></math> tenha
+um extremo local posicionado em <math id="Ch7.Thmexo3.p1.m4" class="ltx_Math" alttext="(-2,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>2,1</mn></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(-2,1)</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo4" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A energia de interação entre dois átomos (ou moléculas) a
+distância <math id="Ch7.Thmexo4.p1.m1" class="ltx_Math" alttext="r&gt;0" display="inline"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&gt;0</annotation></semantics></math> é modelizado pelo <span class="ltx_text ltx_font_bold">potencial de
+Lennard-Jones</span> <span id="Ch7.footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                  <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_upright">1</span></span>
+                  
+                  
+                  
+                <span class="ltx_text ltx_font_upright">Sir John Edward Lennard-Jones (27 de outubro de 1894 –
+1 de novembro de 1954).</span></span></span></span>:</span></p>
+<div id="Ch7.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex1.m1" class="ltx_Math" alttext="V(r)=4\epsilon\Big{\{}\big{(}\frac{\sigma}{r}\big{)}^{12}-\big{(}\frac{\sigma}%
+{r}\big{)}^{6}\Big{\}}\,," display="block"><semantics><mrow><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>ϵ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">{</mo><mrow><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mfrac><mi>σ</mi><mi>r</mi></mfrac><mo maxsize="120%" minsize="120%">)</mo></mrow><mn>12</mn></msup><mo>−</mo><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mfrac><mi>σ</mi><mi>r</mi></mfrac><mo maxsize="120%" minsize="120%">)</mo></mrow><mn>6</mn></msup></mrow><mo maxsize="160%" minsize="160%" rspace="0.170em">}</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">V(r)=4\epsilon\Big{\{}\big{(}\frac{\sigma}{r}\big{)}^{12}-\big{(}\frac{\sigma}%
+{r}\big{)}^{6}\Big{\}}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">onde <math id="Ch7.Thmexo4.p1.m2" class="ltx_Math" alttext="\epsilon" display="inline"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math> e <math id="Ch7.Thmexo4.p1.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math> são duas constantes positivas.</span></p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Determine a distância </span><math id="I3.i1.p1.m1" class="ltx_Math" alttext="r_{0}" display="inline"><semantics><msub><mi>r</mi><mn>0</mn></msub><annotation encoding="application/x-tex">r_{0}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que o potencial seja zero.</span></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Determine a distância </span><math id="I3.i2.p1.m1" class="ltx_Math" alttext="r_{*}" display="inline"><semantics><msub><mi>r</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">r_{*}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que a interação seja mínima.
+Existe máximo global? Determine a variação e esboce </span><math id="I3.i2.p1.m2" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math><span class="ltx_text ltx_font_italic">.
+</span><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch7.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch7.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

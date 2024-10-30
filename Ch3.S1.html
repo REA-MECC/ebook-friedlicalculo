@@ -1,0 +1,670 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="next" href="Ch3.S2.html" title="3.2 Logaritmo ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="section" href="Ch3.S2.html" title="3.2 Logaritmo ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="section" href="Ch3.S3.html" title="3.3 A base 𝑒=2,718⁢… ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="section" href="Ch3.S4.html" title="3.4 Funções trigonométricas hiperbólicas ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Potências de dez (filme), aproximação, conjunto, denso, divergência, exponencial, limite, na base , números, por racionais, potência, propriedades, racionais diádicos">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Exponencial</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Logaritmo</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>A base <math class="ltx_Math" alttext="e=2,718..." display="inline"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mn>2,718</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">e=2,718...</annotation></semantics></math></a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="In Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>Funções hiperbólicas</a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Exponencial</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3.1</span> Exponencial</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="p1.m1" class="ltx_Math" alttext="a&gt;0" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math> um número positivo, fixo, chamado <span class="ltx_text ltx_font_bold">base</span>. Definamos primeiro,
+para todo número natural <math id="p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>,</p>
+<div id="Ch3.Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex5.m1" class="ltx_Math" alttext="\exp_{a}(n){:=}a^{n}=a\cdot a\cdots a\,\quad\text{($n$ vezes)}\,." display="block"><semantics><mrow><mrow><mrow><mrow><msub><mi>exp</mi><mi>a</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>a</mi></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>a</mi></mrow></mrow><mspace width="1.36666666666667em"></mspace><mrow><mtext>(</mtext><mi>n</mi><mtext> vezes)</mtext></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\exp_{a}(n){:=}a^{n}=a\cdot a\cdots a\,\quad\text{($n$ vezes)}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">(Em particular, <math id="p1.m3" class="ltx_Math" alttext="a^{1}=a" display="inline"><semantics><mrow><msup><mi>a</mi><mn>1</mn></msup><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">a^{1}=a</annotation></semantics></math>.)
+Assim obtemos uma função</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx35" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch3.Ex6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex6.m1" class="ltx_Math" alttext="\displaystyle\exp_{a}:\mathbb{N}" display="inline"><semantics><mrow><msub><mi>exp</mi><mi>a</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exp_{a}:\mathbb{N}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex6.m2" class="ltx_Math" alttext="\displaystyle\to(0,\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to(0,\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch3.Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex7.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex7.m2" class="ltx_Math" alttext="\displaystyle\mapsto a^{n}\,," display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>n</mi></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto a^{n}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">que satisfaz às seguintes propriedades: para todo <math id="p1.m4" class="ltx_Math" alttext="m,n\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">m,n\in\mathbb{N}</annotation></semantics></math>,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx36" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch3.E1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.E1.m1" class="ltx_Math" alttext="\displaystyle a^{m}a^{n}" display="inline"><semantics><mrow><msup><mi>a</mi><mi>m</mi></msup><mo>⁢</mo><msup><mi>a</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\displaystyle a^{m}a^{n}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.E1.m2" class="ltx_Math" alttext="\displaystyle=a^{m+n}\,," display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle=a^{m+n}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1)</span></td>
+</tr></tbody>
+<tbody id="Ch3.E2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.E2.m1" class="ltx_Math" alttext="\displaystyle(a^{m})^{n}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mi>m</mi></msup><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><annotation encoding="application/x-tex">\displaystyle(a^{m})^{n}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.E2.m2" class="ltx_Math" alttext="\displaystyle=a^{m\cdot n}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>n</mi></mrow></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=a^{m\cdot n}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Se <math id="p1.m5" class="ltx_Math" alttext="b&gt;0" display="inline"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b&gt;0</annotation></semantics></math> for uma outra base,</p>
+<div id="Ch3.E3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E3.m1" class="ltx_Math" alttext="(a\cdot b)^{n}=a^{n}b^{n}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>b</mi><mi>n</mi></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">(a\cdot b)^{n}=a^{n}b^{n}\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.3)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">O nosso objetivo é de estender essa função à reta real toda:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx37" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch3.Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex8.m1" class="ltx_Math" alttext="\displaystyle\exp_{a}:\mathbb{R}" display="inline"><semantics><mrow><msub><mi>exp</mi><mi>a</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exp_{a}:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex8.m2" class="ltx_Math" alttext="\displaystyle\to(0,\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to(0,\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch3.Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex9.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex9.m2" class="ltx_Math" alttext="\displaystyle\mapsto a^{x}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>x</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto a^{x}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Faremos essa extensão passo a passo, com o seguinte objetivo em mente: <em class="ltx_emph ltx_font_italic">que
+as relações (<a href="#Ch3.E1" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>)-(<a href="#Ch3.E3" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>) sejam sempre satisfeitas,
+também para variáveis reais.</em>
+<br class="ltx_break"></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Por exemplo, como definir <math id="p3.m1" class="ltx_Math" alttext="a^{0}" display="inline"><semantics><msup><mi>a</mi><mn>0</mn></msup><annotation encoding="application/x-tex">a^{0}</annotation></semantics></math>? Para (<a href="#Ch3.E1" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>) ser satisfeita com
+<math id="p3.m2" class="ltx_Math" alttext="m=0" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m=0</annotation></semantics></math>, <math id="p3.m3" class="ltx_Math" alttext="n=1" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n=1</annotation></semantics></math>,</p>
+<div id="Ch3.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex10.m1" class="ltx_Math" alttext="a=a^{1}=a^{1+0}=a^{1}\cdot a^{0}=a\cdot a^{0}\,." display="block"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><msup><mi>a</mi><mn>1</mn></msup><mo>=</mo><msup><mi>a</mi><mrow><mn>1</mn><mo>+</mo><mn>0</mn></mrow></msup><mo>=</mo><mrow><msup><mi>a</mi><mn>1</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>a</mi><mn>0</mn></msup></mrow><mo>=</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>a</mi><mn>0</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">a=a^{1}=a^{1+0}=a^{1}\cdot a^{0}=a\cdot a^{0}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Daí, simplificando por <math id="p3.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> na última expressão,
+vemos que é preciso definir</p>
+<div id="Ch3.Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex11.m1" class="ltx_Math" alttext="a^{0}{:=}1\,." display="block"><semantics><mrow><mrow><msup><mi>a</mi><mn>0</mn></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">a^{0}{:=}1\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Podemos em seguida definir a exponencial dos inteiros negativos, <math id="p3.m5" class="ltx_Math" alttext="a^{-n}" display="inline"><semantics><msup><mi>a</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup><annotation encoding="application/x-tex">a^{-n}</annotation></semantics></math>.
+Usando de novo (<a href="#Ch3.E1" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>) com <math id="p3.m6" class="ltx_Math" alttext="m=-n" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mo>−</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">m=-n</annotation></semantics></math>, temos</p>
+<div id="Ch3.Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex12.m1" class="ltx_Math" alttext="a^{n}a^{-n}=a^{n-n}=a^{0}=1\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>a</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mo>=</mo><msup><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mi>n</mi></mrow></msup><mo>=</mo><msup><mi>a</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">a^{n}a^{-n}=a^{n-n}=a^{0}=1\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Logo, vemos que <math id="p3.m7" class="ltx_Math" alttext="a^{-n}" display="inline"><semantics><msup><mi>a</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup><annotation encoding="application/x-tex">a^{-n}</annotation></semantics></math> precisa ser definida como:</p>
+<div id="Ch3.Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex13.m1" class="ltx_Math" alttext="a^{-n}{:=}\frac{1}{a^{n}}\,." display="block"><semantics><mrow><mrow><msup><mi>a</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mn>1</mn><msup><mi>a</mi><mi>n</mi></msup></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">a^{-n}{:=}\frac{1}{a^{n}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">O mesmo raciocínio pode ser aplicado em geral: se <math id="p3.m8" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math> já foi definido para
+<math id="p3.m9" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>, então o único jeito de definir <math id="p3.m10" class="ltx_Math" alttext="a^{-x}" display="inline"><semantics><msup><mi>a</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">a^{-x}</annotation></semantics></math> é como:</p>
+<div id="Ch3.Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex14.m1" class="ltx_Math" alttext="a^{-x}{:=}\tfrac{1}{a^{x}}\,." display="block"><semantics><mrow><mrow><msup><mi>a</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><msup><mi>a</mi><mi>x</mi></msup></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">a^{-x}{:=}\tfrac{1}{a^{x}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Estamos por enquanto com uma função</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx38" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch3.Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex15.m1" class="ltx_Math" alttext="\displaystyle\exp_{a}:\mathbb{Z}" display="inline"><semantics><mrow><msub><mi>exp</mi><mi>a</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exp_{a}:\mathbb{Z}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex15.m2" class="ltx_Math" alttext="\displaystyle\to(0,\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to(0,\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch3.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex16.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex16.m2" class="ltx_Math" alttext="\displaystyle\mapsto a^{n}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>n</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto a^{n}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Façamos um primeiro esboço, isto é,
+representemos alguns pontos de coordenadas <math id="p3.m11" class="ltx_Math" alttext="(n,a^{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><msup><mi>a</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(n,a^{n})</annotation></semantics></math>, <math id="p3.m12" class="ltx_Math" alttext="n\in\mathbb{Z}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{Z}</annotation></semantics></math>, no plano
+cartesiano
+(nessa figura, <math id="p3.m13" class="ltx_Math" alttext="a=2" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">a=2</annotation></semantics></math>):</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-61.svg" alt="" id="p3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="234" height="185"></div>
+<p class="ltx_p">Já podemos observar que para valores de <math id="p3.m14" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> positivos grandes (aqui <math id="p3.m15" class="ltx_Math" alttext="a=2" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">a=2</annotation></semantics></math>),</p>
+<div id="Ch3.Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex17.m1" class="ltx_Math" alttext="2^{1}=2\,\quad 2^{2}=4\,,\quad 2^{3}=8\,\quad 2^{4}=16\,,\quad 2^{5}=32\,,%
+\quad 2^{6}=64\,,..." display="block"><semantics><mrow><mrow><msup><mn>2</mn><mn>1</mn></msup><mo>=</mo><mn>2</mn></mrow><mspace width="1.36666666666667em"></mspace><mrow><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>=</mo><mn>8</mn></mrow><mspace width="1.36666666666667em"></mspace><mrow><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>=</mo><mn>16</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>32</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><msup><mn>2</mn><mn>6</mn></msup><mo>=</mo><mrow><mn>64</mn><mo lspace="0.170em">,</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">2^{1}=2\,\quad 2^{2}=4\,,\quad 2^{3}=8\,\quad 2^{4}=16\,,\quad 2^{5}=32\,,%
+\quad 2^{6}=64\,,...</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como cada elemento dessa sequência é o <em class="ltx_emph ltx_font_italic">dobro</em> do anterior, ela
+<em class="ltx_emph ltx_font_italic">diverge exponencialmente</em> rápido.
+Por outro lado, para valores de <math id="p3.m16" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> negativos grandes, a sequência
+<em class="ltx_emph ltx_font_italic">converge exponencialmente</em> rápido para zero:</p>
+<div id="Ch3.Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex18.m1" class="ltx_Math" alttext="2^{-1}=0.5\,,\quad 2^{-2}=0.25\,,\quad 2^{-3}=0.125\,,\quad 2^{-4}=0.0625\,,%
+\quad 2^{-5}=0.03125\,..." display="block"><semantics><mrow><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>0.5</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>=</mo><mn>0.25</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>=</mo><mn>0.125</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><mo>=</mo><mn>0.0625</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>=</mo><mrow><mn>0.03125</mn><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">2^{-1}=0.5\,,\quad 2^{-2}=0.25\,,\quad 2^{-3}=0.125\,,\quad 2^{-4}=0.0625\,,%
+\quad 2^{-5}=0.03125\,...</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Agora que <math id="p4.m1" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math> foi definida para os valores de <math id="p4.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> inteiros, vejamos como
+definir <math id="p4.m3" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math> para os semi-inteiros
+<math id="p4.m4" class="ltx_Math" alttext="x\in\{\dots,-\frac{5}{2},-\frac{3}{2},-\frac{1}{2},\frac{1}{2},\frac{3}{2},%
+\frac{5}{2},\dots\}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mo>−</mo><mfrac><mn>5</mn><mn>2</mn></mfrac></mrow><mo>,</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo>,</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">x\in\{\dots,-\frac{5}{2},-\frac{3}{2},-\frac{1}{2},\frac{1}{2},\frac{3}{2},%
+\frac{5}{2},\dots\}</annotation></semantics></math>.
+Por exemplo, se <math id="p4.m5" class="ltx_Math" alttext="x=\tfrac{1}{2}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">x=\tfrac{1}{2}</annotation></semantics></math>, já que <math id="p4.m6" class="ltx_Math" alttext="(a^{\frac{1}{2}})^{2}=a" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">(a^{\frac{1}{2}})^{2}=a</annotation></semantics></math> por
+(<a href="#Ch3.E2" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>), vemos que
+<math id="p4.m7" class="ltx_Math" alttext="a^{\frac{1}{2}}=\sqrt{a}" display="inline"><semantics><mrow><msup><mi>a</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>=</mo><msqrt><mi>a</mi></msqrt></mrow><annotation encoding="application/x-tex">a^{\frac{1}{2}}=\sqrt{a}</annotation></semantics></math>. Para definir <math id="p4.m8" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math> para <math id="p4.m9" class="ltx_Math" alttext="x=\frac{m}{2}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mi>m</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">x=\frac{m}{2}</annotation></semantics></math>, <math id="p4.m10" class="ltx_Math" alttext="m\in\mathbb{Z}" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">m\in\mathbb{Z}</annotation></semantics></math>,
+usemos também (<a href="#Ch3.E2" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>). Quando <math id="p4.m11" class="ltx_Math" alttext="m&gt;0" display="inline"><semantics><mrow><mi>m</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m&gt;0</annotation></semantics></math>,</p>
+<div id="Ch3.Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex19.m1" class="ltx_Math" alttext="a^{\frac{m}{2}}{:=}(a^{\frac{1}{2}})^{m}=\sqrt{a}^{m}\,," display="block"><semantics><mrow><mrow><msup><mi>a</mi><mfrac><mi>m</mi><mn>2</mn></mfrac></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo stretchy="false">)</mo></mrow><mi>m</mi></msup><mo>=</mo><msup><msqrt><mi>a</mi></msqrt><mi>m</mi></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">a^{\frac{m}{2}}{:=}(a^{\frac{1}{2}})^{m}=\sqrt{a}^{m}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e quando <math id="p4.m12" class="ltx_Math" alttext="m&lt;0" display="inline"><semantics><mrow><mi>m</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m&lt;0</annotation></semantics></math>,</p>
+<div id="Ch3.Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex20.m1" class="ltx_Math" alttext="\quad a^{-\frac{m}{2}}{:=}\frac{1}{a^{\frac{m}{2}}}\,." display="block"><semantics><mrow><mrow><msup><mi>a</mi><mrow><mo>−</mo><mfrac><mi>m</mi><mn>2</mn></mfrac></mrow></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mn>1</mn><msup><mi>a</mi><mfrac><mi>m</mi><mn>2</mn></mfrac></msup></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\quad a^{-\frac{m}{2}}{:=}\frac{1}{a^{\frac{m}{2}}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Assim, o gráfico anterior pode ser acrescentado dos pontos da forma
+<math id="p4.m13" class="ltx_Math" alttext="(\tfrac{m}{2},a^{\frac{m}{2}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo>,</mo><msup><mi>a</mi><mfrac><mi>m</mi><mn>2</mn></mfrac></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\tfrac{m}{2},a^{\frac{m}{2}})</annotation></semantics></math>:</p>
+</div>
+<div id="p5" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-62.svg" alt="" id="g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="224" height="171"></div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Repetindo esse processo, <math id="p6.m1" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math> pode ser definido para os pontos da forma
+<math id="p6.m2" class="ltx_Math" alttext="\tfrac{m}{4}" display="inline"><semantics><mfrac><mi>m</mi><mn>4</mn></mfrac><annotation encoding="application/x-tex">\tfrac{m}{4}</annotation></semantics></math>, <math id="p6.m3" class="ltx_Math" alttext="\tfrac{m}{8}" display="inline"><semantics><mfrac><mi>m</mi><mn>8</mn></mfrac><annotation encoding="application/x-tex">\tfrac{m}{8}</annotation></semantics></math>, <math id="p6.m4" class="ltx_Math" alttext="\tfrac{m}{16}" display="inline"><semantics><mfrac><mi>m</mi><mn>16</mn></mfrac><annotation encoding="application/x-tex">\tfrac{m}{16}</annotation></semantics></math>, etc, obtendo assim uma função
+definida para qualquer <math id="p6.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> da forma <math id="p6.m6" class="ltx_Math" alttext="\tfrac{m}{2^{k}}" display="inline"><semantics><mfrac><mi>m</mi><msup><mn>2</mn><mi>k</mi></msup></mfrac><annotation encoding="application/x-tex">\tfrac{m}{2^{k}}</annotation></semantics></math>. Esses reais são chamados
+de <span class="ltx_text ltx_font_bold">racionais diádicos</span>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-63.svg" alt="" id="g2" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="556" height="134"></div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Observe que a medida que <math id="p8.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> aumenta,
+os racionais diádicos <math id="p8.m2" class="ltx_Math" alttext="\tfrac{m}{2^{k}}" display="inline"><semantics><mfrac><mi>m</mi><msup><mn>2</mn><mi>k</mi></msup></mfrac><annotation encoding="application/x-tex">\tfrac{m}{2^{k}}</annotation></semantics></math> vão enchendo a
+reta real: diz-se que eles
+formam um conjunto <em class="ltx_emph ltx_font_italic">denso</em> na reta.
+<br class="ltx_break"></p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Mas todos os racionais diádicos são racionais, e existem muitos (!) reais que
+não são racionais…
+Daremos a idéia da última (e mais delicada) etapa da construção de <math id="p9.m1" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math> para
+qualquer real <math id="p9.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. Procederemos por <em class="ltx_emph ltx_font_italic">aproximação</em>, observando que
+qualquer real <math id="p9.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> pode ser cercado por dois diádicos, digamos <math id="p9.m4" class="ltx_Math" alttext="z_{-}" display="inline"><semantics><msub><mi>z</mi><mo>−</mo></msub><annotation encoding="application/x-tex">z_{-}</annotation></semantics></math> e <math id="p9.m5" class="ltx_Math" alttext="z_{+}" display="inline"><semantics><msub><mi>z</mi><mo>+</mo></msub><annotation encoding="application/x-tex">z_{+}</annotation></semantics></math>,
+arbitrariamente próximos um do outro.</p>
+</div>
+<div id="Ch3.Thmex3" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 3.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch3.Thmex3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Por exemplo, <math id="Ch3.Thmex3.p1.m1" class="ltx_Math" alttext="\pi=3.141592\dots" display="inline"><semantics><mrow><mi>π</mi><mo>=</mo><mrow><mn>3.141592</mn><mo>⁢</mo><mi>…</mi></mrow></mrow><annotation encoding="application/x-tex">\pi=3.141592\dots</annotation></semantics></math> é irracional <span id="Ch3.footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                  <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_upright">1</span></span>
+                  
+                  
+                  
+                <span class="ltx_text ltx_font_upright">A irracionalidade de
+</span><math id="Ch3.footnote1.m1" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math><span class="ltx_text ltx_font_upright"> foi provada pela primeira vez por Johann Heinrich Lambert em </span><math id="Ch3.footnote1.m2" class="ltx_Math" alttext="1761" display="inline"><semantics><mn>1761</mn><annotation encoding="application/x-tex">1761</annotation></semantics></math><span class="ltx_text ltx_font_upright">.</span></span></span></span>,
+e é possível obter
+aproximações pegando sucessivamente diádicos com <math id="Ch3.Thmex3.p1.m2" class="ltx_Math" alttext="k=0,1,2,\dots" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mn>0,1,2</mn><mo>,</mo><mi>…</mi></mrow></mrow><annotation encoding="application/x-tex">k=0,1,2,\dots</annotation></semantics></math>,etc.:</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx39" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch3.Ex21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex21.m1" class="ltx_Math" alttext="\displaystyle 3=\frac{3}{2^{0}}" display="inline"><semantics><mrow><mn>3</mn><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><msup><mn>2</mn><mn>0</mn></msup></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle 3=\frac{3}{2^{0}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex21.m2" class="ltx_Math" alttext="\displaystyle&lt;\pi&lt;\frac{4}{2^{0}}=4" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mi>π</mi><mo>&lt;</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><msup><mn>2</mn><mn>0</mn></msup></mfrac></mstyle><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle&lt;\pi&lt;\frac{4}{2^{0}}=4</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch3.Ex22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex22.m1" class="ltx_Math" alttext="\displaystyle 3=\frac{6}{2^{1}}" display="inline"><semantics><mrow><mn>3</mn><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>6</mn><msup><mn>2</mn><mn>1</mn></msup></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle 3=\frac{6}{2^{1}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex22.m2" class="ltx_Math" alttext="\displaystyle&lt;\pi&lt;\frac{7}{2^{1}}=3.5" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mi>π</mi><mo>&lt;</mo><mstyle displaystyle="true"><mfrac><mn>7</mn><msup><mn>2</mn><mn>1</mn></msup></mfrac></mstyle><mo>=</mo><mn>3.5</mn></mrow><annotation encoding="application/x-tex">\displaystyle&lt;\pi&lt;\frac{7}{2^{1}}=3.5</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch3.Ex23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex23.m1" class="ltx_Math" alttext="\displaystyle 3=\frac{12}{2^{2}}" display="inline"><semantics><mrow><mn>3</mn><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>12</mn><msup><mn>2</mn><mn>2</mn></msup></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle 3=\frac{12}{2^{2}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex23.m2" class="ltx_Math" alttext="\displaystyle&lt;\pi&lt;\frac{13}{2^{2}}=3.250" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mi>π</mi><mo>&lt;</mo><mstyle displaystyle="true"><mfrac><mn>13</mn><msup><mn>2</mn><mn>2</mn></msup></mfrac></mstyle><mo>=</mo><mn>3.250</mn></mrow><annotation encoding="application/x-tex">\displaystyle&lt;\pi&lt;\frac{13}{2^{2}}=3.250</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch3.Ex24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex24.m1" class="ltx_Math" alttext="\displaystyle 3.125=\frac{25}{2^{3}}" display="inline"><semantics><mrow><mn>3.125</mn><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>25</mn><msup><mn>2</mn><mn>3</mn></msup></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle 3.125=\frac{25}{2^{3}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex24.m2" class="ltx_Math" alttext="\displaystyle&lt;\pi&lt;\frac{26}{2^{3}}=3.250\,\quad\text{etc.}" display="inline"><semantics><mrow><mrow><mi></mi><mo>&lt;</mo><mi>π</mi><mo>&lt;</mo><mstyle displaystyle="true"><mfrac><mn>26</mn><msup><mn>2</mn><mn>3</mn></msup></mfrac></mstyle><mo>=</mo><mn>3.250</mn></mrow><mspace width="1.36666666666667em"></mspace><mtext class="ltx_mathvariant_italic">etc.</mtext></mrow><annotation encoding="application/x-tex">\displaystyle&lt;\pi&lt;\frac{26}{2^{3}}=3.250\,\quad\text{etc.}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Assim, podemos sempre achar um diádico, ou maior ou menor do que <math id="Ch3.Thmex3.p1.m3" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>, cujo valor
+numérico é arbitrariamente perto de <math id="Ch3.Thmex3.p1.m4" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Assim, para qualquer irracional <math id="p10.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, é possível escolher uma
+sequência decrescente de diádicos <math id="p10.m2" class="ltx_Math" alttext="z_{n}^{+}" display="inline"><semantics><msubsup><mi>z</mi><mi>n</mi><mo>+</mo></msubsup><annotation encoding="application/x-tex">z_{n}^{+}</annotation></semantics></math> que <em class="ltx_emph ltx_font_italic">tende a <math id="p10.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></em>,
+<math id="p10.m4" class="ltx_Math" alttext="z_{n}^{+}\searrow x" display="inline"><semantics><mrow><msubsup><mi>z</mi><mi>n</mi><mo>+</mo></msubsup><mo>↘</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">z_{n}^{+}\searrow x</annotation></semantics></math>, e uma sequência crescente de diádicos <math id="p10.m5" class="ltx_Math" alttext="z_{n}^{-}" display="inline"><semantics><msubsup><mi>z</mi><mi>n</mi><mo>−</mo></msubsup><annotation encoding="application/x-tex">z_{n}^{-}</annotation></semantics></math>
+<em class="ltx_emph ltx_font_italic">que tende a <math id="p10.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></em>, <math id="p10.m7" class="ltx_Math" alttext="z_{n}^{-}\nearrow x" display="inline"><semantics><mrow><msubsup><mi>z</mi><mi>n</mi><mo>−</mo></msubsup><mo>↗</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">z_{n}^{-}\nearrow x</annotation></semantics></math>.</p>
+</div>
+<div id="p11" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-64.svg" alt="" id="g3" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="142" height="149"></div>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Vemos então que os valores de <math id="p12.m1" class="ltx_Math" alttext="a^{z_{n}^{-}}" display="inline"><semantics><msup><mi>a</mi><msubsup><mi>z</mi><mi>n</mi><mo>−</mo></msubsup></msup><annotation encoding="application/x-tex">a^{z_{n}^{-}}</annotation></semantics></math> e <math id="p12.m2" class="ltx_Math" alttext="a^{z_{n}^{+}}" display="inline"><semantics><msup><mi>a</mi><msubsup><mi>z</mi><mi>n</mi><mo>+</mo></msubsup></msup><annotation encoding="application/x-tex">a^{z_{n}^{+}}</annotation></semantics></math> se aproximam de um
+valor comum, que será usado para definir o valor de <math id="p12.m3" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math>.</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">Observe que essa construção usa implicitamente, pela primeira vez, a idéia
+sutil de <em class="ltx_emph ltx_font_italic">limite</em>, que será apresentada no próximo capítulo: qualquer
+real
+<math id="p13.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> pode ser <em class="ltx_emph ltx_font_italic">aproximado por uma sequência</em> <math id="p13.m2" class="ltx_Math" alttext="z_{n}" display="inline"><semantics><msub><mi>z</mi><mi>n</mi></msub><annotation encoding="application/x-tex">z_{n}</annotation></semantics></math>
+de racionais diádicos:</p>
+<div id="Ch3.Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex25.m1" class="ltx_Math" alttext="x=\lim_{n\to\infty}z_{n}\,." display="block"><semantics><mrow><mrow><mi>x</mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>z</mi><mi>n</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">x=\lim_{n\to\infty}z_{n}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como <math id="p13.m3" class="ltx_Math" alttext="a^{z_{n}}" display="inline"><semantics><msup><mi>a</mi><msub><mi>z</mi><mi>n</mi></msub></msup><annotation encoding="application/x-tex">a^{z_{n}}</annotation></semantics></math> já foi definida para cada <math id="p13.m4" class="ltx_Math" alttext="z_{n}" display="inline"><semantics><msub><mi>z</mi><mi>n</mi></msub><annotation encoding="application/x-tex">z_{n}</annotation></semantics></math> da sequência, <math id="p13.m5" class="ltx_Math" alttext="a^{x}" display="inline"><semantics><msup><mi>a</mi><mi>x</mi></msup><annotation encoding="application/x-tex">a^{x}</annotation></semantics></math> é definida como</p>
+<div id="Ch3.Ex26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex26.m1" class="ltx_Math" alttext="a^{x}{:=}\lim_{n\to\infty}a^{z_{n}}\,." display="block"><semantics><mrow><mrow><msup><mi>a</mi><mi>x</mi></msup><mo lspace="0.278em">:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mi>a</mi><msub><mi>z</mi><mi>n</mi></msub></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">a^{x}{:=}\lim_{n\to\infty}a^{z_{n}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Pode ser mostrado que a função <math id="p13.m6" class="ltx_Math" alttext="x\mapsto a^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto a^{x}</annotation></semantics></math> obtida satisfaz às propriedades
+(<a href="#Ch3.E1" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>)-(<a href="#Ch3.E3" title="In 3.1 Exponencial ‣ Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>). Por exemplo, se <math id="p13.m7" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math> é um outro real,
+aproximado pela sequência <math id="p13.m8" class="ltx_Math" alttext="w_{n}" display="inline"><semantics><msub><mi>w</mi><mi>n</mi></msub><annotation encoding="application/x-tex">w_{n}</annotation></semantics></math>, <math id="p13.m9" class="ltx_Math" alttext="y=\lim_{n\to\infty}w_{n}" display="inline"><semantics><mrow><mi>y</mi><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msub><mi>w</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">y=\lim_{n\to\infty}w_{n}</annotation></semantics></math>, então <math id="p13.m10" class="ltx_Math" alttext="x+y" display="inline"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x+y</annotation></semantics></math> pode ser
+aproximado pela sequência <math id="p13.m11" class="ltx_Math" alttext="(z_{n}+w_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>z</mi><mi>n</mi></msub><mo>+</mo><msub><mi>w</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(z_{n}+w_{n})</annotation></semantics></math>, logo</p>
+<div id="Ch3.Ex27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex27.m1" class="ltx_Math" alttext="a^{x+y}=\lim_{n\to\infty}a^{z_{n}+w_{n}}=\lim_{n\to\infty}a^{z_{n}}a^{w_{n}}=(%
+\lim_{n\to\infty}a^{z_{n}})(\lim_{n\to\infty}a^{w_{n}})=a^{x}a^{y}\,." display="block"><semantics><mrow><mrow><msup><mi>a</mi><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></msup><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mi>a</mi><mrow><msub><mi>z</mi><mi>n</mi></msub><mo>+</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msup></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msup><mi>a</mi><msub><mi>z</mi><mi>n</mi></msub></msup><mo>⁢</mo><msup><mi>a</mi><msub><mi>w</mi><mi>n</mi></msub></msup></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mi>a</mi><msub><mi>z</mi><mi>n</mi></msub></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mi>a</mi><msub><mi>w</mi><mi>n</mi></msub></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>a</mi><mi>y</mi></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">a^{x+y}=\lim_{n\to\infty}a^{z_{n}+w_{n}}=\lim_{n\to\infty}a^{z_{n}}a^{w_{n}}=(%
+\lim_{n\to\infty}a^{z_{n}})(\lim_{n\to\infty}a^{w_{n}})=a^{x}a^{y}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Todas as operações acima são corretas, mas precisam ser justificadas.</p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">AQUI
+Assim conseguimos definir a função <span class="ltx_text ltx_font_bold">exponencial na base <math id="p14.m1" class="ltx_Math" alttext="a&gt;0" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math></span> como uma
+função definida na reta real inteira:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx40" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch3.Ex28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex28.m1" class="ltx_Math" alttext="\displaystyle\exp_{a}:\mathbb{R}" display="inline"><semantics><mrow><msub><mi>exp</mi><mi>a</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exp_{a}:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex28.m2" class="ltx_Math" alttext="\displaystyle\to(0,\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to(0,\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch3.Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.Ex29.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.Ex29.m2" class="ltx_Math" alttext="\displaystyle\mapsto a^{x}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>x</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto a^{x}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Ela foi construida de maneira tal que as seguintes propriedades sejam
+satisfeitas: <math id="p14.m3" class="ltx_Math" alttext="a^{0}=1" display="inline"><semantics><mrow><msup><mi>a</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a^{0}=1</annotation></semantics></math>,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx41" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch3.E4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.E4.m1" class="ltx_Math" alttext="\displaystyle a^{x}a^{y}" display="inline"><semantics><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>a</mi><mi>y</mi></msup></mrow><annotation encoding="application/x-tex">\displaystyle a^{x}a^{y}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.E4.m2" class="ltx_Math" alttext="\displaystyle=a^{x+y}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><msup><mi>a</mi><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle=a^{x+y}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.4)</span></td>
+</tr></tbody>
+<tbody id="Ch3.E5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.E5.m1" class="ltx_Math" alttext="\displaystyle(a^{x})^{y}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mi>x</mi></msup><mo stretchy="false">)</mo></mrow><mi>y</mi></msup><annotation encoding="application/x-tex">\displaystyle(a^{x})^{y}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.E5.m2" class="ltx_Math" alttext="\displaystyle=a^{xy}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><msup><mi>a</mi><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle=a^{xy}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.5)</span></td>
+</tr></tbody>
+<tbody id="Ch3.E6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.E6.m1" class="ltx_Math" alttext="\displaystyle\frac{a^{x}}{a^{y}}" display="inline"><semantics><mstyle displaystyle="true"><mfrac><msup><mi>a</mi><mi>x</mi></msup><msup><mi>a</mi><mi>y</mi></msup></mfrac></mstyle><annotation encoding="application/x-tex">\displaystyle\frac{a^{x}}{a^{y}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.E6.m2" class="ltx_Math" alttext="\displaystyle=a^{x-y}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><msup><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle=a^{x-y}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.6)</span></td>
+</tr></tbody>
+<tbody id="Ch3.E7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch3.E7.m1" class="ltx_Math" alttext="\displaystyle(ab)^{x}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><annotation encoding="application/x-tex">\displaystyle(ab)^{x}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch3.E7.m2" class="ltx_Math" alttext="\displaystyle=a^{x}b^{x}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>b</mi><mi>x</mi></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=a^{x}b^{x}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.7)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Todas as funções exponenciais com base <math id="p14.m4" class="ltx_Math" alttext="a&gt;1" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a&gt;1</annotation></semantics></math> têm gráficos parecidos:</p>
+</div>
+<div id="p15" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-65.svg" alt="" id="g4" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="247" height="187"></div>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">Observe que todos os gráficos passam pelo ponto <math id="p16.m1" class="ltx_Math" alttext="(0,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>, e que <math id="p16.m2" class="ltx_Math" alttext="x\mapsto a^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto a^{x}</annotation></semantics></math>
+é <em class="ltx_emph ltx_font_italic">estritamente crescente</em>:</p>
+<div id="Ch3.Ex30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex30.m1" class="ltx_Math" alttext="x&lt;y\quad\Leftrightarrow\quad a^{x}&lt;a^{y}\,." display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>&lt;</mo><mrow><mi>y</mi><mspace width="1.2em"></mspace><mo stretchy="false">⇔</mo></mrow></mrow><mspace width="1.2em"></mspace><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>&lt;</mo><msup><mi>a</mi><mi>y</mi></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">x&lt;y\quad\Leftrightarrow\quad a^{x}&lt;a^{y}\,.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">Para os valores <math id="p17.m1" class="ltx_Math" alttext="a&lt;1" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a&lt;1</annotation></semantics></math>, basta usar uma simetria:
+Para <math id="p17.m2" class="ltx_Math" alttext="a=\frac{1}{2}" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">a=\frac{1}{2}</annotation></semantics></math> por exemplo, podemos observar que</p>
+<div id="Ch3.Ex31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex31.m1" class="ltx_Math" alttext="\exp_{{\frac{1}{2}}}(x)=(\tfrac{1}{2})^{x}=2^{-x}=\exp_{2}(-x)\,." display="block"><semantics><mrow><mrow><mrow><msub><mi>exp</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><mo>=</mo><msup><mn>2</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>=</mo><mrow><msub><mi>exp</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\exp_{{\frac{1}{2}}}(x)=(\tfrac{1}{2})^{x}=2^{-x}=\exp_{2}(-x)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Portanto, o gráfico de <math id="p17.m3" class="ltx_Math" alttext="x\mapsto(\frac{1}{2})^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto(\frac{1}{2})^{x}</annotation></semantics></math> é obtido a partir do gráfico de
+<math id="p17.m4" class="ltx_Math" alttext="x\mapsto 2^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mn>2</mn><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto 2^{x}</annotation></semantics></math> por uma simetria pelo eixo <math id="p17.m5" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>. Em geral, o gráfico de <math id="p17.m6" class="ltx_Math" alttext="x\mapsto(\frac{1}{a})^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mi>a</mi></mfrac><mo stretchy="false">)</mo></mrow><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto(\frac{1}{a})^{x}</annotation></semantics></math> é obtido a partir do gráfico de <math id="p17.m7" class="ltx_Math" alttext="x\mapsto a^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto a^{x}</annotation></semantics></math> por uma simetria
+pelo eixo <math id="p17.m8" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-66.svg" alt="" id="p17.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="263" height="192"></div>
+<p class="ltx_p">Temos também que quando <math id="p17.m9" class="ltx_Math" alttext="0&lt;a&lt;1" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;a&lt;1</annotation></semantics></math>, <math id="p17.m10" class="ltx_Math" alttext="x\mapsto a^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>a</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto a^{x}</annotation></semantics></math>
+é <em class="ltx_emph ltx_font_italic">estritamente decrescente</em>:</p>
+<div id="Ch3.Ex32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex32.m1" class="ltx_Math" alttext="x&lt;y\quad\Leftrightarrow\quad a^{x}&gt;a^{y}\,." display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>&lt;</mo><mrow><mi>y</mi><mspace width="1.2em"></mspace><mo stretchy="false">⇔</mo></mrow></mrow><mspace width="1.2em"></mspace><mrow><msup><mi>a</mi><mi>x</mi></msup><mo>&gt;</mo><msup><mi>a</mi><mi>y</mi></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">x&lt;y\quad\Leftrightarrow\quad a^{x}&gt;a^{y}\,.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch3.Thmexo1" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 3.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch3.Thmexo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Esboce os gráficos das funções <math id="Ch3.Thmexo1.p1.m1" class="ltx_Math" alttext="1-2^{-x}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mn>2</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">1-2^{-x}</annotation></semantics></math>, <math id="Ch3.Thmexo1.p1.m2" class="ltx_Math" alttext="3^{x-1}" display="inline"><semantics><msup><mn>3</mn><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">3^{x-1}</annotation></semantics></math>, <math id="Ch3.Thmexo1.p1.m3" class="ltx_Math" alttext="(\tfrac{3}{2})^{-x}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">(\tfrac{3}{2})^{-x}</annotation></semantics></math>,
+<math id="Ch3.Thmexo1.p1.m4" class="ltx_Math" alttext="-(\frac{3}{2})^{|x|}" display="inline"><semantics><mrow><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></msup></mrow><annotation encoding="application/x-tex">-(\frac{3}{2})^{|x|}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">Com mais funções, resolvem-se mais (in)equações:</p>
+</div>
+<div id="Ch3.Thmex4" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 3.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch3.Thmex4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolvamos</span></p>
+<div id="Ch3.Ex33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex33.m1" class="ltx_Math" alttext="3^{x}+3^{-x}=2\,." display="block"><semantics><mrow><mrow><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>+</mo><msup><mn>3</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><mo>=</mo><mn>2</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">3^{x}+3^{-x}=2\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Multiplicando por <math id="Ch3.Thmex4.p1.m1" class="ltx_Math" alttext="3^{x}" display="inline"><semantics><msup><mn>3</mn><mi>x</mi></msup><annotation encoding="application/x-tex">3^{x}</annotation></semantics></math> em ambos lados e agrupando os termos obtemos
+<math id="Ch3.Thmex4.p1.m2" class="ltx_Math" alttext="(3^{x})^{2}-2\cdot 3^{x}+1=0" display="inline"><semantics><mrow><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mn>3</mn><mi>x</mi></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>3</mn><mi>x</mi></msup></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(3^{x})^{2}-2\cdot 3^{x}+1=0</annotation></semantics></math>. Chamando <math id="Ch3.Thmex4.p1.m3" class="ltx_Math" alttext="z=3^{x}" display="inline"><semantics><mrow><mi>z</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">z=3^{x}</annotation></semantics></math>, essa equação se torna <math id="Ch3.Thmex4.p1.m4" class="ltx_Math" alttext="z^{2}-2z+1=0" display="inline"><semantics><mrow><mrow><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z^{2}-2z+1=0</annotation></semantics></math>,
+cuja única solução é <math id="Ch3.Thmex4.p1.m5" class="ltx_Math" alttext="z=1" display="inline"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z=1</annotation></semantics></math>, isto é, <math id="Ch3.Thmex4.p1.m6" class="ltx_Math" alttext="3^{x}=1" display="inline"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">3^{x}=1</annotation></semantics></math>. Logo, <math id="Ch3.Thmex4.p1.m7" class="ltx_Math" alttext="S=\{0\}" display="inline"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">S=\{0\}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch3.Thmexo2" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 3.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch3.Thmexo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolva:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="5^{x}+25\cdot 5^{-x}=26" display="inline"><semantics><mrow><mrow><msup><mn>5</mn><mi>x</mi></msup><mo>+</mo><mrow><mn>25</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>5</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mrow><mo>=</mo><mn>26</mn></mrow><annotation encoding="application/x-tex">5^{x}+25\cdot 5^{-x}=26</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="(2^{x})^{2}=16" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">(2^{x})^{2}=16</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="2^{x+1}-16\leq 0" display="inline"><semantics><mrow><mrow><msup><mn>2</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>16</mn></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2^{x+1}-16\leq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="3^{x}&gt;\tfrac{1}{9}" display="inline"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>&gt;</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow><annotation encoding="application/x-tex">3^{x}&gt;\tfrac{1}{9}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="(2^{x}-2)(\tfrac{1}{5^{x}}-1)&lt;0" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><msup><mn>5</mn><mi>x</mi></msup></mfrac><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(2^{x}-2)(\tfrac{1}{5^{x}}-1)&lt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I1.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i6.p1.m1" class="ltx_Math" alttext="2^{2x+1}\geq 5^{1-x}" display="inline"><semantics><mrow><msup><mn>2</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>≥</mo><msup><mn>5</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">2^{2x+1}\geq 5^{1-x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch3.Thmobs1" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 3.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch3.Thmobs1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para se acostumar com a as mudanças de escala entre os valores de <math id="Ch3.Thmobs1.p1.m1" class="ltx_Math" alttext="10^{n}" display="inline"><semantics><msup><mn>10</mn><mi>n</mi></msup><annotation encoding="application/x-tex">10^{n}</annotation></semantics></math> para
+<math id="Ch3.Thmobs1.p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> grande positivo e <math id="Ch3.Thmobs1.p1.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> grande negativo, sugiro assistir o pequeno filme
+clássico de Charles e Bernice Ray Eames de <math id="Ch3.Thmobs1.p1.m4" class="ltx_Math" alttext="1968" display="inline"><semantics><mn>1968</mn><annotation encoding="application/x-tex">1968</annotation></semantics></math>: <em class="ltx_emph ltx_font_upright">Powers of Ten</em>
+(<em class="ltx_emph ltx_font_upright">Potências de dez</em>). Se encontra por
+exemplo em:
+<code class="ltx_verbatim ltx_font_typewriter ltx_font_upright">http://www.youtube.com/watch?v=0fKBhvDjuy0</code>.</span></p>
+</div>
+</div>
+<div id="Ch3.Thmobs2" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 3.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch3.Thmobs2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Lembramos que a base de uma exponencial é sempre <em class="ltx_emph ltx_font_upright">estritamente positiva</em>.
+De fato, definir a exponencial para bases negativas, por exemplo <math id="Ch3.Thmobs2.p1.m1" class="ltx_Math" alttext="a=-1" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">a=-1</annotation></semantics></math>, daria
+problemas já para definir <math id="Ch3.Thmobs2.p1.m2" class="ltx_Math" alttext="(-1)^{1/2}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><annotation encoding="application/x-tex">(-1)^{1/2}</annotation></semantics></math>, que corresponde a <math id="Ch3.Thmobs2.p1.m3" class="ltx_Math" alttext="\sqrt{-1}" display="inline"><semantics><msqrt><mrow><mo>−</mo><mn>1</mn></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{-1}</annotation></semantics></math>, que
+não é definido nos reais.
+Observe também que a base <math id="Ch3.Thmobs2.p1.m4" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math> não é interessante, mas mesmo assim daremos um
+sentido a “<math id="Ch3.Thmobs2.p1.m5" class="ltx_Math" alttext="0^{0}" display="inline"><semantics><msup><mn>0</mn><mn>0</mn></msup><annotation encoding="application/x-tex">0^{0}</annotation></semantics></math>” no Capítulo <a href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6</span></a>.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

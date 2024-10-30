@@ -1,0 +1,548 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>11.1 Em intervalos infinitos ‣ Capítulo 11 Integrais impróprias ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="next" href="Ch11.S2.html" title="11.2 As integrais ∫_𝑎^∞{𝑑⁢𝑥/𝑥^𝑝} ‣ Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="section" href="Ch11.S2.html" title="11.2 As integrais ∫_𝑎^∞{𝑑⁢𝑥/𝑥^𝑝} ‣ Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="section" href="Ch11.S3.html" title="11.3 O critério de comparação ‣ Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="section" href="Ch11.S4.html" title="11.4 Integrais impróprias em ℝ ‣ Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="section" href="Ch11.S5.html" title="11.5 Em intervalos finitos ‣ Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="em intervalo infinito, gráfico, integral imprópria, limite, área debaixo de um">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="11.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 11 Integrais impróprias ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11.1 </span></b>Em intervalos infinitos</a></li>
+<li data-level="11.2" data-path="Ch11.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch11.S2.html" title="In Capítulo 11 Integrais impróprias ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11.2 </span></b>As integrais <math class="ltx_Math" alttext="\int_{a}^{\infty}\frac{dx}{x^{p}}" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><msup><mi>x</mi><mi>p</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">\int_{a}^{\infty}\frac{dx}{x^{p}}</annotation></semantics></math></a></li>
+<li data-level="11.3" data-path="Ch11.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch11.S3.html" title="In Capítulo 11 Integrais impróprias ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11.3 </span></b>O critério de comparação</a></li>
+<li data-level="11.4" data-path="Ch11.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch11.S4.html" title="In Capítulo 11 Integrais impróprias ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11.4 </span></b>Integrais impróprias em <math class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></a></li>
+<li data-level="11.5" data-path="Ch11.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch11.S5.html" title="In Capítulo 11 Integrais impróprias ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11.5 </span></b>Em intervalos finitos</a></li>
+</ol>
+</li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Em intervalos infinitos</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">11.1</span> Em intervalos infinitos</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Consideremos para começar o problema de integrar uma função num
+intervalo infinito, <math id="p1.m1" class="ltx_Math" alttext="f:[a,\infty)\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,\infty)\to\mathbb{R}</annotation></semantics></math>.
+Vemos imediatamente que não tem como definir somas de Riemann num intervalo
+infinito: qualquer subdivisão de <math id="p1.m2" class="ltx_Math" alttext="[a,\infty)" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[a,\infty)</annotation></semantics></math> contém um número
+infinito de retângulos. O que pode ser feito é o seguinte:
+escolheremos um número <math id="p1.m3" class="ltx_Math" alttext="L&gt;a" display="inline"><semantics><mrow><mi>L</mi><mo>&gt;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">L&gt;a</annotation></semantics></math>
+<em class="ltx_emph ltx_font_italic">grande mas finito</em>, calcularemos a integral de Riemann de <math id="p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em <math id="p1.m5" class="ltx_Math" alttext="[a,L]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>L</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,L]</annotation></semantics></math>,
+e <em class="ltx_emph ltx_font_italic">em seguida</em> tomaremos o limite <math id="p1.m6" class="ltx_Math" alttext="L\to\infty" display="inline"><semantics><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">L\to\infty</annotation></semantics></math>:</p>
+</div>
+<div id="Ch11.Thmdefin1" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 11.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmdefin1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch11.Thmdefin1.p1.m1" class="ltx_Math" alttext="f:[a,\infty)\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,\infty)\to\mathbb{R}</annotation></semantics></math> uma função contínua. Se o limite</span></p>
+<div id="Ch11.E1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.E1.m1" class="ltx_Math" alttext="\int_{a}^{\infty}f(x)\,dx{:=}\lim_{L\to\infty}\int_{a}^{L}f(x)\,dx\,," display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo lspace="0.278em">:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>L</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{\infty}f(x)\,dx{:=}\lim_{L\to\infty}\int_{a}^{L}f(x)\,dx\,,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(11.1)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">existir e for finito, diremos que <span class="ltx_text ltx_font_bold">a integral imprópria
+<math id="Ch11.Thmdefin1.p1.m2" class="ltx_Math" alttext="\int_{a}^{\infty}f(x)\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi mathvariant="normal">a</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mi mathvariant="normal">f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi mathvariant="normal">x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{\infty}f(x)\,dx</annotation></semantics></math> converge</span>. Caso contrário, ela <span class="ltx_text ltx_font_bold">diverge</span>.
+Integrais impróprias para <math id="Ch11.Thmdefin1.p1.m3" class="ltx_Math" alttext="f:(-\infty,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:(-\infty,b]\to\mathbb{R}</annotation></semantics></math> se definem da mesma maneira:</span></p>
+<div id="Ch11.E2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.E2.m1" class="ltx_Math" alttext="\int_{-\infty}^{b}f(x)\,dx{:=}\lim_{L\to\infty}\int_{-L}^{b}f(x)\,dx\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo lspace="0.278em">:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>L</mi></mrow><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{b}f(x)\,dx{:=}\lim_{L\to\infty}\int_{-L}^{b}f(x)\,dx\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(11.2)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="Ch11.Thmex1" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 11.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmex1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch11.Thmex1.p1.m1" class="ltx_Math" alttext="f(x)=e^{-x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">f(x)=e^{-x}</annotation></semantics></math> em <math id="Ch11.Thmex1.p1.m2" class="ltx_Math" alttext="[0,+\infty)" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[0,+\infty)</annotation></semantics></math>:</span></p>
+<div id="Ch11.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.Ex1.m1" class="ltx_Math" alttext="\int_{0}^{\infty}e^{-x}\,dx=\lim_{L\to\infty}\int_{0}^{L}e^{-x}\,dx=\lim_{L\to%
+\infty}\bigl{\{}-e^{-x}\bigr{\}}\big{|}_{0}^{L}=\lim_{L\to\infty}\bigl{\{}1-e^%
+{-L}\bigr{\}}=1\,," display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>L</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mn>0</mn><mi>L</mi></msubsup><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>L</mi></mrow></msup></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}e^{-x}\,dx=\lim_{L\to\infty}\int_{0}^{L}e^{-x}\,dx=\lim_{L\to%
+\infty}\bigl{\{}-e^{-x}\bigr{\}}\big{|}_{0}^{L}=\lim_{L\to\infty}\bigl{\{}1-e^%
+{-L}\bigr{\}}=1\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">que é finito. Logo, <math id="Ch11.Thmex1.p1.m3" class="ltx_Math" alttext="\int_{0}^{\infty}e^{-x}\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}e^{-x}\,dx</annotation></semantics></math> converge e vale <math id="Ch11.Thmex1.p1.m4" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>.
+Como <math id="Ch11.Thmex1.p1.m5" class="ltx_Math" alttext="e^{-x}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">e^{-x}</annotation></semantics></math> é uma função positiva no intervalo <math id="Ch11.Thmex1.p1.m6" class="ltx_Math" alttext="[0,\infty)" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[0,\infty)</annotation></semantics></math> todo, o valor de
+<math id="Ch11.Thmex1.p1.m7" class="ltx_Math" alttext="\int_{0}^{\infty}e^{-x}\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}e^{-x}\,dx</annotation></semantics></math> pode
+ser interpretado como
+o valor da área delimitada pela parte do gráfico de <math id="Ch11.Thmex1.p1.m8" class="ltx_Math" alttext="e^{-x}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">e^{-x}</annotation></semantics></math> contida no
+primeiro quadrante,
+pelo eixo <math id="Ch11.Thmex1.p1.m9" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e pelo eixo <math id="Ch11.Thmex1.p1.m10" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-184.svg" alt="" id="Ch11.Thmex1.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="297" height="119"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que
+apesar
+dessa área não possuir
+limitação espacial, ela é finita!</span></p>
+</div>
+</div>
+<div id="Ch11.Thmex2" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 11.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmex2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch11.Thmex2.p1.m1" class="ltx_Math" alttext="f(x)=\frac{1}{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{1}{x}</annotation></semantics></math> em <math id="Ch11.Thmex2.p1.m2" class="ltx_Math" alttext="[1,\infty)" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[1,\infty)</annotation></semantics></math>:</span></p>
+<div id="Ch11.Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.Ex2.m1" class="ltx_Math" alttext="\int_{1}^{\infty}\frac{dx}{x}=\lim_{L\to\infty}\int_{1}^{L}\frac{dx}{x}=\lim_{%
+L\to\infty}\bigl{\{}\ln x\bigr{\}}\big{|}_{1}^{L}=\lim_{L\to\infty}\ln L=%
+\infty\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo>∫</mo><mn>1</mn><mi>L</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow></mrow><mo rspace="0.1389em">=</mo><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mn>1</mn><mi>L</mi></msubsup><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>L</mi></mrow></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{1}^{\infty}\frac{dx}{x}=\lim_{L\to\infty}\int_{1}^{L}\frac{dx}{x}=\lim_{%
+L\to\infty}\bigl{\{}\ln x\bigr{\}}\big{|}_{1}^{L}=\lim_{L\to\infty}\ln L=%
+\infty\,.</annotation></semantics></math></span>
+</div>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-185.svg" alt="" id="Ch11.Thmex2.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="382" height="122"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Neste caso, a interpretação de <math id="Ch11.Thmex2.p1.m3" class="ltx_Math" alttext="\int_{1}^{\infty}\frac{dx}{x}=\infty" display="inline"><semantics><mrow><mrow><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\int_{1}^{\infty}\frac{dx}{x}=\infty</annotation></semantics></math> é que a área
+delimitada pelo gráfico de <math id="Ch11.Thmex2.p1.m4" class="ltx_Math" alttext="f(x)=\tfrac{1}{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\tfrac{1}{x}</annotation></semantics></math> é <em class="ltx_emph ltx_font_upright">infinita</em>.
+</span></p>
+</div>
+</div>
+<div id="Ch11.Thmobs1" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 11.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmobs1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">As duas funções consideradas acima, <math id="Ch11.Thmobs1.p1.m1" class="ltx_Math" alttext="e^{-x}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">e^{-x}</annotation></semantics></math> e <math id="Ch11.Thmobs1.p1.m2" class="ltx_Math" alttext="\frac{1}{x}" display="inline"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac><annotation encoding="application/x-tex">\frac{1}{x}</annotation></semantics></math>, tendem a zero
+no infinito.
+No entanto, a integral imprópria da primeira converge, enquanto a da segunda
+diverge.
+Assim, vemos que <em class="ltx_emph ltx_font_upright">não basta uma função tender a zero no infinito
+para a sua integral imprópria convergir</em>!
+De fato, a convergência de uma integral imprópria depende de <em class="ltx_emph ltx_font_upright">quão
+rápido</em> a função tende a zero.
+Nos exemplos acima, <math id="Ch11.Thmobs1.p1.m3" class="ltx_Math" alttext="e^{-x}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">e^{-x}</annotation></semantics></math> tende a zero muito mais rápido <span id="Ch11.footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                  <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_upright">1</span></span>
+                  
+                  
+                  
+                <span class="ltx_text ltx_font_upright">Por
+exemplo, usando a Regra de B.H.,
+</span><math id="Ch11.footnote1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{e^{-x}}{\tfrac{1}{x}}=\lim_{x\to\infty}\frac{x}{e^{x}}=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mi>x</mi><msup><mi>e</mi><mi>x</mi></msup></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{e^{-x}}{\tfrac{1}{x}}=\lim_{x\to\infty}\frac{x}{e^{x}}=0</annotation></semantics></math><span class="ltx_text ltx_font_upright">.</span></span></span></span> que
+<math id="Ch11.Thmobs1.p1.m4" class="ltx_Math" alttext="\tfrac{1}{x}" display="inline"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac><annotation encoding="application/x-tex">\tfrac{1}{x}</annotation></semantics></math>.
+No caso, <math id="Ch11.Thmobs1.p1.m5" class="ltx_Math" alttext="e^{-x}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">e^{-x}</annotation></semantics></math> tende a zero <em class="ltx_emph ltx_font_upright">rápido o suficiente</em> para que a área
+delimitada pelo seu gráfico seja <em class="ltx_emph ltx_font_upright">finita</em>, e <math id="Ch11.Thmobs1.p1.m6" class="ltx_Math" alttext="\tfrac{1}{x}" display="inline"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac><annotation encoding="application/x-tex">\tfrac{1}{x}</annotation></semantics></math> tende a zero
+<em class="ltx_emph ltx_font_upright">devagar o suficiente</em> para que a área
+delimitada pelo seu gráfico seja <em class="ltx_emph ltx_font_upright">infinita</em>.</span></p>
+</div>
+</div>
+<div id="Ch11.Thmex3" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 11.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmex3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a integral imprópria</span></p>
+<div id="Ch11.Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.Ex3.m1" class="ltx_Math" alttext="\int_{1}^{\infty}\frac{1}{\sqrt{x}(x+1)}dx=\lim_{L\to\infty}\int_{1}^{L}\frac{%
+1}{\sqrt{x}(x+1)}dx\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><msqrt><mi>x</mi></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo>∫</mo><mn>1</mn><mi>L</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><msqrt><mi>x</mi></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{1}^{\infty}\frac{1}{\sqrt{x}(x+1)}dx=\lim_{L\to\infty}\int_{1}^{L}\frac{%
+1}{\sqrt{x}(x+1)}dx\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Com <math id="Ch11.Thmex3.p1.m1" class="ltx_Math" alttext="u=\sqrt{x}" display="inline"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow><annotation encoding="application/x-tex">u=\sqrt{x}</annotation></semantics></math> temos <math id="Ch11.Thmex3.p1.m2" class="ltx_Math" alttext="dx=2u\,du" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>u</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow></mrow><annotation encoding="application/x-tex">dx=2u\,du</annotation></semantics></math>. Logo,</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx84" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch11.Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch11.Ex4.m1" class="ltx_Math" alttext="\displaystyle\int_{1}^{L}\frac{1}{\sqrt{x}(x+1)}dx=2\int_{1}^{\sqrt{L}}\frac{1%
+}{u^{2}+1}du=\bigl{\{}2\arctan u\big{\}}_{1}^{\sqrt{L}}" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi>L</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msqrt><mi>x</mi></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><msqrt><mi>L</mi></msqrt></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>=</mo><msubsup><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>u</mi></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mn>1</mn><msqrt><mi>L</mi></msqrt></msubsup></mrow><annotation encoding="application/x-tex">\displaystyle\int_{1}^{L}\frac{1}{\sqrt{x}(x+1)}dx=2\int_{1}^{\sqrt{L}}\frac{1%
+}{u^{2}+1}du=\bigl{\{}2\arctan u\big{\}}_{1}^{\sqrt{L}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Tomando o limite <math id="Ch11.Thmex3.p1.m3" class="ltx_Math" alttext="L\to\infty" display="inline"><semantics><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">L\to\infty</annotation></semantics></math>,</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx85" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch11.Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch11.Ex5.m1" class="ltx_Math" alttext="\displaystyle\int_{1}^{\infty}\frac{1}{\sqrt{x}(x+1)}dx=2\lim_{L\to\infty}\big%
+{\{}\arctan(\sqrt{L})-\tfrac{\pi}{4}\big{\}}=2\bigl{\{}\tfrac{\pi}{2}-\tfrac{%
+\pi}{4}\bigr{\}}=\tfrac{\pi}{2}\,," display="inline"><semantics><mrow><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msqrt><mi>x</mi></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msqrt><mi>L</mi></msqrt><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\int_{1}^{\infty}\frac{1}{\sqrt{x}(x+1)}dx=2\lim_{L\to\infty}\big%
+{\{}\arctan(\sqrt{L})-\tfrac{\pi}{4}\big{\}}=2\bigl{\{}\tfrac{\pi}{2}-\tfrac{%
+\pi}{4}\bigr{\}}=\tfrac{\pi}{2}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">que é finito. Logo, a integral imprópria acima converge, e o seu valor é
+<math id="Ch11.Thmex3.p1.m4" class="ltx_Math" alttext="\tfrac{\pi}{2}" display="inline"><semantics><mfrac><mi>π</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{\pi}{2}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">A função integrada, numa integral imprópria, não precisa ser positiva:</p>
+</div>
+<div id="Ch11.Thmex4" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 11.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmex4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch11.Thmex4.p1.m1" class="ltx_Math" alttext="\int_{0}^{\infty}e^{-x}\operatorname{sen}x\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}e^{-x}\operatorname{sen}x\,dx</annotation></semantics></math>.
+Usando integração por partes (veja o Exercício <a href="Ch9.S5.html#Ch9.Thmexo19" title="Exercício 9.19. ‣ 9.5.2 Integração por Partes ‣ 9.5 Primitivas ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.19</span></a>),</span></p>
+<div id="Ch11.Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.Ex6.m1" class="ltx_Math" alttext="\int_{0}^{\infty}e^{-x}\operatorname{sen}x\,dx=\lim_{L\to\infty}\bigl{\{}-%
+\tfrac{1}{2}e^{-x}(\operatorname{sen}x+\cos x)\bigr{\}}\Big{|}_{0}^{L}=\tfrac{%
+1}{2}\lim_{L\to\infty}\bigl{\{}1-e^{-L}(\operatorname{sen}L+\cos L)\bigr{\}}=%
+\tfrac{1}{2}\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo>−</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mn>0</mn><mi>L</mi></msubsup><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>L</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>L</mi></mrow><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>L</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}e^{-x}\operatorname{sen}x\,dx=\lim_{L\to\infty}\bigl{\{}-%
+\tfrac{1}{2}e^{-x}(\operatorname{sen}x+\cos x)\bigr{\}}\Big{|}_{0}^{L}=\tfrac{%
+1}{2}\lim_{L\to\infty}\bigl{\{}1-e^{-L}(\operatorname{sen}L+\cos L)\bigr{\}}=%
+\tfrac{1}{2}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Logo, a integral converge. Apesar do valor <math id="Ch11.Thmex4.p1.m2" class="ltx_Math" alttext="\frac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math> ser <math id="Ch11.Thmex4.p1.m3" class="ltx_Math" alttext="&gt;0" display="inline"><semantics><mrow><mi></mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&gt;0</annotation></semantics></math>, a
+sua interpretação em termos de área não é possível neste caso, já que
+<math id="Ch11.Thmex4.p1.m4" class="ltx_Math" alttext="x\mapsto e^{-x}\operatorname{sen}x" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">x\mapsto e^{-x}\operatorname{sen}x</annotation></semantics></math> é negativa em infinitos intervalos:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-186.svg" alt="" id="Ch11.Thmex4.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="297" height="113"></div>
+</div>
+</div>
+<div id="Ch11.Thmexo1" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 11.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmexo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estude a convergência das seguintes integrais impróprias.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\int_{3}^{\infty}\frac{dx}{x-2}" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>3</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\int_{3}^{\infty}\frac{dx}{x-2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\int_{2}^{\infty}x^{2}\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>2</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{2}^{\infty}x^{2}\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\int_{1}^{\infty}\tfrac{dx}{x^{7}}" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>7</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\int_{1}^{\infty}\tfrac{dx}{x^{7}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\int_{0}^{\infty}\cos x\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}\cos x\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="\int_{0}^{\infty}\frac{dx}{x^{2}+1}" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}\frac{dx}{x^{2}+1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I1.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i6.p1.m1" class="ltx_Math" alttext="\int_{1}^{\infty}\frac{dx}{x^{2}+x}" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\int_{1}^{\infty}\frac{dx}{x^{2}+x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I1.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i7.p1.m1" class="ltx_Math" alttext="\int_{-\infty}^{0}e^{t}\operatorname{sen}(2t)dt" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mn>0</mn></msubsup><mrow><msup><mi>e</mi><mi>t</mi></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{0}e^{t}\operatorname{sen}(2t)dt</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I1.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i8.p1.m1" class="ltx_Math" alttext="\int_{3}^{\infty}\frac{\ln x}{x}\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>3</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{3}^{\infty}\frac{\ln x}{x}\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I1.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i9.p1.m1" class="ltx_Math" alttext="\int_{0}^{\infty}\frac{x}{x^{4}+1}\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mi>x</mi><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}\frac{x}{x^{4}+1}\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch11.Thmexo2" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 11.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmexo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch11.Thmexo2.p1.m1" class="ltx_Math" alttext="f:[0,\infty)\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[0,\infty)\to\mathbb{R}</annotation></semantics></math>, a <span class="ltx_text ltx_font_bold">transformada de Laplace</span> de <math id="Ch11.Thmexo2.p1.m2" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> é a
+função <math id="Ch11.Thmexo2.p1.m3" class="ltx_Math" alttext="L(s)" display="inline"><semantics><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">L(s)</annotation></semantics></math> definida pela integral imprópria</span></p>
+<div id="Ch11.E3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.E3.m1" class="ltx_Math" alttext="L(s){:=}\int_{0}^{\infty}e^{-sx}f(x)\,dx\,,\quad s\geq 0\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">:=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>s</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mi>s</mi><mo>≥</mo><mn>0</mn></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">L(s){:=}\int_{0}^{\infty}e^{-sx}f(x)\,dx\,,\quad s\geq 0\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(11.3)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule as transformadas de Laplace das seguintes funções <math id="Ch11.Thmexo2.p1.m4" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>:</span></p>
+<div class="ltx_pagination ltx_role_start_4_columns"></div>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (constante)</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="\operatorname{sen}x" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="e^{-\alpha x}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><annotation encoding="application/x-tex">e^{-\alpha x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_4_columns"></div>
+</div>
+</div>
+<div id="Ch11.Thmexo3" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 11.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmexo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estude <math id="Ch11.Thmexo3.p1.m1" class="ltx_Math" alttext="f(x){:=}\frac{x}{x^{2}+1}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mfrac><mi>x</mi><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x){:=}\frac{x}{x^{2}+1}</annotation></semantics></math>. Em seguida,
+calcule a área da região contida no semi-espaço <math id="Ch11.Thmexo3.p1.m2" class="ltx_Math" alttext="x\geq 0" display="inline"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\geq 0</annotation></semantics></math>, delimitada pelo
+gráfico de <math id="Ch11.Thmexo3.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e pela sua assíntota horizontal.</span></p>
+</div>
+</div>
+<div id="Ch11.Thmexo4" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 11.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmexo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estude a função <math id="Ch11.Thmexo4.p1.m1" class="ltx_Math" alttext="f(x){:=}\frac{e^{x}}{1+e^{x}}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x){:=}\frac{e^{x}}{1+e^{x}}</annotation></semantics></math>.
+Em seguida, calcule a área da região contida no semi-plano <math id="Ch11.Thmexo4.p1.m2" class="ltx_Math" alttext="x\geq 0" display="inline"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\geq 0</annotation></semantics></math> delimitada
+pelo gráfico de <math id="Ch11.Thmexo4.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e pela sua assíntota.</span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Intuitivamente, para uma função <math id="p3.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+contínua possuir uma integral imprópria convergente no infinito, ela precisa
+tender a zero. Vejamos que precisa de mais do que isso, no seguinte
+exercício:</p>
+</div>
+<div id="Ch11.Thmexo5" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 11.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmexo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Dê um exemplo de uma função contínua positiva <math id="Ch11.Thmexo5.p1.m1" class="ltx_Math" alttext="f:[0,\infty)\to\mathbb{R}_{+}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><msub><mi>ℝ</mi><mo>+</mo></msub></mrow></mrow><annotation encoding="application/x-tex">f:[0,\infty)\to\mathbb{R}_{+}</annotation></semantics></math> que não
+tende a zero no infinito,
+e cuja integral imprópria <math id="Ch11.Thmexo5.p1.m2" class="ltx_Math" alttext="\int_{0}^{\infty}f(x)\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}f(x)\,dx</annotation></semantics></math> converge.</span></p>
+</div>
+</div>
+<div id="Ch11.Thmexo6" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 11.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch11.Thmexo6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a <span class="ltx_text ltx_font_bold">função Gamma</span>, definida da seguinte maneira:</span></p>
+<div id="Ch11.Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.Ex7.m1" class="ltx_Math" alttext="\forall z&gt;0\,,\quad\Gamma(z){:=}\int_{0}^{\infty}x^{z}e^{-x}\,dx\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>z</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">:=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>x</mi><mi>z</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\forall z&gt;0\,,\quad\Gamma(z){:=}\int_{0}^{\infty}x^{z}e^{-x}\,dx\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Verifique que <math id="Ch11.Thmexo6.p1.m1" class="ltx_Math" alttext="\Gamma(0)=1" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\Gamma(0)=1</annotation></semantics></math>, <math id="Ch11.Thmexo6.p1.m2" class="ltx_Math" alttext="\Gamma(1)=1" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\Gamma(1)=1</annotation></semantics></math>, <math id="Ch11.Thmexo6.p1.m3" class="ltx_Math" alttext="\Gamma(2)=2" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\Gamma(2)=2</annotation></semantics></math>, <math id="Ch11.Thmexo6.p1.m4" class="ltx_Math" alttext="\Gamma(3)=6" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\Gamma(3)=6</annotation></semantics></math>.
+Mostre que para todo inteiro <math id="Ch11.Thmexo6.p1.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,</span></p>
+<div id="Ch11.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch11.Ex8.m1" class="ltx_Math" alttext="\Gamma(n)=n\cdot\Gamma(n-1)\,." display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">Γ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\Gamma(n)=n\cdot\Gamma(n-1)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Conclua que nos inteiros, <math id="Ch11.Thmexo6.p1.m6" class="ltx_Math" alttext="\Gamma(n)=n!" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>!</mo></mrow></mrow><annotation encoding="application/x-tex">\Gamma(n)=n!</annotation></semantics></math>.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch11.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch11.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,817 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch6.S10.html" title="6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="next" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch6.S1.html" title="6.1 Retas e gráficos de funções ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S2.html" title="6.2 Reta tangente e derivada ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S3.html" title="6.3 A derivada como função ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S4.html" title="6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S5.html" title="6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S6.html" title="6.6 Derivada e Variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S7.html" title="6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S8.html" title="6.8 Linearização ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S9.html" title="6.9 Derivação implícita ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S10.html" title="6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Regra de Bernoulli-l’Hôpital">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="6.1" data-path="Ch6.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S1.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Retas e gráficos de funções</a></li>
+<li data-level="6.2" data-path="Ch6.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S2.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Reta tangente e derivada</a></li>
+<li data-level="6.3" data-path="Ch6.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S3.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>A derivada como função</a></li>
+<li data-level="6.4" data-path="Ch6.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S4.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>Regras de derivação</a></li>
+<li data-level="6.5" data-path="Ch6.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S5.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.5 </span></b>O Teorema de Rolle</a></li>
+<li data-level="6.6" data-path="Ch6.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S6.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.6 </span></b>Derivada e Variação</a></li>
+<li data-level="6.7" data-path="Ch6.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S7.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.7 </span></b>Velocidade, aceleração, taxa de
+variação</a></li>
+<li data-level="6.8" data-path="Ch6.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S8.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.8 </span></b>Linearização</a></li>
+<li data-level="6.9" data-path="Ch6.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S9.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.9 </span></b>Derivação implícita</a></li>
+<li data-level="6.10" data-path="Ch6.S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S10.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.10 </span></b>Convexidade, concavidade</a></li>
+<li data-level="6.11" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.11 </span></b>A Regra de Bernoulli-l’Hôpital</a></li>
+</ol>
+</li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>A Regra de Bernoulli-l’Hôpital</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">6.11</span> A Regra de Bernoulli-l’Hôpital</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Vejamos agora como a derivada fornece uma ferramenta útil para
+calcular alguns limites
+de formas indeterminados do tipo
+“<math id="p1.m1" class="ltx_Math" alttext="\frac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\frac{0}{0}</annotation></semantics></math>”, “<math id="p1.m2" class="ltx_Math" alttext="\frac{\pm\infty}{\pm\infty}" display="inline"><semantics><mfrac><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{\pm\infty}{\pm\infty}</annotation></semantics></math>”, “<math id="p1.m3" class="ltx_Math" alttext="1^{\infty}" display="inline"><semantics><msup><mn>1</mn><mi mathvariant="normal">∞</mi></msup><annotation encoding="application/x-tex">1^{\infty}</annotation></semantics></math>”, tais como</p>
+<div id="Ch6.Ex98" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex98.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{e^{x}-1-x}{x^{2}}\,,\quad\lim_{x\to 0}\frac{\tan x-x}{x^{3}%
+}\,,\quad\lim_{x\to\infty}\Bigl{(}\frac{x+1}{x-1}\Bigr{)}^{x}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn><mo>−</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><mo lspace="0.170em" rspace="1.089em">,</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac></mrow><mo lspace="0.170em" rspace="1.089em">,</mo><mrow><munder><mo movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mi>x</mi></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{e^{x}-1-x}{x^{2}}\,,\quad\lim_{x\to 0}\frac{\tan x-x}{x^{3}%
+}\,,\quad\lim_{x\to\infty}\Bigl{(}\frac{x+1}{x-1}\Bigr{)}^{x}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Os métodos apresentados até agora não permitem calcular esses
+limites.
+Nesta seção veremos como derivadas são úteis para estudar limites da forma
+<math id="p1.m4" class="ltx_Math" alttext="\lim_{x\to a}\frac{g(x)}{h(x)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mfrac><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to a}\frac{g(x)}{h(x)}</annotation></semantics></math>, quando <math id="p1.m5" class="ltx_Math" alttext="\lim_{x\to a}g(x)=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to a}g(x)=0</annotation></semantics></math>, <math id="p1.m6" class="ltx_Math" alttext="\lim_{x\to a}h(x)=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to a}h(x)=0</annotation></semantics></math>, ou quando <math id="p1.m7" class="ltx_Math" alttext="\lim_{x\to a}g(x)=\pm\infty" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a}g(x)=\pm\infty</annotation></semantics></math>, <math id="p1.m8" class="ltx_Math" alttext="\lim_{x\to a}h(x)=\pm\infty" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a}h(x)=\pm\infty</annotation></semantics></math>.
+A idéia principal é que <em class="ltx_emph ltx_font_italic">limites indeterminados da forma <math id="p1.m9" class="ltx_Math" alttext="\tfrac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\tfrac{0}{0}</annotation></semantics></math> (ou
+<math id="p1.m10" class="ltx_Math" alttext="\frac{\pm\infty}{\pm\infty}" display="inline"><semantics><mfrac><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{\pm\infty}{\pm\infty}</annotation></semantics></math>)
+podem, em geral, ser estudados via uma razão de duas derivadas</em>.
+Os métodos que aproveitam dessa idéia,
+descritos abaixo, costumam ser chamados de <em class="ltx_emph ltx_font_italic">Regra de
+Bernoulli-l’Hôpital</em> <span id="Ch6.footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+              <span class="ltx_tag ltx_tag_note">3</span>
+              
+              
+              
+            Johann Bernoulli, Basileia (Suiça) 1667-1748.
+Guillaume François Antoine, marquis de
+L’Hôpital (1661 - 1704).</span></span></span> (denotado por B.-H. abaixo).
+Comecemos com um exemplo elementar.</p>
+</div>
+<div id="Ch6.Thmex33" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.33</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex33.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere o limite</span></p>
+<div id="Ch6.Ex99" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex99.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{e^{x}-1}{\operatorname{sen}x}\,." display="block"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{e^{x}-1}{\operatorname{sen}x}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Já que <math id="Ch6.Thmex33.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}e^{x}-1=e^{0}-1=0" display="inline"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><msup><mi>e</mi><mi>x</mi></msup></mrow><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><msup><mi>e</mi><mn>0</mn></msup><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}e^{x}-1=e^{0}-1=0</annotation></semantics></math> e <math id="Ch6.Thmex33.p1.m2" class="ltx_Math" alttext="\lim_{x\to 0}\operatorname{sen}x=\operatorname{sen}0=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mn>0</mn></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\operatorname{sen}x=\operatorname{sen}0=0</annotation></semantics></math>, esse
+limite é indeterminado da forma <math id="Ch6.Thmex33.p1.m3" class="ltx_Math" alttext="\tfrac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\tfrac{0}{0}</annotation></semantics></math>. Mas observe que,
+dividindo o numerador e o denomindor por <math id="Ch6.Thmex33.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,</span></p>
+<div id="Ch6.Ex100" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex100.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{e^{x}-1}{\operatorname{sen}x}=\lim_{x\to 0}\frac{\frac{e^{x%
+}-1}{x}}{\frac{\operatorname{sen}x}{x}}=\lim_{x\to 0}\frac{\frac{e^{x}-e^{0}}{%
+x}}{\frac{\operatorname{sen}x-\operatorname{sen}0}{x}}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>x</mi></mfrac><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><msup><mi>e</mi><mn>0</mn></msup></mrow><mi>x</mi></mfrac><mfrac><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mn>0</mn></mrow></mrow><mi>x</mi></mfrac></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{e^{x}-1}{\operatorname{sen}x}=\lim_{x\to 0}\frac{\frac{e^{x%
+}-1}{x}}{\frac{\operatorname{sen}x}{x}}=\lim_{x\to 0}\frac{\frac{e^{x}-e^{0}}{%
+x}}{\frac{\operatorname{sen}x-\operatorname{sen}0}{x}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Dessa forma, aparecem dois quocientes bem comportados quando <math id="Ch6.Thmex33.p1.m5" class="ltx_Math" alttext="x\to 0" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\to 0</annotation></semantics></math>. O
+numerador, <math id="Ch6.Thmex33.p1.m6" class="ltx_Math" alttext="\frac{e^{x}-e^{0}}{x}" display="inline"><semantics><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><msup><mi>e</mi><mn>0</mn></msup></mrow><mi>x</mi></mfrac><annotation encoding="application/x-tex">\frac{e^{x}-e^{0}}{x}</annotation></semantics></math>, tende à derivada da função <math id="Ch6.Thmex33.p1.m7" class="ltx_Math" alttext="e^{x}" display="inline"><semantics><msup><mi>e</mi><mi>x</mi></msup><annotation encoding="application/x-tex">e^{x}</annotation></semantics></math> em <math id="Ch6.Thmex33.p1.m8" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>, isto
+é, <math id="Ch6.Thmex33.p1.m9" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>. O denominador, <math id="Ch6.Thmex33.p1.m10" class="ltx_Math" alttext="\frac{\operatorname{sen}x-\operatorname{sen}0}{x}" display="inline"><semantics><mfrac><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mn>0</mn></mrow></mrow><mi>x</mi></mfrac><annotation encoding="application/x-tex">\frac{\operatorname{sen}x-\operatorname{sen}0}{x}</annotation></semantics></math> tende à derivada da função
+<math id="Ch6.Thmex33.p1.m11" class="ltx_Math" alttext="\operatorname{sen}x" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}x</annotation></semantics></math> em <math id="Ch6.Thmex33.p1.m12" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>, isto é: <math id="Ch6.Thmex33.p1.m13" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, diferente de zero. Logo,</span></p>
+<div id="Ch6.Ex101" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex101.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{e^{x}-1}{\operatorname{sen}x}=\frac{\lim_{x\to 0}\frac{e^{x%
+}-e^{0}}{x}}{\lim_{x\to 0}\frac{\operatorname{sen}x-\operatorname{sen}0}{x}}%
+\equiv\frac{(e^{x})^{\prime}|_{x=0}}{(\operatorname{sen}x)^{\prime}|_{x=0}}=%
+\frac{1}{1}=1\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><mo>=</mo><mfrac><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><msup><mi>e</mi><mn>0</mn></msup></mrow><mi>x</mi></mfrac></mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mn>0</mn></mrow></mrow><mi>x</mi></mfrac></mrow></mfrac><mo>≡</mo><mfrac><msub><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mi>x</mi></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo stretchy="false">|</mo></mrow><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></msub><msub><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo stretchy="false">|</mo></mrow><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>1</mn></mfrac><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{e^{x}-1}{\operatorname{sen}x}=\frac{\lim_{x\to 0}\frac{e^{x%
+}-e^{0}}{x}}{\lim_{x\to 0}\frac{\operatorname{sen}x-\operatorname{sen}0}{x}}%
+\equiv\frac{(e^{x})^{\prime}|_{x=0}}{(\operatorname{sen}x)^{\prime}|_{x=0}}=%
+\frac{1}{1}=1\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">A idéia do exemplo anterior pode ser generalizada:</p>
+</div>
+<div id="Ch6.Thmteo4" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 6.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Regra de Bernoulli-l’Hôpital, Primeira versão)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmteo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Ch6.Thmteo4.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, <math id="Ch6.Thmteo4.p1.m2" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> duas funções deriváveis no ponto <math id="Ch6.Thmteo4.p1.m3" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>, que se
+anulam em <math id="Ch6.Thmteo4.p1.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>, <math id="Ch6.Thmteo4.p1.m5" class="ltx_Math" alttext="f(a)=g(a)=0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(a)=g(a)=0</annotation></semantics></math>, e
+tais que <math id="Ch6.Thmteo4.p1.m6" class="ltx_Math" alttext="\frac{f^{\prime}(a)}{g^{\prime}(a)}" display="inline"><semantics><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><annotation encoding="application/x-tex">\frac{f^{\prime}(a)}{g^{\prime}(a)}</annotation></semantics></math> existe. Então</span></p>
+<div id="Ch6.E29" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E29.m1" class="ltx_Math" alttext="\lim_{x\to a}\frac{f(x)}{g(x)}=\frac{f^{\prime}(a)}{g^{\prime}(a)}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to a}\frac{f(x)}{g(x)}=\frac{f^{\prime}(a)}{g^{\prime}(a)}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.29)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Como antes,</p>
+<div id="Ch6.Ex102" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex102.m1" class="ltx_Math" alttext="\lim_{x\to a}\frac{f(x)}{g(x)}=\lim_{x\to a}\frac{f(x)-f(a)}{g(x)-g(a)}=\lim_{%
+x\to a}\frac{\frac{f(x)-f(a)}{x-a}}{\frac{g(x)-g(a)}{x-a}}=\frac{f^{\prime}(a)%
+}{g^{\prime}(a)}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></munder><mfrac><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mfrac></mrow><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to a}\frac{f(x)}{g(x)}=\lim_{x\to a}\frac{f(x)-f(a)}{g(x)-g(a)}=\lim_{%
+x\to a}\frac{\frac{f(x)-f(a)}{x-a}}{\frac{g(x)-g(a)}{x-a}}=\frac{f^{\prime}(a)%
+}{g^{\prime}(a)}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="Ch6.Thmexo49" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.49</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo49.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule os limites:</span></p>
+<div id="Ch6.Ex103" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex103.m1" class="ltx_Math" alttext="\lim_{s\to 0}\frac{\log(1+s)}{e^{2s}-1}\,,\quad\lim_{t\to\pi}\frac{\cos t+1}{%
+\pi-t}\,,\quad\lim_{\alpha\to 0}\frac{1-\cos(\alpha)}{\operatorname{sen}(%
+\alpha+\frac{\pi}{2})}\,,\quad\lim_{x\to 0}\frac{\operatorname{sen}x}{x^{2}+3x%
+}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>s</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo lspace="0.170em" rspace="1.089em">,</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>t</mi><mo stretchy="false">→</mo><mi>π</mi></mrow></munder><mfrac><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow><mo>+</mo><mn>1</mn></mrow><mrow><mi>π</mi><mo>−</mo><mi>t</mi></mrow></mfrac></mrow><mo lspace="0.170em" rspace="1.089em">,</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>α</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>+</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.170em" rspace="1.089em">,</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{s\to 0}\frac{\log(1+s)}{e^{2s}-1}\,,\quad\lim_{t\to\pi}\frac{\cos t+1}{%
+\pi-t}\,,\quad\lim_{\alpha\to 0}\frac{1-\cos(\alpha)}{\operatorname{sen}(%
+\alpha+\frac{\pi}{2})}\,,\quad\lim_{x\to 0}\frac{\operatorname{sen}x}{x^{2}+3x%
+}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">O resultado acima pode ser generalizado a situações em que
+<math id="p4.m1" class="ltx_Math" alttext="\frac{f^{\prime}(a)}{g^{\prime}(a)}" display="inline"><semantics><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><annotation encoding="application/x-tex">\frac{f^{\prime}(a)}{g^{\prime}(a)}</annotation></semantics></math> não existe, ou em que <math id="p4.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e <math id="p4.m3" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> nem são definidas em <math id="p4.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>:</p>
+</div>
+<div id="Ch6.Thmteo5" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 6.5</span></span><span class="ltx_text ltx_font_bold"> </span>(Regra de Bernoulli-l’Hôpital, Segunda versão)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmteo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic"></span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_italic">Limites <math id="I1.i1.p1.m1" class="ltx_Math" alttext="x\to a^{+}" display="inline"><semantics><mrow><mi mathvariant="normal">x</mi><mo stretchy="false">→</mo><msup><mi mathvariant="normal">a</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to a^{+}</annotation></semantics></math>:</span><span class="ltx_text ltx_font_italic">
+Sejam </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math><span class="ltx_text ltx_font_italic"> duas funções deriváveis em </span><math id="I1.i1.p1.m4" class="ltx_Math" alttext="(a,b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+com </span><math id="I1.i1.p1.m5" class="ltx_Math" alttext="g(x)\neq 0" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g(x)\neq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i1.p1.m6" class="ltx_Math" alttext="g^{\prime}(x)\neq 0" display="inline"><semantics><mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g^{\prime}(x)\neq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> para todo </span><math id="I1.i1.p1.m7" class="ltx_Math" alttext="x\in(a,b)" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(a,b)</annotation></semantics></math><span class="ltx_text ltx_font_italic">. Suponha que </span><math id="I1.i1.p1.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> e
+</span><math id="I1.i1.p1.m9" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math><span class="ltx_text ltx_font_italic"> são
+tais
+que </span><math id="I1.i1.p1.m10" class="ltx_Math" alttext="\lim_{x\to a^{+}}f(x)=\pm\alpha" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mi>α</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{+}}f(x)=\pm\alpha</annotation></semantics></math><span class="ltx_text ltx_font_italic"> e </span><math id="I1.i1.p1.m11" class="ltx_Math" alttext="\lim_{x\to a^{+}}g(x)=\pm\alpha" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></msub><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mi>α</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{+}}g(x)=\pm\alpha</annotation></semantics></math><span class="ltx_text ltx_font_italic">, com
+</span><math id="I1.i1.p1.m12" class="ltx_Math" alttext="\alpha\in\{0,\infty\}" display="inline"><semantics><mrow><mi>α</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\alpha\in\{0,\infty\}</annotation></semantics></math><span class="ltx_text ltx_font_italic">. Se </span><math id="I1.i1.p1.m13" class="ltx_Math" alttext="\lim_{x\to a^{+}}\frac{f^{\prime}(x)}{g^{\prime}(x)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></msub><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{+}}\frac{f^{\prime}(x)}{g^{\prime}(x)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> existir, ou se for </span><math id="I1.i1.p1.m14" class="ltx_Math" alttext="\pm\infty" display="inline"><semantics><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\pm\infty</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então</span></p>
+<div id="Ch6.E30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E30.m1" class="ltx_Math" alttext="\lim_{x\to a^{+}}\frac{f(x)}{g(x)}=\lim_{x\to a^{+}}\frac{f^{\prime}(x)}{g^{%
+\prime}(x)}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{+}}\frac{f(x)}{g(x)}=\lim_{x\to a^{+}}\frac{f^{\prime}(x)}{g^{%
+\prime}(x)}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.30)</span>
+                    
+                    
+                  
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Uma afirmação equivalente pode ser formulada para </span><math id="I1.i1.p1.m15" class="ltx_Math" alttext="x\to b^{-}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>b</mi><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">x\to b^{-}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.)</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_bold ltx_font_italic">Limites <math id="I1.i2.p1.m1" class="ltx_Math" alttext="x\to\infty" display="inline"><semantics><mrow><mi mathvariant="normal">x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">x\to\infty</annotation></semantics></math>:</span><span class="ltx_text ltx_font_italic">
+Sejam </span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math><span class="ltx_text ltx_font_italic"> duas funções deriváveis em todo </span><math id="I1.i2.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text ltx_font_italic"> suficientemente grande, e
+tais
+que </span><math id="I1.i2.p1.m5" class="ltx_Math" alttext="\lim_{x\to\infty}f(x)=\pm\alpha" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mi>α</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}f(x)=\pm\alpha</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i2.p1.m6" class="ltx_Math" alttext="\lim_{x\to\infty}g(x)=\pm\alpha" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mi>α</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}g(x)=\pm\alpha</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+com </span><math id="I1.i2.p1.m7" class="ltx_Math" alttext="\alpha\in\{0,\infty\}" display="inline"><semantics><mrow><mi>α</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\alpha\in\{0,\infty\}</annotation></semantics></math><span class="ltx_text ltx_font_italic">. Se
+</span><math id="I1.i2.p1.m8" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{f^{\prime}(x)}{g^{\prime}(x)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{f^{\prime}(x)}{g^{\prime}(x)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> existir ou se for </span><math id="I1.i2.p1.m9" class="ltx_Math" alttext="\pm\infty" display="inline"><semantics><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\pm\infty</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então</span></p>
+<div id="Ch6.E31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E31.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{f(x)}{g(x)}=\lim_{x\to\infty}\frac{f^{\prime}(x)}{g^{%
+\prime}(x)}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{f(x)}{g(x)}=\lim_{x\to\infty}\frac{f^{\prime}(x)}{g^{%
+\prime}(x)}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.31)</span>
+                    
+                    
+                  
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Uma afirmação equivalente pode ser formulada para limites </span><math id="I1.i2.p1.m10" class="ltx_Math" alttext="x\to-\infty" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">x\to-\infty</annotation></semantics></math><span class="ltx_text ltx_font_italic">.)</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Provemos somente o primeiro item. Fixe <math id="p5.m1" class="ltx_Math" alttext="z\in(a,b)" display="inline"><semantics><mrow><mi>z</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">z\in(a,b)</annotation></semantics></math>.
+Podemos definir <math id="p5.m2" class="ltx_Math" alttext="f(a){:=}0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(a){:=}0</annotation></semantics></math>, <math id="p5.m3" class="ltx_Math" alttext="g(a){:=}0" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g(a){:=}0</annotation></semantics></math>, de modo tal que a função
+<math id="p5.m4" class="ltx_Math" alttext="F(x){:=}(f(z)-f(a))g(x)-(g(z)-g(a))f(x)" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">F(x){:=}(f(z)-f(a))g(x)-(g(z)-g(a))f(x)</annotation></semantics></math> seja contínua em <math id="p5.m5" class="ltx_Math" alttext="[a,z]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>z</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,z]</annotation></semantics></math> e derivável em
+<math id="p5.m6" class="ltx_Math" alttext="(a,z)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a,z)</annotation></semantics></math>.
+Como <math id="p5.m7" class="ltx_Math" alttext="F(z)=F(a)" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F(z)=F(a)</annotation></semantics></math>, o Teorema de Rolle <a href="Ch6.S5.html#Ch6.Thmteo2" title="Teorema 6.2. ‣ 6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a> garante a existência de um
+<math id="p5.m8" class="ltx_Math" alttext="c_{z}\in(a,z)" display="inline"><semantics><mrow><msub><mi>c</mi><mi>z</mi></msub><mo>∈</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">c_{z}\in(a,z)</annotation></semantics></math> tal que <math id="p5.m9" class="ltx_Math" alttext="F^{\prime}(c_{z})=0" display="inline"><semantics><mrow><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F^{\prime}(c_{z})=0</annotation></semantics></math>, isto é,
+<math id="p5.m10" class="ltx_Math" alttext="(f(z)-f(a))g^{\prime}(c_{z})-(g(z)-g(a))f^{\prime}(c_{z})=0" display="inline"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(f(z)-f(a))g^{\prime}(c_{z})-(g(z)-g(a))f^{\prime}(c_{z})=0</annotation></semantics></math>, que pode ser escrito</p>
+<div id="Ch6.Ex104" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex104.m1" class="ltx_Math" alttext="\frac{f(z)-f(a)}{g(z)-g(a)}=\frac{f^{\prime}(c_{z})}{g^{\prime}(c_{z})}\,." display="block"><semantics><mrow><mrow><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\frac{f(z)-f(a)}{g(z)-g(a)}=\frac{f^{\prime}(c_{z})}{g^{\prime}(c_{z})}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Observe que se <math id="p5.m11" class="ltx_Math" alttext="z\to a^{+}" display="inline"><semantics><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">z\to a^{+}</annotation></semantics></math>, então <math id="p5.m12" class="ltx_Math" alttext="c_{z}\to a^{+}" display="inline"><semantics><mrow><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">c_{z}\to a^{+}</annotation></semantics></math>. Logo, com a mudança de variável
+<math id="p5.m13" class="ltx_Math" alttext="y{:=}c_{z}" display="inline"><semantics><mrow><mi>y</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><msub><mi>c</mi><mi>z</mi></msub></mrow><annotation encoding="application/x-tex">y{:=}c_{z}</annotation></semantics></math>,</p>
+<div id="Ch6.Ex105" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex105.m1" class="ltx_Math" alttext="\lim_{z\to a^{+}}\frac{f(z)}{g(z)}=\lim_{z\to a^{+}}\frac{f(z)-f(a)}{g(z)-g(a)%
+}=\lim_{z\to a^{+}}\frac{f^{\prime}(c_{z})}{g^{\prime}(c_{z})}\equiv\lim_{y\to
+a%
+^{+}}\frac{f^{\prime}(y)}{g^{\prime}(y)}\,," display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">≡</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\lim_{z\to a^{+}}\frac{f(z)}{g(z)}=\lim_{z\to a^{+}}\frac{f(z)-f(a)}{g(z)-g(a)%
+}=\lim_{z\to a^{+}}\frac{f^{\prime}(c_{z})}{g^{\prime}(c_{z})}\equiv\lim_{y\to
+a%
+^{+}}\frac{f^{\prime}(y)}{g^{\prime}(y)}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">o que prova a afirmação.
+∎</p>
+</div>
+</div>
+<div id="Ch6.Thmex34" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.34</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex34.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch6.Thmex34.p1.m1" class="ltx_Math" alttext="\lim_{x\to 1}\frac{x^{2}-1}{x-1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{x^{2}-1}{x-1}</annotation></semantics></math>. No Capítulo
+<a href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>,
+calculamos esse limite da seguinte maneira:</span></p>
+<div id="Ch6.Ex106" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex106.m1" class="ltx_Math" alttext="\lim_{x\to 1}\frac{x^{2}-1}{x-1}=\lim_{x\to 1}\frac{(x-1)(x+1)}{x-1}=\lim_{x%
+\to 1}(x+1)=2\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></munder><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></munder><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{x^{2}-1}{x-1}=\lim_{x\to 1}\frac{(x-1)(x+1)}{x-1}=\lim_{x%
+\to 1}(x+1)=2\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Vejamos agora como esse mesmo limite pode ser calculado também usando a Regra de
+Bernoulli-l’Hôpital. Como o limite é da forma
+<math id="Ch6.Thmex34.p1.m2" class="ltx_Math" alttext="\lim_{x\to 1}\frac{f(x)}{g(x)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></msub><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{f(x)}{g(x)}</annotation></semantics></math>, com <math id="Ch6.Thmex34.p1.m3" class="ltx_Math" alttext="f(x)=x^{2}-1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">f(x)=x^{2}-1</annotation></semantics></math> e <math id="Ch6.Thmex34.p1.m4" class="ltx_Math" alttext="g(x)=x-1" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">g(x)=x-1</annotation></semantics></math> ambas deriváveis
+em <math id="Ch6.Thmex34.p1.m5" class="ltx_Math" alttext="(1,2)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,2)</annotation></semantics></math>, que <math id="Ch6.Thmex34.p1.m6" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> e <math id="Ch6.Thmex34.p1.m7" class="ltx_Math" alttext="g^{\prime}" display="inline"><semantics><msup><mi>g</mi><mo>′</mo></msup><annotation encoding="application/x-tex">g^{\prime}</annotation></semantics></math> não se anulam nesse intervalo, e como <math id="Ch6.Thmex34.p1.m8" class="ltx_Math" alttext="\lim_{x\to 1^{+}}\frac{f^{\prime}(x)}{g^{\prime}(x)}=\lim_{x\to 1^{+}}\frac{2x%
+}{1}=2" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mn>1</mn></mfrac></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{+}}\frac{f^{\prime}(x)}{g^{\prime}(x)}=\lim_{x\to 1^{+}}\frac{2x%
+}{1}=2</annotation></semantics></math>, o Teorema <a href="#Ch6.Thmteo5" title="Teorema 6.5 (Regra de Bernoulli-l’Hôpital, Segunda versão). ‣ 6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.5</span></a> implica
+<math id="Ch6.Thmex34.p1.m9" class="ltx_Math" alttext="\lim_{x\to 1^{+}}\frac{x^{2}-1}{x-1}=2" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{+}}\frac{x^{2}-1}{x-1}=2</annotation></semantics></math>. Do mesmo jeito, <math id="Ch6.Thmex34.p1.m10" class="ltx_Math" alttext="\lim_{x\to 1^{-}}\frac{x^{2}-1}{x-1}=2" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>−</mo></msup></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{-}}\frac{x^{2}-1}{x-1}=2</annotation></semantics></math>, o que implica <math id="Ch6.Thmex34.p1.m11" class="ltx_Math" alttext="\lim_{x\to 1}\frac{x^{2}-1}{x-1}=2" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}\frac{x^{2}-1}{x-1}=2</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmobs9" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 6.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmobs9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A Regra de Bernoulli-l’Hôpital (que será às vezes abreviada "regra de B.H.")
+fornece uma ferramenta poderosa para calcular alguns limites, mas é
+importante sempre verificar se as hipóteses do teorema são
+satisfeitas, e <em class="ltx_emph ltx_font_upright">não querer a usar para calcular qualquer limite</em>!
+Também, ela pode às vezes se aplicar mas não ser de nenhuma utilidade (ver o
+Exercício <a href="#Ch6.Thmexo50" title="Exercício 6.50. ‣ 6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.50</span></a>).</span></p>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Às vezes, é preciso usar a regra de B.H. mais de uma vez para calcular um
+limite:</p>
+</div>
+<div id="Ch6.Thmex35" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.35</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex35.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere o limite <math id="Ch6.Thmex35.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{1-\cos x}{x^{2}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{1-\cos x}{x^{2}}</annotation></semantics></math>, já
+encontrado no Exercício <a href="Ch4.S4.html#Ch4.Thmexo19" title="Exercício 4.19. ‣ 4.4.1 O limite lim_{𝑥→0}{sen𝑥/𝑥} ‣ 4.4 Indeterminações do tipo “0/0” ‣ Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.19</span></a>.
+Como <math id="Ch6.Thmex35.p1.m2" class="ltx_Math" alttext="1-\cos x" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">1-\cos x</annotation></semantics></math> e <math id="Ch6.Thmex35.p1.m3" class="ltx_Math" alttext="x^{2}" display="inline"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^{2}</annotation></semantics></math> ambas tendem a zero e são deriváveis na vizinhança de
+zero, as hipóteses do Teorema (<a href="#Ch6.Thmteo5" title="Teorema 6.5 (Regra de Bernoulli-l’Hôpital, Segunda versão). ‣ 6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.5</span></a>) são satisfeitas:</span></p>
+<div id="Ch6.Ex107" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex107.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{1-\cos x}{x^{2}}=\lim_{x\to 0^{+}}\frac{(1-\cos x)^{%
+\prime}}{(x^{2})^{\prime}}=\lim_{x\to 0^{+}}\frac{\operatorname{sen}x}{2x}." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{1-\cos x}{x^{2}}=\lim_{x\to 0^{+}}\frac{(1-\cos x)^{%
+\prime}}{(x^{2})^{\prime}}=\lim_{x\to 0^{+}}\frac{\operatorname{sen}x}{2x}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Já sabemos
+que <math id="Ch6.Thmex35.p1.m4" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\operatorname{sen}x}{x}=1" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\operatorname{sen}x}{x}=1</annotation></semantics></math>. Mesmo assim,
+sendo também da forma <math id="Ch6.Thmex35.p1.m5" class="ltx_Math" alttext="\frac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\frac{0}{0}</annotation></semantics></math>, esse limite pode ser calculado aplicando a
+regra de B.-H. uma segunda vez: <math id="Ch6.Thmex35.p1.m6" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{\operatorname{sen}x}{x}=\lim_{x\to 0^{+}}\frac{\cos x}{%
+1}=1" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>1</mn></mfrac></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{\operatorname{sen}x}{x}=\lim_{x\to 0^{+}}\frac{\cos x}{%
+1}=1</annotation></semantics></math>. Logo, <math id="Ch6.Thmex35.p1.m7" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{1-\cos x}{x^{2}}=\frac{1}{2}" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{1-\cos x}{x^{2}}=\frac{1}{2}</annotation></semantics></math>.
+Como a função é par, o limite lateral <math id="Ch6.Thmex35.p1.m8" class="ltx_Math" alttext="x\to 0^{-}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">x\to 0^{-}</annotation></semantics></math> é igual ao limite
+lateral <math id="Ch6.Thmex35.p1.m9" class="ltx_Math" alttext="x\to 0^{+}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to 0^{+}</annotation></semantics></math>, logo <math id="Ch6.Thmex35.p1.m10" class="ltx_Math" alttext="\lim_{x\to 0}\frac{1-\cos x}{x^{2}}=\frac{1}{2}" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{1-\cos x}{x^{2}}=\frac{1}{2}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Vejamos agora um exemplo de limite <math id="p7.m1" class="ltx_Math" alttext="x\to\infty" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">x\to\infty</annotation></semantics></math>:</p>
+</div>
+<div id="Ch6.Thmex36" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.36</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex36.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch6.Thmex36.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{\ln x}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{\ln x}{x}</annotation></semantics></math> (já calculado na
+Seção <a href="Ch4.S8.html" title="4.8 O limite lim_{𝑥→∞}{𝑎^𝑥/𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.8</span></a>, usando a fórmula do binômio
+de Newton).
+Observe que <math id="Ch6.Thmex36.p1.m2" class="ltx_Math" alttext="\frac{\ln x}{x}\equiv\frac{f(x)}{g(x)}" display="inline"><semantics><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>≡</mo><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\ln x}{x}\equiv\frac{f(x)}{g(x)}</annotation></semantics></math>
+é um quociente de duas funções deriváveis para todo <math id="Ch6.Thmex36.p1.m3" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>,
+e que <math id="Ch6.Thmex36.p1.m4" class="ltx_Math" alttext="\lim_{x\to\infty}f(x)=\infty" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}f(x)=\infty</annotation></semantics></math>, <math id="Ch6.Thmex36.p1.m5" class="ltx_Math" alttext="\lim_{x\to\infty}g(x)=\infty" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}g(x)=\infty</annotation></semantics></math>.
+Além disso, <math id="Ch6.Thmex36.p1.m6" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{f^{\prime}(x)}{g^{\prime}(x)}=\lim_{x\to\infty}\frac{1/%
+x}{1}=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mn>1</mn></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{f^{\prime}(x)}{g^{\prime}(x)}=\lim_{x\to\infty}\frac{1/%
+x}{1}=0</annotation></semantics></math>, o que implica, pelo segundo item do
+Teorema <a href="#Ch6.Thmteo5" title="Teorema 6.5 (Regra de Bernoulli-l’Hôpital, Segunda versão). ‣ 6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.5</span></a>,</span></p>
+<div id="Ch6.E32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E32.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{\ln x}{x}=0\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{\ln x}{x}=0\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.32)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Vejamos em seguida um exemplo em que é necessário tomar um limite lateral:</p>
+</div>
+<div id="Ch6.Thmex37" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.37</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex37.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch6.Thmex37.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}x\ln x" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}x\ln x</annotation></semantics></math>. Aqui, consideremos <math id="Ch6.Thmex37.p1.m2" class="ltx_Math" alttext="f(x)=\ln x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\ln x</annotation></semantics></math> e
+<math id="Ch6.Thmex37.p1.m3" class="ltx_Math" alttext="g(x)=\tfrac{1}{x}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">g(x)=\tfrac{1}{x}</annotation></semantics></math>, ambas deriváveis no intervalo <math id="Ch6.Thmex37.p1.m4" class="ltx_Math" alttext="(0,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>. Além disso, <math id="Ch6.Thmex37.p1.m5" class="ltx_Math" alttext="g(x)\neq 0" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g(x)\neq 0</annotation></semantics></math> e <math id="Ch6.Thmex37.p1.m6" class="ltx_Math" alttext="g^{\prime}(x)\neq 0" display="inline"><semantics><mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g^{\prime}(x)\neq 0</annotation></semantics></math> para todo <math id="Ch6.Thmex37.p1.m7" class="ltx_Math" alttext="x\in(0,1)" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(0,1)</annotation></semantics></math>.
+O limite pode ser escrito na forma de um quociente, escrevendo
+<math id="Ch6.Thmex37.p1.m8" class="ltx_Math" alttext="x\ln x=\frac{\ln x}{1/x}" display="inline"><semantics><mrow><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">x\ln x=\frac{\ln x}{1/x}</annotation></semantics></math>. Logo,</span></p>
+<div id="Ch6.Ex108" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex108.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}x\ln x=\lim_{x\to 0^{+}}\frac{\ln x}{1/x}=\lim_{x\to 0^{+}}%
+\frac{1/x}{-1/x^{2}}=-\lim_{x\to 0^{+}}x=0\,," display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><mo>−</mo><mrow><munder><mo lspace="0.167em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mi>x</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}x\ln x=\lim_{x\to 0^{+}}\frac{\ln x}{1/x}=\lim_{x\to 0^{+}}%
+\frac{1/x}{-1/x^{2}}=-\lim_{x\to 0^{+}}x=0\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">onde B.H. foi usada na segunda igualdade.</span></p>
+</div>
+<div id="Ch6.Thmex37.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um outro jeito de calcular o limite acima é de fazer uma mudança de variável:
+se <math id="Ch6.Thmex37.p2.m1" class="ltx_Math" alttext="y{:=}1/x" display="inline"><semantics><mrow><mi>y</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">y{:=}1/x</annotation></semantics></math>, então <math id="Ch6.Thmex37.p2.m2" class="ltx_Math" alttext="x\to 0^{+}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to 0^{+}</annotation></semantics></math> implica <math id="Ch6.Thmex37.p2.m3" class="ltx_Math" alttext="y\to+\infty" display="inline"><semantics><mrow><mi>y</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">y\to+\infty</annotation></semantics></math>. Logo,</span></p>
+<div id="Ch6.Ex109" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex109.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}x\ln x=\lim_{y\to\infty}\tfrac{1}{y}\ln\tfrac{1}{y}=-\lim_{y%
+\to\infty}\tfrac{\ln y}{y}\,," display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>y</mi></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>y</mi></mfrac></mstyle></mrow></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><munder><mo lspace="0.167em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mstyle displaystyle="false"><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow><mi>y</mi></mfrac></mstyle></mrow></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}x\ln x=\lim_{y\to\infty}\tfrac{1}{y}\ln\tfrac{1}{y}=-\lim_{y%
+\to\infty}\tfrac{\ln y}{y}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">e já vimos no último exemplo que esse limite vale <math id="Ch6.Thmex37.p2.m4" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo50" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.50</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo50.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule os limites abaixo. Se quiser usar a Regra de Bernoulli-l’Hôpital,
+verifique primeiro que as hipóteses sejam satisfeitas.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{x}{3}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mi>x</mi><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{x}{3}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\lim_{x\to 2}\frac{x^{2}-x-2}{3x^{2}-5x-2}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>2</mn></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>5</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 2}\frac{x^{2}-x-2}{3x^{2}-5x-2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="\lim_{x\to 1^{+}}\frac{x^{2}-2x+2}{x^{2}+x-2}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>2</mn></mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi></mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{+}}\frac{x^{2}-2x+2}{x^{2}+x-2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{(\operatorname{sen}x)^{2}}{x^{2}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{(\operatorname{sen}x)^{2}}{x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\ln\frac{1}{1+x}}{\operatorname{sen}x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac></mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\ln\frac{1}{1+x}}{\operatorname{sen}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i6.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{1+\operatorname{sen}x-\cos x}{\tan x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{1+\operatorname{sen}x-\cos x}{\tan x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i7.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{x-\operatorname{sen}x}{1-\cos x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>x</mi><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{x-\operatorname{sen}x}{1-\cos x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I2.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i8.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{x-\operatorname{sen}x}{x\operatorname{sen}x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mi>x</mi><mo>−</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{x-\operatorname{sen}x}{x\operatorname{sen}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I2.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i9.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\operatorname{sen}x-x}{x^{3}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\operatorname{sen}x-x}{x^{3}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I2.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i10.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\tan x-x}{x^{3}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\tan x-x}{x^{3}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I2.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i11.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\ln(1+\operatorname{sen}x)}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\ln(1+\operatorname{sen}x)}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span><div id="I2.i12.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i12.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{x\operatorname{sen}x}{1+\cos(x-\pi)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{x\operatorname{sen}x}{1+\cos(x-\pi)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i13" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">13.</span><div id="I2.i13.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i13.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{\sqrt{x}}{\ln x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><msqrt><mi>x</mi></msqrt><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{\sqrt{x}}{\ln x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i14" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">14.</span><div id="I2.i14.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i14.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}x(\ln x)^{2}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}x(\ln x)^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i15" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">15.</span><div id="I2.i15.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i15.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{(\ln x)^{2}}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{(\ln x)^{2}}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i16" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">16.</span><div id="I2.i16.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i16.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{x}{e^{x}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mi>x</mi><msup><mi>e</mi><mi>x</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{x}{e^{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i17" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">17.</span><div id="I2.i17.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i17.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{e^{\ln x}}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><msup><mi>e</mi><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{e^{\ln x}}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i18" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">18.</span><div id="I2.i18.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i18.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{\sqrt{x+1}}{\sqrt{x-1}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msqrt><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{\sqrt{x+1}}{\sqrt{x-1}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i19" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">19.</span><div id="I2.i19.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i19.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{x^{100}-x^{99}}{20x-3x^{100}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>100</mn></msup><mo>−</mo><msup><mi>x</mi><mn>99</mn></msup></mrow><mrow><mrow><mn>20</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>100</mn></msup></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{x^{100}-x^{99}}{20x-3x^{100}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i20" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">20.</span><div id="I2.i20.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i20.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\ln(1+x)-\ln(1-x)}{\operatorname{sen}x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\ln(1+x)-\ln(1-x)}{\operatorname{sen}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i21" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">21.</span><div id="I2.i21.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i21.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{\operatorname{sen}^{2}x}{1-x^{2}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{\operatorname{sen}^{2}x}{1-x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i22" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">22.</span><div id="I2.i22.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i22.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\frac{x+\operatorname{sen}x}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><mi>x</mi><mo>+</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{x+\operatorname{sen}x}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i23" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">23.</span><div id="I2.i23.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i23.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{x^{2}-\operatorname{sen}^{2}x}{x^{2}\operatorname{sen}^%
+{2}x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{x^{2}-\operatorname{sen}^{2}x}{x^{2}\operatorname{sen}^%
+{2}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i24" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">24.</span><div id="I2.i24.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i24.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{x^{2}\operatorname{sen}\frac{1}{x}}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{x^{2}\operatorname{sen}\frac{1}{x}}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i25" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">25.</span><div id="I2.i25.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i25.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{e^{\tan x}-e^{x}}{x^{3}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><msup><mi>e</mi><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup><mo>−</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{e^{\tan x}-e^{x}}{x^{3}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i26" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">26.</span><div id="I2.i26.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i26.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\bigl{(}\frac{1}{x}-\frac{1}{e^{x}-1}\bigr{)}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mrow><mo lspace="0em" maxsize="120%" minsize="120%">(</mo><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\bigl{(}\frac{1}{x}-\frac{1}{e^{x}-1}\bigr{)}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i27" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">27.</span><div id="I2.i27.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i27.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{\arctan(\frac{1}{x})-\tfrac{\pi}{2}}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mstyle scriptlevel="-1"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{\arctan(\frac{1}{x})-\tfrac{\pi}{2}}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Vários outros tipos de limites, por exemplo indeterminações
+“<math id="p9.m1" class="ltx_Math" alttext="1^{\infty}" display="inline"><semantics><msup><mn>1</mn><mi mathvariant="normal">∞</mi></msup><annotation encoding="application/x-tex">1^{\infty}</annotation></semantics></math>”, podem ser calculados usando o Teorema
+<a href="#Ch6.Thmteo5" title="Teorema 6.5 (Regra de Bernoulli-l’Hôpital, Segunda versão). ‣ 6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.5</span></a>. Aqui usaremos <em class="ltx_emph ltx_font_italic">exponenciação</em>.</p>
+</div>
+<div id="Ch6.Thmex38" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.38</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex38.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para calcular <math id="Ch6.Thmex38.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}(\frac{x}{x-a})^{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo stretchy="false">)</mo></mrow><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}(\frac{x}{x-a})^{x}</annotation></semantics></math>, que é da forma
+c“<math id="Ch6.Thmex38.p1.m2" class="ltx_Math" alttext="1^{\infty}" display="inline"><semantics><msup><mn>1</mn><mi mathvariant="normal">∞</mi></msup><annotation encoding="application/x-tex">1^{\infty}</annotation></semantics></math>”, comecemos exponenciando</span></p>
+<div id="Ch6.Ex110" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex110.m1" class="ltx_Math" alttext="\Bigl{(}\frac{x}{x-a}\Bigr{)}^{x}=\exp\Bigl{(}x\ln\frac{x}{x-a}\Bigr{)}\,." display="block"><semantics><mrow><mrow><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mi>x</mi></msup><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\Bigl{(}\frac{x}{x-a}\Bigr{)}^{x}=\exp\Bigl{(}x\ln\frac{x}{x-a}\Bigr{)}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como
+<math id="Ch6.Thmex38.p1.m3" class="ltx_Math" alttext="x\mapsto e^{x}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">x\mapsto e^{x}</annotation></semantics></math> é contínua, <math id="Ch6.Thmex38.p1.m4" class="ltx_Math" alttext="\lim_{x\to\infty}(\frac{x}{x-a})^{x}=\exp(\lim_{x\to\infty}x\ln\frac{x}{x-a})" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo stretchy="false">)</mo></mrow><mi>x</mi></msup></mrow><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mo lspace="0em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}(\frac{x}{x-a})^{x}=\exp(\lim_{x\to\infty}x\ln\frac{x}{x-a})</annotation></semantics></math> (lembre da Seção <a href="Ch5.S2.html" title="5.2 Limites e funções contínuas ‣ Capítulo 5 Continuidade ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.2</span></a>).
+Ora, o limite <math id="Ch6.Thmex38.p1.m5" class="ltx_Math" alttext="\lim_{x\to\infty}x\ln\frac{x}{x-a}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}x\ln\frac{x}{x-a}</annotation></semantics></math> pode ser escrito na forma
+de um quociente:</span></p>
+<div id="Ch6.Ex111" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex111.m1" class="ltx_Math" alttext="\lim_{x\to\infty}x\ln\frac{x}{x-a}=\lim_{x\to\infty}\frac{\ln\frac{x}{x-a}}{%
+\frac{1}{x}}=\lim_{x\to\infty}\frac{\frac{1}{x}-\frac{1}{x-a}}{-\frac{1}{x^{2}%
+}}=\lim_{x\to\infty}\frac{ax^{2}}{x(x-a)}=a\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><mfrac><mn>1</mn><mi>x</mi></mfrac></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><mrow><mo>−</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mi>a</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}x\ln\frac{x}{x-a}=\lim_{x\to\infty}\frac{\ln\frac{x}{x-a}}{%
+\frac{1}{x}}=\lim_{x\to\infty}\frac{\frac{1}{x}-\frac{1}{x-a}}{-\frac{1}{x^{2}%
+}}=\lim_{x\to\infty}\frac{ax^{2}}{x(x-a)}=a\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A segunda igualdade é justificada pela regra de B.-H. (as funções
+são deriváveis em todo <math id="Ch6.Thmex38.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> suficientemente grande),
+a última por uma conta fácil de limite, colocando <math id="Ch6.Thmex38.p1.m7" class="ltx_Math" alttext="x^{2}" display="inline"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^{2}</annotation></semantics></math> em evidência.
+Portanto,</span></p>
+<div id="Ch6.Ex112" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex112.m1" class="ltx_Math" alttext="\lim_{x\to\infty}\Bigl{(}\frac{x}{x-a}\Bigr{)}^{x}=\exp\Big{(}\lim_{x\to\infty%
+}x\ln\frac{x}{x-a}\Big{)}=e^{a}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mi>x</mi></msup></mrow><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>a</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\Bigl{(}\frac{x}{x-a}\Bigr{)}^{x}=\exp\Big{(}\lim_{x\to\infty%
+}x\ln\frac{x}{x-a}\Big{)}=e^{a}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch6.Thmex39" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.39</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex39.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch6.Thmex39.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}(\cos x)^{1/x^{2}}=\exp(\lim_{x\to 0}\frac{\ln(\cos x)}{x^{2}})" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup></mrow><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mo lspace="0em" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}(\cos x)^{1/x^{2}}=\exp(\lim_{x\to 0}\frac{\ln(\cos x)}{x^{2}})</annotation></semantics></math>.
+Como <math id="Ch6.Thmex39.p1.m2" class="ltx_Math" alttext="\ln(\cos x)" display="inline"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(\cos x)</annotation></semantics></math> e <math id="Ch6.Thmex39.p1.m3" class="ltx_Math" alttext="x^{2}" display="inline"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^{2}</annotation></semantics></math> são ambas deriváveis na vizinhança de zero, e como</span></p>
+<div id="Ch6.Ex113" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex113.m1" class="ltx_Math" alttext="\lim_{x\to 0}\frac{(\ln(\cos x))^{\prime}}{(x^{2})^{\prime}}=\lim_{x\to 0}%
+\frac{-\tan x}{2x}=-\tfrac{1}{2}\lim_{x\to 0}\frac{\operatorname{sen}x}{x}%
+\frac{1}{\cos x}=-\tfrac{1}{2}\,," display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mo rspace="0.167em">−</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mrow><mfrac><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⁢</mo><mfrac><mn>1</mn><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}\frac{(\ln(\cos x))^{\prime}}{(x^{2})^{\prime}}=\lim_{x\to 0}%
+\frac{-\tan x}{2x}=-\tfrac{1}{2}\lim_{x\to 0}\frac{\operatorname{sen}x}{x}%
+\frac{1}{\cos x}=-\tfrac{1}{2}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">temos</span></p>
+<div id="Ch6.Ex114" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex114.m1" class="ltx_Math" alttext="\lim_{x\to 0}(\cos x)^{1/x^{2}}=e^{-\tfrac{1}{2}}=\frac{1}{\sqrt{e}}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msqrt><mi>e</mi></msqrt></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}(\cos x)^{1/x^{2}}=e^{-\tfrac{1}{2}}=\frac{1}{\sqrt{e}}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch6.Thmexo51" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.51</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo51.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}(\sqrt{1+x})^{\tfrac{1}{x}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo stretchy="false">)</mo></mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}(\sqrt{1+x})^{\tfrac{1}{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}x^{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><msup><mi>x</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}x^{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I3.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i3.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}(1+\operatorname{sen}(2x))^{\tfrac{1}{x}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}(1+\operatorname{sen}(2x))^{\tfrac{1}{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I3.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i4.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0}(\operatorname{sen}x)^{\operatorname{sen}x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to 0}(\operatorname{sen}x)^{\operatorname{sen}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I3.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i5.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}(e^{x}+x^{2})^{\tfrac{1}{x}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}(e^{x}+x^{2})^{\tfrac{1}{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I3.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i6.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}(\ln x)^{\tfrac{1}{x}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}(\ln x)^{\tfrac{1}{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I3.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i7.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}(1+x)^{\ln x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}(1+x)^{\ln x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I3.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i8.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}(xe^{\tfrac{1}{x}}-x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></msup></mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}(xe^{\tfrac{1}{x}}-x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I3.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i9.p1.m1" class="ltx_Math" alttext="\lim_{x\to\infty}{(\tfrac{\pi}{2}-\arctan x)^{\tfrac{1}{\ln x}}}" display="inline"><semantics><mrow><msub><mo mathsize="83%">lim</mo><mrow><mi mathsize="82%">x</mi><mo mathsize="82%" stretchy="false">→</mo><mi mathsize="82%" mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo lspace="0em" maxsize="83%" minsize="83%">(</mo><mrow><mfrac><mi mathsize="82%">π</mi><mn mathsize="82%">2</mn></mfrac><mo mathsize="83%">−</mo><mrow><mi mathsize="83%">arctan</mi><mo lspace="0.167em">⁡</mo><mi mathsize="83%">x</mi></mrow></mrow><mo maxsize="83%" minsize="83%">)</mo></mrow><mstyle scriptlevel="-1"><mfrac><mn mathsize="82%">1</mn><mrow><mi mathsize="82%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="82%">x</mi></mrow></mfrac></mstyle></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}{(\tfrac{\pi}{2}-\arctan x)^{\tfrac{1}{\ln x}}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I3.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i10.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}x^{x^{x}}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><msup><mi>x</mi><msup><mi>x</mi><mi>x</mi></msup></msup></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}x^{x^{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I3.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I3.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i11.p1.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}\frac{(1+x)^{\tfrac{1}{x}}-e}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mstyle scriptlevel="-2"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></msup><mo>−</mo><mi>e</mi></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}\frac{(1+x)^{\tfrac{1}{x}}-e}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch6.Thmexo52" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.52</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo52.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Segunda prova, 27 de maio de 2011)
+Calcule os limites</span></p>
+<div id="Ch6.Ex115" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex115.m1" class="ltx_Math" alttext="\lim_{z\to\infty}\Bigl{(}\frac{z+9}{z-9}\Bigr{)}^{z}\,,\quad\quad\lim_{x\to%
+\infty}x^{\ln x}e^{-x}\,,\quad\lim_{x\to\infty}\frac{\sqrt{2x+1}}{\sqrt{x-1000%
+}}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mfrac><mrow><mi>z</mi><mo>+</mo><mn>9</mn></mrow><mrow><mi>z</mi><mo>−</mo><mn>9</mn></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mi>z</mi></msup></mrow><mo rspace="2.289em">,</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msup><mi>x</mi><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mrow><mo rspace="1.089em">,</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><msqrt><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mrow><mi>x</mi><mo>−</mo><mn>1000</mn></mrow></msqrt></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{z\to\infty}\Bigl{(}\frac{z+9}{z-9}\Bigr{)}^{z}\,,\quad\quad\lim_{x\to%
+\infty}x^{\ln x}e^{-x}\,,\quad\lim_{x\to\infty}\frac{\sqrt{2x+1}}{\sqrt{x-1000%
+}}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch6.S10.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch7.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

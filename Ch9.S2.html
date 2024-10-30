@@ -1,0 +1,437 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch9.S1.html" title="9.1 Introdução ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="next" href="Ch9.S3.html" title="9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S1.html" title="9.1 Introdução ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S3.html" title="9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S4.html" title="9.4 Áreas de regiões do plano ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S5.html" title="9.5 Primitivas ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Riemann (Georg Friedrich), de Riemann, de integração, função, integral, integrável, limite, muda, propriedades da, variável">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="9.1" data-path="Ch9.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S1.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.1 </span></b>Introdução</a></li>
+<li data-level="9.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.2 </span></b>A integral de Riemann</a></li>
+<li data-level="9.3" data-path="Ch9.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S3.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.3 </span></b>O Teorema Fundamental do Cálculo</a></li>
+<li data-level="9.4" data-path="Ch9.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S4.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.4 </span></b>Áreas de regiões do plano</a></li>
+<li data-level="9.5" data-path="Ch9.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S5.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.5 </span></b>Primitivas</a></li>
+</ol>
+</li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>A integral de Riemann</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">9.2</span> A integral de Riemann</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">De modo geral, a área da região <math id="p1.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> delimitada pelo gráfico de uma função
+<math id="p1.m2" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math> pode ser definida via um processo de limite,
+como visto acima no caso de <math id="p1.m3" class="ltx_Math" alttext="f(x)=1-x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=1-x^{2}</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Primeiro,
+escolhemos um inteiro <math id="p2.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, e escolhemos pontos distintos em <math id="p2.m2" class="ltx_Math" alttext="(a,b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math>:
+<math id="p2.m3" class="ltx_Math" alttext="x_{0}\equiv a&lt;x_{1}&lt;x_{2}&lt;\dots&lt;x_{n-1}&lt;x_{n}\equiv b" display="inline"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>≡</mo><mi>a</mi><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>≡</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">x_{0}\equiv a&lt;x_{1}&lt;x_{2}&lt;\dots&lt;x_{n-1}&lt;x_{n}\equiv b</annotation></semantics></math>.
+Esses pontos formam uma <span class="ltx_text ltx_font_bold">partição</span> de <math id="p2.m4" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math>.
+Em seguida, escolhemos um
+ponto <math id="p2.m5" class="ltx_Math" alttext="x_{j}^{*}" display="inline"><semantics><msubsup><mi>x</mi><mi>j</mi><mo>∗</mo></msubsup><annotation encoding="application/x-tex">x_{j}^{*}</annotation></semantics></math> em cada intervalo <math id="p2.m6" class="ltx_Math" alttext="[x_{j-1},x_{j}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[x_{j-1},x_{j}]</annotation></semantics></math>, e definimos a <span class="ltx_text ltx_font_bold">soma
+de 
+Riemann <span id="Ch9.footnote4" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">4</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">4</sup>
+                <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_medium">4</span></span>
+                
+                
+                
+              <span class="ltx_text ltx_font_medium">Georg Friedrich Bernhard Riemann, 1826 – 1866.</span></span></span></span></span> <math id="p2.m7" class="ltx_Math" alttext="I_{n}" display="inline"><semantics><msub><mi>I</mi><mi>n</mi></msub><annotation encoding="application/x-tex">I_{n}</annotation></semantics></math> por:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-154.svg" alt="" id="p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="420" height="128"></div>
+<p class="ltx_p"><math id="p2.m8" class="ltx_Math" alttext="I_{n}" display="inline"><semantics><msub><mi>I</mi><mi>n</mi></msub><annotation encoding="application/x-tex">I_{n}</annotation></semantics></math> aproxima a área debaixo do gráfico pela soma das áreas dos retângulos, em
+que o <math id="p2.m9" class="ltx_Math" alttext="j" display="inline"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>-ésimo retângulo tem como base <math id="p2.m10" class="ltx_Math" alttext="\Delta x_{j}{:=}x_{j}-x_{j-1}" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow><annotation encoding="application/x-tex">\Delta x_{j}{:=}x_{j}-x_{j-1}</annotation></semantics></math>, e
+como altura <em class="ltx_emph ltx_font_italic">o valor da função no ponto <math id="p2.m11" class="ltx_Math" alttext="x_{j}^{*}" display="inline"><semantics><msubsup><mi>x</mi><mi>j</mi><mo>∗</mo></msubsup><annotation encoding="application/x-tex">x_{j}^{*}</annotation></semantics></math></em>: <math id="p2.m12" class="ltx_Math" alttext="f(x_{j}^{*})" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>x</mi><mi>j</mi><mo>∗</mo></msubsup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x_{j}^{*})</annotation></semantics></math>. (Na imagem
+acima os pontos <math id="p2.m13" class="ltx_Math" alttext="x_{i}" display="inline"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">x_{i}</annotation></semantics></math> foram escolhidos equidistantes,
+<math id="p2.m14" class="ltx_Math" alttext="\Delta x_{j}=\tfrac{b-a}{n}" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>=</mo><mfrac><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">\Delta x_{j}=\tfrac{b-a}{n}</annotation></semantics></math>.)
+<br class="ltx_break"></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">integral</em> de <math id="p3.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é obtida considerando <math id="p3.m2" class="ltx_Math" alttext="I_{n}" display="inline"><semantics><msub><mi>I</mi><mi>n</mi></msub><annotation encoding="application/x-tex">I_{n}</annotation></semantics></math> para uma sequência de
+partições em que o tamanho dos intervalos <math id="p3.m3" class="ltx_Math" alttext="\Delta x_{j}" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\Delta x_{j}</annotation></semantics></math>
+tendem a zero:</p>
+</div>
+<div id="Ch9.Thmdefin1" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmdefin1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A função <math id="Ch9.Thmdefin1.p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">integrável</span> se o limite <math id="Ch9.Thmdefin1.p1.m2" class="ltx_Math" alttext="\lim_{n\to\infty}I_{n}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msub><mi>I</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}I_{n}</annotation></semantics></math> existir, qualquer que seja a
+sequência de partições em que <math id="Ch9.Thmdefin1.p1.m3" class="ltx_Math" alttext="\max_{j}\Delta x_{j}\to 0" display="inline"><semantics><mrow><mrow><msub><mi>max</mi><mi>j</mi></msub><mo lspace="0.167em">⁡</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\max_{j}\Delta x_{j}\to 0</annotation></semantics></math>, e
+qualquer que seja a escolha de <math id="Ch9.Thmdefin1.p1.m4" class="ltx_Math" alttext="x_{j}^{*}\in[x_{j-1},x_{j}]" display="inline"><semantics><mrow><msubsup><mi>x</mi><mi>j</mi><mo>∗</mo></msubsup><mo>∈</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x_{j}^{*}\in[x_{j-1},x_{j}]</annotation></semantics></math>. Quando <math id="Ch9.Thmdefin1.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é
+integrável, o limite <math id="Ch9.Thmdefin1.p1.m6" class="ltx_Math" alttext="\lim_{n\to\infty}I_{n}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msub><mi>I</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}I_{n}</annotation></semantics></math>
+é chamado de <span class="ltx_text ltx_font_bold">integral (de Riemann) de <math id="Ch9.Thmdefin1.p1.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathvariant="normal">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></span>, ou <span class="ltx_text ltx_font_bold">integral definida
+de <math id="Ch9.Thmdefin1.p1.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathvariant="normal">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></span>, e denotado</span></p>
+<div id="Ch9.E4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E4.m1" class="ltx_Math" alttext="\lim_{n\to\infty}I_{n}\equiv\int_{a}^{b}f(x)dx\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>I</mi><mi>n</mi></msub></mrow><mo rspace="0.111em">≡</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}I_{n}\equiv\int_{a}^{b}f(x)dx\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.4)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Os números <math id="Ch9.Thmdefin1.p1.m9" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> e <math id="Ch9.Thmdefin1.p1.m10" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> são chamados de <span class="ltx_text ltx_font_bold">limites de integração</span>.</span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Inventada por Newton,
+a notação “<math id="p4.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(x)dx</annotation></semantics></math>” lembra que a integral é definida a partir de
+uma
+<em class="ltx_emph ltx_font_italic">soma</em> (o “<math id="p4.m2" class="ltx_Math" alttext="\int" display="inline"><semantics><mo>∫</mo><annotation encoding="application/x-tex">\int</annotation></semantics></math>” é parecido com um “s”) de retângulos
+contidos entre <math id="p4.m3" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> e <math id="p4.m4" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>, de áreas <math id="p4.m5" class="ltx_Math" alttext="f(x^{*}_{j})\Delta x_{j}" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>x</mi><mi>j</mi><mo>∗</mo></msubsup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">f(x^{*}_{j})\Delta x_{j}</annotation></semantics></math> (o
+“<math id="p4.m6" class="ltx_Math" alttext="f(x)dx" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">f(x)dx</annotation></semantics></math>”).</p>
+</div>
+<div id="Ch9.Thmobs2" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 9.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmobs2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">É importante lembrar que <math id="Ch9.Thmobs2.p1.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(x)dx</annotation></semantics></math> <em class="ltx_emph ltx_font_upright">é um número, não uma função</em>:
+a variável “<math id="Ch9.Thmobs2.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>” que aparece em <math id="Ch9.Thmobs2.p1.m3" class="ltx_Math" alttext="\int_{a}^{b}f(x)dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(x)dx</annotation></semantics></math> é usada somente
+para indicar que <math id="Ch9.Thmobs2.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> está sendo integrada, com a sua variável
+varrendo o intervalo <math id="Ch9.Thmobs2.p1.m5" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math>.
+Logo, seria equivalente escrever essa
+integral <math id="Ch9.Thmobs2.p1.m6" class="ltx_Math" alttext="\int_{a}^{b}f(t)dt" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(t)dt</annotation></semantics></math>, <math id="Ch9.Thmobs2.p1.m7" class="ltx_Math" alttext="\int_{a}^{b}f(z)dz" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>z</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(z)dz</annotation></semantics></math>, etc., ou simplesmente <math id="Ch9.Thmobs2.p1.m8" class="ltx_Math" alttext="\int_{a}^{b}f\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f\,dx</annotation></semantics></math>. Por isso, a variável <math id="Ch9.Thmobs2.p1.m9" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> que aparece em (<a href="#Ch9.E4" title="In Definição 9.1. ‣ 9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.4</span></a>) é
+
+chamada de <em class="ltx_emph ltx_font_upright">muda</em>.</span></p>
+</div>
+</div>
+<div id="Ch9.Thmobs3" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 9.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmobs3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A definição de integrabilidade faz sentido mesmo se <math id="Ch9.Thmobs3.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> não é
+positiva.
+Neste caso, o termo <math id="Ch9.Thmobs3.p1.m2" class="ltx_Math" alttext="f(x_{j}^{*})\Delta x_{j}" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>x</mi><mi>j</mi><mo>∗</mo></msubsup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">f(x_{j}^{*})\Delta x_{j}</annotation></semantics></math> da soma de Riemann não pode ser mais
+interpretado
+como a área do <math id="Ch9.Thmobs3.p1.m3" class="ltx_Math" alttext="j" display="inline"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>-ésimo retângulo, e <math id="Ch9.Thmobs3.p1.m4" class="ltx_Math" alttext="\int_{a}^{b}f\,dx" display="inline"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f\,dx</annotation></semantics></math>
+não possui necessariamente uma interpretação geométrica.
+O Exercício <a href="Ch9.S3.html#Ch9.Thmexo8" title="Exercício 9.8. ‣ 9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.8</span></a> abaixo esclarece esse ponto.</span></p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Enunciemos algumas propriedades básicas da integral, que podem ser provadas a
+partir da definição.
+</p>
+</div>
+<div id="Ch9.Thmpro1" class="ltx_theorem ltx_theorem_pro">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmpro1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch9.Thmpro1.p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math> integrável.</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\lambda\in\mathbb{R}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é uma
+constante, então </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="\lambda f" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\lambda f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é
+integrável, e </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="\int_{a}^{b}\lambda f\,dx=\lambda\int_{a}^{b}f\,dx" display="inline"><semantics><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}\lambda f\,dx=\lambda\int_{a}^{b}f\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="g:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:[a,b]\to\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> também é integrável, então
+</span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="f+g" display="inline"><semantics><mrow><mi>f</mi><mo>+</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f+g</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é integrável e
+</span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="\int_{a}^{b}(f+g)dx=\int_{a}^{b}f\,dx+\int_{a}^{b}g\,dx" display="inline"><semantics><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mi>f</mi><mo>+</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>g</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}(f+g)dx=\int_{a}^{b}f\,dx+\int_{a}^{b}g\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I1.i3.p1.m1" class="ltx_Math" alttext="a&lt;c&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>c</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a&lt;c&lt;b</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então
+</span><math id="I1.i3.p1.m2" class="ltx_Math" alttext="\int_{a}^{c}f\,dx+\int_{c}^{b}f\,dx=\int_{a}^{b}f\,dx" display="inline"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>c</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo>∫</mo><mi>c</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{c}f\,dx+\int_{c}^{b}f\,dx=\int_{a}^{b}f\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Observe que se <math id="p6.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é uma constante, <math id="p6.m2" class="ltx_Math" alttext="f(x)=c" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">f(x)=c</annotation></semantics></math>, então qualquer soma de Riemann
+pode ser calculada via um retângulo só, e</p>
+<div id="Ch9.E5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E5.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)\,dx=c(b-a)\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(x)\,dx=c(b-a)\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.5)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Mais tarde precisaremos da seguinte propriedade:</p>
+</div>
+<div id="Ch9.Thmpro2" class="ltx_theorem ltx_theorem_pro">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 9.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmpro2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch9.Thmpro2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e <math id="Ch9.Thmpro2.p1.m2" class="ltx_Math" alttext="g:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:[a,b]\to\mathbb{R}</annotation></semantics></math> são integráveis,
+e se <math id="Ch9.Thmpro2.p1.m3" class="ltx_Math" alttext="f\leq g" display="inline"><semantics><mrow><mi>f</mi><mo>≤</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f\leq g</annotation></semantics></math>, então</span></p>
+<div id="Ch9.E6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E6.m1" class="ltx_Math" alttext="\int_{a}^{b}f\,dx\leq\int_{a}^{b}g\,dx\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">≤</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>g</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f\,dx\leq\int_{a}^{b}g\,dx\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.6)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Em particular, se <math id="Ch9.Thmpro2.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é limitada,
+<math id="Ch9.Thmpro2.p1.m5" class="ltx_Math" alttext="M_{-}\leq f(x)\leq M_{+}" display="inline"><semantics><mrow><msub><mi>M</mi><mo>−</mo></msub><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><msub><mi>M</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">M_{-}\leq f(x)\leq M_{+}</annotation></semantics></math> para todo <math id="Ch9.Thmpro2.p1.m6" class="ltx_Math" alttext="x\in[a,b]" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[a,b]</annotation></semantics></math>, então</span></p>
+<div id="Ch9.E7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E7.m1" class="ltx_Math" alttext="M_{-}(b-a)\leq\int_{a}^{b}f\,dx\leq M_{+}(b-a)\,." display="block"><semantics><mrow><mrow><mrow><msub><mi>M</mi><mo>−</mo></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">≤</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>≤</mo><mrow><msub><mi>M</mi><mo>+</mo></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">M_{-}(b-a)\leq\int_{a}^{b}f\,dx\leq M_{+}(b-a)\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.7)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Para funções positivas, a interpretação de (<a href="#Ch9.E6" title="In Proposição 9.2. ‣ 9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.6</span></a>) em
+termos de áreas é imediata: se o gráfico de <math id="p7.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> está sempre abaixo do gráfico
+de <math id="p7.m2" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>, então a área debaixo de <math id="p7.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é menor do que a área abaixo de <math id="p7.m4" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>.</p>
+</div>
+<div id="Ch9.Thmexo4" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Justifique as seguintes afirmações:</span></p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I2.i1.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é par, </span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="\int_{-a}^{a}f(x)\,dx=2\int_{0}^{a}f(x)\,dx" display="inline"><semantics><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>a</mi></mrow><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{-a}^{a}f(x)\,dx=2\int_{0}^{a}f(x)\,dx</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I2.i2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é ímpar, </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="\int_{-a}^{a}f(x)\,dx=0" display="inline"><semantics><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>a</mi></mrow><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{-a}^{a}f(x)\,dx=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Em geral, verificar se uma função é integrável pode ser difícil. O seguinte
+resultado garante que
+as maioria das funções consideradas no restante do
+curso <em class="ltx_emph ltx_font_italic">são</em> integráveis.</p>
+</div>
+<div id="Ch9.Thmteo1" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmteo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch9.Thmteo1.p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math> é contínua, então ela é integrável.</span></p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Por exemplo, <math id="p9.m1" class="ltx_Math" alttext="f(x)=1-x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=1-x^{2}</annotation></semantics></math> é contínua, logo integrável, e vimos na
+introdução que</p>
+<div id="Ch9.Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex12.m1" class="ltx_Math" alttext="\int_{0}^{1}(1-x^{2})dx=\tfrac{2}{3}\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{1}(1-x^{2})dx=\tfrac{2}{3}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Sabendo que uma função contínua é integrável, queremos um jeito de
+<em class="ltx_emph ltx_font_italic">calcular</em> a sua integral.
+Mas como já foi dito, o procedimento de limite descrito acima (calcular a soma
+de Riemann, tomar o limite <math id="p9.m2" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>, etc.) é díficil de
+se implementar, mesmo se <math id="p9.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é simples.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch9.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch9.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

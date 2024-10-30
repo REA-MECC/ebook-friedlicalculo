@@ -1,0 +1,1298 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch2.S3.html" title="2.3 Montar funções ‣ Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="next" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="section" href="Ch2.S1.html" title="2.1 Definição e exemplos ‣ Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="section" href="Ch2.S2.html" title="2.2 Gráfico ‣ Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="section" href="Ch2.S3.html" title="2.3 Montar funções ‣ Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content=", , , bijetiva, composição de, função, imagem, inversa, inverso de, potência, preimagem">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="2.1" data-path="Ch2.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S1.html" title="In Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Definição e exemplos</a></li>
+<li data-level="2.2" data-path="Ch2.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S2.html" title="In Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Gráfico</a></li>
+<li data-level="2.3" data-path="Ch2.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S3.html" title="In Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.3 </span></b>Montar funções</a></li>
+<li data-level="2.4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4 </span></b>Composição, contradomínio e imagem</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="2.4.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4.1 </span></b>Bijeção, função inversa</a></li>
+<li data-level="2.4.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4.2 </span></b>Inversos das potências</a></li>
+<li data-level="2.4.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4.3 </span></b>Funções trigonométricas inversas</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Composição, contradomínio e imagem</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">2.4</span> Composição, contradomínio e imagem</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Suponha que se queira obter o valor de <math id="p1.m1" class="ltx_Math" alttext="\operatorname{sen}(\pi^{2})" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>π</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(\pi^{2})</annotation></semantics></math> com uma
+calculadora. Como uma calculadora possui em geral as duas funções
+<math id="p1.m2" class="ltx_Math" alttext="(\cdot)^{2}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><annotation encoding="application/x-tex">(\cdot)^{2}</annotation></semantics></math> e <math id="p1.m3" class="ltx_Math" alttext="\operatorname{sen}(\cdot)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(\cdot)</annotation></semantics></math>, calculemos primeiro o quadrado de <math id="p1.m4" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>, e
+em seguida tomemos o seno do resultado:</p>
+<div id="Ch2.Ex40" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex40.m1" class="ltx_Math" alttext="\pi=3.1415...\stackrel{{\scriptstyle(\cdot)^{2}}}{{\longmapsto}}\pi^{2}=9,8696%
+...\stackrel{{\scriptstyle\operatorname{sen}(\cdot)}}{{\longmapsto}}%
+\operatorname{sen}(\pi^{2})=-0.4303..." display="block"><semantics><mrow><mi>π</mi><mo>=</mo><mrow><mn>3.1415</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><mover><mo stretchy="false">⟼</mo><msup><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mover><msup><mi>π</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>9,8696</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><mover><mo stretchy="false">⟼</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow></mover><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>π</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mn>0.4303</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\pi=3.1415...\stackrel{{\scriptstyle(\cdot)^{2}}}{{\longmapsto}}\pi^{2}=9,8696%
+...\stackrel{{\scriptstyle\operatorname{sen}(\cdot)}}{{\longmapsto}}%
+\operatorname{sen}(\pi^{2})=-0.4303...</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">O que foi feito foi <em class="ltx_emph ltx_font_italic">compor</em> duas funções.
+<br class="ltx_break"></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Sejam <math id="p2.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e <math id="p2.m2" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> duas funções reais. Definemos a <span class="ltx_text ltx_font_bold">composição de <math id="p2.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> com
+<math id="p2.m4" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math></span> como a nova função <math id="p2.m5" class="ltx_Math" alttext="f\circ g" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f\circ g</annotation></semantics></math> definida por</p>
+<div id="Ch2.Ex41" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex41.m1" class="ltx_math_unparsed" alttext="\boxed{(f\circ g)(x){:=}f(g(x))\,.}" display="block"><semantics><menclose notation="box"><mrow><mrow><mo stretchy="false">(</mo><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:=</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>g</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{(f\circ g)(x){:=}f(g(x))\,.}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Isto significa que para calcular <math id="p2.m6" class="ltx_math_unparsed" alttext="x\mapsto(f\circ g)(x))" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x\mapsto(f\circ g)(x))</annotation></semantics></math>,
+calculamos <em class="ltx_emph ltx_font_italic">primeiro</em> <math id="p2.m7" class="ltx_Math" alttext="g(x)" display="inline"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">g(x)</annotation></semantics></math>,</p>
+<div id="Ch2.Ex42" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex42.m1" class="ltx_Math" alttext="x\mapsto g(x)\,," display="block"><semantics><mrow><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">x\mapsto g(x)\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e <em class="ltx_emph ltx_font_italic">em seguida</em> aplicamos <math id="p2.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>:</p>
+<div id="Ch2.Ex43" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex43.m1" class="ltx_Math" alttext="x\mapsto g(x)\mapsto f(g(x))\,." display="block"><semantics><mrow><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">↦</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">x\mapsto g(x)\mapsto f(g(x))\,.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch2.Thmexo21" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.21</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo21.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Ch2.Thmexo21.p1.m1" class="ltx_Math" alttext="f(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{2}</annotation></semantics></math>, <math id="Ch2.Thmexo21.p1.m2" class="ltx_Math" alttext="g(x)=\frac{1}{x+1}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">g(x)=\frac{1}{x+1}</annotation></semantics></math>, <math id="Ch2.Thmexo21.p1.m3" class="ltx_Math" alttext="h(x)=x+1" display="inline"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">h(x)=x+1</annotation></semantics></math>. Calcule</span></p>
+<div id="Ch2.Ex44" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex44.m1" class="ltx_Math" alttext="(f\circ g)(0)\,,(g\circ f)(0)\,,(f\circ g)(1)\,,(g\circ f)(1)\,,f(g(h(-1)))\,,%
+h(f(g(3)))\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(f\circ g)(0)\,,(g\circ f)(0)\,,(f\circ g)(1)\,,(g\circ f)(1)\,,f(g(h(-1)))\,,%
+h(f(g(3)))\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Como foi observado no exercício anterior, <math id="p3.m1" class="ltx_Math" alttext="f\circ g" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f\circ g</annotation></semantics></math> é em geral diferente de <math id="p3.m2" class="ltx_Math" alttext="g\circ f" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">g\circ f</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Às vezes será necessário considerar uma função complicada como sendo uma composta de
+funções mais elementares:</p>
+</div>
+<div id="Ch2.Thmex20" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 2.20</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmex20.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A função <math id="Ch2.Thmex20.p1.m1" class="ltx_Math" alttext="x\mapsto\sqrt{1+x^{2}}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">x\mapsto\sqrt{1+x^{2}}</annotation></semantics></math> pode ser vista como a composta</span></p>
+<div id="Ch2.Ex45" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex45.m1" class="ltx_Math" alttext="x\mapsto 1+x^{2}\mapsto\sqrt{1+x^{2}}\,," display="block"><semantics><mrow><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">↦</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">x\mapsto 1+x^{2}\mapsto\sqrt{1+x^{2}}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">que significa que <math id="Ch2.Thmex20.p1.m2" class="ltx_Math" alttext="\sqrt{1+x^{2}}=f(g(x))" display="inline"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sqrt{1+x^{2}}=f(g(x))</annotation></semantics></math>, com <math id="Ch2.Thmex20.p1.m3" class="ltx_Math" alttext="g(x)=1+x^{2}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">g(x)=1+x^{2}</annotation></semantics></math> e <math id="Ch2.Thmex20.p1.m4" class="ltx_Math" alttext="f(x)=\sqrt{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow><annotation encoding="application/x-tex">f(x)=\sqrt{x}</annotation></semantics></math>.
+Observe que podia também escrever</span></p>
+<div id="Ch2.Ex46" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex46.m1" class="ltx_Math" alttext="x\mapsto x^{2}\mapsto 1+x^{2}\mapsto\sqrt{1+x^{2}}\,," display="block"><semantics><mrow><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">↦</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">↦</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">x\mapsto x^{2}\mapsto 1+x^{2}\mapsto\sqrt{1+x^{2}}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">que dá a decomposição <math id="Ch2.Thmex20.p1.m5" class="ltx_Math" alttext="\sqrt{1+x^{2}}=f(g(h(x)))" display="inline"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sqrt{1+x^{2}}=f(g(h(x)))</annotation></semantics></math>, onde <math id="Ch2.Thmex20.p1.m6" class="ltx_Math" alttext="h(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">h(x)=x^{2}</annotation></semantics></math>, <math id="Ch2.Thmex20.p1.m7" class="ltx_Math" alttext="g(x)=x+1" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">g(x)=x+1</annotation></semantics></math>,
+<math id="Ch2.Thmex20.p1.m8" class="ltx_Math" alttext="f(x)=\sqrt{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow><annotation encoding="application/x-tex">f(x)=\sqrt{x}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo22" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.22</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo22.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para cada função <math id="Ch2.Thmexo22.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> a seguir, dê uma decomposição de <math id="Ch2.Thmexo22.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> como composição de funções mais
+simples.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(2x)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(2x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\frac{1}{\operatorname{sen}x}" display="inline"><semantics><mfrac><mn>1</mn><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{\operatorname{sen}x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(\tfrac{1}{x})" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(\tfrac{1}{x})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\sqrt{\frac{1}{\tan(x)}}" display="inline"><semantics><msqrt><mfrac><mn>1</mn><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></msqrt><annotation encoding="application/x-tex">\sqrt{\frac{1}{\tan(x)}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch2.Thmexo23" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.23</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo23.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere</span></p>
+<div id="Ch2.Ex47" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex47.m1" class="ltx_Math" alttext="f(x){:=}\begin{cases}x+3&amp;\text{ se }x\geq 0\,,\\
+x^{2}&amp;\text{ se }x&lt;0\,,\end{cases}\quad\quad g(x){:=}\begin{cases}2x+1&amp;\text{ %
+se }x\geq 3\,,\\
+x&amp;\text{ se }x&lt;3\,.\end{cases}" display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≥</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><msup><mi>x</mi><mn>2</mn></msup></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr></mtable></mrow></mrow><mspace width="2.4em"></mspace><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≥</mo><mn>3</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mi>x</mi></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>3</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x){:=}\begin{cases}x+3&amp;\text{ se }x\geq 0\,,\\
+x^{2}&amp;\text{ se }x&lt;0\,,\end{cases}\quad\quad g(x){:=}\begin{cases}2x+1&amp;\text{ %
+se }x\geq 3\,,\\
+x&amp;\text{ se }x&lt;3\,.\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule <math id="Ch2.Thmexo23.p1.m1" class="ltx_Math" alttext="f\circ g" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f\circ g</annotation></semantics></math> e <math id="Ch2.Thmexo23.p1.m2" class="ltx_Math" alttext="g\circ f" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">g\circ f</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Lembramos que uma função é sempre definida junto com o seu domínio:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex48"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex48.m1" class="ltx_Math" alttext="\displaystyle f:D" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">\displaystyle f:D</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex48.m2" class="ltx_Math" alttext="\displaystyle\to\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\to\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex49"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex49.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex49.m2" class="ltx_Math" alttext="\displaystyle\mapsto f(x)\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto f(x)\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Em “<math id="p5.m1" class="ltx_Math" alttext="f:D\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>D</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:D\to\mathbb{R}</annotation></semantics></math>”, o “<math id="p5.m2" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>” foi colocado para indicar que qualquer
+que seja <math id="p5.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+<math id="p5.m4" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> é sempre um número real. Em outras palavas: a imagem de qualquer
+<math id="p5.m5" class="ltx_Math" alttext="x\in D" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">x\in D</annotation></semantics></math> por <math id="p5.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é um número real.
+Vejamos em alguns exemplos que esse conjunto “<math id="p5.m7" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>” pode ser mudado
+por um conjunto que represente melhor a função.</p>
+</div>
+<div id="Ch2.Thmex21" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 2.21</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmex21.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex50"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex50.m1" class="ltx_Math" alttext="\displaystyle f:\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle f:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex50.m2" class="ltx_Math" alttext="\displaystyle\to\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\to\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex51"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex51.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex51.m2" class="ltx_Math" alttext="\displaystyle\mapsto x^{2}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto x^{2}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como <math id="Ch2.Thmex21.p1.m1" class="ltx_Math" alttext="x^{2}\geq 0" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}\geq 0</annotation></semantics></math> qualquer que seja <math id="Ch2.Thmex21.p1.m2" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>,
+vemos que a imagem de qualquer <math id="Ch2.Thmex21.p1.m3" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math> por <math id="Ch2.Thmex21.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é positiva.
+Logo, podemos rescrever a função da seguinte maneira:</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex52"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex52.m1" class="ltx_Math" alttext="\displaystyle f:\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle f:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex52.m2" class="ltx_Math" alttext="\displaystyle\to[0,\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[0,\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex53"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex53.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex53.m2" class="ltx_Math" alttext="\displaystyle\mapsto x^{2}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto x^{2}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Quando uma função for escrita na forma</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx21" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex54"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex54.m1" class="ltx_Math" alttext="\displaystyle f:D" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">\displaystyle f:D</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex54.m2" class="ltx_Math" alttext="\displaystyle\to C" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\displaystyle\to C</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex55"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex55.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex55.m2" class="ltx_Math" alttext="\displaystyle\mapsto f(x)\,," display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto f(x)\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">para indicar que qualquer <math id="p6.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> em <math id="p6.m2" class="ltx_Math" alttext="D" display="inline"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math> tem a sua imagem em <math id="p6.m3" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>, diremos que um
+<span class="ltx_text ltx_font_bold">contradomínio</span> foi escolhido para <math id="p6.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>. Em geral, não existe uma escolha única para
+o contradomínio.</p>
+</div>
+<div id="Ch2.Thmex22" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 2.22</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmex22.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como, <math id="Ch2.Thmex22.p1.m1" class="ltx_Math" alttext="x\mapsto\operatorname{sen}x" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">x\mapsto\operatorname{sen}x</annotation></semantics></math> é uma função limitada, podemos escrever</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx22" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.E2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E2.m1" class="ltx_Math" alttext="\displaystyle\operatorname{sen}:\mathbb{R}" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{sen}:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E2.m2" class="ltx_Math" alttext="\displaystyle\to[-10,+10]" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>10</mn></mrow><mo>,</mo><mrow><mo>+</mo><mn>10</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[-10,+10]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.2)</span></td>
+</tr></tbody>
+<tbody id="Ch2.Ex56"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex56.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex56.m2" class="ltx_Math" alttext="\displaystyle\mapsto\operatorname{sen}x\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\operatorname{sen}x\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mas podemos também escolher um contradomínio menor:</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx23" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E3.m1" class="ltx_Math" alttext="\displaystyle\operatorname{sen}:\mathbb{R}" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{sen}:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E3.m2" class="ltx_Math" alttext="\displaystyle\to[-1,+1]" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[-1,+1]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.3)</span></td>
+</tr></tbody>
+<tbody id="Ch2.Ex57"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex57.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex57.m2" class="ltx_Math" alttext="\displaystyle\mapsto\operatorname{sen}x\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\operatorname{sen}x\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Acontece que <math id="Ch2.Thmex22.p1.m2" class="ltx_Math" alttext="[-1,+1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-1,+1]</annotation></semantics></math> é o menor contradomínio possível (ver abaixo).</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Seja <math id="p7.m1" class="ltx_Math" alttext="f:D\to C" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>D</mi><mo stretchy="false">→</mo><mi>C</mi></mrow></mrow><annotation encoding="application/x-tex">f:D\to C</annotation></semantics></math>. Para cada <math id="p7.m2" class="ltx_Math" alttext="x\in D" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">x\in D</annotation></semantics></math>, lembremos que <math id="p7.m3" class="ltx_Math" alttext="f(x)\in C" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">f(x)\in C</annotation></semantics></math> é chamado de <em class="ltx_emph ltx_font_italic">imagem
+de <math id="p7.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></em>, e o
+<span class="ltx_text ltx_font_bold">conjunto imagem</span> de <math id="p7.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é definido como</p>
+<div id="Ch2.Ex58" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex58.m1" class="ltx_math_unparsed" alttext="\boxed{\operatorname{Im}(f){:=}\{f(x):x\in D\}\,.}" display="block"><semantics><menclose notation="box"><mrow><mi>Im</mi><mrow><mo stretchy="false">(</mo><mi>f</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:</mo><mi>x</mi><mo>∈</mo><mi>D</mi><mo stretchy="false">}</mo></mrow><mo lspace="0.170em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{\operatorname{Im}(f){:=}\{f(x):x\in D\}\,.}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por definição, <math id="p7.m6" class="ltx_Math" alttext="\operatorname{Im}(f)\subset C" display="inline"><semantics><mrow><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\operatorname{Im}(f)\subset C</annotation></semantics></math> é um contradomínio, e é também o menor possível.
+Para cada <math id="p7.m7" class="ltx_Math" alttext="y\in\operatorname{Im}(f)" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y\in\operatorname{Im}(f)</annotation></semantics></math>, existe pelo menos um <math id="p7.m8" class="ltx_Math" alttext="x\in D" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">x\in D</annotation></semantics></math> tal que <math id="p7.m9" class="ltx_Math" alttext="f(x)=y" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">f(x)=y</annotation></semantics></math>, cada <math id="p7.m10" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> com
+essa propriedade é chamado de <span class="ltx_text ltx_font_bold">preimagem</span> de <math id="p7.m11" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.
+Cada ponto <math id="p7.m12" class="ltx_Math" alttext="x\in D" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">x\in D</annotation></semantics></math> possui uma única imagem em <math id="p7.m13" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>, um <math id="p7.m14" class="ltx_Math" alttext="y\in C" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">y\in C</annotation></semantics></math> pode possuir uma
+preimagem, mais de uma preimagem, ou nenhuma preimagem.</p>
+</div>
+<div id="Ch2.Thmex23" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 2.23</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmex23.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a função seno na reta.
+Ao <math id="Ch2.Thmex23.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> percorrer a reta real, <math id="Ch2.Thmex23.p1.m2" class="ltx_Math" alttext="\operatorname{sen}x" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}x</annotation></semantics></math> atinge todos os pontos do intervalo <math id="Ch2.Thmex23.p1.m3" class="ltx_Math" alttext="[-1,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-1,1]</annotation></semantics></math>. Logo,
+<math id="Ch2.Thmex23.p1.m4" class="ltx_Math" alttext="\operatorname{Im}(\operatorname{sen})=[-1,1]" display="inline"><semantics><mrow><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>sen</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Im}(\operatorname{sen})=[-1,1]</annotation></semantics></math>. Qualquer <math id="Ch2.Thmex23.p1.m5" class="ltx_Math" alttext="y\in[-1,1]" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">y\in[-1,1]</annotation></semantics></math> possui infinitas preimagens, por exemplo,
+todos os pontos de <math id="Ch2.Thmex23.p1.m6" class="ltx_Math" alttext="\{k\pi,k\in\mathbb{Z}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>π</mi></mrow><mo>,</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{k\pi,k\in\mathbb{Z}\}</annotation></semantics></math> são preimagens de
+<math id="Ch2.Thmex23.p1.m7" class="ltx_Math" alttext="y=0" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math>. O ponto <math id="Ch2.Thmex23.p1.m8" class="ltx_Math" alttext="y=2" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">y=2</annotation></semantics></math>, por sua vez, não possui nenhuma preimagem (não existe <math id="Ch2.Thmex23.p1.m9" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>
+tal que <math id="Ch2.Thmex23.p1.m10" class="ltx_Math" alttext="\operatorname{sen}x=2" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{sen}x=2</annotation></semantics></math>).</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo24" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.24</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo24.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule o conjunto imagem das seguintes funções:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="-2x+1" display="inline"><semantics><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-2x+1</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="D=\mathbb{R}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">D=\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="-2x+1" display="inline"><semantics><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-2x+1</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="D=[-1,1]" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">D=[-1,1]</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="x^{p}" display="inline"><semantics><msup><mi>x</mi><mi>p</mi></msup><annotation encoding="application/x-tex">x^{p}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (</span><math id="I2.i3.p1.m2" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math><span class="ltx_text ltx_font_italic"> ímpar)</span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="x^{p}" display="inline"><semantics><msup><mi>x</mi><mi>p</mi></msup><annotation encoding="application/x-tex">x^{p}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (</span><math id="I2.i4.p1.m2" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math><span class="ltx_text ltx_font_italic"> par)</span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="\tfrac{1}{x}" display="inline"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac><annotation encoding="application/x-tex">\tfrac{1}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i5.p1.m2" class="ltx_Math" alttext="D=\mathbb{R}\setminus\{0\}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mi>ℝ</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">D=\mathbb{R}\setminus\{0\}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i6.p1.m1" class="ltx_Math" alttext="\tfrac{1}{x}" display="inline"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac><annotation encoding="application/x-tex">\tfrac{1}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i6.p1.m2" class="ltx_Math" alttext="D=(0,\infty)" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">D=(0,\infty)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i7.p1.m1" class="ltx_Math" alttext="x^{2}+1" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{2}+1</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i7.p1.m2" class="ltx_Math" alttext="D=\mathbb{R}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">D=\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I2.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i8.p1.m1" class="ltx_Math" alttext="1-x^{2}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1-x^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i8.p1.m2" class="ltx_Math" alttext="D=\mathbb{R}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">D=\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I2.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i9.p1.m1" class="ltx_Math" alttext="x^{2}+2x" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">x^{2}+2x</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i9.p1.m2" class="ltx_Math" alttext="D=(-\infty,0)" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mrow><mi mathvariant="normal">∞</mi><mo>⁢</mo><mn>,0</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">D=(-\infty,0)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I2.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i10.p1.m1" class="ltx_Math" alttext="\tan x" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\tan x</annotation></semantics></math><span class="ltx_text ltx_font_italic">,</span></p>
+</div>
+</li>
+<li id="I2.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I2.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i11.p1.m1" class="ltx_Math" alttext="\operatorname{sen}x" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i11.p1.m2" class="ltx_Math" alttext="D=[-\tfrac{\pi}{2},\tfrac{\pi}{2}]" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">D=[-\tfrac{\pi}{2},\tfrac{\pi}{2}]</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span><div id="I2.i12.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i12.p1.m1" class="ltx_Math" alttext="\cos x" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\cos x</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i12.p1.m2" class="ltx_Math" alttext="D=(-\tfrac{\pi}{2},\tfrac{\pi}{2})" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">D=(-\tfrac{\pi}{2},\tfrac{\pi}{2})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i13" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">13.</span><div id="I2.i13.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i13.p1.m1" class="ltx_Math" alttext="\tfrac{1}{3}\operatorname{sen}x" display="inline"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\tfrac{1}{3}\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i13.p1.m2" class="ltx_Math" alttext="D=\mathbb{R}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">D=\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i14" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">14.</span><div id="I2.i14.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i14.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(\tfrac{\pi}{4}\operatorname{sen}x)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mi>π</mi><mn>4</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(\tfrac{\pi}{4}\operatorname{sen}x)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i14.p1.m2" class="ltx_Math" alttext="D=\mathbb{R}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">D=\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i15" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">15.</span><div id="I2.i15.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i15.p1.m1" class="ltx_Math" alttext="\frac{1}{x^{2}+1}" display="inline"><semantics><mfrac><mn>1</mn><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{x^{2}+1}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i15.p1.m2" class="ltx_Math" alttext="D=\mathbb{R}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">D=\mathbb{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i16" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">16.</span><div id="I2.i16.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i16.p1.m1" class="ltx_Math" alttext="\begin{cases}x+1&amp;\text{ se }x\geq 0\\
+\tfrac{1}{2}(x-1)&amp;\text{ se }x&lt;0\end{cases}" display="inline"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≥</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\begin{cases}x+1&amp;\text{ se }x\geq 0\\
+\tfrac{1}{2}(x-1)&amp;\text{ se }x&lt;0\end{cases}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Faça a mesma coisa com as funções do Exercício (<a href="Ch2.S2.html#Ch2.Thmexo4" title="Exercício 2.4. ‣ 2.2 Gráfico ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4</span></a>).</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo25" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.25</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo25.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch2.Thmexo25.p1.m1" class="ltx_Math" alttext="f(x)=\frac{2x}{x^{2}+25}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>25</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{2x}{x^{2}+25}</annotation></semantics></math>, calcule <math id="Ch2.Thmexo25.p1.m2" class="ltx_Math" alttext="\operatorname{Im}(f)" display="inline"><semantics><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Im}(f)</annotation></semantics></math>. Para cada <math id="Ch2.Thmexo25.p1.m3" class="ltx_Math" alttext="y\in\operatorname{Im}(f)" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y\in\operatorname{Im}(f)</annotation></semantics></math>, determine
+se <math id="Ch2.Thmexo25.p1.m4" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math> possui uma única preimagem ou mais.</span></p>
+</div>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.4.1</span> Bijeção, função inversa</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Diremos que uma função <math id="SS1.p1.m1" class="ltx_Math" alttext="f:D\to C" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>D</mi><mo stretchy="false">→</mo><mi>C</mi></mrow></mrow><annotation encoding="application/x-tex">f:D\to C</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">bijetiva</span> (ou
+simplesmente: <math id="SS1.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é uma <span class="ltx_text ltx_font_bold">bijeção</span>)
+se</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="\operatorname{Im}(f)=C" display="inline"><semantics><mrow><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\operatorname{Im}(f)=C</annotation></semantics></math> (isto é, se <math id="I3.i1.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> atinge cada
+ponto do seu contradomínio), e se</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p">qualquer <math id="I3.i2.p1.m1" class="ltx_Math" alttext="y\in C" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">y\in C</annotation></semantics></math> possui uma única preimagem, i.e.
+existe um único <math id="I3.i2.p1.m2" class="ltx_Math" alttext="x\in D" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">x\in D</annotation></semantics></math> tal que</p>
+<div id="Ch2.E4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E4.m1" class="ltx_Math" alttext="f(x)=y\,." display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>y</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f(x)=y\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.4)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Quando uma função é bijetiva, é possivel definir a sua <span class="ltx_text ltx_font_bold">função
+inversa</span>,
+<math id="SS1.p2.m1" class="ltx_Math" alttext="f^{-1}:C\to D" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>C</mi><mo stretchy="false">→</mo><mi>D</mi></mrow></mrow><annotation encoding="application/x-tex">f^{-1}:C\to D</annotation></semantics></math>, onde para todo <math id="SS1.p2.m2" class="ltx_Math" alttext="y\in C" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">y\in C</annotation></semantics></math>, <math id="SS1.p2.m3" class="ltx_Math" alttext="f^{-1}(y)" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{-1}(y)</annotation></semantics></math> é definido como a única
+solução <math id="SS1.p2.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> de (<a href="#Ch2.E4" title="In item 2 ‣ 2.4.1 Bijeção, função inversa ‣ 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4</span></a>). A função inversa tem as seguintes
+propriedades:</p>
+<div id="Ch2.Ex59" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex59.m1" class="ltx_math_unparsed" alttext="\boxed{\forall x\in D,\,(f^{-1}\circ f)(x)=x\,,\quad\text{ e }\forall y\in C,%
+\,(f\circ f^{-1})(y)=y\,.}" display="block"><semantics><menclose notation="box"><mrow><mo rspace="0.167em">∀</mo><mi>x</mi><mo>∈</mo><mi>D</mi><mo rspace="0.337em">,</mo><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>x</mi><mo lspace="0.170em" rspace="1.367em">,</mo><mtext> e </mtext><mo lspace="0.167em" rspace="0.167em">∀</mo><mi>y</mi><mo>∈</mo><mi>C</mi><mo rspace="0.337em">,</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>y</mi><mo lspace="0.170em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{\forall x\in D,\,(f^{-1}\circ f)(x)=x\,,\quad\text{ e }\forall y\in C,%
+\,(f\circ f^{-1})(y)=y\,.}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch2.Thmex24" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 2.24</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmex24.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a função do Exemplo <a href="Ch2.S2.html#Ch2.Thmex8" title="Exemplo 2.8. ‣ 2.2 Gráfico ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8</span></a>: <math id="Ch2.Thmex24.p1.m1" class="ltx_Math" alttext="f(x)=\tfrac{x}{2}+1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">f(x)=\tfrac{x}{2}+1</annotation></semantics></math> com <math id="Ch2.Thmex24.p1.m2" class="ltx_math_unparsed" alttext="D=[0,2)" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">D=[0,2)</annotation></semantics></math>.
+Então <math id="Ch2.Thmex24.p1.m3" class="ltx_math_unparsed" alttext="\operatorname{Im}(f)=[1,2)" display="inline"><semantics><mrow><mi>Im</mi><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Im}(f)=[1,2)</annotation></semantics></math>, e <math id="Ch2.Thmex24.p1.m4" class="ltx_math_unparsed" alttext="f:[0,2)\to[1,2)" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mn>0,2</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f:[0,2)\to[1,2)</annotation></semantics></math> é uma bijeção:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-48.svg" alt="" id="Ch2.Thmex24.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="412" height="128"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como <math id="Ch2.Thmex24.p1.m5" class="ltx_Math" alttext="y=\tfrac{x}{2}+1" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">y=\tfrac{x}{2}+1</annotation></semantics></math>, a função inversa obtém-se isolando <math id="Ch2.Thmex24.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>: <math id="Ch2.Thmex24.p1.m7" class="ltx_Math" alttext="x=2(y-1)" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x=2(y-1)</annotation></semantics></math>. Logo,
+<math id="Ch2.Thmex24.p1.m8" class="ltx_math_unparsed" alttext="f^{-1}:[1,2)\to[0,2)" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{-1}:[1,2)\to[0,2)</annotation></semantics></math>,
+<math id="Ch2.Thmex24.p1.m9" class="ltx_Math" alttext="f^{-1}(y)=2(y-1)" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{-1}(y)=2(y-1)</annotation></semantics></math>.
+Para esboçar o gráfico da função inversa no plano cartesiano, é mais natural
+<em class="ltx_emph ltx_font_upright">renomear</em> a variável usada para representar <math id="Ch2.Thmex24.p1.m10" class="ltx_Math" alttext="f^{-1}" display="inline"><semantics><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">f^{-1}</annotation></semantics></math>, da seguinte maneira:</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx24" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex60"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex60.m1" class="ltx_math_unparsed" alttext="\displaystyle f^{-1}:[1,2)" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}:[1,2)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex60.m2" class="ltx_math_unparsed" alttext="\displaystyle\to[0,2)" display="inline"><semantics><mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[0,2)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex61"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex61.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex61.m2" class="ltx_Math" alttext="\displaystyle\mapsto 2(x-1)\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto 2(x-1)\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Podemos agora esbocar <math id="Ch2.Thmex24.p1.m11" class="ltx_Math" alttext="f^{-1}" display="inline"><semantics><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">f^{-1}</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-49.svg" alt="" id="Ch2.Thmex24.p1.g2" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="161" height="117"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">É importante observar que o gráfico da função inversa obtém-se a partir do
+gráfico de <math id="Ch2.Thmex24.p1.m12" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> por uma <em class="ltx_emph ltx_font_upright">simetria através da diagonal do primeiro quadrante</em>:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-50.svg" alt="" id="Ch2.Thmex24.p1.g3" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="115" height="117"></div>
+</div>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">Vimos no último exemplo
+que o gráfico de <math id="SS1.p3.m1" class="ltx_Math" alttext="f^{-1}" display="inline"><semantics><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">f^{-1}</annotation></semantics></math> é obtido a partir do
+gráfico de <math id="SS1.p3.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+por uma simetria através da diagonal do primeiro quadrante. Isso vale
+em geral. De fato, se um ponto
+<math id="SS1.p3.m3" class="ltx_Math" alttext="(x,y=f(x))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x,y=f(x))</annotation></semantics></math> pertence ao gráfico de <math id="SS1.p3.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, então <math id="SS1.p3.m5" class="ltx_Math" alttext="(y,x=f^{-1}(y))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>y</mi><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(y,x=f^{-1}(y))</annotation></semantics></math> pertence ao gráfico de
+<math id="SS1.p3.m6" class="ltx_Math" alttext="f^{-1}" display="inline"><semantics><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">f^{-1}</annotation></semantics></math>.</p>
+</div>
+<div id="Ch2.Thmex25" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 2.25</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmex25.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch2.Thmex25.p1.m1" class="ltx_Math" alttext="f(x)=1-x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=1-x^{2}</annotation></semantics></math>.</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-51.svg" alt="" id="Ch2.Thmex25.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="380" height="70"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">1) Com <math id="Ch2.Thmex25.p1.m2" class="ltx_Math" alttext="D=[-1,1]" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">D=[-1,1]</annotation></semantics></math>, temos <math id="Ch2.Thmex25.p1.m3" class="ltx_Math" alttext="\operatorname{Im}(f)=[0,1]" display="inline"><semantics><mrow><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Im}(f)=[0,1]</annotation></semantics></math>. Mas
+como <math id="Ch2.Thmex25.p1.m4" class="ltx_Math" alttext="1-(-x)^{2}=1-x^{2}" display="inline"><semantics><mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">1-(-x)^{2}=1-x^{2}</annotation></semantics></math>, cada ponto do contradomínio (diferente de zero) possui exatamente
+<em class="ltx_emph ltx_font_upright">duas</em>
+preimagens, logo <math id="Ch2.Thmex25.p1.m5" class="ltx_Math" alttext="f:[-1,1]\to[0,1]" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f:[-1,1]\to[0,1]</annotation></semantics></math> não é bijetiva. 2) Mas, ao <em class="ltx_emph ltx_font_upright">restringir o
+domínio</em>, <math id="Ch2.Thmex25.p1.m6" class="ltx_Math" alttext="D=[0,1]" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">D=[0,1]</annotation></semantics></math>, então <math id="Ch2.Thmex25.p1.m7" class="ltx_Math" alttext="f:[0,1]\to[0,1]" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f:[0,1]\to[0,1]</annotation></semantics></math>, <math id="Ch2.Thmex25.p1.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> se torna bijetiva. O seu inverso se
+acha resolvendo <math id="Ch2.Thmex25.p1.m9" class="ltx_Math" alttext="y=1-x^{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">y=1-x^{2}</annotation></semantics></math>: <math id="Ch2.Thmex25.p1.m10" class="ltx_Math" alttext="x=\sqrt{1-y}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><mi>y</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">x=\sqrt{1-y}</annotation></semantics></math>. Assim, a sua função inversa é dada por
+<math id="Ch2.Thmex25.p1.m11" class="ltx_Math" alttext="f^{-1}:[0,1]\to[0,1]" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{-1}:[0,1]\to[0,1]</annotation></semantics></math>, <math id="Ch2.Thmex25.p1.m12" class="ltx_Math" alttext="f^{-1}(y)=\sqrt{1-y}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><mi>y</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">f^{-1}(y)=\sqrt{1-y}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo26" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.26</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo26.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que a função</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx25" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex62"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex62.m1" class="ltx_Math" alttext="\displaystyle f:(-1,0)" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1,0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f:(-1,0)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex62.m2" class="ltx_Math" alttext="\displaystyle\to(0,1)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to(0,1)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex63"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex63.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex63.m2" class="ltx_Math" alttext="\displaystyle\mapsto\sqrt{1-x^{2}}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">↦</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\sqrt{1-x^{2}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">é bijetiva, e calcule <math id="Ch2.Thmexo26.p1.m1" class="ltx_Math" alttext="f^{-1}" display="inline"><semantics><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">f^{-1}</annotation></semantics></math>. Esboce o gráfico de <math id="Ch2.Thmexo26.p1.m2" class="ltx_Math" alttext="f^{-1}" display="inline"><semantics><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">f^{-1}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo27" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.27</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo27.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch2.Thmexo27.p1.m1" class="ltx_Math" alttext="f:(-1,\infty)\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:(-1,\infty)\to\mathbb{R}</annotation></semantics></math>, <math id="Ch2.Thmexo27.p1.m2" class="ltx_Math" alttext="f(x)=\frac{1}{x+1}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{1}{x+1}</annotation></semantics></math>. A partir do gráfico de <math id="Ch2.Thmexo27.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, dê o
+seu conjunto imagem, e mostre que <math id="Ch2.Thmexo27.p1.m4" class="ltx_Math" alttext="f:(-1,\infty)\to\operatorname{Im}(f)" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">f:(-1,\infty)\to\operatorname{Im}(f)</annotation></semantics></math>
+é uma bijeção. Em seguida, dê a sua função inversa.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo28" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.28</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo28.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch2.Thmexo28.p1.m1" class="ltx_Math" alttext="f:\mathbb{R}\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:\mathbb{R}\to\mathbb{R}</annotation></semantics></math> uma bijeção ímpar. Mostre que a sua função inversa
+<math id="Ch2.Thmexo28.p1.m2" class="ltx_Math" alttext="f^{-1}:\mathbb{R}\to\mathbb{R}" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f^{-1}:\mathbb{R}\to\mathbb{R}</annotation></semantics></math> é ímpar também.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo29" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.29</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo29.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para cada um dos contradomínios <math id="Ch2.Thmexo29.p1.m1" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> a seguir, dê um exemplo explícito de bijeção
+<math id="Ch2.Thmexo29.p1.m2" class="ltx_Math" alttext="f:(0,1)\to C" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>C</mi></mrow></mrow><annotation encoding="application/x-tex">f:(0,1)\to C</annotation></semantics></math>.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="(0,b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,b)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, onde </span><math id="I4.i1.p1.m2" class="ltx_Math" alttext="b&gt;0" display="inline"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="(a,b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, onde </span><math id="I4.i2.p1.m2" class="ltx_Math" alttext="a&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a&lt;b</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I4.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i3.p1.m1" class="ltx_Math" alttext="(0,\infty)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,\infty)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I4.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i4.p1.m1" class="ltx_Math" alttext="(-\infty,\infty)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(-\infty,\infty)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I4.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i5.p1.m1" class="ltx_Math" alttext="(0,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch2.Thmexo30" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.30</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo30.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Ch2.Thmexo30.p1.m1" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> e <math id="Ch2.Thmexo30.p1.m2" class="ltx_Math" alttext="g(x)" display="inline"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">g(x)</annotation></semantics></math>, <math id="Ch2.Thmexo30.p1.m3" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>, definidas por</span></p>
+<div id="Ch2.Ex64" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex64.m1" class="ltx_Math" alttext="f(x){:=}\lfloor x\rfloor+(x-\lfloor x\rfloor)^{2}\,,\quad g(x){:=}\lfloor x%
+\rfloor+\sqrt{x-\lfloor x\rfloor}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow><mo>+</mo><msqrt><mrow><mi>x</mi><mo>−</mo><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow></mrow></msqrt></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f(x){:=}\lfloor x\rfloor+(x-\lfloor x\rfloor)^{2}\,,\quad g(x){:=}\lfloor x%
+\rfloor+\sqrt{x-\lfloor x\rfloor}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que <math id="Ch2.Thmexo30.p1.m4" class="ltx_Math" alttext="g=f^{-1}" display="inline"><semantics><mrow><mi>g</mi><mo>=</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">g=f^{-1}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.4.2</span> Inversos das potências</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Vimos que se <math id="SS2.p1.m1" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math> é par, então a função <math id="SS2.p1.m2" class="ltx_Math" alttext="f(x)=x^{p}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mi>p</mi></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{p}</annotation></semantics></math> é par, e
+<math id="SS2.p1.m3" class="ltx_Math" alttext="\operatorname{Im}(f)=[0,\infty)" display="inline"><semantics><mrow><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Im}(f)=[0,\infty)</annotation></semantics></math> ou <math id="SS2.p1.m4" class="ltx_Math" alttext="(0,\infty)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,\infty)</annotation></semantics></math> (dependendo de <math id="SS2.p1.m5" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math> ser <math id="SS2.p1.m6" class="ltx_Math" alttext="&gt;0" display="inline"><semantics><mrow><mi></mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&gt;0</annotation></semantics></math> ou <math id="SS2.p1.m7" class="ltx_Math" alttext="&lt;0" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&lt;0</annotation></semantics></math>).
+Logo, para serem invertidas, o domínio delas precisa ser restringido.
+Escolheremos (para <math id="SS2.p1.m8" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math> par)</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx26" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex65"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex65.m1" class="ltx_Math" alttext="\displaystyle f:[0,\infty)" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f:[0,\infty)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex65.m2" class="ltx_Math" alttext="\displaystyle\to[0,\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[0,\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex66"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex66.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex66.m2" class="ltx_Math" alttext="\displaystyle\mapsto x^{p}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mi>p</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto x^{p}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Vemos que com essa restrição, <math id="SS2.p1.m9" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> se torna
+bijetiva: para cada <math id="SS2.p1.m10" class="ltx_Math" alttext="y\in[0,\infty)" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">y\in[0,\infty)</annotation></semantics></math> existe um único <math id="SS2.p1.m11" class="ltx_Math" alttext="x\in[0,\infty)" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[0,\infty)</annotation></semantics></math> tal que <math id="SS2.p1.m12" class="ltx_Math" alttext="x^{p}=y" display="inline"><semantics><mrow><msup><mi>x</mi><mi>p</mi></msup><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x^{p}=y</annotation></semantics></math>.
+Esse <math id="SS2.p1.m13" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> costuma ser denotado por <math id="SS2.p1.m14" class="ltx_Math" alttext="x=y^{1/p}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>y</mi><mrow><mn>1</mn><mo>/</mo><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">x=y^{1/p}</annotation></semantics></math>:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx27" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex67"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex67.m1" class="ltx_Math" alttext="\displaystyle f^{-1}:[0,\infty)" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}:[0,\infty)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex67.m2" class="ltx_Math" alttext="\displaystyle\to[0,\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[0,\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex68"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex68.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex68.m2" class="ltx_Math" alttext="\displaystyle\mapsto y^{1/p}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>y</mi><mrow><mn>1</mn><mo>/</mo><mi>p</mi></mrow></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto y^{1/p}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">No caso <math id="SS2.p1.m15" class="ltx_Math" alttext="p=2" display="inline"><semantics><mrow><mi>p</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p=2</annotation></semantics></math>, <math id="SS2.p1.m16" class="ltx_Math" alttext="y^{1/2}=\sqrt{y}" display="inline"><semantics><mrow><msup><mi>y</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>=</mo><msqrt><mi>y</mi></msqrt></mrow><annotation encoding="application/x-tex">y^{1/2}=\sqrt{y}</annotation></semantics></math> é a função <span class="ltx_text ltx_font_bold">raiz quadrada</span>.</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-52.svg" alt="" id="SS2.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="341" height="99"></div>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Se <math id="SS2.p2.m1" class="ltx_Math" alttext="p&gt;0" display="inline"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math> for ímpar, <math id="SS2.p2.m2" class="ltx_Math" alttext="\operatorname{Im}(f)=\mathbb{R}" display="inline"><semantics><mrow><mrow><mi>Im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\operatorname{Im}(f)=\mathbb{R}</annotation></semantics></math> e não é preciso restringir o seu domínio:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx28" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex69"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex69.m1" class="ltx_Math" alttext="\displaystyle f:\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle f:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex69.m2" class="ltx_Math" alttext="\displaystyle\to\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\to\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex70"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex70.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex70.m2" class="ltx_Math" alttext="\displaystyle\mapsto x^{p}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mi>p</mi></msup></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto x^{p}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">é bijetiva, e o seu inverso tem o seguinte gráfico:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-53.svg" alt="" id="SS2.p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="323" height="131"></div>
+</div>
+<div id="Ch2.Thmexo31" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.31</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo31.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Complete essa discussão, incluindo os valores negativos de <math id="Ch2.Thmexo31.p1.m1" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo32" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.32</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo32.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolva:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="x&gt;\sqrt{x+2}" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><msqrt><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">x&gt;\sqrt{x+2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="(x-1)^{2}\leq\sqrt{1-x}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><msqrt><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">(x-1)^{2}\leq\sqrt{1-x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I5.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="\sqrt{-x^{2}-x+6}=-(x+1)" display="inline"><semantics><mrow><msqrt><mrow><mrow><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow></msqrt><mo>=</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sqrt{-x^{2}-x+6}=-(x+1)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.4.3</span> Funções trigonométricas inversas</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">Vimos que para a função <math id="SS3.p1.m1" class="ltx_Math" alttext="\operatorname{sen}:\mathbb{R}\to[-1,1]" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}:\mathbb{R}\to[-1,1]</annotation></semantics></math>,
+um <math id="SS3.p1.m2" class="ltx_Math" alttext="y\in[-1,1]" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">y\in[-1,1]</annotation></semantics></math> possui infinitas preimagens, logo não é bijeção.
+Portanto, para <em class="ltx_emph ltx_font_italic">inverter</em> a função seno, é necessário restringir o seu domínio. A restringiremos ao intervalo <math id="SS3.p1.m3" class="ltx_Math" alttext="[-\tfrac{\pi}{2},\tfrac{\pi}{2}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-\tfrac{\pi}{2},\tfrac{\pi}{2}]</annotation></semantics></math>:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-54.svg" alt="" id="SS3.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="286" height="109"></div>
+<p class="ltx_p">De fato, com essa restrição,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx29" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex71"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex71.m1" class="ltx_Math" alttext="\displaystyle\operatorname{sen}:[-\tfrac{\pi}{2},\tfrac{\pi}{2}]" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{sen}:[-\tfrac{\pi}{2},\tfrac{\pi}{2}]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex71.m2" class="ltx_Math" alttext="\displaystyle\to[-1,1]" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[-1,1]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex72"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex72.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex72.m2" class="ltx_Math" alttext="\displaystyle\mapsto\operatorname{sen}x" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\operatorname{sen}x</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">é uma bijeção, pois cada <math id="SS3.p1.m4" class="ltx_Math" alttext="y\in[-1,1]" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">y\in[-1,1]</annotation></semantics></math> é atingido e possui uma única preimagem. A função
+inversa é chamada <span class="ltx_text ltx_font_bold">arcseno</span>, e denotada</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx30" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex73"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex73.m1" class="ltx_Math" alttext="\displaystyle\operatorname{arcsen}:[-1,1]" display="inline"><semantics><mrow><mi>arcsen</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{arcsen}:[-1,1]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex73.m2" class="ltx_Math" alttext="\displaystyle\to[-\tfrac{\pi}{2},\tfrac{\pi}{2}]" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[-\tfrac{\pi}{2},\tfrac{\pi}{2}]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex74"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex74.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex74.m2" class="ltx_Math" alttext="\displaystyle\mapsto\operatorname{arcsen}y\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\operatorname{arcsen}y\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Pela sua definição, ela satisfaz:</p>
+<div id="Ch2.E5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E5.m1" class="ltx_math_unparsed" alttext="\boxed{\forall y\in[-1,1]:\,\operatorname{sen}(\operatorname{arcsen}y)=y\,\,,%
+\quad\text{ e }\quad\forall x\in[-\tfrac{\pi}{2},\tfrac{\pi}{2}]:\,%
+\operatorname{arcsen}(\operatorname{sen}x)=x\,\,.}" display="block"><semantics><menclose notation="box"><mrow><mo rspace="0.167em">∀</mo><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mo lspace="0em">−</mo><mn>1,1</mn><mo rspace="0.278em" stretchy="false">]</mo></mrow><mo rspace="0.448em">:</mo><mi>sen</mi><mrow><mo stretchy="false">(</mo><mi>arcsen</mi><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>y</mi><mo lspace="0.330em" rspace="1.367em">,</mo><mtext> e </mtext><mspace width="1.367em"></mspace><mo rspace="0.167em">∀</mo><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mo lspace="0em">−</mo><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo rspace="0.278em" stretchy="false">]</mo></mrow><mo rspace="0.448em">:</mo><mi>arcsen</mi><mrow><mo stretchy="false">(</mo><mi>sen</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>x</mi><mo lspace="0.330em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{\forall y\in[-1,1]:\,\operatorname{sen}(\operatorname{arcsen}y)=y\,\,,%
+\quad\text{ e }\quad\forall x\in[-\tfrac{\pi}{2},\tfrac{\pi}{2}]:\,%
+\operatorname{arcsen}(\operatorname{sen}x)=x\,\,.}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.5)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">O gráfico de <math id="SS3.p2.m1" class="ltx_Math" alttext="\operatorname{arcsen}" display="inline"><semantics><mi>arcsen</mi><annotation encoding="application/x-tex">\operatorname{arcsen}</annotation></semantics></math> pode ser obtido por uma reflexão do gráfico de <math id="SS3.p2.m2" class="ltx_Math" alttext="\operatorname{sen}" display="inline"><semantics><mi>sen</mi><annotation encoding="application/x-tex">\operatorname{sen}</annotation></semantics></math> pela
+diagonal do primeiro quadrante:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-55.svg" alt="" id="SS3.p2.g1" class="ltx_graphics ltx_centering ltx_img_portrait" style="vertical-align:-1px" width="120" height="156"></div>
+</div>
+<div id="Ch2.Thmobs2" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 2.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmobs2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Já fizemos esse comentário no Exemplo <a href="#Ch2.Thmex24" title="Exemplo 2.24. ‣ 2.4.1 Bijeção, função inversa ‣ 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.24</span></a>.)
+Como <math id="Ch2.Thmobs2.p1.m1" class="ltx_Math" alttext="\operatorname{arcsen}" display="inline"><semantics><mi>arcsen</mi><annotation encoding="application/x-tex">\operatorname{arcsen}</annotation></semantics></math> é definida como a função inversa de <math id="Ch2.Thmobs2.p1.m2" class="ltx_Math" alttext="x\mapsto\operatorname{sen}x" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">x\mapsto\operatorname{sen}x</annotation></semantics></math> (no intervalo
+<math id="Ch2.Thmobs2.p1.m3" class="ltx_Math" alttext="[-\tfrac{\pi}{2},\tfrac{\pi}{2}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-\tfrac{\pi}{2},\tfrac{\pi}{2}]</annotation></semantics></math>), o mais correto é escrevê-la <math id="Ch2.Thmobs2.p1.m4" class="ltx_Math" alttext="y\mapsto\operatorname{arcsen}y" display="inline"><semantics><mrow><mi>y</mi><mo stretchy="false">↦</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">y\mapsto\operatorname{arcsen}y</annotation></semantics></math>.
+Mas para esboçar o seu gráfico, faz mais sentido usar a notação habitual, em que o eixo
+das abscissas é chamado de “<math id="Ch2.Thmobs2.p1.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>”. Por isso, esse último gráfico representa o gráfico da
+função <math id="Ch2.Thmobs2.p1.m6" class="ltx_Math" alttext="\operatorname{arcsen}" display="inline"><semantics><mi>arcsen</mi><annotation encoding="application/x-tex">\operatorname{arcsen}</annotation></semantics></math>, mas chamando a sua variável <math id="Ch2.Thmobs2.p1.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> (em vez de <math id="Ch2.Thmobs2.p1.m8" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>):
+<math id="Ch2.Thmobs2.p1.m9" class="ltx_Math" alttext="x\mapsto\operatorname{arcsen}x" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">x\mapsto\operatorname{arcsen}x</annotation></semantics></math>.
+Faremos a mesma modificação nos próximos gráficos.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo33" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.33</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo33.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch2.Thmexo33.p1.m1" class="ltx_Math" alttext="y\in(0,\tfrac{\pi}{2})" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">y\in(0,\tfrac{\pi}{2})</annotation></semantics></math> tal que <math id="Ch2.Thmexo33.p1.m2" class="ltx_Math" alttext="y=\operatorname{arcsen}\tfrac{3}{5}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">y=\operatorname{arcsen}\tfrac{3}{5}</annotation></semantics></math>. Calcule <math id="Ch2.Thmexo33.p1.m3" class="ltx_Math" alttext="\operatorname{sen}y" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}y</annotation></semantics></math>, <math id="Ch2.Thmexo33.p1.m4" class="ltx_Math" alttext="\cos y" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\cos y</annotation></semantics></math>, e
+<math id="Ch2.Thmexo33.p1.m5" class="ltx_Math" alttext="\tan y" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\tan y</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="SS3.p3" class="ltx_para">
+<p class="ltx_p">O cosseno pode ser invertido também, uma vez que o seu domínio é bem escolhido:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx31" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex75"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex75.m1" class="ltx_Math" alttext="\displaystyle\cos:[0,\pi]" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\cos:[0,\pi]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex75.m2" class="ltx_Math" alttext="\displaystyle\to[-1,1]" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[-1,1]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex76"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex76.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex76.m2" class="ltx_Math" alttext="\displaystyle\mapsto\cos x" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\cos x</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-56.svg" alt="" id="SS3.p3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="187" height="109"></div>
+<p class="ltx_p">A função inversa é chamada <span class="ltx_text ltx_font_bold">arcosseno</span>, e denotada</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx32" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex77"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex77.m1" class="ltx_Math" alttext="\displaystyle\operatorname{arcos}:[-1,1]" display="inline"><semantics><mrow><mi>arcos</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\operatorname{arcos}:[-1,1]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex77.m2" class="ltx_Math" alttext="\displaystyle\to[0,\pi]" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to[0,\pi]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex78"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex78.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex78.m2" class="ltx_Math" alttext="\displaystyle\mapsto\operatorname{arcos}y\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>arcos</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\operatorname{arcos}y\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Ela possui as propriedades:</p>
+<div id="Ch2.E6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E6.m1" class="ltx_math_unparsed" alttext="\boxed{\forall y\in[-1,1]:\,\cos(\operatorname{arcos}y)=y\,\,,\quad\text{ e }%
+\quad\forall x\in[0,\pi]:\,\operatorname{arcos}(\cos x)=x\,\,.}" display="block"><semantics><menclose notation="box"><mrow><mo rspace="0.167em">∀</mo><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mo lspace="0em">−</mo><mn>1,1</mn><mo rspace="0.278em" stretchy="false">]</mo></mrow><mo rspace="0.448em">:</mo><mi>cos</mi><mrow><mo stretchy="false">(</mo><mi>arcos</mi><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>y</mi><mo lspace="0.330em" rspace="1.367em">,</mo><mtext> e </mtext><mspace width="1.367em"></mspace><mo rspace="0.167em">∀</mo><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo rspace="0.278em" stretchy="false">]</mo></mrow><mo rspace="0.448em">:</mo><mi>arcos</mi><mrow><mo stretchy="false">(</mo><mi>cos</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>x</mi><mo lspace="0.330em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{\forall y\in[-1,1]:\,\cos(\operatorname{arcos}y)=y\,\,,\quad\text{ e }%
+\quad\forall x\in[0,\pi]:\,\operatorname{arcos}(\cos x)=x\,\,.}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.6)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS3.p4" class="ltx_para">
+<p class="ltx_p">O gráfico de <math id="SS3.p4.m1" class="ltx_Math" alttext="\operatorname{arcos}" display="inline"><semantics><mi>arcos</mi><annotation encoding="application/x-tex">\operatorname{arcos}</annotation></semantics></math> pode ser obtido por uma reflexão pela diagonal do primeiro quadrante:</p>
+</div>
+<div id="SS3.p5" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-57.svg" alt="" id="SS3.g1" class="ltx_graphics ltx_centering ltx_img_portrait" style="vertical-align:-1px" width="120" height="170"></div>
+</div>
+<div id="SS3.p6" class="ltx_para">
+<p class="ltx_p">Para inverter a tangente, faremos a restrição</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx33" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex79"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex79.m1" class="ltx_Math" alttext="\displaystyle\tan:(-\tfrac{\pi}{2},\tfrac{\pi}{2})" display="inline"><semantics><mrow><mi>tan</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\tan:(-\tfrac{\pi}{2},\tfrac{\pi}{2})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex79.m2" class="ltx_Math" alttext="\displaystyle\to\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\to\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex80"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex80.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex80.m2" class="ltx_Math" alttext="\displaystyle\mapsto\tan x\,," display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\tan x\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">obtendo assim uma bijeção.</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-58.svg" alt="" id="SS3.p6.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="475" height="246"></div>
+<p class="ltx_p">A função inversa é chamada de <span class="ltx_text ltx_font_bold">arctangente</span>:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx34" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch2.Ex81"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex81.m1" class="ltx_Math" alttext="\displaystyle\arctan:\mathbb{R}" display="inline"><semantics><mrow><mi>arctan</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\arctan:\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex81.m2" class="ltx_Math" alttext="\displaystyle\to(-\tfrac{\pi}{2},\tfrac{\pi}{2})" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\to(-\tfrac{\pi}{2},\tfrac{\pi}{2})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch2.Ex82"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex82.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex82.m2" class="ltx_Math" alttext="\displaystyle\mapsto\arctan y\,." display="inline"><semantics><mrow><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto\arctan y\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Como antes,</p>
+<div id="Ch2.E7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E7.m1" class="ltx_math_unparsed" alttext="\boxed{\forall x\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}):\,\arctan(\tan x)=x\,\,,%
+\quad\text{ e }\quad\forall y\in\mathbb{R}:\,\tan(\arctan y)=y\,\,.}" display="block"><semantics><menclose notation="box"><mrow><mo rspace="0.167em">∀</mo><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em">−</mo><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.448em">:</mo><mi>arctan</mi><mrow><mo stretchy="false">(</mo><mi>tan</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>x</mi><mo lspace="0.330em" rspace="1.367em">,</mo><mtext> e </mtext><mspace width="1.367em"></mspace><mo rspace="0.167em">∀</mo><mi>y</mi><mo>∈</mo><mi>ℝ</mi><mo lspace="0.278em" rspace="0.448em">:</mo><mi>tan</mi><mrow><mo stretchy="false">(</mo><mi>arctan</mi><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>y</mi><mo lspace="0.330em">.</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{\forall x\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}):\,\arctan(\tan x)=x\,\,,%
+\quad\text{ e }\quad\forall y\in\mathbb{R}:\,\tan(\arctan y)=y\,\,.}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.7)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">O seu gráfico possui duas <em class="ltx_emph ltx_font_italic">assíntotas horizontais</em>: quando <math id="SS3.p6.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é
+positivo e grande, o gráfico de <math id="SS3.p6.m3" class="ltx_Math" alttext="\arctan x" display="inline"><semantics><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\arctan x</annotation></semantics></math> se aproxima da reta de equação
+<math id="SS3.p6.m4" class="ltx_Math" alttext="y=\tfrac{\pi}{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">y=\tfrac{\pi}{2}</annotation></semantics></math>, e quando <math id="SS3.p6.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é
+negativo e grande, ele se aproxima da reta de equação <math id="SS3.p6.m6" class="ltx_Math" alttext="y=-\tfrac{\pi}{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">y=-\tfrac{\pi}{2}</annotation></semantics></math>:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-59.svg" alt="" id="SS3.p6.g2" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="399" height="163"></div>
+<p class="ltx_p">Observemos também que <math id="SS3.p6.m7" class="ltx_Math" alttext="\arctan" display="inline"><semantics><mi>arctan</mi><annotation encoding="application/x-tex">\arctan</annotation></semantics></math> é uma função ímpar, limitada por <math id="SS3.p6.m8" class="ltx_Math" alttext="\tfrac{\pi}{2}" display="inline"><semantics><mfrac><mi>π</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{\pi}{2}</annotation></semantics></math>.</p>
+</div>
+<div id="Ch2.Thmobs3" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 2.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmobs3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">É importante notar que as três funções trigonométricas inversas, <math id="Ch2.Thmobs3.p1.m1" class="ltx_Math" alttext="\operatorname{arcsen}" display="inline"><semantics><mi>arcsen</mi><annotation encoding="application/x-tex">\operatorname{arcsen}</annotation></semantics></math> <math id="Ch2.Thmobs3.p1.m2" class="ltx_Math" alttext="\operatorname{arcos}" display="inline"><semantics><mi>arcos</mi><annotation encoding="application/x-tex">\operatorname{arcos}</annotation></semantics></math> e
+<math id="Ch2.Thmobs3.p1.m3" class="ltx_Math" alttext="\arctan" display="inline"><semantics><mi>arctan</mi><annotation encoding="application/x-tex">\arctan</annotation></semantics></math>, foram definidas a partir de uma <em class="ltx_emph ltx_font_upright">escolha</em> de uma restrição para cada uma
+das funções <math id="Ch2.Thmobs3.p1.m4" class="ltx_Math" alttext="\operatorname{sen}" display="inline"><semantics><mi>sen</mi><annotation encoding="application/x-tex">\operatorname{sen}</annotation></semantics></math>, <math id="Ch2.Thmobs3.p1.m5" class="ltx_Math" alttext="\cos" display="inline"><semantics><mi>cos</mi><annotation encoding="application/x-tex">\cos</annotation></semantics></math> e <math id="Ch2.Thmobs3.p1.m6" class="ltx_Math" alttext="\tan" display="inline"><semantics><mi>tan</mi><annotation encoding="application/x-tex">\tan</annotation></semantics></math>.
+Essa escolha pode parecer arbitrária, mas é a mais comum usada nos livros de matemática.
+Continuaremos usando as funções inversas assim definidas, até o fim do curso.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo34" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.34</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo34.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Determine os domínios das seguintes funções.</span></p>
+<div class="ltx_pagination ltx_role_start_2_columns"></div>
+<ol id="I6" class="ltx_enumerate">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i1.p1.m1" class="ltx_Math" alttext="\operatorname{arcos}x-\operatorname{arcsen}x" display="inline"><semantics><mrow><mrow><mi>arcos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\operatorname{arcos}x-\operatorname{arcsen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I6.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i2.p1.m1" class="ltx_Math" alttext="\operatorname{arcos}(2x)" display="inline"><semantics><mrow><mi>arcos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{arcos}(2x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I6.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i3.p1.m1" class="ltx_Math" alttext="\tan(\operatorname{arcsen}x)" display="inline"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\tan(\operatorname{arcsen}x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I6.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I6.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i4.p1.m1" class="ltx_Math" alttext="\operatorname{arcos}(\tfrac{2-x^{2}}{1+x^{2}})" display="inline"><semantics><mrow><mi>arcos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mrow><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{arcos}(\tfrac{2-x^{2}}{1+x^{2}})</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_2_columns"></div>
+</div>
+</div>
+<div id="Ch2.Thmexo35" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.35</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo35.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma tela de cinema de <math id="Ch2.Thmexo35.p1.m1" class="ltx_Math" alttext="5" display="inline"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math> metros de altura está pregada numa parede, <math id="Ch2.Thmexo35.p1.m2" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math> metros acima do chão.
+a) Se <math id="Ch2.Thmexo35.p1.m3" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> é um ponto no chão a distância <math id="Ch2.Thmexo35.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> da parede, calcule o ângulo <math id="Ch2.Thmexo35.p1.m5" class="ltx_Math" alttext="\theta" display="inline"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> sob o qual
+<math id="Ch2.Thmexo35.p1.m6" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> vê a tela, em função de <math id="Ch2.Thmexo35.p1.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+b) Mesma coisa se <math id="Ch2.Thmexo35.p1.m8" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> é a <math id="Ch2.Thmexo35.p1.m9" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> metros do chão.
+(Obs: no Exercício <a href="Ch7.S4.html#Ch7.Thmexo15" title="Exercício 7.15. ‣ 7.4 Problemas de otimização ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.15</span></a> calcularemos onde colocar o ponto <math id="Ch2.Thmexo35.p1.m10" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> de modo tal que o ângulo
+seja máximo.)</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo36" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.36</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo36.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Resolva:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I7" class="ltx_enumerate">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I7.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i1.p1.m1" class="ltx_Math" alttext="3\operatorname{arcsen}x=\tfrac{\pi}{2}" display="inline"><semantics><mrow><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">3\operatorname{arcsen}x=\tfrac{\pi}{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I7.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i2.p1.m1" class="ltx_Math" alttext="\arctan(x-1)=\tfrac{\pi}{3}" display="inline"><semantics><mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\arctan(x-1)=\tfrac{\pi}{3}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I7.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I7.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i3.p1.m1" class="ltx_Math" alttext="2\operatorname{sen}(\operatorname{arcsen}x)=\tfrac{1}{3}" display="inline"><semantics><mrow><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">2\operatorname{sen}(\operatorname{arcsen}x)=\tfrac{1}{3}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I7.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I7.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i4.p1.m1" class="ltx_Math" alttext="\arctan(\tan(x^{2}))=\tfrac{\pi}{9}" display="inline"><semantics><mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>9</mn></mfrac></mrow><annotation encoding="application/x-tex">\arctan(\tan(x^{2}))=\tfrac{\pi}{9}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="SS3.p7" class="ltx_para">
+<p class="ltx_p">As funções trigonométricas inversas têm identidades associadas. Somente consideraremos algumas:</p>
+</div>
+<div id="Ch2.Thmex26" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 2.26</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmex26.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Provemos, por exemplo, a identidade</span></p>
+<div id="Ch2.E8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E8.m1" class="ltx_Math" alttext="\cos(\operatorname{arcsen}x)=\sqrt{1-x^{2}}\,,\quad\forall x\in[-1,1]\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mo rspace="0.167em">∀</mo><mi>x</mi></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\cos(\operatorname{arcsen}x)=\sqrt{1-x^{2}}\,,\quad\forall x\in[-1,1]\,.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.8)</span>
+                
+                
+              
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Primeiro, como
+<math id="Ch2.Thmex26.p1.m1" class="ltx_Math" alttext="\operatorname{sen}^{2}\alpha+\cos^{2}\alpha=1" display="inline"><semantics><mrow><mrow><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>+</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{sen}^{2}\alpha+\cos^{2}\alpha=1</annotation></semantics></math>, temos, usando (<a href="#Ch2.E6" title="In 2.4.3 Funções trigonométricas inversas ‣ 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.6</span></a>),</span></p>
+<div id="Ch2.Ex83" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex83.m1" class="ltx_Math" alttext="\cos^{2}(\operatorname{arcsen}x)=1-\operatorname{sen}^{2}(\operatorname{arcsen%
+}x)=1-x^{2}\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sen</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\cos^{2}(\operatorname{arcsen}x)=1-\operatorname{sen}^{2}(\operatorname{arcsen%
+}x)=1-x^{2}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mas como <math id="Ch2.Thmex26.p1.m2" class="ltx_Math" alttext="-\tfrac{\pi}{2}\leq\operatorname{arcsen}x\leq\tfrac{\pi}{2}" display="inline"><semantics><mrow><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>≤</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≤</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">-\tfrac{\pi}{2}\leq\operatorname{arcsen}x\leq\tfrac{\pi}{2}</annotation></semantics></math>, vale
+<math id="Ch2.Thmex26.p1.m3" class="ltx_Math" alttext="\cos(\operatorname{arcsen}x)\in[0,1]" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\cos(\operatorname{arcsen}x)\in[0,1]</annotation></semantics></math>, logo, tomando a raiz quadrada dá a
+idendidade desejada.
+Um outro jeito de entender a identidade é de escrevê-la como
+<math id="Ch2.Thmex26.p1.m4" class="ltx_Math" alttext="\cos(\operatorname{arcsen}x)=\cos\alpha" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow></mrow><annotation encoding="application/x-tex">\cos(\operatorname{arcsen}x)=\cos\alpha</annotation></semantics></math>, onde
+<math id="Ch2.Thmex26.p1.m5" class="ltx_Math" alttext="\alpha=\operatorname{arcsen}x" display="inline"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\alpha=\operatorname{arcsen}x</annotation></semantics></math>. Logo, <math id="Ch2.Thmex26.p1.m6" class="ltx_Math" alttext="\operatorname{sen}\alpha=x" display="inline"><semantics><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}\alpha=x</annotation></semantics></math>, o que pode ser representado
+num triângulo:</span></p>
+</div>
+<div id="Ch2.Thmex26.p2" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-60.svg" alt="" id="Ch2.Thmex26.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="94" height="40"></div>
+</div>
+<div id="Ch2.Thmex26.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Nesse triângulo vemos que <math id="Ch2.Thmex26.p3.m1" class="ltx_Math" alttext="\cos\alpha=\tfrac{\sqrt{1-x^{2}}}{1}=\sqrt{1-x^{2}}" display="inline"><semantics><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>α</mi></mrow><mo>=</mo><mfrac><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mn>1</mn></mfrac><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\cos\alpha=\tfrac{\sqrt{1-x^{2}}}{1}=\sqrt{1-x^{2}}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch2.Thmexo37" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.37</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo37.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Simplifique:</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I8" class="ltx_enumerate">
+<li id="I8.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I8.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.i1.p1.m1" class="ltx_Math" alttext="\cos(2\operatorname{arcos}x)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arcos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\cos(2\operatorname{arcos}x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I8.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I8.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.i2.p1.m1" class="ltx_Math" alttext="\cos(2\arcsin x)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arcsin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\cos(2\arcsin x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I8.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I8.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.i3.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(2\operatorname{arcos}x)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arcos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(2\operatorname{arcos}x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I8.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I8.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.i4.p1.m1" class="ltx_Math" alttext="\cos(2\arctan x)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\cos(2\arctan x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I8.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I8.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.i5.p1.m1" class="ltx_Math" alttext="\operatorname{sen}(2\arctan x)" display="inline"><semantics><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{sen}(2\arctan x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I8.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I8.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.i6.p1.m1" class="ltx_Math" alttext="\tan(2\operatorname{arcsen}x)" display="inline"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\tan(2\operatorname{arcsen}x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="Ch2.Thmexo38" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 2.38</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexo38.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que para todo <math id="Ch2.Thmexo38.p1.m1" class="ltx_Math" alttext="x\in[-1,1]" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[-1,1]</annotation></semantics></math>,</span></p>
+<div id="Ch2.Ex84" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex84.m1" class="ltx_Math" alttext="\operatorname{arcsen}x+\operatorname{arcos}x=\tfrac{\pi}{2}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>arcsen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>arcos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\operatorname{arcsen}x+\operatorname{arcos}x=\tfrac{\pi}{2}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

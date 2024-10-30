@@ -1,0 +1,679 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.2 Limites laterais: lim_{𝑥→𝑎^±}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch4.S1.html" title="4.1 Limites lim_{𝑥→±∞}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="next" href="Ch4.S3.html" title="4.3 Limites lim_{𝑥→𝑎}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S1.html" title="4.1 Limites lim_{𝑥→±∞}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S3.html" title="4.3 Limites lim_{𝑥→𝑎}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S4.html" title="4.4 Indeterminações do tipo “0/0” ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S5.html" title="4.5 Limites laterais infinitos, assíntotas verticais ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S6.html" title="4.6 Mudar de variável ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S7.html" title="4.7 O limite 𝑒=lim_{𝑥→∞}{(1+{1/𝑥})^𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S8.html" title="4.8 O limite lim_{𝑥→∞}{𝑎^𝑥/𝑥} ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="section" href="Ch4.S9.html" title="4.9 Exercícios de revisão ‣ Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="descontinuidade, do tipo “, indeterminação, lateral, limite, propriedades">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Limites <math class="ltx_Math" alttext="\lim_{x\to\pm\infty}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\pm\infty}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Limites laterais: <math class="ltx_Math" alttext="\lim_{x\to a^{\pm}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>±</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{\pm}}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Limites <math class="ltx_Math" alttext="\lim_{x\to a}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi>a</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a}f(x)</annotation></semantics></math></a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Indeterminações do tipo “<math class="ltx_Math" alttext="\tfrac{0}{0}" display="inline"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac><annotation encoding="application/x-tex">\tfrac{0}{0}</annotation></semantics></math>”</a></li>
+<li data-level="4.5" data-path="Ch4.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S5.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.5 </span></b>Limites laterais infinitos, assíntotas verticais</a></li>
+<li data-level="4.6" data-path="Ch4.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S6.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.6 </span></b>Mudar de variável</a></li>
+<li data-level="4.7" data-path="Ch4.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S7.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.7 </span></b>O limite <math class="ltx_Math" alttext="e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}" display="inline"><semantics><mrow><mi>e</mi><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>x</mi></msup></mrow></mrow><annotation encoding="application/x-tex">e=\lim_{x\to\infty}\bigl{(}1+\tfrac{1}{x}\bigr{)}^{x}</annotation></semantics></math></a></li>
+<li data-level="4.8" data-path="Ch4.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S8.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.8 </span></b>O limite
+<math class="ltx_Math" alttext="\lim_{x\to\infty}\frac{a^{x}}{x}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msup><mi>a</mi><mi>x</mi></msup><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\frac{a^{x}}{x}</annotation></semantics></math></a></li>
+<li data-level="4.9" data-path="Ch4.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S9.html" title="In Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.9 </span></b>Exercícios de revisão</a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Limites laterais: </h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4.2</span> Limites laterais: <math id="m1" class="ltx_Math" alttext="\lim_{x\to a^{\pm}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>±</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{\pm}}f(x)</annotation></semantics></math>
+</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Na seção anterior estudamos o comportamento de uma função <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+longe da origem, <math id="p1.m2" class="ltx_Math" alttext="x\to\infty" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">x\to\infty</annotation></semantics></math> ou <math id="p1.m3" class="ltx_Math" alttext="x\to-\infty" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">x\to-\infty</annotation></semantics></math>.
+Agora observaremos
+o comportamento de uma função <math id="p1.m4" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> a medida que <math id="p1.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+se aproxima de um ponto da reta, que denotaremos por <math id="p1.m6" class="ltx_Math" alttext="a\in\mathbb{R}" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">a\in\mathbb{R}</annotation></semantics></math>.
+
+<br class="ltx_break"></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Como um <math id="p2.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> pode estar ou à esquerda de <math id="p2.m2" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> (<math id="p2.m3" class="ltx_Math" alttext="x&lt;a" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x&lt;a</annotation></semantics></math>), ou à direita
+de <math id="p2.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> (<math id="p2.m5" class="ltx_Math" alttext="x&gt;a" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x&gt;a</annotation></semantics></math>), começaremos com dois tipos de limites, chamados de
+<span class="ltx_text ltx_font_bold">laterais</span>: escreveremos <math id="p2.m6" class="ltx_Math" alttext="x\to a^{+}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to a^{+}</annotation></semantics></math> (ou <math id="p2.m7" class="ltx_Math" alttext="x\searrow a" display="inline"><semantics><mrow><mi>x</mi><mo>↘</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x\searrow a</annotation></semantics></math>) para
+indicar que <math id="p2.m8" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> se aproxima de <math id="p2.m9" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> pela direita, e
+<math id="p2.m10" class="ltx_Math" alttext="x\to a^{-}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">x\to a^{-}</annotation></semantics></math> (ou <math id="p2.m11" class="ltx_Math" alttext="x\nearrow a" display="inline"><semantics><mrow><mi>x</mi><mo>↗</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x\nearrow a</annotation></semantics></math>) para indicar que <math id="p2.m12" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> se aproxima de <math id="p2.m13" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> pela esquerda.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Comecemos com um exemplo bem simples.</p>
+</div>
+<div id="Ch4.Thmex16" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 4.16</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmex16.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a função</span></p>
+<div id="Ch4.Ex69" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex69.m1" class="ltx_Math" alttext="f(x)=\frac{x}{2}+1\,," display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">f(x)=\frac{x}{2}+1\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">em uma vizinhança do ponto <math id="Ch4.Thmex16.p1.m1" class="ltx_Math" alttext="a=1" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1</annotation></semantics></math>. Olhemos primeiro os
+valores de <math id="Ch4.Thmex16.p1.m2" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> quando <math id="Ch4.Thmex16.p1.m3" class="ltx_Math" alttext="x\searrow 1" display="inline"><semantics><mrow><mi>x</mi><mo>↘</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x\searrow 1</annotation></semantics></math>, isto é, quando <math id="Ch4.Thmex16.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> toma valores maiores mas perto
+de <math id="Ch4.Thmex16.p1.m5" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m6" class="ltx_Math" alttext="x=" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">x=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m7" class="ltx_Math" alttext="1.5" display="inline"><semantics><mn>1.5</mn><annotation encoding="application/x-tex">1.5</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m8" class="ltx_Math" alttext="1.1" display="inline"><semantics><mn>1.1</mn><annotation encoding="application/x-tex">1.1</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m9" class="ltx_Math" alttext="1.01" display="inline"><semantics><mn>1.01</mn><annotation encoding="application/x-tex">1.01</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center"><math id="Ch4.Thmex16.p1.m10" class="ltx_Math" alttext="1,0001" display="inline"><semantics><mn>1,0001</mn><annotation encoding="application/x-tex">1,0001</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m11" class="ltx_Math" alttext="f(x)=" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">f(x)=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m12" class="ltx_Math" alttext="1.75" display="inline"><semantics><mn>1.75</mn><annotation encoding="application/x-tex">1.75</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m13" class="ltx_Math" alttext="1.55" display="inline"><semantics><mn>1.55</mn><annotation encoding="application/x-tex">1.55</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m14" class="ltx_Math" alttext="1.505" display="inline"><semantics><mn>1.505</mn><annotation encoding="application/x-tex">1.505</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="Ch4.Thmex16.p1.m15" class="ltx_Math" alttext="1,50005" display="inline"><semantics><mn>1,50005</mn><annotation encoding="application/x-tex">1,50005</annotation></semantics></math></td>
+</tr>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Vemos que
+estes valores decrescem, se aproximando de <math id="Ch4.Thmex16.p1.m16" class="ltx_Math" alttext="1.5=\tfrac{3}{2}" display="inline"><semantics><mrow><mn>1.5</mn><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">1.5=\tfrac{3}{2}</annotation></semantics></math>. Gostaríamos de escrever</span></p>
+<div id="Ch4.Ex70" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex70.m1" class="ltx_Math" alttext="\lim_{x\searrow 1}f(x)=\tfrac{3}{2}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>↘</mo><mn>1</mn></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\searrow 1}f(x)=\tfrac{3}{2}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Ao olharmos
+os valores de <math id="Ch4.Thmex16.p1.m17" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> quando <math id="Ch4.Thmex16.p1.m18" class="ltx_Math" alttext="x\nearrow 1" display="inline"><semantics><mrow><mi>x</mi><mo>↗</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x\nearrow 1</annotation></semantics></math>, isto é, quando <math id="Ch4.Thmex16.p1.m19" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> toma valores menores mas
+perto de <math id="Ch4.Thmex16.p1.m20" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>,
+vemos que estes crescem para o mesmo valor <math id="Ch4.Thmex16.p1.m21" class="ltx_Math" alttext="\tfrac{3}{2}" display="inline"><semantics><mfrac><mn>3</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{3}{2}</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m22" class="ltx_Math" alttext="x=" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">x=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m23" class="ltx_Math" alttext="0.5" display="inline"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m24" class="ltx_Math" alttext="0.9" display="inline"><semantics><mn>0.9</mn><annotation encoding="application/x-tex">0.9</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex16.p1.m25" class="ltx_Math" alttext="0.99" display="inline"><semantics><mn>0.99</mn><annotation encoding="application/x-tex">0.99</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center"><math id="Ch4.Thmex16.p1.m26" class="ltx_Math" alttext="0.9999" display="inline"><semantics><mn>0.9999</mn><annotation encoding="application/x-tex">0.9999</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m27" class="ltx_Math" alttext="f(x)=" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">f(x)=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m28" class="ltx_Math" alttext="1.25" display="inline"><semantics><mn>1.25</mn><annotation encoding="application/x-tex">1.25</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m29" class="ltx_Math" alttext="1.45" display="inline"><semantics><mn>1.45</mn><annotation encoding="application/x-tex">1.45</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex16.p1.m30" class="ltx_Math" alttext="1.495" display="inline"><semantics><mn>1.495</mn><annotation encoding="application/x-tex">1.495</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="Ch4.Thmex16.p1.m31" class="ltx_Math" alttext="1,49995" display="inline"><semantics><mn>1,49995</mn><annotation encoding="application/x-tex">1,49995</annotation></semantics></math></td>
+</tr>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Gostariamos então de escrever</span></p>
+<div id="Ch4.Ex71" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex71.m1" class="ltx_Math" alttext="\lim_{x\nearrow 1}f(x)=\tfrac{3}{2}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>↗</mo><mn>1</mn></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\nearrow 1}f(x)=\tfrac{3}{2}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Essas propriedades se tornam óbvias olhando para o gráfico, que é uma simples reta:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-80.svg" alt="" id="Ch4.Thmex16.p1.g1" class="ltx_graphics ltx_centering ltx_img_square" style="vertical-align:-1px" width="171" height="145"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para entender um pouco melhor o que está acontecendo, vamos
+estudar a diferença:</span></p>
+<div id="Ch4.Ex72" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex72.m1" class="ltx_Math" alttext="|f(x)-\tfrac{3}{2}|=\bigl{|}(\tfrac{x}{2}+1)-\tfrac{3}{2}\bigr{|}=\tfrac{1}{2}%
+|x-1|\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mi>x</mi><mn>2</mn></mfrac></mstyle><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">|f(x)-\tfrac{3}{2}|=\bigl{|}(\tfrac{x}{2}+1)-\tfrac{3}{2}\bigr{|}=\tfrac{1}{2}%
+|x-1|\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Assim, vemos que quando <math id="Ch4.Thmex16.p1.m32" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> fica perto de <math id="Ch4.Thmex16.p1.m33" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, isto é quando a distância
+<math id="Ch4.Thmex16.p1.m34" class="ltx_Math" alttext="|x-1|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|x-1|</annotation></semantics></math> é
+pequena, então a diferença <math id="Ch4.Thmex16.p1.m35" class="ltx_Math" alttext="|f(x)-\tfrac{3}{2}|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|f(x)-\tfrac{3}{2}|</annotation></semantics></math> é pequena também.
+Poderíamos ser um pouco mais precisos, fixar uma <span class="ltx_text ltx_font_bold">tolerância</span> <math id="Ch4.Thmex16.p1.m36" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>
+(subentendido pequena) e perguntar:
+<em class="ltx_emph ltx_font_upright">quão próximo de <math id="Ch4.Thmex16.p1.m37" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> <math id="Ch4.Thmex16.p1.m38" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> precisa estar para garantir que </em></span></p>
+<div id="Ch4.Ex73" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex73.m1" class="ltx_Math" alttext="|f(x)-\tfrac{3}{2}|\leq\epsilon\,\quad?" display="block"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi>ϵ</mi><mspace width="1.36666666666667em"></mspace><mi mathvariant="normal">?</mi></mrow></mrow><annotation encoding="application/x-tex">|f(x)-\tfrac{3}{2}|\leq\epsilon\,\quad?</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como <math id="Ch4.Thmex16.p1.m39" class="ltx_Math" alttext="|f(x)-\tfrac{3}{2}|=\tfrac{1}{2}|x-1|" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">|f(x)-\tfrac{3}{2}|=\tfrac{1}{2}|x-1|</annotation></semantics></math>, vemos que <math id="Ch4.Thmex16.p1.m40" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> precisa satisfazer
+<math id="Ch4.Thmex16.p1.m41" class="ltx_Math" alttext="\tfrac{1}{2}|x-1|\leq\epsilon" display="inline"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>≤</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\tfrac{1}{2}|x-1|\leq\epsilon</annotation></semantics></math>, isto é</span></p>
+<div id="Ch4.Ex74" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex74.m1" class="ltx_Math" alttext="|x-1|\leq 2\epsilon\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>ϵ</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">|x-1|\leq 2\epsilon\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Logo, a resposta à pergunta acima é: <em class="ltx_emph ltx_font_upright">a distância menor que <math id="Ch4.Thmex16.p1.m42" class="ltx_Math" alttext="2\epsilon" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">2\epsilon</annotation></semantics></math>.</em></span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Na verdade,
+pode parecer óbvio que a medida que <math id="p4.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> se aproxima de <math id="p4.m2" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, a função
+<math id="p4.m3" class="ltx_Math" alttext="f(x)=\frac{x}{2}+1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">f(x)=\frac{x}{2}+1</annotation></semantics></math> se aproxima de <math id="p4.m4" class="ltx_Math" alttext="f(1)=\tfrac{1}{2}+1=\tfrac{3}{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">f(1)=\tfrac{1}{2}+1=\tfrac{3}{2}</annotation></semantics></math>. Isto
+é: colocando o valor <math id="p4.m5" class="ltx_Math" alttext="x=1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math> na função, a
+gente já sabe qual será o valor limite.
+Mas isso funciona porque a função do exemplo é simples o suficiente. Às
+vezes, teremos que trabalhar mais, como no próximo exemplo.</p>
+</div>
+<div id="Ch4.Thmex17" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 4.17</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmex17.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Consideremos agora</span></p>
+<div id="Ch4.Ex75" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex75.m1" class="ltx_Math" alttext="f(x)=\frac{x^{3}-1}{x-1}\,," display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">f(x)=\frac{x^{3}-1}{x-1}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">também na vizinhança de <math id="Ch4.Thmex17.p1.m1" class="ltx_Math" alttext="a=1" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1</annotation></semantics></math>.
+Observe que essa função <em class="ltx_emph ltx_font_upright">não é definida em <math id="Ch4.Thmex17.p1.m2" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></em>. Logo,
+para saber o que acontece quando <math id="Ch4.Thmex17.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tende a <math id="Ch4.Thmex17.p1.m4" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, não
+temos como adivinhar qual será o limite trocando simplesmente <math id="Ch4.Thmex17.p1.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> por <math id="Ch4.Thmex17.p1.m6" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>.</span></p>
+</div>
+<div id="Ch4.Thmex17.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mas isso não significa que ele não pode ser calculado. Calculemos alguns valores
+de <math id="Ch4.Thmex17.p2.m1" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>, com <math id="Ch4.Thmex17.p2.m2" class="ltx_Math" alttext="x\searrow 1" display="inline"><semantics><mrow><mi>x</mi><mo>↘</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x\searrow 1</annotation></semantics></math>,</span></p>
+<div class="bml-overflow-wrapper">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex17.p2.m3" class="ltx_Math" alttext="x=" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">x=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><span class="ltx_text ltx_font_italic">1.1</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><span class="ltx_text ltx_font_italic">1.02</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><span class="ltx_text ltx_font_italic">1.002</span></td>
+<td class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_italic">1.0002</span></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m4" class="ltx_Math" alttext="f(x)\simeq" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mi></mi></mrow><annotation encoding="application/x-tex">f(x)\simeq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m5" class="ltx_Math" alttext="3,310" display="inline"><semantics><mn>3,310</mn><annotation encoding="application/x-tex">3,310</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m6" class="ltx_Math" alttext="3,060" display="inline"><semantics><mn>3,060</mn><annotation encoding="application/x-tex">3,060</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m7" class="ltx_Math" alttext="3.006" display="inline"><semantics><mn>3.006</mn><annotation encoding="application/x-tex">3.006</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="Ch4.Thmex17.p2.m8" class="ltx_Math" alttext="3,001" display="inline"><semantics><mn>3,001</mn><annotation encoding="application/x-tex">3,001</annotation></semantics></math></td>
+</tr>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">e quando <math id="Ch4.Thmex17.p2.m9" class="ltx_Math" alttext="x\nearrow 1" display="inline"><semantics><mrow><mi>x</mi><mo>↗</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x\nearrow 1</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r"><math id="Ch4.Thmex17.p2.m10" class="ltx_Math" alttext="x=" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">x=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><span class="ltx_text ltx_font_italic">0,9</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><span class="ltx_text ltx_font_italic">0,99</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r"><span class="ltx_text ltx_font_italic">0.999</span></td>
+<td class="ltx_td ltx_align_center"><span class="ltx_text ltx_font_italic">0.9999</span></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m11" class="ltx_Math" alttext="f(x)\simeq" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mi></mi></mrow><annotation encoding="application/x-tex">f(x)\simeq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m12" class="ltx_Math" alttext="2,710" display="inline"><semantics><mn>2,710</mn><annotation encoding="application/x-tex">2,710</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m13" class="ltx_Math" alttext="2,970" display="inline"><semantics><mn>2,970</mn><annotation encoding="application/x-tex">2,970</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Ch4.Thmex17.p2.m14" class="ltx_Math" alttext="2,997" display="inline"><semantics><mn>2,997</mn><annotation encoding="application/x-tex">2,997</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="Ch4.Thmex17.p2.m15" class="ltx_Math" alttext="2,999" display="inline"><semantics><mn>2,999</mn><annotation encoding="application/x-tex">2,999</annotation></semantics></math></td>
+</tr>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Esses números sugerem que</span></p>
+<div id="Ch4.Ex76" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex76.m1" class="ltx_Math" alttext="\lim_{x\to 1^{+}}f(x)=\lim_{x\to 1^{-}}f(x)=3\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>−</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>3</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{+}}f(x)=\lim_{x\to 1^{-}}f(x)=3\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Não falaremos de tolerância aqui, mas podemos
+fazer uma conta simples que mostra porque que o limite é <math id="Ch4.Thmex17.p2.m16" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>.
+De fato, o polinômio <math id="Ch4.Thmex17.p2.m17" class="ltx_Math" alttext="x^{3}-1" display="inline"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{3}-1</annotation></semantics></math> possui a raiz <math id="Ch4.Thmex17.p2.m18" class="ltx_Math" alttext="x=1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>, sabemos então
+que ele pode ser fatorado da seguinte maneira:</span></p>
+<div id="Ch4.Ex77" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex77.m1" class="ltx_Math" alttext="x^{3}-1=(x-1)(\dots)\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">x^{3}-1=(x-1)(\dots)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">O fator <math id="Ch4.Thmex17.p2.m19" class="ltx_Math" alttext="(\dots)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\dots)</annotation></semantics></math> pode ser calculado pela divisão de <math id="Ch4.Thmex17.p2.m20" class="ltx_Math" alttext="x^{3}-1" display="inline"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{3}-1</annotation></semantics></math> por <math id="Ch4.Thmex17.p2.m21" class="ltx_Math" alttext="x-1" display="inline"><semantics><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x-1</annotation></semantics></math>,
+que dá:</span></p>
+<div id="Ch4.Ex78" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex78.m1" class="ltx_Math" alttext="\begin{array}[]{r|l}x^{3}\phantom{+x^{2}+x}-1&amp;x-1\\
+\cline{2-2}\cr x^{3}-x^{2}\phantom{+x+1}&amp;x^{2}+x+1\\
+\cline{1-1}\cr\\
+x^{2}\phantom{+x}-1\\
+x^{2}-x\phantom{-1}\\
+\cline{1-1}\cr\\
+x-1\\
+x-1\\
+\cline{1-1}\cr\\
+0\end{array}" display="block"><semantics><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><msup><mi>x</mi><mn>3</mn></msup><mo lspace="4.332em">−</mo><mn>1</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r"></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="2.112em">−</mo><mn>1</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r"></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r"></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mn>0</mn></mtd><mtd></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}[]{r|l}x^{3}\phantom{+x^{2}+x}-1&amp;x-1\\
+\cline{2-2}\cr x^{3}-x^{2}\phantom{+x+1}&amp;x^{2}+x+1\\
+\cline{1-1}\cr\\
+x^{2}\phantom{+x}-1\\
+x^{2}-x\phantom{-1}\\
+\cline{1-1}\cr\\
+x-1\\
+x-1\\
+\cline{1-1}\cr\\
+0\end{array}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Isto mostra que o nosso quociente na verdade pode ser escrito como</span></p>
+<div id="Ch4.Ex79" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex79.m1" class="ltx_Math" alttext="\frac{x^{3}-1}{x-1}=x^{2}+x+1\,." display="block"><semantics><mrow><mrow><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\frac{x^{3}-1}{x-1}=x^{2}+x+1\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Agora fica claro que se <math id="Ch4.Thmex17.p2.m22" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tende a <math id="Ch4.Thmex17.p2.m23" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, não importa de qual lado,</span></p>
+<div id="Ch4.E18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E18.m1" class="ltx_Math" alttext="\lim_{x\to 1^{\pm}}\frac{x^{3}-1}{x-1}=\lim_{x\to 1^{\pm}}(x^{2}+x+1)=1^{2}+1+%
+1=3\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>±</mo></msup></mrow></munder><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>±</mo></msup></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>3</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{\pm}}\frac{x^{3}-1}{x-1}=\lim_{x\to 1^{\pm}}(x^{2}+x+1)=1^{2}+1+%
+1=3\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.18)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="Ch4.Thmobs7" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 4.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmobs7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">No exemplo anterior, a função <math id="Ch4.Thmobs7.p1.m1" class="ltx_Math" alttext="\frac{x^{3}-1}{x-1}" display="inline"><semantics><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><annotation encoding="application/x-tex">\frac{x^{3}-1}{x-1}</annotation></semantics></math>
+não é definida <em class="ltx_emph ltx_font_upright">no</em> ponto <math id="Ch4.Thmobs7.p1.m2" class="ltx_Math" alttext="a=1" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1</annotation></semantics></math>, mas
+em qualquer outro ponto da sua vizinhança, e à medida que <math id="Ch4.Thmobs7.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> se aproxima de <math id="Ch4.Thmobs7.p1.m4" class="ltx_Math" alttext="a=1" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1</annotation></semantics></math>, o
+numerador e o denominador <em class="ltx_emph ltx_font_upright">ambos</em> tendem a <math id="Ch4.Thmobs7.p1.m5" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>.
+Foi o nosso primeiro exemplo de resolução de uma <span class="ltx_text ltx_font_bold">indeterminação do tipo</span>
+</span></p>
+<div id="Ch4.Ex80" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex80.m1" class="ltx_Math" alttext='``\frac{0}{0}"\,.' display="block"><semantics><mrow><mrow><mi mathvariant="normal">`</mi><mo>⁢</mo><mi mathvariant="normal">`</mi><mo>⁢</mo><mfrac><mn>0</mn><mn>0</mn></mfrac><mo>⁢</mo><mi mathvariant="normal">"</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">``\frac{0}{0}"\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch4.Thmexo11" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.11</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule <math id="Ch4.Thmexo11.p1.m1" class="ltx_Math" alttext="\lim_{x\to 1^{\pm}}\frac{x^{4}-1}{x-1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>±</mo></msup></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{\pm}}\frac{x^{4}-1}{x-1}</annotation></semantics></math>,
+<math id="Ch4.Thmexo11.p1.m2" class="ltx_Math" alttext="\lim_{x\to 1^{\pm}}\frac{x^{5}-1}{x-1}" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>±</mo></msup></mrow></msub><mfrac><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{\pm}}\frac{x^{5}-1}{x-1}</annotation></semantics></math>, …</span></p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Eis agora a definição geral de limite lateral:</p>
+</div>
+<div id="Ch4.Thmdefin4" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 4.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmdefin4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch4.Thmdefin4.p1.m1" class="ltx_Math" alttext="a\in\mathbb{R}" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">a\in\mathbb{R}</annotation></semantics></math>.</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Diz-se que </span><math id="I1.i1.p1.m1" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math><span class="ltx_text ltx_font_bold ltx_font_italic"> tende a <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\ell" display="inline"><semantics><mi mathvariant="normal">ℓ</mi><annotation encoding="application/x-tex">\ell</annotation></semantics></math> quando <math id="I1.i1.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathvariant="normal">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tende a <math id="I1.i1.p1.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi mathvariant="normal">a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> pela direita</span><span class="ltx_text ltx_font_italic"> se
+para todo </span><math id="I1.i1.p1.m5" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> existe um </span><math id="I1.i1.p1.m6" class="ltx_Math" alttext="\delta&gt;0" display="inline"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic">
+tal que se </span><math id="I1.i1.p1.m7" class="ltx_Math" alttext="a&lt;x\leq a+\delta" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>x</mi><mo>≤</mo><mrow><mi>a</mi><mo>+</mo><mi>δ</mi></mrow></mrow><annotation encoding="application/x-tex">a&lt;x\leq a+\delta</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então </span><math id="I1.i1.p1.m8" class="ltx_Math" alttext="|f(x)-\ell|\leq\epsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mi mathvariant="normal">ℓ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">|f(x)-\ell|\leq\epsilon</annotation></semantics></math><span class="ltx_text ltx_font_italic">.
+Escreve-se </span><math id="I1.i1.p1.m9" class="ltx_Math" alttext="\lim_{x\to a^{+}}f(x)=\ell" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">ℓ</mi></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{+}}f(x)=\ell</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Diz-se que </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math><span class="ltx_text ltx_font_bold ltx_font_italic"> tende a <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\ell" display="inline"><semantics><mi mathvariant="normal">ℓ</mi><annotation encoding="application/x-tex">\ell</annotation></semantics></math> quando <math id="I1.i2.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathvariant="normal">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tende a <math id="I1.i2.p1.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi mathvariant="normal">a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> pela esquerda</span><span class="ltx_text ltx_font_italic"> se
+para todo </span><math id="I1.i2.p1.m5" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> existe um </span><math id="I1.i2.p1.m6" class="ltx_Math" alttext="\delta&gt;0" display="inline"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic">
+tal que se </span><math id="I1.i2.p1.m7" class="ltx_Math" alttext="a-\delta\leq x&lt;a" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>−</mo><mi>δ</mi></mrow><mo>≤</mo><mi>x</mi><mo>&lt;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">a-\delta\leq x&lt;a</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então </span><math id="I1.i2.p1.m8" class="ltx_Math" alttext="|f(x)-\ell|\leq\epsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mi mathvariant="normal">ℓ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">|f(x)-\ell|\leq\epsilon</annotation></semantics></math><span class="ltx_text ltx_font_italic">.
+Escreve-se </span><math id="I1.i2.p1.m9" class="ltx_Math" alttext="\lim_{x\to a^{-}}f(x)=\ell" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>−</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">ℓ</mi></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{-}}f(x)=\ell</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Ch4.Thmex18" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 4.18</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmex18.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Usando a definição, mostremos que</span></p>
+<div id="Ch4.Ex81" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex81.m1" class="ltx_Math" alttext="\lim_{x\to 1}x^{2}=1\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></munder><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 1}x^{2}=1\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe primeiro que <math id="Ch4.Thmex18.p1.m1" class="ltx_Math" alttext="|x^{2}-1|=|x+1|\cdot|x-1|" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">|x^{2}-1|=|x+1|\cdot|x-1|</annotation></semantics></math>.
+Quando <math id="Ch4.Thmex18.p1.m2" class="ltx_Math" alttext="x&gt;1" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x&gt;1</annotation></semantics></math> fica perto de <math id="Ch4.Thmex18.p1.m3" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, digamos a distância menor que <math id="Ch4.Thmex18.p1.m4" class="ltx_Math" alttext="\tfrac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\tfrac{1}{2}</annotation></semantics></math>, temos
+<math id="Ch4.Thmex18.p1.m5" class="ltx_Math" alttext="|x-1|=x-1" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">|x-1|=x-1</annotation></semantics></math>, e <math id="Ch4.Thmex18.p1.m6" class="ltx_Math" alttext="|x+1|=x+1\leq\tfrac{5}{2}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo>≤</mo><mfrac><mn>5</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">|x+1|=x+1\leq\tfrac{5}{2}</annotation></semantics></math>.
+Quando <math id="Ch4.Thmex18.p1.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tende a <math id="Ch4.Thmex18.p1.m8" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, <math id="Ch4.Thmex18.p1.m9" class="ltx_Math" alttext="|x-1|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|x-1|</annotation></semantics></math> tende a
+<math id="Ch4.Thmex18.p1.m10" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>.
+Seja agora <math id="Ch4.Thmex18.p1.m11" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>.
+Para garantir que
+<math id="Ch4.Thmex18.p1.m12" class="ltx_Math" alttext="|x^{2}-1|\leq\epsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">|x^{2}-1|\leq\epsilon</annotation></semantics></math>, podemos escrever primeiro <math id="Ch4.Thmex18.p1.m13" class="ltx_Math" alttext="|x^{2}-1|\leq\tfrac{5}{2}(x-1)" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">|x^{2}-1|\leq\tfrac{5}{2}(x-1)</annotation></semantics></math>, e procurar
+primeiro
+resolver <math id="Ch4.Thmex18.p1.m14" class="ltx_Math" alttext="\tfrac{5}{2}(x-1)\leq\epsilon" display="inline"><semantics><mrow><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\tfrac{5}{2}(x-1)\leq\epsilon</annotation></semantics></math>, que dá <math id="Ch4.Thmex18.p1.m15" class="ltx_Math" alttext="x\leq 1+\tfrac{2}{5}\epsilon" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mrow><mn>1</mn><mo>+</mo><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>⁢</mo><mi>ϵ</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">x\leq 1+\tfrac{2}{5}\epsilon</annotation></semantics></math>. Assim,
+mostramos que se <math id="Ch4.Thmex18.p1.m16" class="ltx_Math" alttext="1&lt;x\leq 1+\delta" display="inline"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mi>x</mi><mo>≤</mo><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mrow><annotation encoding="application/x-tex">1&lt;x\leq 1+\delta</annotation></semantics></math>, com
+<math id="Ch4.Thmex18.p1.m17" class="ltx_Math" alttext="\delta{:=}\frac{2\epsilon}{5}" display="inline"><semantics><mrow><mi>δ</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>ϵ</mi></mrow><mn>5</mn></mfrac></mrow><annotation encoding="application/x-tex">\delta{:=}\frac{2\epsilon}{5}</annotation></semantics></math>,
+teremos
+<math id="Ch4.Thmex18.p1.m18" class="ltx_Math" alttext="|x^{2}-1|=|x+1|\cdot|x-1|\leq\tfrac{3}{2}(x-1)\leq\tfrac{3}{2}\delta=\epsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>≤</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>δ</mi></mrow><mo>=</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">|x^{2}-1|=|x+1|\cdot|x-1|\leq\tfrac{3}{2}(x-1)\leq\tfrac{3}{2}\delta=\epsilon</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Foi usado implicitamente em (<a href="#Ch4.E18" title="In Exemplo 4.17. ‣ 4.2 Limites laterais: lim_{𝑥→𝑎^±}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.18</span></a>) que se cada termo de uma soma possui
+limite, então a soma possui limite também, e este vale a soma dos limites; segue do
+seguinte resultado, que é o análogo da Proposição <a href="Ch4.S1.html#Ch4.Thmpro1" title="Proposição 4.1. ‣ 4.1.2 A definição de limite ‣ 4.1 Limites lim_{𝑥→±∞}{𝑓⁢(𝑥)} ‣ Capítulo 4 Limites ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a>:</p>
+</div>
+<div id="Ch4.Thmpro3" class="ltx_theorem ltx_theorem_pro">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 4.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmpro3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suponha que duas funções, <math id="Ch4.Thmpro3.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e <math id="Ch4.Thmpro3.p1.m2" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+possuam limites quando <math id="Ch4.Thmpro3.p1.m3" class="ltx_Math" alttext="x\to a^{+}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to a^{+}</annotation></semantics></math>:</span></p>
+<div id="Ch4.Ex82" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex82.m1" class="ltx_Math" alttext="\lim_{x\to a^{+}}f(x)=\ell_{1}\,,\quad\lim_{x\to a^{+}}g(x)=\ell_{2}\,," display="block"><semantics><mrow><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></mrow><mo rspace="1.089em">,</mo><mrow><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><msub><mi mathvariant="normal">ℓ</mi><mn>2</mn></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{+}}f(x)=\ell_{1}\,,\quad\lim_{x\to a^{+}}g(x)=\ell_{2}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">onde <math id="Ch4.Thmpro3.p1.m4" class="ltx_Math" alttext="\ell_{1}" display="inline"><semantics><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\ell_{1}</annotation></semantics></math> e <math id="Ch4.Thmpro3.p1.m5" class="ltx_Math" alttext="\ell_{2}" display="inline"><semantics><msub><mi mathvariant="normal">ℓ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\ell_{2}</annotation></semantics></math> são ambos <em class="ltx_emph ltx_font_upright">finitos</em>. Então</span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.Sx11.EGx48" class="ltx_equationgroup ltx_eqn_gather ltx_eqn_table">
+
+<tbody id="Ch4.E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch4.E19.m1" class="ltx_Math" alttext="\displaystyle\lim_{x\to a^{+}}\{f(x)+g(x)\}=\lim_{x\to a^{+}}f(x)+\lim_{x\to a%
+^{+}}g(x)=\ell_{1}+\ell_{2}\,," display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mo lspace="0em" stretchy="false">{</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub><mo>+</mo><msub><mi mathvariant="normal">ℓ</mi><mn>2</mn></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\lim_{x\to a^{+}}\{f(x)+g(x)\}=\lim_{x\to a^{+}}f(x)+\lim_{x\to a%
+^{+}}g(x)=\ell_{1}+\ell_{2}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.19)</span></td>
+</tr></tbody>
+<tbody id="Ch4.E20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch4.E20.m1" class="ltx_Math" alttext="\displaystyle\lim_{x\to a^{+}}f(x)g(x)=\bigl{(}\lim_{x\to a^{+}}f(x)\bigr{)}%
+\cdot\bigl{(}\lim_{x\to a^{+}}g(x)\bigr{)}=\ell_{1}\cdot\ell_{2}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%" rspace="0.055em">)</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi mathvariant="normal">ℓ</mi><mn>2</mn></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\lim_{x\to a^{+}}f(x)g(x)=\bigl{(}\lim_{x\to a^{+}}f(x)\bigr{)}%
+\cdot\bigl{(}\lim_{x\to a^{+}}g(x)\bigr{)}=\ell_{1}\cdot\ell_{2}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.20)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Além disso, se <math id="Ch4.Thmpro3.p1.m6" class="ltx_Math" alttext="\ell_{2}\neq 0" display="inline"><semantics><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>2</mn></msub><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\ell_{2}\neq 0</annotation></semantics></math>, então</span></p>
+<div id="Ch4.E21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E21.m1" class="ltx_Math" alttext="\lim_{x\to a^{+}}\frac{f(x)}{g(x)}=\frac{\lim_{x\to a^{+}}f(x)}{\lim_{x\to a^{%
++}}g(x)}=\frac{\ell_{1}}{\ell_{2}}\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></msub><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo>=</mo><mfrac><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub><msub><mi mathvariant="normal">ℓ</mi><mn>2</mn></msub></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{+}}\frac{f(x)}{g(x)}=\frac{\lim_{x\to a^{+}}f(x)}{\lim_{x\to a^{%
++}}g(x)}=\frac{\ell_{1}}{\ell_{2}}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.21)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">As mesmas propriedades valem no caso <math id="Ch4.Thmpro3.p1.m7" class="ltx_Math" alttext="x\to a^{-}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">x\to a^{-}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Nos exemplos anteriores, os limites laterais <math id="p7.m1" class="ltx_Math" alttext="x\to a^{+}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to a^{+}</annotation></semantics></math> e <math id="p7.m2" class="ltx_Math" alttext="x\to a^{-}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">x\to a^{-}</annotation></semantics></math> eram iguais.
+Vejamos um exemplo onde eles são diferentes.</p>
+</div>
+<div id="Ch4.Thmex19" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 4.19</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmex19.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch4.Thmex19.p1.m1" class="ltx_Math" alttext="f(x)=\tfrac{x}{3}+\frac{x}{2|x|}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>+</mo><mfrac><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">f(x)=\tfrac{x}{3}+\frac{x}{2|x|}</annotation></semantics></math> na vizinhança de <math id="Ch4.Thmex19.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math> (em que ela
+nem é definida).
+Usando a definição de <math id="Ch4.Thmex19.p1.m3" class="ltx_Math" alttext="|x|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|x|</annotation></semantics></math>, podemos reescrever <math id="Ch4.Thmex19.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> da seguinte maneira:</span></p>
+<div id="Ch4.Ex83" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex83.m1" class="ltx_Math" alttext="f(x)=\begin{cases}\tfrac{x}{3}+\tfrac{1}{2}&amp;\text{ se }x&gt;0\,,\\
+\tfrac{x}{3}-\tfrac{1}{2}&amp;\text{ se }x&lt;0\,.\\
+\end{cases}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mstyle displaystyle="false"><mfrac><mi>x</mi><mn>3</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mstyle displaystyle="false"><mfrac><mi>x</mi><mn>3</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(x)=\begin{cases}\tfrac{x}{3}+\tfrac{1}{2}&amp;\text{ se }x&gt;0\,,\\
+\tfrac{x}{3}-\tfrac{1}{2}&amp;\text{ se }x&lt;0\,.\\
+\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Logo,</span></p>
+<div id="Ch4.Ex84" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex84.m1" class="ltx_Math" alttext="\lim_{x\to 0^{+}}f(x)=\lim_{x\to 0^{+}}\bigl{\{}\tfrac{x}{3}+\tfrac{1}{2}\bigr%
+{\}}=+\tfrac{1}{2}\,,\quad\quad\text{ e }\quad\quad\lim_{x\to 0^{-}}f(x)=\lim_%
+{x\to 0^{-}}\bigl{\{}\tfrac{x}{3}-\tfrac{1}{2}\bigr{\}}=-\tfrac{1}{2}\,." display="block"><semantics><mrow><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mstyle displaystyle="false"><mfrac><mi>x</mi><mn>3</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mrow><mo lspace="0.170em" rspace="2.567em">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic"> e </mtext><mspace width="2.567em"></mspace><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>−</mo></msup></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>−</mo></msup></mrow></munder><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mstyle displaystyle="false"><mfrac><mi>x</mi><mn>3</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\to 0^{+}}f(x)=\lim_{x\to 0^{+}}\bigl{\{}\tfrac{x}{3}+\tfrac{1}{2}\bigr%
+{\}}=+\tfrac{1}{2}\,,\quad\quad\text{ e }\quad\quad\lim_{x\to 0^{-}}f(x)=\lim_%
+{x\to 0^{-}}\bigl{\{}\tfrac{x}{3}-\tfrac{1}{2}\bigr{\}}=-\tfrac{1}{2}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Isso significa que o gráfico de <math id="Ch4.Thmex19.p1.m5" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>, ao <math id="Ch4.Thmex19.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> crescer de <math id="Ch4.Thmex19.p1.m7" class="ltx_Math" alttext="&lt;0" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&lt;0</annotation></semantics></math> para <math id="Ch4.Thmex19.p1.m8" class="ltx_Math" alttext="&gt;0" display="inline"><semantics><mrow><mi></mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&gt;0</annotation></semantics></math> e atravessar
+<math id="Ch4.Thmex19.p1.m9" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>, dá um <em class="ltx_emph ltx_font_upright">pulo</em> de valores pertos de <math id="Ch4.Thmex19.p1.m10" class="ltx_Math" alttext="-\tfrac{1}{2}" display="inline"><semantics><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">-\tfrac{1}{2}</annotation></semantics></math> para valores perto de <math id="Ch4.Thmex19.p1.m11" class="ltx_Math" alttext="+\tfrac{1}{2}" display="inline"><semantics><mrow><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">+\tfrac{1}{2}</annotation></semantics></math>.
+Diz-se que essa função é <em class="ltx_emph ltx_font_upright">descontínua</em> em <math id="Ch4.Thmex19.p1.m12" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-81.svg" alt="" id="Ch4.Thmex19.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="189" height="137"></div>
+</div>
+</div>
+<div id="Ch4.Thmexo12" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.12</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo12.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja</span></p>
+<div id="Ch4.Ex85" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex85.m1" class="ltx_Math" alttext="f(x){:=}\begin{cases}5-x&amp;\text{ se }x\geq 2\\
+\frac{x}{2}&amp;\text{ se }x&lt;2\,.\end{cases}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>5</mn><mo>−</mo><mi>x</mi></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≥</mo><mn>2</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mstyle displaystyle="false"><mfrac><mi>x</mi><mn>2</mn></mfrac></mstyle></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>2</mn></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(x){:=}\begin{cases}5-x&amp;\text{ se }x\geq 2\\
+\frac{x}{2}&amp;\text{ se }x&lt;2\,.\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule os limites laterais <math id="Ch4.Thmexo12.p1.m1" class="ltx_Math" alttext="\lim_{x\to a^{\pm}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>±</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to a^{\pm}}f(x)</annotation></semantics></math> para <math id="Ch4.Thmexo12.p1.m2" class="ltx_Math" alttext="a=0" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math>, <math id="Ch4.Thmexo12.p1.m3" class="ltx_Math" alttext="a=2" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">a=2</annotation></semantics></math>, <math id="Ch4.Thmexo12.p1.m4" class="ltx_Math" alttext="a=5" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">a=5</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Às vezes, limites laterais não existem:</p>
+</div>
+<div id="Ch4.Thmex20" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 4.20</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmex20.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Por exemplo, o limite lateral <math id="Ch4.Thmex20.p1.m1" class="ltx_Math" alttext="x\to 0^{+}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">x\to 0^{+}</annotation></semantics></math> da
+função <math id="Ch4.Thmex20.p1.m2" class="ltx_Math" alttext="\operatorname{sen}\tfrac{1}{x}" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\operatorname{sen}\tfrac{1}{x}</annotation></semantics></math> (que obviamente não é definida em <math id="Ch4.Thmex20.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>)
+não existe:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-82.svg" alt="" id="Ch4.Thmex20.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="292" height="105"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe, no entanto, que <math id="Ch4.Thmex20.p1.m4" class="ltx_Math" alttext="\lim_{x\to\infty}\operatorname{sen}\tfrac{1}{x}=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x\to\infty}\operatorname{sen}\tfrac{1}{x}=0</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch4.Thmexo13" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.13</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo13.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere a função definida por</span></p>
+<div id="Ch4.Ex86" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex86.m1" class="ltx_Math" alttext="f(x)=\begin{cases}+1&amp;\text{ se $x$ \'{e} racional di\'{a}dico}\,,\\
+0&amp;\text{ caso contr\'{a}rio}.\end{cases}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mo>+</mo><mn>1</mn></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mi>x</mi><mtext class="ltx_mathvariant_italic"> é racional diádico</mtext></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext class="ltx_mathvariant_italic"> caso contrário</mtext><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(x)=\begin{cases}+1&amp;\text{ se $x$ \'{e} racional di\'{a}dico}\,,\\
+0&amp;\text{ caso contr\'{a}rio}.\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estude os limites laterais de <math id="Ch4.Thmexo13.p1.m1" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> num ponto qualquer <math id="Ch4.Thmexo13.p1.m2" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch4.Thmexo14" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 4.14</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexo14.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch4.Thmexo14.p1.m1" class="ltx_Math" alttext="f(x){:=}\lfloor x\rfloor" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow></mrow><annotation encoding="application/x-tex">f(x){:=}\lfloor x\rfloor</annotation></semantics></math>.
+Calcule
+<math id="Ch4.Thmexo14.p1.m2" class="ltx_Math" alttext="\lim_{x\to\frac{1}{2}^{+}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\frac{1}{2}^{+}}f(x)</annotation></semantics></math>, <math id="Ch4.Thmexo14.p1.m3" class="ltx_Math" alttext="\lim_{x\to\frac{1}{2}^{-}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>−</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\frac{1}{2}^{-}}f(x)</annotation></semantics></math>,
+<math id="Ch4.Thmexo14.p1.m4" class="ltx_Math" alttext="\lim_{x\to\frac{1}{3}^{+}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\frac{1}{3}^{+}}f(x)</annotation></semantics></math>, <math id="Ch4.Thmexo14.p1.m5" class="ltx_Math" alttext="\lim_{x\to\frac{1}{3}^{-}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>−</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to\frac{1}{3}^{-}}f(x)</annotation></semantics></math>.
+Calcule
+<math id="Ch4.Thmexo14.p1.m6" class="ltx_Math" alttext="\lim_{x\to 1^{+}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{+}}f(x)</annotation></semantics></math>, <math id="Ch4.Thmexo14.p1.m7" class="ltx_Math" alttext="\lim_{x\to 1^{-}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>−</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to 1^{-}}f(x)</annotation></semantics></math>. Calcule, para qualquer número
+inteiro <math id="Ch4.Thmexo14.p1.m8" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, <math id="Ch4.Thmexo14.p1.m9" class="ltx_Math" alttext="\lim_{x\to n^{+}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>n</mi><mo>+</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to n^{+}}f(x)</annotation></semantics></math>, <math id="Ch4.Thmexo14.p1.m10" class="ltx_Math" alttext="\lim_{x\to n^{-}}f(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mi>n</mi><mo>−</mo></msup></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\to n^{-}}f(x)</annotation></semantics></math>.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

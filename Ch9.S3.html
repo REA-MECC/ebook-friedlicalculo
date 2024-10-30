@@ -1,0 +1,626 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch9.S2.html" title="9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="next" href="Ch9.S4.html" title="9.4 Áreas de regiões do plano ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S1.html" title="9.1 Introdução ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S2.html" title="9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S4.html" title="9.4 Áreas de regiões do plano ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="section" href="Ch9.S5.html" title="9.5 Primitivas ‣ Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Teorema Fundamental do Cálculo, contínua, função, função área, primitiva">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="9.1" data-path="Ch9.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S1.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.1 </span></b>Introdução</a></li>
+<li data-level="9.2" data-path="Ch9.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S2.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.2 </span></b>A integral de Riemann</a></li>
+<li data-level="9.3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.3 </span></b>O Teorema Fundamental do Cálculo</a></li>
+<li data-level="9.4" data-path="Ch9.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S4.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.4 </span></b>Áreas de regiões do plano</a></li>
+<li data-level="9.5" data-path="Ch9.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch9.S5.html" title="In Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9.5 </span></b>Primitivas</a></li>
+</ol>
+</li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O Teorema Fundamental do Cálculo</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">9.3</span> O Teorema Fundamental do Cálculo</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Suponha que se queira calcular a integral de uma função
+contínua <math id="p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math>:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-155.svg" alt="" id="p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="356" height="94"></div>
+<p class="ltx_p">Podemos supor sem perda de generalidade que <math id="p1.m2" class="ltx_Math" alttext="f\geq 0" display="inline"><semantics><mrow><mi>f</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f\geq 0</annotation></semantics></math>, o que deve ajudar a entender geometricamente alguns dos raciocínios a
+seguir. Para calcular <math id="p1.m3" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> passaremos pelo estudo de uma função auxiliar,
+chamada de <span class="ltx_text ltx_font_bold">função área</span>, definida da seguinte maneira:
+</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-156.svg" alt="" id="p1.g2" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="376" height="94"></div>
+<p class="ltx_p">Isto é, <math id="p1.m4" class="ltx_Math" alttext="I(x)" display="inline"><semantics><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">I(x)</annotation></semantics></math> representa a área debaixo do gráfico de <math id="p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+entre as retas verticais em <math id="p1.m6" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> (fixa) e em <math id="p1.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> (móvel).
+Como <math id="p1.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é positiva, <math id="p1.m9" class="ltx_Math" alttext="x\mapsto I(x)" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x\mapsto I(x)</annotation></semantics></math> é crescente.
+Além disso, <math id="p1.m10" class="ltx_Math" alttext="I(a)=0" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">I(a)=0</annotation></semantics></math>, e a integral original procurada é
+<math id="p1.m11" class="ltx_Math" alttext="I(b)\equiv I" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">I(b)\equiv I</annotation></semantics></math>.</p>
+</div>
+<div id="Ch9.Thmex2" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 9.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmex2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch9.Thmex2.p1.m1" class="ltx_Math" alttext="f(x)=mx" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=mx</annotation></semantics></math>, a função área pode ser calculada explicitamente:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-157.svg" alt="" id="Ch9.Thmex2.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="324" height="96"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Podemos observar que</span></p>
+<div id="Ch9.Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex13.m1" class="ltx_Math" alttext="I^{\prime}(x)=\bigl{(}\tfrac{1}{2}m(x^{2}-a^{2})\bigr{)}^{\prime}=mx\equiv f(x%
+)\,!" display="block"><semantics><mrow><mrow><msup><mi>I</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow><mo>≡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">I^{\prime}(x)=\bigl{(}\tfrac{1}{2}m(x^{2}-a^{2})\bigr{)}^{\prime}=mx\equiv f(x%
+)\,!</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch9.Thmexo5" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcule as funções área associadas às
+funções <math id="Ch9.Thmexo5.p1.m1" class="ltx_Math" alttext="f:[0,1]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[0,1]\to\mathbb{R}</annotation></semantics></math> abaixo.</span></p>
+<div class="ltx_pagination ltx_role_start_3_columns"></div>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle{f(x)=\begin{cases}0&amp;\text{ se }x\leq\frac{1}{2}\,,\\
+1&amp;\text{ se }x&gt;\frac{1}{2}\,.\end{cases}}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≤</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo lspace="0.170em">,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mn>1</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic"> se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&gt;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{f(x)=\begin{cases}0&amp;\text{ se }x\leq\frac{1}{2}\,,\\
+1&amp;\text{ se }x&gt;\frac{1}{2}\,.\end{cases}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="f(x)=-x+1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">f(x)=-x+1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="f(x)=2x-1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">f(x)=2x-1</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_3_columns"></div>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">A relação entre <math id="p2.m1" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> e <math id="p2.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é surpreendentemente simples:
+
+</p>
+</div>
+<div id="Ch9.Thmteo2" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 9.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Teorema Fundamental do Cálculo)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmteo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch9.Thmteo2.p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math> contínua. Então a função área <math id="Ch9.Thmteo2.p1.m2" class="ltx_Math" alttext="I:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>I</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">I:[a,b]\to\mathbb{R}</annotation></semantics></math>,
+definida por <math id="Ch9.Thmteo2.p1.m3" class="ltx_Math" alttext="I(x){:=}\int_{a}^{x}f(t)dt" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">:=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">I(x){:=}\int_{a}^{x}f(t)dt</annotation></semantics></math>
+é derivável em todo <math id="Ch9.Thmteo2.p1.m4" class="ltx_Math" alttext="x\in(a,b)" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(a,b)</annotation></semantics></math>, e a sua derivada é igual a <math id="Ch9.Thmteo2.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>:</span></p>
+<div id="Ch9.E8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E8.m1" class="ltx_Math" alttext="I^{\prime}(x)=f(x)\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>I</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">I^{\prime}(x)=f(x)\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.8)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">O seguinte desenho deve ajudar a entender a prova:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-158.svg" alt="" id="p3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="433" height="175"></div>
+<p class="ltx_p">De fato, entre <math id="p3.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e <math id="p3.m2" class="ltx_Math" alttext="x+h" display="inline"><semantics><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">x+h</annotation></semantics></math>, a função área <math id="p3.m3" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> cresce de uma
+quantidade que pode ser aproximada, quando <math id="p3.m4" class="ltx_Math" alttext="h&gt;0" display="inline"><semantics><mrow><mi>h</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h&gt;0</annotation></semantics></math> é pequeno,
+pela área do retângulo pontilhado, cuja base é <math id="p3.m5" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> e altura <math id="p3.m6" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>.
+Isso sugere</p>
+<div id="Ch9.E9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E9.m1" class="ltx_Math" alttext="\lim_{h\to 0^{+}}\frac{I(x+h)-I(x)}{h}=f(x)\,." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{h\to 0^{+}}\frac{I(x+h)-I(x)}{h}=f(x)\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.9)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Seja <math id="p4.m1" class="ltx_Math" alttext="x\in(a,b)" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(a,b)</annotation></semantics></math>. Provemos (<a href="#Ch9.E9" title="In 9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.9</span></a>)
+(o limite <math id="p4.m2" class="ltx_Math" alttext="h\to 0^{-}" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">h\to 0^{-}</annotation></semantics></math> se trata da mesma maneira).
+Pela propriedade (<a href="Ch9.S2.html#I1.i3" title="item 3 ‣ Proposição 9.1. ‣ 9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>) da Proposição <a href="Ch9.S2.html#Ch9.Thmpro1" title="Proposição 9.1. ‣ 9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.1</span></a>,</p>
+<div id="Ch9.Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex14.m1" class="ltx_Math" alttext="I(x+h)=\int_{a}^{x+h}f(t)\,dt=\int_{a}^{x}f(t)\,dt+\int_{x}^{x+h}f(t)\,dt=I(x)%
++\int_{x}^{x+h}f(t)\,dt\,." display="block"><semantics><mrow><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo>∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo>∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">I(x+h)=\int_{a}^{x+h}f(t)\,dt=\int_{a}^{x}f(t)\,dt+\int_{x}^{x+h}f(t)\,dt=I(x)%
++\int_{x}^{x+h}f(t)\,dt\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Observe também que por (<a href="Ch9.S2.html#Ch9.E5" title="In 9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.5</span></a>), <math id="p4.m3" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> pode
+ser escrito como a diferença
+<math id="p4.m4" class="ltx_Math" alttext="f(x)=\frac{1}{h}f(x)\int_{x}^{x+h}\,dt=\frac{1}{h}\int_{x}^{x+h}f(x)\,dt" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>h</mi></mfrac><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msubsup><mo>∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mo lspace="0em" rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>h</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo>∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)=\frac{1}{h}f(x)\int_{x}^{x+h}\,dt=\frac{1}{h}\int_{x}^{x+h}f(x)\,dt</annotation></semantics></math>.
+Logo, (<a href="#Ch9.E9" title="In 9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.9</span></a>) é equivalente a mostrar que</p>
+<div id="Ch9.E10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E10.m1" class="ltx_Math" alttext="\frac{I(x+h)-I(x)}{h}-f(x)=\tfrac{1}{h}\int_{x}^{x+h}(f(t)-f(x))dt" display="block"><semantics><mrow><mrow><mfrac><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>h</mi></mfrac></mstyle><mo>⁢</mo><mrow><msubsup><mo rspace="0em">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\frac{I(x+h)-I(x)}{h}-f(x)=\tfrac{1}{h}\int_{x}^{x+h}(f(t)-f(x))dt</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.10)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">tende a zero quando <math id="p4.m5" class="ltx_Math" alttext="h\to 0" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\to 0</annotation></semantics></math>.
+Como <math id="p4.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é contínua em <math id="p4.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, sabemos que para todo <math id="p4.m8" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>,
+<math id="p4.m9" class="ltx_Math" alttext="-\epsilon\leq f(t)-f(x)\leq+\epsilon" display="inline"><semantics><mrow><mrow><mo>−</mo><mi>ϵ</mi></mrow><mo>≤</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mrow><mo>+</mo><mi>ϵ</mi></mrow></mrow><annotation encoding="application/x-tex">-\epsilon\leq f(t)-f(x)\leq+\epsilon</annotation></semantics></math>, desde que <math id="p4.m10" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> seja suficientemente
+perto de <math id="p4.m11" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Logo, para <math id="p4.m12" class="ltx_Math" alttext="h&gt;0" display="inline"><semantics><mrow><mi>h</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h&gt;0</annotation></semantics></math> suficientemente pequeno, a integral em
+(<a href="#Ch9.E10" title="In 9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.10</span></a>) pode ser limitada por</p>
+<div id="Ch9.Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex15.m1" class="ltx_Math" alttext="-\epsilon=\tfrac{1}{h}\int_{x}^{x+h}(-\epsilon)\,dt\leq\tfrac{1}{h}\int_{x}^{x%
++h}(f(t)-f(x))dt\leq\tfrac{1}{h}\int_{x}^{x+h}(+\epsilon)\,dt=+\epsilon\,." display="block"><semantics><mrow><mrow><mrow><mo>−</mo><mi>ϵ</mi></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>h</mi></mfrac></mstyle><mo>⁢</mo><mrow><msubsup><mo rspace="0em">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>≤</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>h</mi></mfrac></mstyle><mo>⁢</mo><mrow><msubsup><mo rspace="0em">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>≤</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>h</mi></mfrac></mstyle><mo>⁢</mo><mrow><msubsup><mo rspace="0em">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>+</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mi>ϵ</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">-\epsilon=\tfrac{1}{h}\int_{x}^{x+h}(-\epsilon)\,dt\leq\tfrac{1}{h}\int_{x}^{x%
++h}(f(t)-f(x))dt\leq\tfrac{1}{h}\int_{x}^{x+h}(+\epsilon)\,dt=+\epsilon\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">(Usamos (<a href="Ch9.S2.html#Ch9.E7" title="In Proposição 9.2. ‣ 9.2 A integral de Riemann ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.7</span></a>).)
+Isso mostra que (<a href="#Ch9.E10" title="In 9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.10</span></a>) fica arbitrariamente pequeno quando <math id="p4.m13" class="ltx_Math" alttext="h\to 0^{+}" display="inline"><semantics><mrow><mi>h</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">h\to 0^{+}</annotation></semantics></math>, o que prova (<a href="#Ch9.E9" title="In 9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.9</span></a>).
+∎</p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Assim, provamos que integral e derivada são duas noções intimamente ligadas, já
+que a função área é <em class="ltx_emph ltx_font_italic">uma função derivável cuja
+derivada é igual a <math id="p5.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></em>.</p>
+</div>
+<div id="Ch9.Thmdefin2" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 9.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmdefin2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch9.Thmdefin2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> uma função. Se <math id="Ch9.Thmdefin2.p1.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> é uma função derivável tal que</span></p>
+<div id="Ch9.Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex16.m1" class="ltx_Math" alttext="F^{\prime}(x)=f(x)" display="block"><semantics><mrow><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F^{\prime}(x)=f(x)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">para todo <math id="Ch9.Thmdefin2.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, então <math id="Ch9.Thmdefin2.p1.m4" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> é chamada <span class="ltx_text ltx_font_bold">primitiva de</span> <math id="Ch9.Thmdefin2.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+</span></p>
+</div>
+</div>
+<div id="Ch9.Thmex3" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 9.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmex3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch9.Thmex3.p1.m1" class="ltx_Math" alttext="f(x)=x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">f(x)=x</annotation></semantics></math>, então
+<math id="Ch9.Thmex3.p1.m2" class="ltx_Math" alttext="F(x)=\frac{x^{2}}{2}" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">F(x)=\frac{x^{2}}{2}</annotation></semantics></math> é primitiva de <math id="Ch9.Thmex3.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, já que</span></p>
+<div id="Ch9.Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex17.m1" class="ltx_Math" alttext="F^{\prime}(x)=\bigl{(}\frac{x^{2}}{2}\bigr{)}^{\prime}=\tfrac{1}{2}(x^{2})^{%
+\prime}=\tfrac{1}{2}2x=x\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">F^{\prime}(x)=\bigl{(}\frac{x^{2}}{2}\bigr{)}^{\prime}=\tfrac{1}{2}(x^{2})^{%
+\prime}=\tfrac{1}{2}2x=x\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que como <math id="Ch9.Thmex3.p1.m4" class="ltx_Math" alttext="(\frac{x^{2}}{2}+1)^{\prime}=x" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">(\frac{x^{2}}{2}+1)^{\prime}=x</annotation></semantics></math>,
+<math id="Ch9.Thmex3.p1.m5" class="ltx_Math" alttext="G(x)=\frac{x^{2}}{2}+1" display="inline"><semantics><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">G(x)=\frac{x^{2}}{2}+1</annotation></semantics></math> é <em class="ltx_emph ltx_font_upright">também</em> primitiva de <math id="Ch9.Thmex3.p1.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch9.Thmex4" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 9.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmex4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch9.Thmex4.p1.m1" class="ltx_Math" alttext="f(x)=\cos x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\cos x</annotation></semantics></math>, então <math id="Ch9.Thmex4.p1.m2" class="ltx_Math" alttext="F(x)=\operatorname{sen}x" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">F(x)=\operatorname{sen}x</annotation></semantics></math> é primitiva de <math id="Ch9.Thmex4.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>. Observe que
+<math id="Ch9.Thmex4.p1.m4" class="ltx_Math" alttext="G(x)=\operatorname{sen}x+14" display="inline"><semantics><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mn>14</mn></mrow></mrow><annotation encoding="application/x-tex">G(x)=\operatorname{sen}x+14</annotation></semantics></math> e <math id="Ch9.Thmex4.p1.m5" class="ltx_Math" alttext="H(x)=\operatorname{sen}x-7" display="inline"><semantics><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mn>7</mn></mrow></mrow><annotation encoding="application/x-tex">H(x)=\operatorname{sen}x-7</annotation></semantics></math> também são primitivas de <math id="Ch9.Thmex4.p1.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Os dois exemplos acima mostram que <em class="ltx_emph ltx_font_italic">uma função admite infinitas
+primitivas</em>, e que aparentemente duas primitivas de uma mesma função somente
+diferem por uma constante:</p>
+</div>
+<div id="Ch9.Thmlem1" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Lema 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmlem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch9.Thmlem1.p1.m1" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> e <math id="Ch9.Thmlem1.p1.m2" class="ltx_Math" alttext="G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math> são duas primitivas de uma mesma função <math id="Ch9.Thmlem1.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, então existe uma
+constante <math id="Ch9.Thmlem1.p1.m4" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> tal que <math id="Ch9.Thmlem1.p1.m5" class="ltx_Math" alttext="F(x)-G(x)=C" display="inline"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">F(x)-G(x)=C</annotation></semantics></math> para todo <math id="Ch9.Thmlem1.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Defina <math id="p7.m1" class="ltx_Math" alttext="m(x){:=}F(x)-G(x)" display="inline"><semantics><mrow><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">m(x){:=}F(x)-G(x)</annotation></semantics></math>. Como <math id="p7.m2" class="ltx_Math" alttext="F^{\prime}(x)=f(x)" display="inline"><semantics><mrow><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F^{\prime}(x)=f(x)</annotation></semantics></math> e <math id="p7.m3" class="ltx_Math" alttext="G^{\prime}(x)=f(x)" display="inline"><semantics><mrow><mrow><msup><mi>G</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">G^{\prime}(x)=f(x)</annotation></semantics></math>, temos
+<math id="p7.m4" class="ltx_Math" alttext="m^{\prime}(x)=0" display="inline"><semantics><mrow><mrow><msup><mi>m</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m^{\prime}(x)=0</annotation></semantics></math> para todo
+<math id="p7.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. Considere dois pontos <math id="p7.m6" class="ltx_Math" alttext="x_{1}&lt;x_{2}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">x_{1}&lt;x_{2}</annotation></semantics></math> quaisquer. Aplicando o Corólário
+(<a href="Ch6.S5.html#Ch6.Thmcor1" title="Corolário 6.1. ‣ 6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>) a <math id="p7.m7" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> no intervalo <math id="p7.m8" class="ltx_Math" alttext="[x_{1},x_{2}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[x_{1},x_{2}]</annotation></semantics></math>: existe <math id="p7.m9" class="ltx_Math" alttext="c\in[x_{1},x_{2}]" display="inline"><semantics><mrow><mi>c</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">c\in[x_{1},x_{2}]</annotation></semantics></math> tal que <math id="p7.m10" class="ltx_Math" alttext="\frac{m(x_{2})-m(x_{1})}{x_{2}-x_{1}}=m^{\prime}(c)" display="inline"><semantics><mrow><mfrac><mrow><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac><mo>=</mo><mrow><msup><mi>m</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\frac{m(x_{2})-m(x_{1})}{x_{2}-x_{1}}=m^{\prime}(c)</annotation></semantics></math>. Como <math id="p7.m11" class="ltx_Math" alttext="m^{\prime}(c)=0" display="inline"><semantics><mrow><mrow><msup><mi>m</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m^{\prime}(c)=0</annotation></semantics></math>, temos
+<math id="p7.m12" class="ltx_Math" alttext="m(x_{2})=m(x_{1})" display="inline"><semantics><mrow><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">m(x_{2})=m(x_{1})</annotation></semantics></math>. Como isso pode ser feito para qualquer ponto <math id="p7.m13" class="ltx_Math" alttext="x_{2}&lt;x_{1}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">x_{2}&lt;x_{1}</annotation></semantics></math>, temos
+que <math id="p7.m14" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> toma o mesmo valor em qualquer ponto, o que implica que é uma função
+constante.
+∎</p>
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Em geral, escreveremos uma primitiva genérica de <math id="p8.m1" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math> como</p>
+<div id="Ch9.Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex18.m1" class="ltx_Math" alttext="F(x)=\text{primitiva}+C\,," display="block"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mtext>primitiva</mtext><mo>+</mo><mi>C</mi></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">F(x)=\text{primitiva}+C\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para indicar que é sempre possível adicionar uma constante <math id="p8.m2" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> arbitrária.</p>
+</div>
+<div id="Ch9.Thmexo6" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Ache as primitivas das funções abaixo.</span></p>
+<div class="ltx_pagination ltx_role_start_4_columns"></div>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="-2" display="inline"><semantics><mrow><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">-2</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="x^{2}" display="inline"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^{2}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="x^{n}" display="inline"><semantics><msup><mi>x</mi><mi>n</mi></msup><annotation encoding="application/x-tex">x^{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (</span><math id="I2.i4.p1.m2" class="ltx_Math" alttext="n\neq-1" display="inline"><semantics><mrow><mi>n</mi><mo>≠</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">n\neq-1</annotation></semantics></math><span class="ltx_text ltx_font_italic">)</span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="\sqrt{1+x}" display="inline"><semantics><msqrt><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{1+x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i6.p1.m1" class="ltx_Math" alttext="\cos x" display="inline"><semantics><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\cos x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i7.p1.m1" class="ltx_Math" alttext="\operatorname{sen}x" display="inline"><semantics><mrow><mi>sen</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\operatorname{sen}x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I2.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i8.p1.m1" class="ltx_Math" alttext="\cos(2x)" display="inline"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\cos(2x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I2.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i9.p1.m1" class="ltx_Math" alttext="e^{x}" display="inline"><semantics><msup><mi>e</mi><mi>x</mi></msup><annotation encoding="application/x-tex">e^{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I2.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i10.p1.m1" class="ltx_Math" alttext="1-e^{-x}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">1-e^{-x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I2.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i11.p1.m1" class="ltx_Math" alttext="e^{2x}" display="inline"><semantics><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><annotation encoding="application/x-tex">e^{2x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span><div id="I2.i12.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i12.p1.m1" class="ltx_Math" alttext="3xe^{-x^{2}}" display="inline"><semantics><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup></mrow><annotation encoding="application/x-tex">3xe^{-x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i13" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">13.</span><div id="I2.i13.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i13.p1.m1" class="ltx_Math" alttext="\frac{1}{\sqrt{x}}" display="inline"><semantics><mfrac><mn>1</mn><msqrt><mi>x</mi></msqrt></mfrac><annotation encoding="application/x-tex">\frac{1}{\sqrt{x}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i14" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">14.</span><div id="I2.i14.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i14.p1.m1" class="ltx_Math" alttext="\frac{1}{x}" display="inline"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac><annotation encoding="application/x-tex">\frac{1}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i14.p1.m2" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i15" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">15.</span><div id="I2.i15.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i15.p1.m1" class="ltx_Math" alttext="\frac{1}{1+x^{2}}" display="inline"><semantics><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{1+x^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i16" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">16.</span><div id="I2.i16.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i16.p1.m1" class="ltx_Math" alttext="\frac{1}{\sqrt{1-x^{2}}}" display="inline"><semantics><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><annotation encoding="application/x-tex">\frac{1}{\sqrt{1-x^{2}}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_4_columns"></div>
+</div>
+</div>
+<div id="Ch9.Thmexo7" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que <math id="Ch9.Thmexo7.p1.m1" class="ltx_Math" alttext="(2x^{2}-2x+1)e^{2x}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">(2x^{2}-2x+1)e^{2x}</annotation></semantics></math> é primitiva da função <math id="Ch9.Thmexo7.p1.m2" class="ltx_Math" alttext="4x^{2}e^{2x}" display="inline"><semantics><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">4x^{2}e^{2x}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Mais tarde olharemos de mais perto o problema de calcular primitivas.
+Voltemos agora ao nosso problema:
+</p>
+</div>
+<div id="Ch9.Thmteo3" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 9.3</span></span><span class="ltx_text ltx_font_bold"> </span>(Teorema Fundamental do Cálculo)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmteo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch9.Thmteo3.p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathbb{R}</annotation></semantics></math> uma função contínua, e <math id="Ch9.Thmteo3.p1.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> uma primitiva de <math id="Ch9.Thmteo3.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Então</span></p>
+<div id="Ch9.E11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.E11.m1" class="ltx_Math" alttext="\int_{a}^{b}f(t)\,dt=F(b)-F(a)\equiv F(x)\big{|}_{a}^{b}\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≡</mo><msubsup><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mi>a</mi><mi>b</mi></msubsup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(t)\,dt=F(b)-F(a)\equiv F(x)\big{|}_{a}^{b}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(9.11)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Lembre que <math id="p10.m1" class="ltx_Math" alttext="\int_{a}^{b}f(t)\,dt=I(b)" display="inline"><semantics><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(t)\,dt=I(b)</annotation></semantics></math>, onde <math id="p10.m2" class="ltx_Math" alttext="I(x)" display="inline"><semantics><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">I(x)</annotation></semantics></math> é a função
+área. Ora, sabemos pelo Teorema <a href="#Ch9.Thmteo2" title="Teorema 9.2 (Teorema Fundamental do Cálculo). ‣ 9.3 O Teorema Fundamental do Cálculo ‣ Capítulo 9 Integral ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2</span></a> que <math id="p10.m3" class="ltx_Math" alttext="I(x)" display="inline"><semantics><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">I(x)</annotation></semantics></math> é primitiva
+de <math id="p10.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>. Assim, <math id="p10.m5" class="ltx_Math" alttext="I(x)=F(x)+C" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow><annotation encoding="application/x-tex">I(x)=F(x)+C</annotation></semantics></math>, onde <math id="p10.m6" class="ltx_Math" alttext="F(x)" display="inline"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(x)</annotation></semantics></math> é uma primitiva qualquer de <math id="p10.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, e
+onde se trata de achar o valor de <math id="p10.m8" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>.
+Mas <math id="p10.m9" class="ltx_Math" alttext="I(a)=0" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">I(a)=0</annotation></semantics></math> implica <math id="p10.m10" class="ltx_Math" alttext="F(a)+C=0" display="inline"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>C</mi></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F(a)+C=0</annotation></semantics></math>, logo <math id="p10.m11" class="ltx_Math" alttext="C=-F(a)" display="inline"><semantics><mrow><mi>C</mi><mo>=</mo><mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">C=-F(a)</annotation></semantics></math>, e <math id="p10.m12" class="ltx_Math" alttext="I(x)=F(x)-F(a)" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">I(x)=F(x)-F(a)</annotation></semantics></math>. Em
+particular, <math id="p10.m13" class="ltx_Math" alttext="I(b)=F(b)-F(a)" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">I(b)=F(b)-F(a)</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Ch9.Thmex5" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 9.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmex5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch9.Thmex5.p1.m1" class="ltx_Math" alttext="I=\int_{0}^{1}x^{2}dx" display="inline"><semantics><mrow><mi>I</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">I=\int_{0}^{1}x^{2}dx</annotation></semantics></math>, que representa
+a área debaixo do gráfico da parábola <math id="Ch9.Thmex5.p1.m2" class="ltx_Math" alttext="y=f(x)=x^{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=f(x)=x^{2}</annotation></semantics></math>, entre <math id="Ch9.Thmex5.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> e <math id="Ch9.Thmex5.p1.m4" class="ltx_Math" alttext="x=1" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>.
+Como <math id="Ch9.Thmex5.p1.m5" class="ltx_Math" alttext="F(x)=\frac{x^{3}}{3}" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">F(x)=\frac{x^{3}}{3}</annotation></semantics></math> é primitiva de <math id="Ch9.Thmex5.p1.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, temos</span></p>
+<div id="Ch9.Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex19.m1" class="ltx_Math" alttext="\int_{0}^{1}x^{2}\,dx=\frac{x^{3}}{3}\Big{|}_{0}^{1}=\frac{1^{3}}{3}-\frac{0^{%
+3}}{3}=\frac{1}{3}\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><msubsup><mrow><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo maxsize="160%" minsize="160%">|</mo></mrow><mn>0</mn><mn>1</mn></msubsup><mo>=</mo><mrow><mfrac><msup><mn>1</mn><mn>3</mn></msup><mn>3</mn></mfrac><mo>−</mo><mfrac><msup><mn>0</mn><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{1}x^{2}\,dx=\frac{x^{3}}{3}\Big{|}_{0}^{1}=\frac{1^{3}}{3}-\frac{0^{%
+3}}{3}=\frac{1}{3}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Podemos também calcular a integral da introdução, dessa vez usando o Teorema
+Fundamental:</span></p>
+<div id="Ch9.Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex20.m1" class="ltx_Math" alttext="\int_{0}^{1}(1-x^{2})\,dx=\int_{0}^{1}1\,dx-\int_{0}^{1}x^{2}\,dx=1-\tfrac{1}{%
+3}=\tfrac{2}{3}\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mn>1</mn><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{1}(1-x^{2})\,dx=\int_{0}^{1}1\,dx-\int_{0}^{1}x^{2}\,dx=1-\tfrac{1}{%
+3}=\tfrac{2}{3}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch9.Thmexo8" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mostre que <math id="Ch9.Thmexo8.p1.m1" class="ltx_Math" alttext="\int_{0}^{2}(x-1)\,dx=0" display="inline"><semantics><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup><mrow><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{0}^{2}(x-1)\,dx=0</annotation></semantics></math>. Como interpretar esse resultado
+geometricamente?</span></p>
+</div>
+</div>
+<div id="Ch9.Thmexo9" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 9.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch9.Thmexo9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A seguinte conta está certa? Justifique.</span></p>
+<div id="Ch9.Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch9.Ex21.m1" class="ltx_Math" alttext="\int_{-1}^{2}\frac{1}{x^{2}}\,dx=\bigl{(}-\frac{1}{x}\bigr{)}\Big{|}_{-1}^{2}=%
+-\tfrac{3}{2}\,." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></msubsup><mrow><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><msubsup><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></msubsup><mo>=</mo><mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\int_{-1}^{2}\frac{1}{x^{2}}\,dx=\bigl{(}-\frac{1}{x}\bigr{)}\Big{|}_{-1}^{2}=%
+-\tfrac{3}{2}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">O Teorema Fundamental mostra que se uma primitiva de <math id="p11.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é
+conhecida, então a integral de <math id="p11.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em qualquer intervalo <math id="p11.m3" class="ltx_Math" alttext="[c,d]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[c,d]</annotation></semantics></math> pode ser
+obtida, calculando simplesmente <math id="p11.m4" class="ltx_Math" alttext="F(d)-F(c)" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F(d)-F(c)</annotation></semantics></math>.
+Isto é, o problema de calcular integral é reduzido ao de achar uma primitiva de
+<math id="p11.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Ora, <em class="ltx_emph ltx_font_italic">calcular uma primitiva</em> é uma operação mais complexa do que calcular
+uma derivada. De fato, calcular
+uma derivada significa simplesmente aplicar mecanicamente as regras de
+derivação descritas no Capítulo <a href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6</span></a>, enquanto uma certa
+ingeniosidade pode ser necessária para achar uma primitiva, mesmo de uma
+função simples como <math id="p11.m6" class="ltx_Math" alttext="\sqrt{1+x^{2}}" display="inline"><semantics><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{1+x^{2}}</annotation></semantics></math> ou <math id="p11.m7" class="ltx_Math" alttext="\ln x" display="inline"><semantics><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\ln x</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Portanto, estudaremos <em class="ltx_emph ltx_font_italic">técnicas</em> para calcular primitivas, ao longo
+do capítulo. Por enquanto, vejamos primeiro como usar integrais para calcular
+áreas mais gerais do plano.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch9.S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch9.S4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

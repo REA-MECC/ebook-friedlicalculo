@@ -1,0 +1,636 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch6.S6.html" title="6.6 Derivada e Variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="next" href="Ch6.S8.html" title="6.8 Linearização ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S1.html" title="6.1 Retas e gráficos de funções ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S2.html" title="6.2 Reta tangente e derivada ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S3.html" title="6.3 A derivada como função ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S4.html" title="6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S5.html" title="6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S6.html" title="6.6 Derivada e Variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S8.html" title="6.8 Linearização ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S9.html" title="6.9 Derivação implícita ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S10.html" title="6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S11.html" title="6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="aceleração, instantânea, movimento, movimento oscilatório, média, retilíneo uniforme, taxa de variação, taxas relacionadas, velocidade">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="6.1" data-path="Ch6.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S1.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Retas e gráficos de funções</a></li>
+<li data-level="6.2" data-path="Ch6.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S2.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Reta tangente e derivada</a></li>
+<li data-level="6.3" data-path="Ch6.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S3.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>A derivada como função</a></li>
+<li data-level="6.4" data-path="Ch6.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S4.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>Regras de derivação</a></li>
+<li data-level="6.5" data-path="Ch6.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S5.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.5 </span></b>O Teorema de Rolle</a></li>
+<li data-level="6.6" data-path="Ch6.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S6.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.6 </span></b>Derivada e Variação</a></li>
+<li data-level="6.7" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.7 </span></b>Velocidade, aceleração, taxa de
+variação</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="6.7.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.7.1 </span></b>Taxas relacionadas</a></li>
+</ol>
+</li>
+<li data-level="6.8" data-path="Ch6.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S8.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.8 </span></b>Linearização</a></li>
+<li data-level="6.9" data-path="Ch6.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S9.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.9 </span></b>Derivação implícita</a></li>
+<li data-level="6.10" data-path="Ch6.S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S10.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.10 </span></b>Convexidade, concavidade</a></li>
+<li data-level="6.11" data-path="Ch6.S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S11.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.11 </span></b>A Regra de Bernoulli-l’Hôpital</a></li>
+</ol>
+</li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Velocidade, aceleração, taxa de
+variação</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">6.7</span> Velocidade, aceleração, taxa de
+variação</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Sabemos que o <em class="ltx_emph ltx_font_italic">sinal</em> da derivada (quando ela existe)
+permite caracterizar o crescimento de uma função.
+Mais especificamente, a derivada deve ser entendida como
+<em class="ltx_emph ltx_font_italic">taxa de variação</em>.
+O exemplo mais importante do significado da derivada como taxa
+de variação é em
+mecânica, estudando o movimento de uma partícula.
+<br class="ltx_break"></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Considere uma partícula que evolui na reta, durante um intervalo de tempo
+<math id="p2.m1" class="ltx_Math" alttext="[t_{1},t_{2}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[t_{1},t_{2}]</annotation></semantics></math>.
+Suponha que a sua posição no tempo <math id="p2.m2" class="ltx_Math" alttext="t_{1}" display="inline"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_{1}</annotation></semantics></math> seja <math id="p2.m3" class="ltx_Math" alttext="x(t_{1})" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t_{1})</annotation></semantics></math>,
+que no tempo <math id="p2.m4" class="ltx_Math" alttext="t_{2}" display="inline"><semantics><msub><mi>t</mi><mn>2</mn></msub><annotation encoding="application/x-tex">t_{2}</annotation></semantics></math> a sua posição seja <math id="p2.m5" class="ltx_Math" alttext="x(t_{2})" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t_{2})</annotation></semantics></math>, e que para
+<math id="p2.m6" class="ltx_Math" alttext="t\in[t_{1},t_{2}]" display="inline"><semantics><mrow><mi>t</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">t\in[t_{1},t_{2}]</annotation></semantics></math>, a posição seja dada por uma função <math id="p2.m7" class="ltx_Math" alttext="x(t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math>.</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-107.svg" alt="" id="p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="267" height="43"></div>
+<p class="ltx_p">A função
+<math id="p2.m8" class="ltx_Math" alttext="t\mapsto x(t)" display="inline"><semantics><mrow><mi>t</mi><mo stretchy="false">↦</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">t\mapsto x(t)</annotation></semantics></math>, para <math id="p2.m9" class="ltx_Math" alttext="t\geq 0" display="inline"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t\geq 0</annotation></semantics></math>, representa a <span class="ltx_text ltx_font_bold">trajetória</span> da partícula.</p>
+</div>
+<div id="p3" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-108.svg" alt="" id="g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="225" height="117"></div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Uma informação útil pode ser extraida da trajetória,
+olhando somente para o deslocamento entre o ponto inicial e o ponto final:
+definimos a <span class="ltx_text ltx_font_bold">velocidade média ao longo de <math id="p4.m1" class="ltx_Math" alttext="[t_{1},t_{2}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[t_{1},t_{2}]</annotation></semantics></math></span>,
+</p>
+<div id="Ch6.Ex68" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex68.m1" class="ltx_Math" alttext="\overline{v}=\frac{x(t_{2})-x(t_{1})}{t_{2}-t_{1}}\,." display="block"><semantics><mrow><mrow><mover accent="true"><mi>v</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\overline{v}=\frac{x(t_{2})-x(t_{1})}{t_{2}-t_{1}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">A interpretação de <math id="p4.m2" class="ltx_Math" alttext="\overline{v}" display="inline"><semantics><mover accent="true"><mi>v</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{v}</annotation></semantics></math> é a seguinte: se uma segunda partícula sair de
+<math id="p4.m3" class="ltx_Math" alttext="x(t_{1})" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t_{1})</annotation></semantics></math> no tempo <math id="p4.m4" class="ltx_Math" alttext="t_{1}" display="inline"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_{1}</annotation></semantics></math>, se movendo a velocidade <em class="ltx_emph ltx_font_italic">constante</em>
+<math id="p4.m5" class="ltx_Math" alttext="\overline{v}" display="inline"><semantics><mover accent="true"><mi>v</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{v}</annotation></semantics></math>, então ela chegará em <math id="p4.m6" class="ltx_Math" alttext="x(t_{1})" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t_{1})</annotation></semantics></math> no tempo <math id="p4.m7" class="ltx_Math" alttext="t_{2}" display="inline"><semantics><msub><mi>t</mi><mn>2</mn></msub><annotation encoding="application/x-tex">t_{2}</annotation></semantics></math>, junto com a
+primeira partícula. A trajetória dessa segunda partícula de velocidade
+constante <math id="p4.m8" class="ltx_Math" alttext="\overline{v}" display="inline"><semantics><mover accent="true"><mi>v</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{v}</annotation></semantics></math> é representada pela linha pontilhada do desenho
+acima.
+<br class="ltx_break"></p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Mas a primeira partícula não anda necessariamente com uma velocidade
+constante. Podemos então perguntar: como calcular a sua <em class="ltx_emph ltx_font_italic">velocidade
+instantânea</em> 
+num determinado instante <math id="p5.m1" class="ltx_Math" alttext="t_{1}&lt;t&lt;t_{2}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>&lt;</mo><mi>t</mi><mo>&lt;</mo><msub><mi>t</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">t_{1}&lt;t&lt;t_{2}</annotation></semantics></math>?
+Para isso, é necessário olhar as posições em dois instantes próximos. Se
+a partícula se
+encontra na posição <math id="p5.m2" class="ltx_Math" alttext="x(t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math> no tempo <math id="p5.m3" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>, então logo depois, no instante
+<math id="p5.m4" class="ltx_Math" alttext="t+\Delta t&gt;t" display="inline"><semantics><mrow><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>&gt;</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">t+\Delta t&gt;t</annotation></semantics></math>, ela se encontrará na posição <math id="p5.m5" class="ltx_Math" alttext="x(t+\Delta t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t+\Delta t)</annotation></semantics></math>. Logo, a sua
+velocidade média no intervalo <math id="p5.m6" class="ltx_Math" alttext="[t,t+\Delta t]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>t</mi><mo>,</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[t,t+\Delta t]</annotation></semantics></math> é dada por <math id="p5.m7" class="ltx_Math" alttext="\frac{x(t+\Delta t)-x(t)}{\Delta t}" display="inline"><semantics><mfrac><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{x(t+\Delta t)-x(t)}{\Delta t}</annotation></semantics></math>. Calcular a <em class="ltx_emph ltx_font_italic">velocidade instantânea</em> significa
+calcular a velocidade média em intervalos de tempo <math id="p5.m8" class="ltx_Math" alttext="[t,t+\Delta t]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>t</mi><mo>,</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[t,t+\Delta t]</annotation></semantics></math>
+infinitesimais:</p>
+<div id="Ch6.Ex69" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex69.m1" class="ltx_Math" alttext="v(t)=\lim_{\Delta t\to 0}\frac{x(t+\Delta t)-x(t)}{\Delta t}\equiv x^{\prime}(%
+t)\,," display="block"><semantics><mrow><mrow><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>≡</mo><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">v(t)=\lim_{\Delta t\to 0}\frac{x(t+\Delta t)-x(t)}{\Delta t}\equiv x^{\prime}(%
+t)\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">isto é, a derivada de <math id="p5.m9" class="ltx_Math" alttext="x(t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math> com respeito a <math id="p5.m10" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Vemos assim como a derivada aparece no estudo da cinemática: se <math id="p6.m1" class="ltx_Math" alttext="x(t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math>
+(em metros) é a posição da partícula no tempo <math id="p6.m2" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> (em
+segundos), então a sua velocidade instantânea neste instante é <math id="p6.m3" class="ltx_Math" alttext="v(t)=x^{\prime}(t)" display="inline"><semantics><mrow><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">v(t)=x^{\prime}(t)</annotation></semantics></math>
+metros/segundo.</p>
+</div>
+<div id="Ch6.Thmobs6" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 6.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmobs6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Existe uma relação interessante entre
+velocidade instantânea e média.
+Como consequência do Teorema de Rolle
+(e o seu Corolário <a href="Ch6.S5.html#Ch6.Thmcor1" title="Corolário 6.1. ‣ 6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>), se <math id="Ch6.Thmobs6.p1.m1" class="ltx_Math" alttext="x(t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math> for contínua
+e derivável num intervalo <math id="Ch6.Thmobs6.p1.m2" class="ltx_Math" alttext="[t_{1},t_{2}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[t_{1},t_{2}]</annotation></semantics></math>, então deve existir um instante
+<math id="Ch6.Thmobs6.p1.m3" class="ltx_Math" alttext="t_{*}\in(t_{1},t_{2})" display="inline"><semantics><mrow><msub><mi>t</mi><mo>∗</mo></msub><mo>∈</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">t_{*}\in(t_{1},t_{2})</annotation></semantics></math> tal que</span></p>
+<div id="Ch6.Ex70" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex70.m1" class="ltx_Math" alttext="\overline{v}=\frac{x(t_{2})-x(t_{1})}{t_{2}-t_{1}}=x^{\prime}(t_{*})=v(t_{*})\,." display="block"><semantics><mrow><mrow><mover accent="true"><mi>v</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></mfrac><mo>=</mo><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mo>∗</mo></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\overline{v}=\frac{x(t_{2})-x(t_{1})}{t_{2}-t_{1}}=x^{\prime}(t_{*})=v(t_{*})\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Isso implica que ao longo da sua trajetória entre <math id="Ch6.Thmobs6.p1.m4" class="ltx_Math" alttext="t_{1}" display="inline"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_{1}</annotation></semantics></math> e <math id="Ch6.Thmobs6.p1.m5" class="ltx_Math" alttext="t_{2}" display="inline"><semantics><msub><mi>t</mi><mn>2</mn></msub><annotation encoding="application/x-tex">t_{2}</annotation></semantics></math>, existe
+pelo menos um instante <math id="Ch6.Thmobs6.p1.m6" class="ltx_Math" alttext="t_{1}&lt;t_{*}&lt;t_{2}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>t</mi><mo>∗</mo></msub><mo>&lt;</mo><msub><mi>t</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">t_{1}&lt;t_{*}&lt;t_{2}</annotation></semantics></math> em que a velocidade instantânea é igual à
+velocidade média.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmex20" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.20</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex20.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere uma partícula cuja trajetória é dada por</span></p>
+<div id="Ch6.E18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E18.m1" class="ltx_Math" alttext="x(t)=v_{0}t+x_{0}\,,\quad t\geq 0" display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></mrow><annotation encoding="application/x-tex">x(t)=v_{0}t+x_{0}\,,\quad t\geq 0</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.18)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">em que <math id="Ch6.Thmex20.p1.m1" class="ltx_Math" alttext="x_{0}" display="inline"><semantics><msub><mi>x</mi><mn>0</mn></msub><annotation encoding="application/x-tex">x_{0}</annotation></semantics></math> e <math id="Ch6.Thmex20.p1.m2" class="ltx_Math" alttext="v_{0}" display="inline"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_{0}</annotation></semantics></math> são constantes.
+Como <math id="Ch6.Thmex20.p1.m3" class="ltx_Math" alttext="x(0)=x_{0}" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">x(0)=x_{0}</annotation></semantics></math>, <math id="Ch6.Thmex20.p1.m4" class="ltx_Math" alttext="x_{0}" display="inline"><semantics><msub><mi>x</mi><mn>0</mn></msub><annotation encoding="application/x-tex">x_{0}</annotation></semantics></math> é a posição inicial da partícula.
+A velocidade instantânea é dada por</span></p>
+<div id="Ch6.Ex71" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex71.m1" class="ltx_Math" alttext="x^{\prime}(t)=v_{0}\,," display="block"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">x^{\prime}(t)=v_{0}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">o que significa que a partícula se move com uma velocidade constante
+<math id="Ch6.Thmex20.p1.m5" class="ltx_Math" alttext="v_{0}" display="inline"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_{0}</annotation></semantics></math> ao longo da sua trajetória. Diz-se que apartícula segue um
+<em class="ltx_emph ltx_font_upright">movimento retilíneo uniforme</em>.</span></p>
+</div>
+<div id="Ch6.Thmex20.p2" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-109.svg" alt="" id="Ch6.Thmex20.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="225" height="117"></div>
+</div>
+<div id="Ch6.Thmex20.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que nesse caso, a velocidade média ao longo de um intervalo é
+igual à velocidade instantânea: <math id="Ch6.Thmex20.p3.m1" class="ltx_Math" alttext="\overline{v}=v_{0}" display="inline"><semantics><mrow><mover accent="true"><mi>v</mi><mo>¯</mo></mover><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\overline{v}=v_{0}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">É natural considerar também a <em class="ltx_emph ltx_font_italic">taxa de variação instantânea de
+velocidade</em>, chamada <span class="ltx_text ltx_font_bold">aceleração</span>:</p>
+<div id="Ch6.Ex72" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex72.m1" class="ltx_Math" alttext="a(t)=\lim_{\Delta t\to 0}\frac{v(t+\Delta t)-v(t)}{\Delta t}\equiv v^{\prime}(%
+t)\,." display="block"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>≡</mo><mrow><msup><mi>v</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">a(t)=\lim_{\Delta t\to 0}\frac{v(t+\Delta t)-v(t)}{\Delta t}\equiv v^{\prime}(%
+t)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por <math id="p7.m1" class="ltx_Math" alttext="a(t)" display="inline"><semantics><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">a(t)</annotation></semantics></math> ser a derivada da derivada de <math id="p7.m2" class="ltx_Math" alttext="x(t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math>, é a <span class="ltx_text ltx_font_bold">derivada segunda</span>
+de <math id="p7.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> com respeito a <math id="p7.m4" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>, denotada: <math id="p7.m5" class="ltx_Math" alttext="a(t)=x^{\prime\prime}(t)" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">a(t)=x^{\prime\prime}(t)</annotation></semantics></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">No exemplo anterior, em que uma partícula se movia com velocidade
+constante <math id="p8.m1" class="ltx_Math" alttext="v_{0}" display="inline"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_{0}</annotation></semantics></math>, a aceleração é igual a zero:</p>
+<div id="Ch6.Ex73" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex73.m1" class="ltx_Math" alttext="x^{\prime\prime}(t)=(v_{0}t+x_{0})^{\prime\prime}=(v_{0})^{\prime}=0\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>′′</mo></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">x^{\prime\prime}(t)=(v_{0}t+x_{0})^{\prime\prime}=(v_{0})^{\prime}=0\,.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch6.Thmex21" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.21</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex21.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma partícula que sai da origem no tempo <math id="Ch6.Thmex21.p1.m1" class="ltx_Math" alttext="t=0" display="inline"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t=0</annotation></semantics></math> com uma velocidade inicial
+<math id="Ch6.Thmex21.p1.m2" class="ltx_Math" alttext="v_{0}&gt;0" display="inline"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{0}&gt;0</annotation></semantics></math> e evolui sob o efeito de uma força constante <math id="Ch6.Thmex21.p1.m3" class="ltx_Math" alttext="-F&lt;0" display="inline"><semantics><mrow><mrow><mo>−</mo><mi>F</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-F&lt;0</annotation></semantics></math> (tende a
+freiar a partícula) tem uma trajetória dada por</span></p>
+<div id="Ch6.Ex74" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex74.m1" class="ltx_Math" alttext="x(t)=-\frac{F}{2m}t^{2}+v_{0}t+x_{0}\,,\quad t\geq 0\,," display="block"><semantics><mrow><mrow><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mi>F</mi><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac><mo>⁢</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">x(t)=-\frac{F}{2m}t^{2}+v_{0}t+x_{0}\,,\quad t\geq 0\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">onde <math id="Ch6.Thmex21.p1.m4" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> é a massa da partícula. Então a velocidade não é mais
+constante, e decresce com <math id="Ch6.Thmex21.p1.m5" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>:</span></p>
+<div id="Ch6.Ex75" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex75.m1" class="ltx_Math" alttext="v(t)=x^{\prime}(t)=-\frac{F}{m}t+v_{0}\,." display="block"><semantics><mrow><mrow><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mi>F</mi><mi>m</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">v(t)=x^{\prime}(t)=-\frac{F}{m}t+v_{0}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A aceleração, por sua vez,
+é constante:</span></p>
+<div id="Ch6.Ex76" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex76.m1" class="ltx_Math" alttext="a(t)=v^{\prime}(t)=-\frac{F}{m}\,." display="block"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>v</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mi>F</mi><mi>m</mi></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">a(t)=v^{\prime}(t)=-\frac{F}{m}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch6.Thmexo33" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.33</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo33.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere uma partícula cuja trajetória é dada por:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-110.svg" alt="" id="Ch6.Thmexo33.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="433" height="155"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Descreva qualitativamente a evolução da partícula em cada um dos intervalos <math id="Ch6.Thmexo33.p1.m1" class="ltx_Math" alttext="[0,t_{1}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,t_{1}]</annotation></semantics></math>,
+<math id="Ch6.Thmexo33.p1.m2" class="ltx_Math" alttext="[t_{2},t_{3}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><msub><mi>t</mi><mn>3</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[t_{2},t_{3}]</annotation></semantics></math>, etc., em termos de velocidade instantânea e aceleração.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo34" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.34</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo34.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere uma partícula se movendo ao longo da trajetória
+<math id="Ch6.Thmexo34.p1.m1" class="ltx_Math" alttext="x(t)=\frac{t^{2}}{2}-t" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>t</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>−</mo><mi>t</mi></mrow></mrow><annotation encoding="application/x-tex">x(t)=\frac{t^{2}}{2}-t</annotation></semantics></math> (medida em metros), <math id="Ch6.Thmexo34.p1.m2" class="ltx_Math" alttext="t\geq 0" display="inline"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t\geq 0</annotation></semantics></math>.
+Calcule a velocidade instântânea nos instantes <math id="Ch6.Thmexo34.p1.m3" class="ltx_Math" alttext="t_{0}=0" display="inline"><semantics><mrow><msub><mi>t</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t_{0}=0</annotation></semantics></math>, <math id="Ch6.Thmexo34.p1.m4" class="ltx_Math" alttext="t_{1}=1" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t_{1}=1</annotation></semantics></math>,
+<math id="Ch6.Thmexo34.p1.m5" class="ltx_Math" alttext="t_{2}=2" display="inline"><semantics><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">t_{2}=2</annotation></semantics></math>, <math id="Ch6.Thmexo34.p1.m6" class="ltx_Math" alttext="t_{3}=10" display="inline"><semantics><mrow><msub><mi>t</mi><mn>3</mn></msub><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">t_{3}=10</annotation></semantics></math>. O que acontece com a velocidade instantânea <math id="Ch6.Thmexo34.p1.m7" class="ltx_Math" alttext="v(t)" display="inline"><semantics><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">v(t)</annotation></semantics></math> quando
+<math id="Ch6.Thmexo34.p1.m8" class="ltx_Math" alttext="t\to\infty" display="inline"><semantics><mrow><mi>t</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">t\to\infty</annotation></semantics></math>? Descreva o que seria visto por um observador imóvel
+posicionado em <math id="Ch6.Thmexo34.p1.m9" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>, olhando para a partícula, em particular nos instantes
+<math id="Ch6.Thmexo34.p1.m10" class="ltx_Math" alttext="t_{0},\dots,t_{3}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">t_{0},\dots,t_{3}</annotation></semantics></math>.
+Calcule a aceleração <math id="Ch6.Thmexo34.p1.m11" class="ltx_Math" alttext="a(t)" display="inline"><semantics><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">a(t)</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo35" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.35</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo35.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">O movimento oscilatório 
+genérico é descrito por uma trajetória do tipo</span></p>
+<div id="Ch6.Ex77" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex77.m1" class="ltx_Math" alttext="x(t)=A\operatorname{sen}(\omega t)\,," display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sen</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">x(t)=A\operatorname{sen}(\omega t)\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">em que <math id="Ch6.Thmexo35.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é a amplitude máxima e <math id="Ch6.Thmexo35.p1.m2" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> uma
+velocidade angular.
+Estude <math id="Ch6.Thmexo35.p1.m3" class="ltx_Math" alttext="x(t)" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math>, <math id="Ch6.Thmexo35.p1.m4" class="ltx_Math" alttext="v(t)" display="inline"><semantics><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">v(t)</annotation></semantics></math> e <math id="Ch6.Thmexo35.p1.m5" class="ltx_Math" alttext="a(t)" display="inline"><semantics><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">a(t)</annotation></semantics></math>. Em particular, estude os instantes em que
+<math id="Ch6.Thmexo35.p1.m6" class="ltx_Math" alttext="v(t)" display="inline"><semantics><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">v(t)</annotation></semantics></math> e <math id="Ch6.Thmexo35.p1.m7" class="ltx_Math" alttext="a(t)" display="inline"><semantics><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">a(t)</annotation></semantics></math> são nulos ou atingem os seus valores extremos, e onde que a
+partícula se encontra nesses instantes.</span></p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Na prática, a derivada deve sempre ser interpretada como
+taxa de variação.
+Considere alguma quantidade <math id="p9.m1" class="ltx_Math" alttext="N(t)" display="inline"><semantics><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(t)</annotation></semantics></math>,
+por exemplo o número de indivíduos numa população, que depende
+de um parâmetro <math id="p9.m2" class="ltx_Math" alttext="t\geq 0" display="inline"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t\geq 0</annotation></semantics></math> que interpretaremos aqui como o
+tempo.
+A <em class="ltx_emph ltx_font_italic">taxa de variação instantânea de <math id="p9.m3" class="ltx_Math" alttext="N(t)" display="inline"><semantics><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(t)</annotation></semantics></math></em> é
+definida medindo de quanto que <math id="p9.m4" class="ltx_Math" alttext="N(t)" display="inline"><semantics><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(t)</annotation></semantics></math> cresce entre dois instantes
+consecutivos, arbitrariamente próximos:</p>
+<div id="Ch6.Ex78" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex78.m1" class="ltx_Math" alttext="\text{Taxa de varia\c{c}\~{a}o de $N$ no
+instante }t=\lim_{\Delta t\to 0}\frac{N(t+\Delta t)-N(t)}{\Delta t}\equiv N^{%
+\prime}(t)\,." display="block"><semantics><mrow><mrow><mrow><mrow><mtext>Taxa de variação de </mtext><mi>N</mi><mtext> no
+instante </mtext></mrow><mo>⁢</mo><mi>t</mi></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>≡</mo><mrow><msup><mi>N</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\text{Taxa de varia\c{c}\~{a}o de $N$ no
+instante }t=\lim_{\Delta t\to 0}\frac{N(t+\Delta t)-N(t)}{\Delta t}\equiv N^{%
+\prime}(t)\,.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Ch6.Thmexo36" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.36</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo36.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Calcula-se que, daqui a <math id="Ch6.Thmexo36.p1.m1" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> meses,
+a população de uma certa comunidade será de
+<math id="Ch6.Thmexo36.p1.m2" class="ltx_Math" alttext="P(t)=t^{2}+20t+8000" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>20</mn><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><mn>8000</mn></mrow></mrow><annotation encoding="application/x-tex">P(t)=t^{2}+20t+8000</annotation></semantics></math> habitantes.</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual é a taxa de variação da população da comunidade hoje?</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual será a taxa de variação da população
+desta comunidade daqui a 15 meses ?</span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual será a variação real da população durante o </span><math id="I1.i3.p1.m1" class="ltx_Math" alttext="16^{o}" display="inline"><semantics><msup><mn>16</mn><mi>o</mi></msup><annotation encoding="application/x-tex">16^{o}</annotation></semantics></math><span class="ltx_text ltx_font_italic">
+mês?</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.7.1</span> Taxas relacionadas</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Em vários problemas, uma quantidade <math id="SS1.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> depende de uma quantidade <math id="SS1.p1.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>:
+<math id="SS1.p1.m3" class="ltx_Math" alttext="X=f(Y)" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X=f(Y)</annotation></semantics></math>.
+Ora, se <math id="SS1.p1.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> por sua vez depende de um parâmetro por exemplo o tempo <math id="SS1.p1.m5" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+então <math id="SS1.p1.m6" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> depende de <math id="SS1.p1.m7" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> também: <math id="SS1.p1.m8" class="ltx_Math" alttext="X(t)=f(Y(t))" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X(t)=f(Y(t))</annotation></semantics></math>. A taxa de variação de <math id="SS1.p1.m9" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+com respeito a <math id="SS1.p1.m10" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> pode ser obtida usando a regra da
+cadeia:</p>
+<div id="Ch6.Ex79" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex79.m1" class="ltx_Math" alttext="X^{\prime}(t)=f^{\prime}(Y(t))Y^{\prime}(t)\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>X</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>Y</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">X^{\prime}(t)=f^{\prime}(Y(t))Y^{\prime}(t)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Essa expressão mostra como as taxas de variação de <math id="SS1.p1.m11" class="ltx_Math" alttext="X(t)" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X(t)</annotation></semantics></math> e <math id="SS1.p1.m12" class="ltx_Math" alttext="Y(t)" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y(t)</annotation></semantics></math>,
+isto é <math id="SS1.p1.m13" class="ltx_Math" alttext="X^{\prime}(t)" display="inline"><semantics><mrow><msup><mi>X</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X^{\prime}(t)</annotation></semantics></math> e <math id="SS1.p1.m14" class="ltx_math_unparsed" alttext="Y^{\prime})(t)" display="inline"><semantics><mrow><msup><mi>Y</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Y^{\prime})(t)</annotation></semantics></math>, são relacionadas.</p>
+</div>
+<div id="Ch6.Thmex22" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.22</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex22.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere um quadrado de comprimento linear <math id="Ch6.Thmex22.p1.m1" class="ltx_Math" alttext="L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>, medido em
+metros. Outras quantidades associadas ao
+quadrado podem ser expressas em função de <math id="Ch6.Thmex22.p1.m2" class="ltx_Math" alttext="L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>.
+Por exemplo, o comprimento da sua diagonal, o seu perímetro (ambos em metros), e
+a sua área (em metros quadrados):</span></p>
+<div id="Ch6.Ex80" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex80.m1" class="ltx_Math" alttext="D=\sqrt{2}L\,,\quad P=4L\,,\quad A=L^{2}\,." display="block"><semantics><mrow><mrow><mrow><mi>D</mi><mo>=</mo><mrow><msqrt><mn>2</mn></msqrt><mo>⁢</mo><mi>L</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mi>P</mi><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>L</mi></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mi>A</mi><mo>=</mo><msup><mi>L</mi><mn>2</mn></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">D=\sqrt{2}L\,,\quad P=4L\,,\quad A=L^{2}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suponha agora que <math id="Ch6.Thmex22.p1.m3" class="ltx_Math" alttext="L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> depende do tempo: <math id="Ch6.Thmex22.p1.m4" class="ltx_Math" alttext="L=L(t)" display="inline"><semantics><mrow><mi>L</mi><mo>=</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">L=L(t)</annotation></semantics></math> (<math id="Ch6.Thmex22.p1.m5" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> é medido em segundos).
+Então <math id="Ch6.Thmex22.p1.m6" class="ltx_Math" alttext="D" display="inline"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>, <math id="Ch6.Thmex22.p1.m7" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> e <math id="Ch6.Thmex22.p1.m8" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> também dependem do tempo</span></p>
+<div id="Ch6.Ex81" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex81.m1" class="ltx_Math" alttext="D(t)=\sqrt{2}L(t)\,,\quad P(t)=4L(t)\,,\quad A(t)=L(t)^{2}\,," display="block"><semantics><mrow><mrow><mrow><mrow><mi>D</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msqrt><mn>2</mn></msqrt><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>L</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">D(t)=\sqrt{2}L(t)\,,\quad P(t)=4L(t)\,,\quad A(t)=L(t)^{2}\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">e como a taxa de variação de <math id="Ch6.Thmex22.p1.m9" class="ltx_Math" alttext="L(t)" display="inline"><semantics><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">L(t)</annotation></semantics></math> é <math id="Ch6.Thmex22.p1.m10" class="ltx_Math" alttext="L^{\prime}(t)" display="inline"><semantics><mrow><msup><mi>L</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">L^{\prime}(t)</annotation></semantics></math> metros/segundo,
+as taxas de variação
+de <math id="Ch6.Thmex22.p1.m11" class="ltx_Math" alttext="D" display="inline"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>, <math id="Ch6.Thmex22.p1.m12" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> e <math id="Ch6.Thmex22.p1.m13" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> são obtidas derivando com respeito a <math id="Ch6.Thmex22.p1.m14" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>:</span></p>
+<div id="Ch6.Ex82" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex82.m1" class="ltx_Math" alttext="D^{\prime}(t)=\sqrt{2}L^{\prime}(t)\,,\quad P^{\prime}(t)=4L^{\prime}(t)\,,%
+\quad A^{\prime}(t)=2L(t)L^{\prime}(t)\,." display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>D</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msqrt><mn>2</mn></msqrt><mo>⁢</mo><msup><mi>L</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><mrow><msup><mi>P</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>L</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>L</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">D^{\prime}(t)=\sqrt{2}L^{\prime}(t)\,,\quad P^{\prime}(t)=4L^{\prime}(t)\,,%
+\quad A^{\prime}(t)=2L(t)L^{\prime}(t)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Para <math id="Ch6.Thmex22.p1.m15" class="ltx_Math" alttext="A^{\prime}(t)" display="inline"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">A^{\prime}(t)</annotation></semantics></math> usamos a regra da cadeia.)
+Suponhamos, por exemplo, que <em class="ltx_emph ltx_font_upright">o quadrado se expande de modo tal que o seu
+lado cresça a razão constante de <math id="Ch6.Thmex22.p1.m16" class="ltx_Math" alttext="6" display="inline"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math> <math id="Ch6.Thmex22.p1.m17" class="ltx_Math" alttext="m/s" display="inline"><semantics><mrow><mi>m</mi><mo>/</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">m/s</annotation></semantics></math></em>, isto é: <math id="Ch6.Thmex22.p1.m18" class="ltx_Math" alttext="L^{\prime}(t)=6" display="inline"><semantics><mrow><mrow><msup><mi>L</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">L^{\prime}(t)=6</annotation></semantics></math>.
+Logo,</span></p>
+<div id="Ch6.Ex83" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex83.m1" class="ltx_Math" alttext="D^{\prime}(t)=6\sqrt{2}\,,\quad P^{\prime}(t)=24\,,\quad A^{\prime}(t)=12L(t)\,." display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>D</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>6</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><mrow><msup><mi>P</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>24</mn></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>12</mn><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">D^{\prime}(t)=6\sqrt{2}\,,\quad P^{\prime}(t)=24\,,\quad A^{\prime}(t)=12L(t)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Isto é, a diagonal e o perímetro crescem com uma taxa constante, mas a taxa
+de variação da área depende do tamanho do quadrado: quanto maior o quadrado,
+maior a taxa <math id="Ch6.Thmex22.p1.m19" class="ltx_Math" alttext="A^{\prime}(t)" display="inline"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">A^{\prime}(t)</annotation></semantics></math>.
+Por exemplo, no instante <math id="Ch6.Thmex22.p1.m20" class="ltx_Math" alttext="t_{1}" display="inline"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_{1}</annotation></semantics></math> em que <math id="Ch6.Thmex22.p1.m21" class="ltx_Math" alttext="L(t_{1})=1" display="inline"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">L(t_{1})=1</annotation></semantics></math>, <math id="Ch6.Thmex22.p1.m22" class="ltx_Math" alttext="A^{\prime}(t_{1})=12" display="inline"><semantics><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">A^{\prime}(t_{1})=12</annotation></semantics></math> <math id="Ch6.Thmex22.p1.m23" class="ltx_Math" alttext="m^{2}/s" display="inline"><semantics><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>/</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">m^{2}/s</annotation></semantics></math>, e no
+instante <math id="Ch6.Thmex22.p1.m24" class="ltx_Math" alttext="t_{2}" display="inline"><semantics><msub><mi>t</mi><mn>2</mn></msub><annotation encoding="application/x-tex">t_{2}</annotation></semantics></math> em que <math id="Ch6.Thmex22.p1.m25" class="ltx_Math" alttext="L(t_{2})=10" display="inline"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">L(t_{2})=10</annotation></semantics></math>, <math id="Ch6.Thmex22.p1.m26" class="ltx_Math" alttext="A^{\prime}(t_{2})=120" display="inline"><semantics><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>120</mn></mrow><annotation encoding="application/x-tex">A^{\prime}(t_{2})=120</annotation></semantics></math> <math id="Ch6.Thmex22.p1.m27" class="ltx_Math" alttext="m^{2}/s" display="inline"><semantics><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>/</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">m^{2}/s</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo37" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.37</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo37.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Os lados de um cubo crescem a uma taxa de <math id="Ch6.Thmexo37.p1.m1" class="ltx_Math" alttext="0.5" display="inline"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math> metros por segundo.
+Determine a taxa de variação do volume do cubo no instante em que os lados
+medem 1) <math id="Ch6.Thmexo37.p1.m2" class="ltx_Math" alttext="10" display="inline"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math> metro 2) <math id="Ch6.Thmexo37.p1.m3" class="ltx_Math" alttext="20" display="inline"><semantics><mn>20</mn><annotation encoding="application/x-tex">20</annotation></semantics></math> metros.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo38" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.38</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo38.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Segunda prova, 27 de maio de 2011)
+Um balão esférico se enche de ar a uma taxa de <math id="Ch6.Thmexo38.p1.m1" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> metros
+cúbicos por segundo. Calcule
+a taxa com a qual o raio do balão cresce no instante em que o seu volume
+atingiu <math id="Ch6.Thmexo38.p1.m2" class="ltx_Math" alttext="\frac{4\pi}{3}" display="inline"><semantics><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac><annotation encoding="application/x-tex">\frac{4\pi}{3}</annotation></semantics></math> metros cúbicos.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo39" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.39</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo39.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma vassoura de <math id="Ch6.Thmexo39.p1.m1" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> metros está apoiada numa parede. Seja <math id="Ch6.Thmexo39.p1.m2" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+seu ponto de contato com o chão, <math id="Ch6.Thmexo39.p1.m3" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> seu ponto de contato com
+a parede. A vassoura começa a
+escorregar, <math id="Ch6.Thmexo39.p1.m4" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> se afastando da parede a
+uma velocidade de <math id="Ch6.Thmexo39.p1.m5" class="ltx_Math" alttext="0.8\,m/s" display="inline"><semantics><mrow><mrow><mn>0.8</mn><mo lspace="0.170em">⁢</mo><mi>m</mi></mrow><mo>/</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">0.8\,m/s</annotation></semantics></math>. 1) Com qual velocidade <math id="Ch6.Thmexo39.p1.m6" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> se
+aproxima do chão no instante em que <math id="Ch6.Thmexo39.p1.m7" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> está a <math id="Ch6.Thmexo39.p1.m8" class="ltx_Math" alttext="1\,m" display="inline"><semantics><mrow><mn>1</mn><mo lspace="0.170em">⁢</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">1\,m</annotation></semantics></math> da
+parede? 2) O que acontece com a
+velocidade de <math id="Ch6.Thmexo39.p1.m9" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> quando a distância de <math id="Ch6.Thmexo39.p1.m10" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> à parede se aproxima de <math id="Ch6.Thmexo39.p1.m11" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>?</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo40" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.40</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo40.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um laser em rotação (<math id="Ch6.Thmexo40.p1.m1" class="ltx_Math" alttext="0.5" display="inline"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math> rad/s.) está a <math id="Ch6.Thmexo40.p1.m2" class="ltx_Math" alttext="10" display="inline"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math> metros de uma parede
+reta. Seja <math id="Ch6.Thmexo40.p1.m3" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> a posição da marca do laser na parede, <math id="Ch6.Thmexo40.p1.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> o ponto da parede
+mais perto do laser.
+Calcule a velocidade do ponto <math id="Ch6.Thmexo40.p1.m5" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> no instante em que <math id="Ch6.Thmexo40.p1.m6" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> está 1) em <math id="Ch6.Thmexo40.p1.m7" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> 2) a
+<math id="Ch6.Thmexo40.p1.m8" class="ltx_Math" alttext="10" display="inline"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math> metros de <math id="Ch6.Thmexo40.p1.m9" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, 3) a <math id="Ch6.Thmexo40.p1.m10" class="ltx_Math" alttext="100" display="inline"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math> metros de <math id="Ch6.Thmexo40.p1.m11" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo41" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.41</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo41.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um balão cheio de hidrogênio é soltado, e sobe verticalmente a
+uma velocidade de <math id="Ch6.Thmexo41.p1.m1" class="ltx_Math" alttext="5m/s" display="inline"><semantics><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>m</mi></mrow><mo>/</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">5m/s</annotation></semantics></math>. Um observador está a <math id="Ch6.Thmexo41.p1.m2" class="ltx_Math" alttext="50m" display="inline"><semantics><mrow><mn>50</mn><mo>⁢</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">50m</annotation></semantics></math> do ponto de onde
+o balão foi largado. calcule a taxa de variação do ângulo sob o qual o
+observador vê o balão subir, no instante em que este se encontra a 1) <math id="Ch6.Thmexo41.p1.m3" class="ltx_Math" alttext="30" display="inline"><semantics><mn>30</mn><annotation encoding="application/x-tex">30</annotation></semantics></math>
+metros de
+altura, 2) <math id="Ch6.Thmexo41.p1.m4" class="ltx_Math" alttext="1000" display="inline"><semantics><mn>1000</mn><annotation encoding="application/x-tex">1000</annotation></semantics></math> metros de altura.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo42" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.42</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo42.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A pressão <math id="Ch6.Thmexo42.p1.m1" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> de um gás ideal de temperatura fixa <math id="Ch6.Thmexo42.p1.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> contido num container de
+volume <math id="Ch6.Thmexo42.p1.m3" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> satisfaz à equação <math id="Ch6.Thmexo42.p1.m4" class="ltx_Math" alttext="PV=nkT" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mi>V</mi></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow></mrow><annotation encoding="application/x-tex">PV=nkT</annotation></semantics></math>, em que <math id="Ch6.Thmexo42.p1.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> e <math id="Ch6.Thmexo42.p1.m6" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> são constantes (que
+dependem do gás). Suponha que, mantendo <math id="Ch6.Thmexo42.p1.m7" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> fixo, o gás tenha um
+volume inicial de <math id="Ch6.Thmexo42.p1.m8" class="ltx_Math" alttext="V_{1}" display="inline"><semantics><msub><mi>V</mi><mn>1</mn></msub><annotation encoding="application/x-tex">V_{1}</annotation></semantics></math>, e que ele comece a diminuir com uma
+taxa de <math id="Ch6.Thmexo42.p1.m9" class="ltx_Math" alttext="0.01" display="inline"><semantics><mn>0.01</mn><annotation encoding="application/x-tex">0.01</annotation></semantics></math> <math id="Ch6.Thmexo42.p1.m10" class="ltx_Math" alttext="m^{3}/s" display="inline"><semantics><mrow><msup><mi>m</mi><mn>3</mn></msup><mo>/</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">m^{3}/s</annotation></semantics></math>. Calcule a taxa de variação da pressão no instante em que
+o volume vale <math id="Ch6.Thmexo42.p1.m11" class="ltx_Math" alttext="V_{0}&lt;V_{1}" display="inline"><semantics><mrow><msub><mi>V</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>V</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">V_{0}&lt;V_{1}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch6.S6.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch6.S8.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

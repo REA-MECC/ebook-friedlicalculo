@@ -1,0 +1,537 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch6.S9.html" title="6.9 Derivação implícita ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="next" href="Ch6.S11.html" title="6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S1.html" title="6.1 Retas e gráficos de funções ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S2.html" title="6.2 Reta tangente e derivada ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S3.html" title="6.3 A derivada como função ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S4.html" title="6.4 Regras de derivação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S5.html" title="6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S6.html" title="6.6 Derivada e Variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S7.html" title="6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S8.html" title="6.8 Linearização ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S9.html" title="6.9 Derivação implícita ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="section" href="Ch6.S11.html" title="6.11 A Regra de Bernoulli-l’Hôpital ‣ Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="Teorema, convexa, côncava, do valor intermediário para derivada, função">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="6.1" data-path="Ch6.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S1.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Retas e gráficos de funções</a></li>
+<li data-level="6.2" data-path="Ch6.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S2.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Reta tangente e derivada</a></li>
+<li data-level="6.3" data-path="Ch6.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S3.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>A derivada como função</a></li>
+<li data-level="6.4" data-path="Ch6.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S4.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>Regras de derivação</a></li>
+<li data-level="6.5" data-path="Ch6.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S5.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.5 </span></b>O Teorema de Rolle</a></li>
+<li data-level="6.6" data-path="Ch6.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S6.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.6 </span></b>Derivada e Variação</a></li>
+<li data-level="6.7" data-path="Ch6.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S7.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.7 </span></b>Velocidade, aceleração, taxa de
+variação</a></li>
+<li data-level="6.8" data-path="Ch6.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S8.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.8 </span></b>Linearização</a></li>
+<li data-level="6.9" data-path="Ch6.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S9.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.9 </span></b>Derivação implícita</a></li>
+<li data-level="6.10" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.10 </span></b>Convexidade, concavidade</a></li>
+<li data-level="6.11" data-path="Ch6.S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S11.html" title="In Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.11 </span></b>A Regra de Bernoulli-l’Hôpital</a></li>
+</ol>
+</li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a></li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Convexidade, concavidade</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">6.10</span> Convexidade, concavidade</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Vimos na Seção <a href="Ch6.S7.html" title="6.7 Velocidade, aceleração, taxa de variação ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.7</span></a> que a segunda derivada de uma
+função aparece naturalmente ao estudar a aceleração (taxa de variação
+instantânea da
+velocidade) de uma partícula. Nesta seção veremos qual é a
+<em class="ltx_emph ltx_font_italic">interpretação geométrica</em> da segunda derivada. Comecemos com
+uma definição.</p>
+</div>
+<div id="Ch6.Thmdefin2" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 6.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmdefin2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch6.Thmdefin2.p1.m1" class="ltx_Math" alttext="I\subset\mathbb{R}" display="inline"><semantics><mrow><mi>I</mi><mo>⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">I\subset\mathbb{R}</annotation></semantics></math> um intervalo, <math id="Ch6.Thmdefin2.p1.m2" class="ltx_Math" alttext="f:I\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>I</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:I\to\mathbb{R}</annotation></semantics></math> uma função.</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é </span><span class="ltx_text ltx_font_bold ltx_font_italic">convexa</span><span class="ltx_text ltx_font_italic"> em </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math><span class="ltx_text ltx_font_italic"> se para todo </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="x,y\in I" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x,y\in I</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i1.p1.m4" class="ltx_Math" alttext="x\leq y" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\leq y</annotation></semantics></math><span class="ltx_text ltx_font_italic">,</span></p>
+<div id="Ch6.E26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E26.m1" class="ltx_Math" alttext="f\bigl{(}\frac{x+y}{2}\bigr{)}\leq\frac{f(x)+f(y)}{2}\,." display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>2</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f\bigl{(}\frac{x+y}{2}\bigr{)}\leq\frac{f(x)+f(y)}{2}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.26)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é </span><span class="ltx_text ltx_font_bold ltx_font_italic">côncava</span><span class="ltx_text ltx_font_italic"> em </span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math><span class="ltx_text ltx_font_italic"> se </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="-f" display="inline"><semantics><mrow><mo>−</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">-f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é convexa em </span><math id="I1.i2.p1.m4" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math><span class="ltx_text ltx_font_italic">, isto é,
+se para todo </span><math id="I1.i2.p1.m5" class="ltx_Math" alttext="x,y\in I" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x,y\in I</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i2.p1.m6" class="ltx_Math" alttext="x\leq y" display="inline"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\leq y</annotation></semantics></math><span class="ltx_text ltx_font_italic">,</span></p>
+<div id="Ch6.E27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E27.m1" class="ltx_Math" alttext="f\bigl{(}\frac{x+y}{2}\bigr{)}\geq\frac{f(x)+f(y)}{2}\,." display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≥</mo><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>2</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f\bigl{(}\frac{x+y}{2}\bigr{)}\geq\frac{f(x)+f(y)}{2}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.27)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Ch6.Thmobs8" class="ltx_theorem ltx_theorem_obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 6.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmobs8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que <math id="Ch6.Thmobs8.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é concava se e somente se <math id="Ch6.Thmobs8.p1.m2" class="ltx_Math" alttext="-f" display="inline"><semantics><mrow><mo>−</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">-f</annotation></semantics></math> é convexa.</span></p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Estudar a convexidade <span id="Ch6.footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_medium">2</span></span>
+                
+                
+                
+              <span class="ltx_text ltx_font_medium">A
+terminologia a respeito da convexidade pode variar,
+dependendo dos livros. Às vezes, uma função </span><em class="ltx_emph ltx_font_medium ltx_font_italic">côncava</em><span class="ltx_text ltx_font_medium"> é chamada de
+“convexa para baixo”, e uma função </span><em class="ltx_emph ltx_font_medium ltx_font_italic">convexa</em><span class="ltx_text ltx_font_medium"> é chamada de “côncava
+para cima”…
+</span></span></span></span> de uma função <math id="p2.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></span> será entendido como
+<em class="ltx_emph ltx_font_italic">determinar os intervalos em que <math id="p2.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é convexa/côncava</em>.</p>
+</div>
+<div id="Ch6.Thmex30" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.30</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex30.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A função <math id="Ch6.Thmex30.p1.m1" class="ltx_Math" alttext="f(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{2}</annotation></semantics></math> é convexa em <math id="Ch6.Thmex30.p1.m2" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>, isto é:
+<math id="Ch6.Thmex30.p1.m3" class="ltx_Math" alttext="(\frac{x+y}{2})^{2}\leq\frac{x^{2}+y^{2}}{2}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">(\frac{x+y}{2})^{2}\leq\frac{x^{2}+y^{2}}{2}</annotation></semantics></math>.
+De fato, desenvolvendo o quadrado
+<math id="Ch6.Thmex30.p1.m4" class="ltx_Math" alttext="(\frac{x+y}{2})^{2}=\frac{x^{2}+2xy+y^{2}}{4}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">(\frac{x+y}{2})^{2}=\frac{x^{2}+2xy+y^{2}}{4}</annotation></semantics></math>, assim a desigualdade
+pode ser reescrita
+<math id="Ch6.Thmex30.p1.m5" class="ltx_Math" alttext="0\leq\frac{x^{2}-2xy+y^{2}}{4}" display="inline"><semantics><mrow><mn>0</mn><mo>≤</mo><mfrac><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">0\leq\frac{x^{2}-2xy+y^{2}}{4}</annotation></semantics></math>, que é equivalente a <math id="Ch6.Thmex30.p1.m6" class="ltx_Math" alttext="0\leq\frac{(x-y)^{2}}{4}" display="inline"><semantics><mrow><mn>0</mn><mo>≤</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">0\leq\frac{(x-y)^{2}}{4}</annotation></semantics></math>.
+Mas essa desigualdade é sempre satisfeita, já que <math id="Ch6.Thmex30.p1.m7" class="ltx_Math" alttext="(x-y)^{2}\geq 0" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x-y)^{2}\geq 0</annotation></semantics></math> para qualquer
+par <math id="Ch6.Thmex30.p1.m8" class="ltx_Math" alttext="x,y" display="inline"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo47" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.47</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo47.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Usando as definições acima, mostre que</span></p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="g(x)=\sqrt{x}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow><annotation encoding="application/x-tex">g(x)=\sqrt{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é côncava em </span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="\mathbb{R}_{+}" display="inline"><semantics><msub><mi>ℝ</mi><mo>+</mo></msub><annotation encoding="application/x-tex">\mathbb{R}_{+}</annotation></semantics></math><span class="ltx_text ltx_font_italic">,</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="h(x)=\frac{1}{x}" display="inline"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">h(x)=\frac{1}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é convexa em </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="\mathbb{R}_{+}" display="inline"><semantics><msub><mi>ℝ</mi><mo>+</mo></msub><annotation encoding="application/x-tex">\mathbb{R}_{+}</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+côncava em </span><math id="I2.i2.p1.m3" class="ltx_Math" alttext="\mathbb{R}_{-}" display="inline"><semantics><msub><mi>ℝ</mi><mo>−</mo></msub><annotation encoding="application/x-tex">\mathbb{R}_{-}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Geometricamente, (<a href="#Ch6.E26" title="In item 1 ‣ Definição 6.2. ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.26</span></a>) pode ser interpretado da seguinte
+maneira:
+<math id="p3.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">convexa</span> se o gráfico de <math id="p3.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> entre dois pontos quaisquer
+<math id="p3.m3" class="ltx_Math" alttext="A=(x,f(x))" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">A=(x,f(x))</annotation></semantics></math>, <math id="p3.m4" class="ltx_Math" alttext="B=(y,f(y))" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">B=(y,f(y))</annotation></semantics></math>, fica <em class="ltx_emph ltx_font_italic">abaixo</em> do segmento <math id="p3.m5" class="ltx_Math" alttext="AB" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">AB</annotation></semantics></math>:</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-113.svg" alt="" id="p3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="197" height="110"></div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Por exemplo,</p>
+<div class="ltx_logical-block">
+          
+<div id="p4.p1" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-114.svg" alt="" id="p4.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="533" height="118"></div>
+</div>
+          
+<figure id="Ch6.F1" class="ltx_figure ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 6.1: </span>Exemplos de funções convexas.</figcaption>
+</figure>
+        
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Por outro lado, <math id="p5.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é <span class="ltx_text ltx_font_bold">côncava</span> se o gráfico de <math id="p5.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> entre dois pontos
+quaisquer <math id="p5.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="p5.m4" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> fica <em class="ltx_emph ltx_font_italic">acima</em> do segmento <math id="p5.m5" class="ltx_Math" alttext="AB" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">AB</annotation></semantics></math>. Por exemplo,</p>
+</div>
+<div class="ltx_logical-block">
+        
+<div id="p6" class="ltx_para">
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-115.svg" alt="" id="g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="472" height="109"></div>
+</div>
+        
+<figure id="Ch6.F2" class="ltx_figure ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 6.2: </span>Exemplos de funções côncavas.</figcaption>
+</figure>
+      
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Façamos agora uma observação importante a respeito do comportamento da
+derivada em relação a convexidade.
+Primeiro, vemos na Figura <a href="#Ch6.F1" title="Figura 6.1 ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a> que para qualquer uma das
+funções, se <math id="p7.m1" class="ltx_Math" alttext="x&lt;y" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x&lt;y</annotation></semantics></math> são dois pontos que pertencem a um intervalo
+em que a derivada existe, então <math id="p7.m2" class="ltx_Math" alttext="f^{\prime}(x)\leq f^{\prime}(y)" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)\leq f^{\prime}(y)</annotation></semantics></math>. Isto é, <em class="ltx_emph ltx_font_italic">a derivada de cada uma das funções convexas da
+Figura <a href="#Ch6.F1" title="Figura 6.1 ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a> é crescente.</em>
+Do mesmo jeito, vemos que
+<em class="ltx_emph ltx_font_italic">a derivada de cada uma das funções côncavas da
+Figura <a href="#Ch6.F2" title="Figura 6.2 ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a> é decrescente</em>.
+Como a variação de
+<math id="p7.m3" class="ltx_Math" alttext="f^{\prime}" display="inline"><semantics><msup><mi>f</mi><mo>′</mo></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math> é determinada a partir do estudo do sinal da derivada
+de <math id="p7.m4" class="ltx_Math" alttext="f^{\prime}" display="inline"><semantics><msup><mi>f</mi><mo>′</mo></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math> (quando ela existe), isto é, <math id="p7.m5" class="ltx_Math" alttext="(f^{\prime})^{\prime}" display="inline"><semantics><msup><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><annotation encoding="application/x-tex">(f^{\prime})^{\prime}</annotation></semantics></math>,
+vemos que a concavidade/convexidade de <math id="p7.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> pode ser obtida a partir do estudo
+do sinal da <span class="ltx_text ltx_font_bold">segunda derivada de <math id="p7.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></span>, <math id="p7.m8" class="ltx_Math" alttext="f^{\prime\prime}{:=}(f^{\prime})^{\prime}" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">f^{\prime\prime}{:=}(f^{\prime})^{\prime}</annotation></semantics></math>:</p>
+</div>
+<div id="Ch6.Thmteo3" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 6.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmteo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch6.Thmteo3.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> tal que <math id="Ch6.Thmteo3.p1.m2" class="ltx_Math" alttext="f^{\prime}(x)" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)</annotation></semantics></math> e <math id="Ch6.Thmteo3.p1.m3" class="ltx_Math" alttext="f^{\prime\prime}(x)" display="inline"><semantics><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(x)</annotation></semantics></math> ambas existam em todo ponto <math id="Ch6.Thmteo3.p1.m4" class="ltx_Math" alttext="x\in I" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x\in I</annotation></semantics></math> (<math id="Ch6.Thmteo3.p1.m5" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> um intervalo).</span></p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I3.i1.p1.m1" class="ltx_Math" alttext="f^{\prime\prime}(x)\geq 0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(x)\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> para todo </span><math id="I3.i1.p1.m2" class="ltx_Math" alttext="x\in I" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x\in I</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então </span><math id="I3.i1.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é convexa em </span><math id="I3.i1.p1.m4" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I3.i2.p1.m1" class="ltx_Math" alttext="f^{\prime\prime}(x)\leq 0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(x)\leq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> para todo </span><math id="I3.i2.p1.m2" class="ltx_Math" alttext="x\in I" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x\in I</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então </span><math id="I3.i2.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é côncava em </span><math id="I3.i2.p1.m4" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Provemos a primeira afirmação (pela Observação <a href="#Ch6.Thmobs8" title="Observação 6.8. ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.8</span></a>, a
+segunda segue por uma simples mudança de sinal).
+Para mostrar que <math id="p8.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é convexa, é preciso mostrar que</p>
+<div id="Ch6.E28" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.E28.m1" class="ltx_Math" alttext="f(z)\leq\frac{f(x)+f(y)}{2}\,," display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>2</mn></mfrac></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">f(z)\leq\frac{f(x)+f(y)}{2}\,,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.28)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">em que
+<math id="p8.m2" class="ltx_Math" alttext="x&lt;y" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x&lt;y</annotation></semantics></math> são dois pontos quaisquer de <math id="p8.m3" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>, e <math id="p8.m4" class="ltx_Math" alttext="z{:=}\frac{x+y}{2}" display="inline"><semantics><mrow><mi>z</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">z{:=}\frac{x+y}{2}</annotation></semantics></math> é o
+ponto médio entre <math id="p8.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e <math id="p8.m6" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.</p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-116.svg" alt="" id="p8.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="157" height="103"></div>
+<p class="ltx_p">Aplicaremos três vezes o Teorema do valor intermediário para a derivada
+(Corolário <a href="Ch6.S5.html#Ch6.Thmcor1" title="Corolário 6.1. ‣ 6.5 O Teorema de Rolle ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>):
+1) Para <math id="p8.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> no intervalo <math id="p8.m8" class="ltx_Math" alttext="[x,z]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[x,z]</annotation></semantics></math>: existe <math id="p8.m9" class="ltx_Math" alttext="c_{1}\in[x,z]" display="inline"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">c_{1}\in[x,z]</annotation></semantics></math> tal que</p>
+<div id="Ch6.Ex95" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex95.m1" class="ltx_Math" alttext="f(z)-f(x)=f^{\prime}(c_{1})(z-x)\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f(z)-f(x)=f^{\prime}(c_{1})(z-x)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">2) Para <math id="p8.m10" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> no intervalo <math id="p8.m11" class="ltx_Math" alttext="[z,y]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>z</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[z,y]</annotation></semantics></math>: existe <math id="p8.m12" class="ltx_Math" alttext="c_{2}\in[z,y]" display="inline"><semantics><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>z</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">c_{2}\in[z,y]</annotation></semantics></math> tal que</p>
+<div id="Ch6.Ex96" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex96.m1" class="ltx_Math" alttext="f(y)-f(z)=f^{\prime}(c_{2})(y-z)\equiv f^{\prime}(c_{2})(z-x)\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f(y)-f(z)=f^{\prime}(c_{2})(y-z)\equiv f^{\prime}(c_{2})(z-x)\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Subtraindo as duas expressões acima, obtemos
+<math id="p8.m13" class="ltx_Math" alttext="2f(z)-(f(x)+f(y))=-(f^{\prime}(c_{2})-f^{\prime}(c_{1}))(z-x)" display="inline"><semantics><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">2f(z)-(f(x)+f(y))=-(f^{\prime}(c_{2})-f^{\prime}(c_{1}))(z-x)</annotation></semantics></math>.
+3) Para <math id="p8.m14" class="ltx_Math" alttext="f^{\prime}" display="inline"><semantics><msup><mi>f</mi><mo>′</mo></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math> no intervalo <math id="p8.m15" class="ltx_Math" alttext="[c_{1},c_{2}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[c_{1},c_{2}]</annotation></semantics></math>: existe <math id="p8.m16" class="ltx_Math" alttext="\alpha\in[c_{1},c_{2}]" display="inline"><semantics><mrow><mi>α</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\alpha\in[c_{1},c_{2}]</annotation></semantics></math> tal que</p>
+<div id="Ch6.Ex97" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex97.m1" class="ltx_Math" alttext="f^{\prime}(c_{2})-f^{\prime}(c_{1})=f^{\prime\prime}(\alpha)(c_{2}-c_{1})\,." display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>−</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(c_{2})-f^{\prime}(c_{1})=f^{\prime\prime}(\alpha)(c_{2}-c_{1})\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como <math id="p8.m17" class="ltx_Math" alttext="f^{\prime\prime}(\alpha)\geq 0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(\alpha)\geq 0</annotation></semantics></math> por hipótese, temos <math id="p8.m18" class="ltx_Math" alttext="f^{\prime}(c_{2})-f^{\prime}(c_{1})\geq 0" display="inline"><semantics><mrow><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(c_{2})-f^{\prime}(c_{1})\geq 0</annotation></semantics></math>, o que
+implica <math id="p8.m19" class="ltx_Math" alttext="2f(z)-(f(x)+f(y))\leq 0" display="inline"><semantics><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2f(z)-(f(x)+f(y))\leq 0</annotation></semantics></math>, e prova (<a href="#Ch6.E28" title="In 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.28</span></a>).
+∎</p>
+</div>
+</div>
+<div id="Ch6.Thmex31" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.31</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex31.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch6.Thmex31.p1.m1" class="ltx_Math" alttext="f(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{2}</annotation></semantics></math>. Como <math id="Ch6.Thmex31.p1.m2" class="ltx_Math" alttext="f^{\prime}(x)=(x^{2})^{\prime}=2x" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=(x^{2})^{\prime}=2x</annotation></semantics></math>, e como <math id="Ch6.Thmex31.p1.m3" class="ltx_Math" alttext="f^{\prime\prime}(x)=(2x)^{\prime}=2&gt;0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>′</mo></msup><mo>=</mo><mn>2</mn><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(x)=(2x)^{\prime}=2&gt;0</annotation></semantics></math> para
+todo <math id="Ch6.Thmex31.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, o Teorema <a href="#Ch6.Thmteo3" title="Teorema 6.3. ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.3</span></a> garante que <math id="Ch6.Thmex31.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é convexa em <math id="Ch6.Thmex31.p1.m6" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>,
+como já tinha sido provado no Exemplo <a href="#Ch6.Thmex30" title="Exemplo 6.30. ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.30</span></a>.</span></p>
+</div>
+<div id="Ch6.Thmex31.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Por outro lado, se <math id="Ch6.Thmex31.p2.m1" class="ltx_Math" alttext="g(x)=x^{3}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">g(x)=x^{3}</annotation></semantics></math>, então <math id="Ch6.Thmex31.p2.m2" class="ltx_Math" alttext="g^{\prime\prime}(x)=6x" display="inline"><semantics><mrow><mrow><msup><mi>g</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>6</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">g^{\prime\prime}(x)=6x</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-117.svg" alt="" id="Ch6.Thmex31.p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="214" height="75"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Logo, (confere no gráfico visto
+no Capítulo <a href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>) <math id="Ch6.Thmex31.p2.m3" class="ltx_Math" alttext="x^{3}" display="inline"><semantics><msup><mi>x</mi><mn>3</mn></msup><annotation encoding="application/x-tex">x^{3}</annotation></semantics></math> é côncava em <math id="Ch6.Thmex31.p2.m4" class="ltx_math_unparsed" alttext="]-\infty,0]" display="inline"><semantics><mrow><mo stretchy="false">]</mo><mo>−</mo><mi mathvariant="normal">∞</mi><mn>,0</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">]-\infty,0]</annotation></semantics></math>,
+convexa em <math id="Ch6.Thmex31.p2.m5" class="ltx_Math" alttext="[0,\infty)" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[0,\infty)</annotation></semantics></math>. O ponto <math id="Ch6.Thmex31.p2.m6" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>, em que a função passa de côncava para
+convexa, é chamado de <span class="ltx_text ltx_font_bold">ponto de inflexão</span>.</span></p>
+</div>
+</div>
+<div id="Ch6.Thmex32" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 6.32</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmex32.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere <math id="Ch6.Thmex32.p1.m1" class="ltx_Math" alttext="f(x)=\ln x" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\ln x</annotation></semantics></math> para <math id="Ch6.Thmex32.p1.m2" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>. Como <math id="Ch6.Thmex32.p1.m3" class="ltx_Math" alttext="f^{\prime}(x)=\frac{1}{x}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=\frac{1}{x}</annotation></semantics></math>,
+<math id="Ch6.Thmex32.p1.m4" class="ltx_Math" alttext="f^{\prime\prime}(x)=-\frac{1}{x^{2}}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(x)=-\frac{1}{x^{2}}</annotation></semantics></math>, temos <math id="Ch6.Thmex32.p1.m5" class="ltx_Math" alttext="f^{\prime\prime}(x)&lt;0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime\prime}(x)&lt;0</annotation></semantics></math> para todo <math id="Ch6.Thmex32.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. Isto é, <em class="ltx_emph ltx_font_upright"><math id="Ch6.Thmex32.p1.m7" class="ltx_Math" alttext="\ln x" display="inline"><semantics><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\ln x</annotation></semantics></math>
+é uma função côncava</em>, como já foi observado na Figura
+(<a href="#Ch6.F2" title="Figura 6.2 ‣ 6.10 Convexidade, concavidade ‣ Capítulo 6 Derivada ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a>).</span></p>
+</div>
+</div>
+<div id="Ch6.Thmexo48" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 6.48</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch6.Thmexo48.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estude a convexidade das funções a seguir. Quando for possível, monte o gráfico.</span></p>
+<div class="ltx_pagination ltx_role_start_4_columns"></div>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="\frac{x^{3}}{3}-x" display="inline"><semantics><mrow><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\frac{x^{3}}{3}-x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="-x^{3}+5x^{2}-6x" display="inline"><semantics><mrow><mrow><mrow><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mn>5</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>−</mo><mrow><mn>6</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">-x^{3}+5x^{2}-6x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I4.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i3.p1.m1" class="ltx_Math" alttext="\scriptstyle{3x^{4}-10x^{3}-12x^{2}+10x}" display="inline"><semantics><mrow><mrow><mrow><mn mathsize="70%">3</mn><mo>⁢</mo><msup><mi mathsize="70%">x</mi><mn mathsize="71%">4</mn></msup></mrow><mo mathsize="70%">−</mo><mrow><mn mathsize="70%">10</mn><mo>⁢</mo><msup><mi mathsize="70%">x</mi><mn mathsize="71%">3</mn></msup></mrow><mo mathsize="70%">−</mo><mrow><mn mathsize="70%">12</mn><mo>⁢</mo><msup><mi mathsize="70%">x</mi><mn mathsize="71%">2</mn></msup></mrow></mrow><mo mathsize="70%">+</mo><mrow><mn mathsize="70%">10</mn><mo>⁢</mo><mi mathsize="70%">x</mi></mrow></mrow><annotation encoding="application/x-tex">\scriptstyle{3x^{4}-10x^{3}-12x^{2}+10x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I4.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i4.p1.m1" class="ltx_Math" alttext="\frac{1}{x}" display="inline"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac><annotation encoding="application/x-tex">\frac{1}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I4.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i5.p1.m1" class="ltx_Math" alttext="xe^{x}" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">xe^{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span><div id="I4.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i6.p1.m1" class="ltx_Math" alttext="\frac{x^{2}+9}{(x-3)^{2}}" display="inline"><semantics><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac><annotation encoding="application/x-tex">\frac{x^{2}+9}{(x-3)^{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="I4.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i7.p1.m1" class="ltx_Math" alttext="xe^{-3x}" display="inline"><semantics><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">xe^{-3x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="I4.i8.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i8.p1.m1" class="ltx_Math" alttext="|x|-x" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">|x|-x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I4.i9.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i9.p1.m1" class="ltx_Math" alttext="\arctan x" display="inline"><semantics><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\arctan x</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I4.i10.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i10.p1.m1" class="ltx_Math" alttext="e^{-\frac{x^{2}}{2}}" display="inline"><semantics><msup><mi>e</mi><mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><annotation encoding="application/x-tex">e^{-\frac{x^{2}}{2}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I4.i11.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i11.p1.m1" class="ltx_Math" alttext="\frac{1}{x^{2}+1}" display="inline"><semantics><mfrac><mn>1</mn><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><annotation encoding="application/x-tex">\frac{1}{x^{2}+1}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I4.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span><div id="I4.i12.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i12.p1.m1" class="ltx_Math" alttext="x+\frac{1}{x}" display="inline"><semantics><mrow><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">x+\frac{1}{x}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_end_4_columns"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch6.S9.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch6.S11.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

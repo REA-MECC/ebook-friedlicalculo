@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>7.4 Problemas de otimização ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1</title>
+<!--Generated on Thu Oct  3 10:53:46 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on Julho de 2015.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Apostila.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="up up" href="index.html" title="Cálculo 1">
+<link rel="start" href="index.html" title="Cálculo 1">
+<link rel="prev" href="Ch7.S3.html" title="7.3 A procura de extremos em intervalos fechados ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="next" href="Ch7.S5.html" title="7.5 A Lei de Snell ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S1.html" title="7.1 Extremos globais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S2.html" title="7.2 Extremos locais ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S3.html" title="7.3 A procura de extremos em intervalos fechados ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="section" href="Ch7.S5.html" title="7.5 A Lei de Snell ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Chx1.html" title="Licença e créditos ‣ Cálculo 1">
+<link rel="chapter" href="Chx2.html" title="Prefácio ‣ Cálculo 1">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Cálculo 1">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Exponencial e logaritmo ‣ Cálculo 1">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Limites ‣ Cálculo 1">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Continuidade ‣ Cálculo 1">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Derivada ‣ Cálculo 1">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1">
+<link rel="chapter" href="Ch8.html" title="Capítulo 8 Estudos de funções ‣ Cálculo 1">
+<link rel="chapter" href="Ch9.html" title="Capítulo 9 Integral ‣ Cálculo 1">
+<link rel="chapter" href="Ch10.html" title="Capítulo 10 Aplicações ‣ Cálculo 1">
+<link rel="chapter" href="Ch11.html" title="Capítulo 11 Integrais impróprias ‣ Cálculo 1">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções dos exercícios ‣ Cálculo 1">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Cálculo 1">
+<meta name="keywords" lang="pt-BR" content="otimização">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Cálculo 1</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Cálculo 1" class="ltx_ref">Licença e créditos</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Cálculo 1" class="ltx_ref">Prefácio</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Funções</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Exponencial e logaritmo</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Limites</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Continuidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Derivada</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch7.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Extremos e problemas de otimização</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="7.1" data-path="Ch7.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S1.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.1 </span></b>Extremos globais</a></li>
+<li data-level="7.2" data-path="Ch7.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S2.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.2 </span></b>Extremos locais</a></li>
+<li data-level="7.3" data-path="Ch7.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S3.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.3 </span></b>A procura de extremos em intervalos
+fechados</a></li>
+<li data-level="7.4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.4 </span></b>Problemas de otimização</a></li>
+<li data-level="7.5" data-path="Ch7.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S5.html" title="In Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.5 </span></b>A Lei de Snell</a></li>
+</ol>
+</li>
+<li data-level="8" data-path="Ch8.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch8.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Estudos de funções</a></li>
+<li data-level="9" data-path="Ch9.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch9.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Integral</a></li>
+<li data-level="10" data-path="Ch10.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch10.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Aplicações</a></li>
+<li data-level="11" data-path="Ch11.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch11.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Integrais impróprias</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Cálculo 1" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções dos exercícios</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Cálculo 1" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Problemas de otimização</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">7.4</span> Problemas de otimização</h1>
+
+<div id="Ch7.Thmex12" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 7.12</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmex12.p1" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph">Dentre os retângulos contidos debaixo da parábola <math id="Ch7.Thmex12.p1.m1" class="ltx_Math" alttext="y=1-x^{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">y=1-x^{2}</annotation></semantics></math>, com o
+lado inferior no eixo <math id="Ch7.Thmex12.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, qual é que tem maior área?</em><span class="ltx_text ltx_font_italic">
+Considere a família dos retângulos inscritos debaixo da parábola:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-125.svg" alt="" id="Ch7.Thmex12.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="120" height="74"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Fixemos um retângulo e chamemos de
+<math id="Ch7.Thmex12.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> a metade do comprimento do lado horizontal.
+Como os cantos superiores estão
+no gráfico de <math id="Ch7.Thmex12.p1.m4" class="ltx_Math" alttext="y=1-x^{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">y=1-x^{2}</annotation></semantics></math>, a altura do retângulo é
+igual a <math id="Ch7.Thmex12.p1.m5" class="ltx_Math" alttext="1-x^{2}" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1-x^{2}</annotation></semantics></math>. Portanto, a área em função de <math id="Ch7.Thmex12.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é
+dada pela função</span></p>
+<div id="Ch7.Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex2.m1" class="ltx_Math" alttext="A(x)=2x(1-x^{2})\,." display="block"><semantics><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">A(x)=2x(1-x^{2})\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que <math id="Ch7.Thmex12.p1.m7" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> tem domínio <math id="Ch7.Thmex12.p1.m8" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math> (o menor lado horizontal possível é <math id="Ch7.Thmex12.p1.m9" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>, o
+maior é
+<math id="Ch7.Thmex12.p1.m10" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>).
+Para achar os valores extremos de <math id="Ch7.Thmex12.p1.m11" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, procuremos os seus pontos críticos em
+<math id="Ch7.Thmex12.p1.m12" class="ltx_Math" alttext="(0,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>, soluções de <math id="Ch7.Thmex12.p1.m13" class="ltx_Math" alttext="A^{\prime}(x)=0" display="inline"><semantics><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A^{\prime}(x)=0</annotation></semantics></math>.
+Como <math id="Ch7.Thmex12.p1.m14" class="ltx_Math" alttext="A^{\prime}(x)=2-6x^{2}" display="inline"><semantics><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">A^{\prime}(x)=2-6x^{2}</annotation></semantics></math>, o único ponto crítico é
+<math id="Ch7.Thmex12.p1.m15" class="ltx_Math" alttext="x_{*}=\frac{1}{\sqrt{3}}" display="inline"><semantics><mrow><msub><mi>x</mi><mo>∗</mo></msub><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mrow><annotation encoding="application/x-tex">x_{*}=\frac{1}{\sqrt{3}}</annotation></semantics></math>. O estudo do
+sinal mostra que <math id="Ch7.Thmex12.p1.m16" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math>
+é um ponto de máximo local de <math id="Ch7.Thmex12.p1.m17" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>. Como <math id="Ch7.Thmex12.p1.m18" class="ltx_Math" alttext="A(0)=0" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A(0)=0</annotation></semantics></math> e
+<math id="Ch7.Thmex12.p1.m19" class="ltx_Math" alttext="A(1)=0" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A(1)=0</annotation></semantics></math>, o máximo global é atingido em <math id="Ch7.Thmex12.p1.m20" class="ltx_Math" alttext="x_{*}" display="inline"><semantics><msub><mi>x</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">x_{*}</annotation></semantics></math> mesmo. Logo o retângulo de
+maior área tem largura <math id="Ch7.Thmex12.p1.m21" class="ltx_Math" alttext="2x_{*}\simeq 1.154" display="inline"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mo>∗</mo></msub></mrow><mo>≃</mo><mn>1.154</mn></mrow><annotation encoding="application/x-tex">2x_{*}\simeq 1.154</annotation></semantics></math> e altura
+<math id="Ch7.Thmex12.p1.m22" class="ltx_Math" alttext="1-x_{*}^{2}=\frac{2}{3}=0.666\dots" display="inline"><semantics><mrow><mrow><mn>1</mn><mo>−</mo><msubsup><mi>x</mi><mo>∗</mo><mn>2</mn></msubsup></mrow><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>=</mo><mrow><mn>0.666</mn><mo>⁢</mo><mi>…</mi></mrow></mrow><annotation encoding="application/x-tex">1-x_{*}^{2}=\frac{2}{3}=0.666\dots</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">O método usado neste último exemplo pode ser usado na resolução de
+outros problemas:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Escolher uma variável que descreve a situação e os
+objetos envolvidos no problema. Determinar os valores possíveis dessa
+variável.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Montar uma função dessa variável, que represente a quantidade a
+ser maximizada (ou minimizada).</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p">Resolver o problema de otimização correspondente, usando as
+ferramentas descritas na Seção <a href="Ch7.S3.html" title="7.3 A procura de extremos em intervalos fechados ‣ Capítulo 7 Extremos e problemas de otimização ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.3</span></a>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Ch7.Thmexo5" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual é o retângulo de maior área que pode ser inscrito</span></p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">em um círculo de raio </span><math id="I2.i1.p1.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math><span class="ltx_text ltx_font_italic">?</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">no triângulo determinado pelas três retas
+</span><math id="I2.i2.p1.m1" class="ltx_Math" alttext="y=x" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">y=x</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="y=-2x+12" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>12</mn></mrow></mrow><annotation encoding="application/x-tex">y=-2x+12</annotation></semantics></math><span class="ltx_text ltx_font_italic"> e </span><math id="I2.i2.p1.m3" class="ltx_Math" alttext="y=0" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">?</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Ch7.Thmexo6" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Segunda prova, Segundo semestre de 2011)
+Considere a família de todos os triângulos isósceles cujos dois lados iguais
+tem tamanho igual a <math id="Ch7.Thmexo6.p1.m1" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-126.svg" alt="" id="Ch7.Thmexo6.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="78" height="42"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual desses triângulos tem maior área?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo7" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Dentre todos os retângulos de perímetro fixo igual a <math id="Ch7.Thmexo7.p1.m1" class="ltx_Math" alttext="L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>, qual é o de maior
+área?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo8" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma corda de tamanho <math id="Ch7.Thmexo8.p1.m1" class="ltx_Math" alttext="L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> é cortada em dois pedaços. Com o primeiro pedaço,
+faz-se um quadrado, e com o segundo, um círculo. Como que a corda deve ser
+cortada para que a área total (quadrado <math id="Ch7.Thmexo8.p1.m2" class="ltx_Math" alttext="+" display="inline"><semantics><mo>+</mo><annotation encoding="application/x-tex">+</annotation></semantics></math>
+círculo) seja máxima? mínima?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmex13" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 7.13</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmex13.p1" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph">Qual é o ponto <math id="Ch7.Thmex13.p1.m1" class="ltx_Math" alttext="Q_{*}" display="inline"><semantics><msub><mi>Q</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">Q_{*}</annotation></semantics></math> da reta <math id="Ch7.Thmex13.p1.m2" class="ltx_Math" alttext="y={2x}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">y={2x}</annotation></semantics></math> que está mais próximo do ponto
+<math id="Ch7.Thmex13.p1.m3" class="ltx_Math" alttext="P=(1,0)" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>1,0</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P=(1,0)</annotation></semantics></math>?</em><span class="ltx_text ltx_font_italic"></span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-127.svg" alt="" id="Ch7.Thmex13.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="201" height="115"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Ch7.Thmex13.p1.m4" class="ltx_Math" alttext="Q=(x,y)" display="inline"><semantics><mrow><mi>Q</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Q=(x,y)</annotation></semantics></math> é um ponto qualquer do plano, então</span></p>
+<div id="Ch7.Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex3.m1" class="ltx_Math" alttext="d(Q,P)=\sqrt{(x-1)^{2}+y^{2}}\,." display="block"><semantics><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">d(Q,P)=\sqrt{(x-1)^{2}+y^{2}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Mas se <math id="Ch7.Thmex13.p1.m5" class="ltx_Math" alttext="Q" display="inline"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> pertence à reta, então <math id="Ch7.Thmex13.p1.m6" class="ltx_Math" alttext="y=2x" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">y=2x</annotation></semantics></math> e podemos escrever a
+distância em função da variável <math id="Ch7.Thmex13.p1.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> só: <math id="Ch7.Thmex13.p1.m8" class="ltx_Math" alttext="d(Q,P)=f(x)" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d(Q,P)=f(x)</annotation></semantics></math>, onde</span></p>
+<div id="Ch7.Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex4.m1" class="ltx_Math" alttext="f(x)=\sqrt{(x-1)^{2}+(2x)^{2}}=\sqrt{5x^{2}-2x+1}\," display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mrow><mrow><mn>5</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">f(x)=\sqrt{(x-1)^{2}+(2x)^{2}}=\sqrt{5x^{2}-2x+1}\,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">é a função que queremos <em class="ltx_emph ltx_font_upright">minimizar</em>.
+Como <math id="Ch7.Thmex13.p1.m9" class="ltx_Math" alttext="Q" display="inline"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> pode se mover na reta toda, <math id="Ch7.Thmex13.p1.m10" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> tem <math id="Ch7.Thmex13.p1.m11" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> como domínio.
+Como <math id="Ch7.Thmex13.p1.m12" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é derivável e <math id="Ch7.Thmex13.p1.m13" class="ltx_Math" alttext="f^{\prime}(x)=0" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=0</annotation></semantics></math>
+se e somente se <math id="Ch7.Thmex13.p1.m14" class="ltx_Math" alttext="x=\frac{1}{5}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/x-tex">x=\frac{1}{5}</annotation></semantics></math>, e como <math id="Ch7.Thmex13.p1.m15" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> é convexa (<math id="Ch7.Thmex13.p1.m16" class="ltx_Math" alttext="d^{\prime\prime}(z)&gt;0" display="inline"><semantics><mrow><mrow><msup><mi>d</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d^{\prime\prime}(z)&gt;0</annotation></semantics></math> para todo <math id="Ch7.Thmex13.p1.m17" class="ltx_Math" alttext="z" display="inline"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>), o
+ponto de abcissa <math id="Ch7.Thmex13.p1.m18" class="ltx_Math" alttext="x=\frac{1}{5}" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/x-tex">x=\frac{1}{5}</annotation></semantics></math> é um ponto de mínimo global de <math id="Ch7.Thmex13.p1.m19" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>. Logo, o ponto
+procurado é <math id="Ch7.Thmex13.p1.m20" class="ltx_Math" alttext="Q_{*}=(\frac{1}{5},\frac{2}{5})" display="inline"><semantics><mrow><msub><mi>Q</mi><mo>∗</mo></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>,</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Q_{*}=(\frac{1}{5},\frac{2}{5})</annotation></semantics></math>.
+Observe que a inclinação do segmento <math id="Ch7.Thmex13.p1.m21" class="ltx_Math" alttext="Q_{*}P" display="inline"><semantics><mrow><msub><mi>Q</mi><mo>∗</mo></msub><mo>⁢</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">Q_{*}P</annotation></semantics></math> é igual a <math id="Ch7.Thmex13.p1.m22" class="ltx_Math" alttext="-\tfrac{1}{2}" display="inline"><semantics><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">-\tfrac{1}{2}</annotation></semantics></math>: ele
+é perpendicular à reta, como era de se esperar (sabemos desde o curso
+de geometria elementar que o caminho mais curto
+entre um ponto <math id="Ch7.Thmex13.p1.m23" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> e uma reta é o segmento perpendicular à reta passando
+por <math id="Ch7.Thmex13.p1.m24" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>).</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo9" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual é o ponto <math id="Ch7.Thmexo9.p1.m1" class="ltx_Math" alttext="Q_{*}" display="inline"><semantics><msub><mi>Q</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">Q_{*}</annotation></semantics></math> da parábola <math id="Ch7.Thmexo9.p1.m2" class="ltx_Math" alttext="y=x^{2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=x^{2}</annotation></semantics></math> cuja distância a <math id="Ch7.Thmexo9.p1.m3" class="ltx_Math" alttext="P=(10,2)" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>10,2</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P=(10,2)</annotation></semantics></math> é
+mínima?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo10" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.10</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere os pontos <math id="Ch7.Thmexo10.p1.m1" class="ltx_Math" alttext="A=(1,3)" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>1,3</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">A=(1,3)</annotation></semantics></math>, <math id="Ch7.Thmexo10.p1.m2" class="ltx_Math" alttext="B=(8,4)" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>8,4</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">B=(8,4)</annotation></semantics></math>. Determine o ponto <math id="Ch7.Thmexo10.p1.m3" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> do eixo <math id="Ch7.Thmexo10.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+tal que o perímetro do triângulo <math id="Ch7.Thmexo10.p1.m5" class="ltx_Math" alttext="ABC" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">ABC</annotation></semantics></math> seja mínimo.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo11" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.11</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Ch7.Thmexo11.p1.m1" class="ltx_Math" alttext="r_{\alpha}" display="inline"><semantics><msub><mi>r</mi><mi>α</mi></msub><annotation encoding="application/x-tex">r_{\alpha}</annotation></semantics></math> a reta tangente ao gráfico da função <math id="Ch7.Thmexo11.p1.m2" class="ltx_Math" alttext="f(x)=3-x^{2}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=3-x^{2}</annotation></semantics></math>, no ponto
+<math id="Ch7.Thmexo11.p1.m3" class="ltx_Math" alttext="(\alpha,f(\alpha))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>α</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\alpha,f(\alpha))</annotation></semantics></math>, <math id="Ch7.Thmexo11.p1.m4" class="ltx_Math" alttext="\alpha\neq 0" display="inline"><semantics><mrow><mi>α</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha\neq 0</annotation></semantics></math>.
+Seja <math id="Ch7.Thmexo11.p1.m5" class="ltx_Math" alttext="\mathcal{T}_{\alpha}" display="inline"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒯</mi><mi>α</mi></msub><annotation encoding="application/x-tex">\mathcal{T}_{\alpha}</annotation></semantics></math> o triângulo determinado pela origem e pelos pontos em
+que <math id="Ch7.Thmexo11.p1.m6" class="ltx_Math" alttext="r_{\alpha}" display="inline"><semantics><msub><mi>r</mi><mi>α</mi></msub><annotation encoding="application/x-tex">r_{\alpha}</annotation></semantics></math> corta os eixos de coordenada. Determine o(s) valores de <math id="Ch7.Thmexo11.p1.m7" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+para os quais a área de <math id="Ch7.Thmexo11.p1.m8" class="ltx_Math" alttext="\mathcal{T}_{\alpha}" display="inline"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒯</mi><mi>α</mi></msub><annotation encoding="application/x-tex">\mathcal{T}_{\alpha}</annotation></semantics></math> é mínima.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo12" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.12</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo12.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Considere um ponto <math id="Ch7.Thmexo12.p1.m1" class="ltx_Math" alttext="P=(a,b)" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P=(a,b)</annotation></semantics></math> fixo no primeiro quadrante.
+Para um ponto <math id="Ch7.Thmexo12.p1.m2" class="ltx_Math" alttext="Q" display="inline"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> no eixo <math id="Ch7.Thmexo12.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> positivo, considere a área do triângulo
+determinado pelos eixos de coordenadas e pela reta que passa por <math id="Ch7.Thmexo12.p1.m4" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> e
+<math id="Ch7.Thmexo12.p1.m5" class="ltx_Math" alttext="Q" display="inline"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>. Ache a posição do ponto <math id="Ch7.Thmexo12.p1.m6" class="ltx_Math" alttext="Q" display="inline"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> que minimize a área do triângulo, e dê o valor
+dessa área.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo13" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.13</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo13.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual é o triângulo isósceles de maior área que pode ser inscrito
+dentro de um disco de raio <math id="Ch7.Thmexo13.p1.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo14" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.14</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo14.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Ch7.Thmexo14.p1.m1" class="ltx_Math" alttext="x_{1},\dots,x_{n}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">x_{1},\dots,x_{n}</annotation></semantics></math> os resultados de medidas repetidas feitas a respeito de
+uma grandeza. Procure o número <math id="Ch7.Thmexo14.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> que minimize</span></p>
+<div id="Ch7.Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex5.m1" class="ltx_Math" alttext="\sigma(x)=\sum_{i=1}^{n}(x-x_{i})^{2}\,." display="block"><semantics><mrow><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sigma(x)=\sum_{i=1}^{n}(x-x_{i})^{2}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch7.Thmexo15" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.15</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo15.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma formiga entra no cinema, e vê que
+o telão tem <math id="Ch7.Thmexo15.p1.m1" class="ltx_Math" alttext="5" display="inline"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math> metros de altura e está afixado na parede, <math id="Ch7.Thmexo15.p1.m2" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math> metros acima do
+chão.
+A qual distância da parede a formiga deve ficar para que o ângulo sob o qual
+ela vê o telão seja máximo? (Vide: Exercício <a href="Ch2.S4.html#Ch2.Thmexo35" title="Exercício 2.35. ‣ 2.4.3 Funções trigonométricas inversas ‣ 2.4 Composição, contradomínio e imagem ‣ Capítulo 2 Funções ‣ Cálculo 1" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.35</span></a>.)</span></p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Consideremos alguns exemplos de problemas de otimização em três dimensões:</p>
+</div>
+<div id="Ch7.Thmex14" class="ltx_theorem ltx_theorem_ex">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exemplo 7.14</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmex14.p1" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph">Qual é, dentre os cilíndros inscritos numa esfera de raio <math id="Ch7.Thmex14.p1.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>, o de volume
+máximo?</em><span class="ltx_text ltx_font_italic">
+Um cílindro cuja base tem raio <math id="Ch7.Thmex14.p1.m2" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>, e cuja altura é <math id="Ch7.Thmex14.p1.m3" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> tem volume
+<math id="Ch7.Thmex14.p1.m4" class="ltx_Math" alttext="V=\pi r^{2}h" display="inline"><semantics><mrow><mi>V</mi><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mi>h</mi></mrow></mrow><annotation encoding="application/x-tex">V=\pi r^{2}h</annotation></semantics></math>. Quando o cilíndro é inscrito na esfera de raio <math id="Ch7.Thmex14.p1.m5" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> centrada na
+origem, <math id="Ch7.Thmex14.p1.m6" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> e <math id="Ch7.Thmex14.p1.m7" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> dependem um do outro:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-128.svg" alt="" id="Ch7.Thmex14.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="302" height="124"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Assim, <math id="Ch7.Thmex14.p1.m8" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> pode ser escrito como função de uma variável só.
+Em função de <math id="Ch7.Thmex14.p1.m9" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>,</span></p>
+<div id="Ch7.Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex6.m1" class="ltx_Math" alttext="V(r)=2\pi r^{2}\sqrt{R^{2}-r^{2}}\,,\quad r\in[0,R]\,," display="block"><semantics><mrow><mrow><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msqrt></mrow></mrow><mo lspace="0.170em" rspace="1.367em">,</mo><mrow><mi>r</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>R</mi><mo rspace="0.170em" stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">V(r)=2\pi r^{2}\sqrt{R^{2}-r^{2}}\,,\quad r\in[0,R]\,,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">ou em função de <math id="Ch7.Thmex14.p1.m10" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>:</span></p>
+<div id="Ch7.Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex7.m1" class="ltx_Math" alttext="V(h)=\pi h(R^{2}-\tfrac{h^{2}}{4})\,,\quad h\in[0,2R]\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><mstyle displaystyle="false"><mfrac><msup><mi>h</mi><mn>2</mn></msup><mn>4</mn></mfrac></mstyle></mrow><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="1.367em">,</mo><mrow><mi>h</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mn>0,2</mn><mo>⁢</mo><mi>R</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">V(h)=\pi h(R^{2}-\tfrac{h^{2}}{4})\,,\quad h\in[0,2R]\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para achar o cílindro de volume máximo, procuremos o máximo global de qualquer
+uma dessas funções no seu domínio. Consideremos por exemplo <math id="Ch7.Thmex14.p1.m11" class="ltx_Math" alttext="V(r)" display="inline"><semantics><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">V(r)</annotation></semantics></math>. Como <math id="Ch7.Thmex14.p1.m12" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> é
+derivável em <math id="Ch7.Thmex14.p1.m13" class="ltx_Math" alttext="(0,R)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,R)</annotation></semantics></math>, temos</span></p>
+<div id="Ch7.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex8.m1" class="ltx_Math" alttext="V^{\prime}(r)=2\pi\Big{\{}2r\sqrt{R^{2}-r^{2}}+r^{2}\frac{-r}{\sqrt{R^{2}-r^{2%
+}}}\Big{\}}=2\pi r\frac{2R^{2}-3r^{2}}{\sqrt{R^{2}-r^{2}}}\,." display="block"><semantics><mrow><mrow><mrow><msup><mi>V</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">{</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>r</mi><mo>⁢</mo><msqrt><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msqrt></mrow><mo>+</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo>−</mo><mi>r</mi></mrow><msqrt><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></mrow><mo maxsize="160%" minsize="160%">}</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>R</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mrow><msqrt><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">V^{\prime}(r)=2\pi\Big{\{}2r\sqrt{R^{2}-r^{2}}+r^{2}\frac{-r}{\sqrt{R^{2}-r^{2%
+}}}\Big{\}}=2\pi r\frac{2R^{2}-3r^{2}}{\sqrt{R^{2}-r^{2}}}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Portanto, <math id="Ch7.Thmex14.p1.m14" class="ltx_Math" alttext="V^{\prime}(r)=0" display="inline"><semantics><mrow><mrow><msup><mi>V</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">V^{\prime}(r)=0</annotation></semantics></math> se e somente se <math id="Ch7.Thmex14.p1.m15" class="ltx_Math" alttext="r=0" display="inline"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r=0</annotation></semantics></math> ou <math id="Ch7.Thmex14.p1.m16" class="ltx_Math" alttext="2R^{2}-3r^{2}=0" display="inline"><semantics><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>R</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2R^{2}-3r^{2}=0</annotation></semantics></math>. Logo, o único ponto
+crítico
+de <math id="Ch7.Thmex14.p1.m17" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> em <math id="Ch7.Thmex14.p1.m18" class="ltx_Math" alttext="(0,R)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,R)</annotation></semantics></math> é <math id="Ch7.Thmex14.p1.m19" class="ltx_Math" alttext="r_{*}=\sqrt{2/3}R" display="inline"><semantics><mrow><msub><mi>r</mi><mo>∗</mo></msub><mo>=</mo><mrow><msqrt><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msqrt><mo>⁢</mo><mi>R</mi></mrow></mrow><annotation encoding="application/x-tex">r_{*}=\sqrt{2/3}R</annotation></semantics></math> (<math id="Ch7.Thmex14.p1.m20" class="ltx_Math" alttext="\simeq 0.82R" display="inline"><semantics><mrow><mi></mi><mo>≃</mo><mrow><mn>0.82</mn><mo>⁢</mo><mi>R</mi></mrow></mrow><annotation encoding="application/x-tex">\simeq 0.82R</annotation></semantics></math>). Estudando o sinal de
+<math id="Ch7.Thmex14.p1.m21" class="ltx_Math" alttext="V^{\prime}" display="inline"><semantics><msup><mi>V</mi><mo>′</mo></msup><annotation encoding="application/x-tex">V^{\prime}</annotation></semantics></math> obtemos a variação de <math id="Ch7.Thmex14.p1.m22" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-129.svg" alt="" id="Ch7.Thmex14.p1.g2" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="214" height="79"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Na fronteira do intervalo <math id="Ch7.Thmex14.p1.m23" class="ltx_Math" alttext="[0,R]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,R]</annotation></semantics></math>, <math id="Ch7.Thmex14.p1.m24" class="ltx_Math" alttext="V(0)=0" display="inline"><semantics><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">V(0)=0</annotation></semantics></math> e <math id="Ch7.Thmex14.p1.m25" class="ltx_Math" alttext="V(R)=0" display="inline"><semantics><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">V(R)=0</annotation></semantics></math>. Logo, <math id="Ch7.Thmex14.p1.m26" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> atinge o
+seu máximo global em <math id="Ch7.Thmex14.p1.m27" class="ltx_Math" alttext="r_{*}" display="inline"><semantics><msub><mi>r</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">r_{*}</annotation></semantics></math>. Portanto, o cilíndro com volume máximo que pode
+ser inscrito numa esfera de raio <math id="Ch7.Thmex14.p1.m28" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> tem base com raio <math id="Ch7.Thmex14.p1.m29" class="ltx_Math" alttext="r_{*}" display="inline"><semantics><msub><mi>r</mi><mo>∗</mo></msub><annotation encoding="application/x-tex">r_{*}</annotation></semantics></math>, e altura
+<math id="Ch7.Thmex14.p1.m30" class="ltx_Math" alttext="h_{*}=2\sqrt{R^{2}-r_{*}^{2}}=\frac{2}{\sqrt{3}}R" display="inline"><semantics><mrow><msub><mi>h</mi><mo>∗</mo></msub><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>r</mi><mo>∗</mo><mn>2</mn></msubsup></mrow></msqrt></mrow><mo>=</mo><mrow><mfrac><mn>2</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>⁢</mo><mi>R</mi></mrow></mrow><annotation encoding="application/x-tex">h_{*}=2\sqrt{R^{2}-r_{*}^{2}}=\frac{2}{\sqrt{3}}R</annotation></semantics></math> (<math id="Ch7.Thmex14.p1.m31" class="ltx_Math" alttext="\simeq 1.15R" display="inline"><semantics><mrow><mi></mi><mo>≃</mo><mrow><mn>1.15</mn><mo>⁢</mo><mi>R</mi></mrow></mrow><annotation encoding="application/x-tex">\simeq 1.15R</annotation></semantics></math>).</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo16" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.16</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo16.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual é, dentre os cilíndros inscritos em um cone de altura <math id="Ch7.Thmexo16.p1.m1" class="ltx_Math" alttext="H" display="inline"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math> e base circular
+de raio <math id="Ch7.Thmexo16.p1.m2" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>, o de volume máximo?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo17" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.17</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo17.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(Segunda prova, 27 de maio de 2011)
+Considere um cone de base circular, inscrito numa esfera de raio <math id="Ch7.Thmexo17.p1.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Expresse o volume <math id="Ch7.Thmexo17.p1.m2" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> do cone em função da sua altura <math id="Ch7.Thmexo17.p1.m3" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>.
+Dê o domínio de <math id="Ch7.Thmexo17.p1.m4" class="ltx_Math" alttext="V(h)" display="inline"><semantics><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">V(h)</annotation></semantics></math> e ache os seus pontos de mínimo e máximo globais.
+Dê as dimensões exatas do cone que tem volume máximo.</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo18" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.18</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo18.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">De todos os cones que contêm uma esfera de raio <math id="Ch7.Thmexo18.p1.m1" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>, qual tem o menor
+volume?</span></p>
+</div>
+</div>
+<div id="Ch7.Thmexo19" class="ltx_theorem ltx_theorem_exo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercício 7.19</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch7.Thmexo19.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma caixa retangular é feita retirando quatro quadrados dos cantos de uma
+folha de papelão de dimensões <math id="Ch7.Thmexo19.p1.m1" class="ltx_Math" alttext="2m\times 1m" display="inline"><semantics><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mn>1</mn></mrow><mo>⁢</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">2m\times 1m</annotation></semantics></math>, e dobrando os quatro
+lados:</span></p>
+<div class="bml-overflow-wrapper"><img src="bmlimages/Apostila-130.svg" alt="" id="Ch7.Thmexo19.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="154" height="79"></div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qual deve ser o tamanho dos quadrados retirados para maximizar o
+volume da caixa obtida?</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch7.S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch7.S5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Apostila.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>
